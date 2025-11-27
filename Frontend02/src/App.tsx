@@ -19,6 +19,9 @@ import CompleteProductDetailsPage from './pages/farmer/CompleteProductDetailsPag
 // Notification Component
 import NotificationToast from './components/ui/NotificationToast';
 
+// Chatbot Component
+import Chatbot from './components/chatbot/Chatbot';
+
 function App() {
   return (
     <CurrencyProvider>
@@ -65,6 +68,7 @@ function App() {
         </Router>
       </FarmerProvider>
     </NotificationProvider>
+    <Chatbot />
     </CurrencyProvider>
   );
 }

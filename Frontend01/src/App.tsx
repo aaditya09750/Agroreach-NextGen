@@ -29,6 +29,7 @@ import CartNotification from './components/ui/CartNotification';
 import UserNotification from './components/ui/UserNotification';
 import OrderNotification from './components/ui/OrderNotification';
 import SkeletonLoader from './components/ui/SkeletonLoader';
+import Chatbot from './components/chatbot/Chatbot';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -107,6 +108,7 @@ function App() {
         </NotificationProvider>
       </UserProvider>
     </LanguageProvider>
+    <Chatbot />
   </CurrencyProvider>
   );
 }

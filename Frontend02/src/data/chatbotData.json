@@ -1,0 +1,746 @@
+{
+  "initialQuestions": [
+    {
+      "id": "f1",
+      "text": "How do I list my products for sale?",
+      "category": "Selling"
+    },
+    {
+      "id": "f2",
+      "text": "What if my stock is unsold?",
+      "category": "Stock Management"
+    },
+    {
+      "id": "f3",
+      "text": "How do I receive payments?",
+      "category": "Payments"
+    },
+    {
+      "id": "f4",
+      "text": "What documents do I need?",
+      "category": "Verification"
+    }
+  ],
+  "conversations": {
+    "f1": {
+      "answer": "To list your products: 1) Go to Dashboard, 2) Click 'Sell Product' or 'Add Product', 3) Fill in product details (name, quantity, price, quality grade), 4) Upload 3-5 clear product photos, 5) Set delivery options, 6) Click 'Publish Product'. Your listing will be live within 5 minutes after verification.",
+      "relatedQuestions": [
+        {
+          "id": "f1_1",
+          "text": "Can I bulk upload products?",
+          "category": "Selling"
+        },
+        {
+          "id": "f1_2",
+          "text": "How do I set product prices?",
+          "category": "Pricing"
+        },
+        {
+          "id": "f1_3",
+          "text": "What product details are required?",
+          "category": "Selling"
+        }
+      ]
+    },
+    "f1_1": {
+      "answer": "Yes! Bulk upload is available for verified farmers. Download our Excel/CSV template from Dashboard → Bulk Upload section. Fill in product details (one row per product), upload the file, and review before publishing. You can upload up to 100 products at once. Contact support if you need help with bulk listing.",
+      "relatedQuestions": [
+        {
+          "id": "f1_1_1",
+          "text": "Where to download bulk upload template?",
+          "category": "Selling"
+        },
+        {
+          "id": "f1_1_2",
+          "text": "Can I edit products after bulk upload?",
+          "category": "Selling"
+        },
+        {
+          "id": "f1",
+          "text": "How do I list my products for sale?",
+          "category": "Selling"
+        }
+      ]
+    },
+    "f1_2": {
+      "answer": "Price setting tips: 1) Check current market rates using our Price Prediction tool, 2) Consider quality grade (Premium = +20%, Standard = base price), 3) Factor in your costs (production + packaging + transport), 4) Check competitor prices, 5) Add 10-15% margin. You can adjust prices anytime based on demand.",
+      "relatedQuestions": [
+        {
+          "id": "f1_2_1",
+          "text": "What are current market rates?",
+          "category": "Pricing"
+        },
+        {
+          "id": "f1_2_2",
+          "text": "Can I offer discounts?",
+          "category": "Pricing"
+        },
+        {
+          "id": "f1_2_3",
+          "text": "What commission does platform charge?",
+          "category": "Payments"
+        }
+      ]
+    },
+    "f1_3": {
+      "answer": "Required product details: 1) Product name and category, 2) Quantity available (in kg/litre/pieces), 3) Price per unit, 4) Quality grade (A/B/C), 5) Harvest/production date, 6) Product photos (minimum 3, maximum 5), 7) Delivery options (pickup/delivery), 8) Location/farm address, 9) Product description (optional but recommended).",
+      "relatedQuestions": [
+        {
+          "id": "f1_3_1",
+          "text": "How many photos should I upload?",
+          "category": "Selling"
+        },
+        {
+          "id": "f1_3_2",
+          "text": "What quality grades mean?",
+          "category": "Quality"
+        },
+        {
+          "id": "f1",
+          "text": "How do I list my products for sale?",
+          "category": "Selling"
+        }
+      ]
+    },
+    "f2": {
+      "answer": "If you have unsold stock, here are options: 1) Flash Sale (10-25% discount for quick sale), 2) Sell to processor/cannery (better bulk prices), 3) Convert to fodder/animal feed, 4) Cold storage (if available in your area), 5) On-farm processing (drying, pickling). Generate Audit Report from Manage Products to get AI-powered recommendations.",
+      "relatedQuestions": [
+        {
+          "id": "f2_1",
+          "text": "How to run flash sale?",
+          "category": "Stock Management"
+        },
+        {
+          "id": "f2_2",
+          "text": "How to connect with processors?",
+          "category": "Stock Management"
+        },
+        {
+          "id": "f2_3",
+          "text": "What is cold storage cost?",
+          "category": "Storage"
+        }
+      ]
+    },
+    "f2_1": {
+      "answer": "To run flash sale: 1) Go to Manage Products, 2) Select product with unsold stock, 3) Click 'Edit', 4) Set discount percentage (10-25% recommended), 5) Flash sale badge appears on listing, 6) Promoted to buyers looking for deals. Flash sales typically sell within 24-48 hours. Remove discount anytime.",
+      "relatedQuestions": [
+        {
+          "id": "f2_1_1",
+          "text": "What discount percentage to offer?",
+          "category": "Pricing"
+        },
+        {
+          "id": "f2_1_2",
+          "text": "How long do flash sales last?",
+          "category": "Stock Management"
+        },
+        {
+          "id": "f2",
+          "text": "What if my stock is unsold?",
+          "category": "Stock Management"
+        }
+      ]
+    },
+    "f2_2": {
+      "answer": "Processor connections: Use our platform's Processor Directory to find food processing units, canneries, and value-addition facilities near you. Filter by product type and location. Contact directly through platform messaging. Many processors have standing orders for bulk quantities at competitive rates.",
+      "relatedQuestions": [
+        {
+          "id": "f2_2_1",
+          "text": "What do processors pay?",
+          "category": "Pricing"
+        },
+        {
+          "id": "f2_2_2",
+          "text": "What is minimum quantity for processors?",
+          "category": "Stock Management"
+        },
+        {
+          "id": "f2",
+          "text": "What if my stock is unsold?",
+          "category": "Stock Management"
+        }
+      ]
+    },
+    "f2_3": {
+      "answer": "Cold storage costs vary by location and facility: Typically ₹2-5 per kg per day. Minimum storage period is usually 7 days. Some facilities offer monthly rates at discounted prices. Check our Cold Storage Locator tool to find facilities near you with current rates and availability.",
+      "relatedQuestions": [
+        {
+          "id": "f2_3_1",
+          "text": "Where to find cold storage?",
+          "category": "Storage"
+        },
+        {
+          "id": "f2_3_2",
+          "text": "Is cold storage worth the cost?",
+          "category": "Storage"
+        },
+        {
+          "id": "f2",
+          "text": "What if my stock is unsold?",
+          "category": "Stock Management"
+        }
+      ]
+    },
+    "f3": {
+      "answer": "Payment process: 1) Buyer places order and pays online, 2) Amount held securely, 3) You deliver product/arrange pickup, 4) Buyer confirms receipt, 5) Payment released to your registered bank account within 24-48 hours. Track all payments in Dashboard → Payments section. Minimum payout threshold is ₹500.",
+      "relatedQuestions": [
+        {
+          "id": "f3_1",
+          "text": "When do I receive payment?",
+          "category": "Payments"
+        },
+        {
+          "id": "f3_2",
+          "text": "What payment methods are supported?",
+          "category": "Payments"
+        },
+        {
+          "id": "f3_3",
+          "text": "How to add bank details?",
+          "category": "Payments"
+        }
+      ]
+    },
+    "f3_1": {
+      "answer": "Payment timeline: After buyer confirms delivery, amount is processed within 24-48 hours to your registered bank account. For emergency needs, Premium sellers can request instant payout (small fee applies). Track payment status in Dashboard. Payments are made every Monday and Thursday for completed orders.",
+      "relatedQuestions": [
+        {
+          "id": "f3_1_1",
+          "text": "Can I get faster payments?",
+          "category": "Payments"
+        },
+        {
+          "id": "f3_1_2",
+          "text": "What if buyer doesn't confirm?",
+          "category": "Payments"
+        },
+        {
+          "id": "f3",
+          "text": "How do I receive payments?",
+          "category": "Payments"
+        }
+      ]
+    },
+    "f3_2": {
+      "answer": "Payment methods for farmers: Bank transfer (NEFT/RTGS/IMPS) to your registered bank account. We also support payments to UPI IDs. All payments are made in INR. International payments require special approval. Add your preferred payment method in Settings → Payment Details.",
+      "relatedQuestions": [
+        {
+          "id": "f3_3",
+          "text": "How to add bank details?",
+          "category": "Payments"
+        },
+        {
+          "id": "f3",
+          "text": "How do I receive payments?",
+          "category": "Payments"
+        },
+        {
+          "id": "f3_2_1",
+          "text": "Can I add multiple bank accounts?",
+          "category": "Payments"
+        }
+      ]
+    },
+    "f3_3": {
+      "answer": "To add bank details: 1) Go to Dashboard → Settings → Payment Details, 2) Click 'Add Bank Account', 3) Enter account holder name, account number, IFSC code, bank name, 4) Upload cancelled cheque or bank statement, 5) Verify with OTP, 6) Account verified within 2-4 hours. Keep details updated for smooth payments.",
+      "relatedQuestions": [
+        {
+          "id": "f3_3_1",
+          "text": "How to verify bank account?",
+          "category": "Payments"
+        },
+        {
+          "id": "f3_3_2",
+          "text": "Can I change bank account?",
+          "category": "Payments"
+        },
+        {
+          "id": "f3",
+          "text": "How do I receive payments?",
+          "category": "Payments"
+        }
+      ]
+    },
+    "f4": {
+      "answer": "Required documents for verification: 1) Aadhaar Card (ID proof), 2) PAN Card (for tax purposes), 3) Bank account details (cancelled cheque/statement), 4) Land ownership proof or lease agreement, 5) Farm photos (3-5 images), 6) Mobile number for OTP verification. Upload documents in Settings → Verification. Process takes 24-48 hours.",
+      "relatedQuestions": [
+        {
+          "id": "f4_1",
+          "text": "How long does verification take?",
+          "category": "Verification"
+        },
+        {
+          "id": "f4_2",
+          "text": "Can I sell before verification?",
+          "category": "Verification"
+        },
+        {
+          "id": "f4_3",
+          "text": "What if documents are rejected?",
+          "category": "Verification"
+        }
+      ]
+    },
+    "f4_1": {
+      "answer": "Verification timeline: Document upload → Initial review (2-4 hours) → Field verification if needed (24 hours) → Final approval (24-48 hours total). You'll receive SMS and email updates at each stage. Once verified, you get a blue badge and can list unlimited products. Rush verification available for premium members.",
+      "relatedQuestions": [
+        {
+          "id": "f4_1_1",
+          "text": "Can I speed up verification?",
+          "category": "Verification"
+        },
+        {
+          "id": "f4",
+          "text": "What documents do I need?",
+          "category": "Verification"
+        },
+        {
+          "id": "f4_2",
+          "text": "Can I sell before verification?",
+          "category": "Verification"
+        }
+      ]
+    },
+    "f4_2": {
+      "answer": "Limited selling is allowed during verification: You can list up to 3 products with maximum 50kg total quantity per product. Orders are held until verification completes. Once verified, all limits are removed and held orders are processed. This protects buyers while giving you a head start.",
+      "relatedQuestions": [
+        {
+          "id": "f4",
+          "text": "What documents do I need?",
+          "category": "Verification"
+        },
+        {
+          "id": "f4_1",
+          "text": "How long does verification take?",
+          "category": "Verification"
+        },
+        {
+          "id": "f1",
+          "text": "How do I list my products for sale?",
+          "category": "Selling"
+        }
+      ]
+    },
+    "f4_3": {
+      "answer": "If documents are rejected: 1) Check rejection reason in email/SMS, 2) Common issues: unclear photos, mismatched details, expired documents, 3) Re-upload correct documents, 4) Contact support if confused. Most rejections are due to photo quality - take clear, well-lit photos. Resubmission review takes 4-6 hours.",
+      "relatedQuestions": [
+        {
+          "id": "f4",
+          "text": "What documents do I need?",
+          "category": "Verification"
+        },
+        {
+          "id": "f4_3_1",
+          "text": "How to take good document photos?",
+          "category": "Verification"
+        },
+        {
+          "id": "f4_1",
+          "text": "How long does verification take?",
+          "category": "Verification"
+        }
+      ]
+    },
+    "f1_1_1": {
+      "answer": "Download bulk upload template: Go to Dashboard → Products → Bulk Upload → Download Template. The Excel/CSV file has columns for all required fields with examples. Fill one row per product. Save and upload. Video tutorial available in Help section.",
+      "relatedQuestions": [
+        {
+          "id": "f1_1",
+          "text": "Can I bulk upload products?",
+          "category": "Selling"
+        },
+        {
+          "id": "f1",
+          "text": "How do I list my products for sale?",
+          "category": "Selling"
+        },
+        {
+          "id": "f1_3",
+          "text": "What product details are required?",
+          "category": "Selling"
+        }
+      ]
+    },
+    "f1_1_2": {
+      "answer": "Yes, you can edit any product after bulk upload. Go to Manage Products, find the product, click Edit. You can change price, quantity, photos, description, etc. Changes are live immediately. Bulk edit option also available to update multiple products at once.",
+      "relatedQuestions": [
+        {
+          "id": "f1_1",
+          "text": "Can I bulk upload products?",
+          "category": "Selling"
+        },
+        {
+          "id": "f1",
+          "text": "How do I list my products for sale?",
+          "category": "Selling"
+        },
+        {
+          "id": "f1_2",
+          "text": "How do I set product prices?",
+          "category": "Pricing"
+        }
+      ]
+    },
+    "f1_2_1": {
+      "answer": "Check current market rates using our Price Prediction tool (top menu). Enter your product name, location, quality grade, and date. Tool shows: 1) Today's average price, 2) Price range across markets, 3) 7-day price forecast, 4) Historical trends. Updated daily from APMC markets and platform data.",
+      "relatedQuestions": [
+        {
+          "id": "f1_2",
+          "text": "How do I set product prices?",
+          "category": "Pricing"
+        },
+        {
+          "id": "f1",
+          "text": "How do I list my products for sale?",
+          "category": "Selling"
+        },
+        {
+          "id": "f1_2_2",
+          "text": "Can I offer discounts?",
+          "category": "Pricing"
+        }
+      ]
+    },
+    "f1_2_2": {
+      "answer": "Yes, you can offer discounts: 1) Regular discount (set in product listing), 2) Flash sale discount (for quick clearance), 3) Bulk order discount (automatic for orders above 25kg), 4) Loyalty discount for repeat buyers. Discounts are clearly shown to buyers. You can change discount percentage anytime.",
+      "relatedQuestions": [
+        {
+          "id": "f2_1",
+          "text": "How to run flash sale?",
+          "category": "Stock Management"
+        },
+        {
+          "id": "f1_2",
+          "text": "How do I set product prices?",
+          "category": "Pricing"
+        },
+        {
+          "id": "f1",
+          "text": "How do I list my products for sale?",
+          "category": "Selling"
+        }
+      ]
+    },
+    "f1_2_3": {
+      "answer": "Platform commission: 5% on each sale for standard sellers, 3% for premium members. Commission covers: payment processing, platform maintenance, buyer protection, marketing. No listing fees or monthly charges. Commission is automatically deducted before payment is released to your account.",
+      "relatedQuestions": [
+        {
+          "id": "f3",
+          "text": "How do I receive payments?",
+          "category": "Payments"
+        },
+        {
+          "id": "f1_2",
+          "text": "How do I set product prices?",
+          "category": "Pricing"
+        },
+        {
+          "id": "f3_1",
+          "text": "When do I receive payment?",
+          "category": "Payments"
+        }
+      ]
+    },
+    "f1_3_1": {
+      "answer": "Upload 3-5 clear product photos: 1) Full product shot (main image), 2) Close-up showing quality, 3) Packaging/size reference, 4) Optional: farm/field photo, 5) Optional: different angle. Tips: Use good lighting, clean background, show actual product, avoid filters. Better photos = more sales!",
+      "relatedQuestions": [
+        {
+          "id": "f1_3",
+          "text": "What product details are required?",
+          "category": "Selling"
+        },
+        {
+          "id": "f1",
+          "text": "How do I list my products for sale?",
+          "category": "Selling"
+        },
+        {
+          "id": "f1_3_2",
+          "text": "What quality grades mean?",
+          "category": "Quality"
+        }
+      ]
+    },
+    "f1_3_2": {
+      "answer": "Quality grades: Grade A = Premium quality, uniform size, perfect appearance, no defects (highest price). Grade B = Good quality, slight size variation, minor cosmetic flaws (10-15% lower price). Grade C = Standard quality, mixed sizes, cosmetic imperfections but safe to eat (20-30% lower price). Be honest about grade - wrong grading leads to returns.",
+      "relatedQuestions": [
+        {
+          "id": "f1_3",
+          "text": "What product details are required?",
+          "category": "Selling"
+        },
+        {
+          "id": "f1_2",
+          "text": "How do I set product prices?",
+          "category": "Pricing"
+        },
+        {
+          "id": "f1",
+          "text": "How do I list my products for sale?",
+          "category": "Selling"
+        }
+      ]
+    },
+    "f2_1_1": {
+      "answer": "Recommended discount for flash sales: 10-15% for slow-moving stock, 15-20% for quick sale needed, 20-25% for urgent clearance (near expiry). Higher discounts attract more buyers but reduce profit. Check market price first. Flash sale products get promoted to deal-seeking buyers automatically.",
+      "relatedQuestions": [
+        {
+          "id": "f2_1",
+          "text": "How to run flash sale?",
+          "category": "Stock Management"
+        },
+        {
+          "id": "f1_2",
+          "text": "How do I set product prices?",
+          "category": "Pricing"
+        },
+        {
+          "id": "f2",
+          "text": "What if my stock is unsold?",
+          "category": "Stock Management"
+        }
+      ]
+    },
+    "f2_1_2": {
+      "answer": "Flash sale duration: You control how long. Recommended: 24-48 hours for maximum visibility. System automatically promotes flash sales to buyers. You can end sale anytime by removing discount. Most flash sales sell within first 24 hours. Monitor sales in Manage Products section.",
+      "relatedQuestions": [
+        {
+          "id": "f2_1",
+          "text": "How to run flash sale?",
+          "category": "Stock Management"
+        },
+        {
+          "id": "f2",
+          "text": "What if my stock is unsold?",
+          "category": "Stock Management"
+        },
+        {
+          "id": "f1_2_2",
+          "text": "Can I offer discounts?",
+          "category": "Pricing"
+        }
+      ]
+    },
+    "f2_2_1": {
+      "answer": "Processor pricing: Generally 10-20% lower than retail market price but: 1) Bulk quantity guaranteed sale, 2) No individual packaging needed, 3) Regular orders possible, 4) Payment terms may be better. Actual price depends on product type, quality, and quantity. Compare with our platform's direct selling before deciding.",
+      "relatedQuestions": [
+        {
+          "id": "f2_2",
+          "text": "How to connect with processors?",
+          "category": "Stock Management"
+        },
+        {
+          "id": "f1_2_1",
+          "text": "What are current market rates?",
+          "category": "Pricing"
+        },
+        {
+          "id": "f2",
+          "text": "What if my stock is unsold?",
+          "category": "Stock Management"
+        }
+      ]
+    },
+    "f2_2_2": {
+      "answer": "Processor minimum quantity: Typically 50-100kg minimum for vegetables, 100-500kg for grains/pulses. Each processor sets their own minimum based on processing capacity. Check individual processor profiles in our directory. Some processors accept smaller quantities from new farmers initially.",
+      "relatedQuestions": [
+        {
+          "id": "f2_2",
+          "text": "How to connect with processors?",
+          "category": "Stock Management"
+        },
+        {
+          "id": "f2",
+          "text": "What if my stock is unsold?",
+          "category": "Stock Management"
+        },
+        {
+          "id": "f2_2_1",
+          "text": "What do processors pay?",
+          "category": "Pricing"
+        }
+      ]
+    },
+    "f2_3_1": {
+      "answer": "Find cold storage: Use our Cold Storage Locator tool in Resources section. Filter by: 1) Location (within 50km), 2) Product type (vegetables/fruits/grains), 3) Availability, 4) Price range. Shows: facility name, address, capacity, rates, contact details. Book directly through platform or call facility.",
+      "relatedQuestions": [
+        {
+          "id": "f2_3",
+          "text": "What is cold storage cost?",
+          "category": "Storage"
+        },
+        {
+          "id": "f2",
+          "text": "What if my stock is unsold?",
+          "category": "Stock Management"
+        },
+        {
+          "id": "f2_3_2",
+          "text": "Is cold storage worth the cost?",
+          "category": "Storage"
+        }
+      ]
+    },
+    "f2_3_2": {
+      "answer": "Cold storage worth it when: 1) Expected price increase covers storage cost + profit, 2) Preventing immediate spoilage loss, 3) Waiting for better market conditions, 4) Off-season storage for premium prices. Calculate: (expected selling price - current price) × quantity - storage cost. Not worth if storage eats all profit margin.",
+      "relatedQuestions": [
+        {
+          "id": "f2_3",
+          "text": "What is cold storage cost?",
+          "category": "Storage"
+        },
+        {
+          "id": "f1_2_1",
+          "text": "What are current market rates?",
+          "category": "Pricing"
+        },
+        {
+          "id": "f2",
+          "text": "What if my stock is unsold?",
+          "category": "Stock Management"
+        }
+      ]
+    },
+    "f3_1_1": {
+      "answer": "Faster payments available for Premium members: Instant payout option (payment within 2-4 hours after delivery confirmation). Small convenience fee of 2% applies. Regular sellers get payments in 24-48 hours at no extra cost. Upgrade to Premium in Settings for instant payouts and other benefits.",
+      "relatedQuestions": [
+        {
+          "id": "f3_1",
+          "text": "When do I receive payment?",
+          "category": "Payments"
+        },
+        {
+          "id": "f3",
+          "text": "How do I receive payments?",
+          "category": "Payments"
+        },
+        {
+          "id": "f3_1_2",
+          "text": "What if buyer doesn't confirm?",
+          "category": "Payments"
+        }
+      ]
+    },
+    "f3_1_2": {
+      "answer": "If buyer doesn't confirm delivery: System automatically confirms after 48 hours of delivery attempt. Payment is then released. If delivery dispute, both parties can submit proof (delivery photos, signatures). Our support team reviews and resolves within 24 hours. Genuine delivery issues are rare.",
+      "relatedQuestions": [
+        {
+          "id": "f3_1",
+          "text": "When do I receive payment?",
+          "category": "Payments"
+        },
+        {
+          "id": "f3",
+          "text": "How do I receive payments?",
+          "category": "Payments"
+        },
+        {
+          "id": "f3_1_1",
+          "text": "Can I get faster payments?",
+          "category": "Payments"
+        }
+      ]
+    },
+    "f3_2_1": {
+      "answer": "You can add multiple bank accounts: 1 primary account (receives all payments by default), up to 3 secondary accounts. Useful for: separating business/personal funds, backup accounts, different banks for different purposes. Switch primary account anytime in Settings. Only verified accounts can receive payments.",
+      "relatedQuestions": [
+        {
+          "id": "f3_3",
+          "text": "How to add bank details?",
+          "category": "Payments"
+        },
+        {
+          "id": "f3_2",
+          "text": "What payment methods are supported?",
+          "category": "Payments"
+        },
+        {
+          "id": "f3",
+          "text": "How do I receive payments?",
+          "category": "Payments"
+        }
+      ]
+    },
+    "f3_3_1": {
+      "answer": "Bank account verification: After adding account details, we send ₹1 test transfer with reference code. Check your bank statement/passbook for the amount and code (within 2-4 hours). Enter the code in Settings → Payment Details → Verify Account. Once verified, account is active for receiving payments.",
+      "relatedQuestions": [
+        {
+          "id": "f3_3",
+          "text": "How to add bank details?",
+          "category": "Payments"
+        },
+        {
+          "id": "f3",
+          "text": "How do I receive payments?",
+          "category": "Payments"
+        },
+        {
+          "id": "f3_3_2",
+          "text": "Can I change bank account?",
+          "category": "Payments"
+        }
+      ]
+    },
+    "f3_3_2": {
+      "answer": "Yes, you can change your bank account anytime: Add new account (with verification) → Set as primary in Settings → Old account becomes secondary or delete it. Pending payments go to account registered at time of sale. New orders use new primary account. Keep at least one verified account active.",
+      "relatedQuestions": [
+        {
+          "id": "f3_3",
+          "text": "How to add bank details?",
+          "category": "Payments"
+        },
+        {
+          "id": "f3_2_1",
+          "text": "Can I add multiple bank accounts?",
+          "category": "Payments"
+        },
+        {
+          "id": "f3",
+          "text": "How do I receive payments?",
+          "category": "Payments"
+        }
+      ]
+    },
+    "f4_1_1": {
+      "answer": "Rush verification available for Premium members: Priority review queue, 4-6 hours total verification time, dedicated support agent. Premium membership costs ₹299/month but includes: faster verification, instant payouts, lower commission (3% vs 5%), bulk upload unlimited, priority customer support. Worth it for active sellers.",
+      "relatedQuestions": [
+        {
+          "id": "f4_1",
+          "text": "How long does verification take?",
+          "category": "Verification"
+        },
+        {
+          "id": "f4",
+          "text": "What documents do I need?",
+          "category": "Verification"
+        },
+        {
+          "id": "f3_1_1",
+          "text": "Can I get faster payments?",
+          "category": "Payments"
+        }
+      ]
+    },
+    "f4_3_1": {
+      "answer": "Tips for good document photos: 1) Use camera not screenshot, 2) Good natural or bright light, 3) Place document on plain background, 4) All corners visible in frame, 5) No glare or shadows, 6) Text clearly readable, 7) No hand/finger covering parts. Take multiple photos and upload best one. Clear photos = faster verification.",
+      "relatedQuestions": [
+        {
+          "id": "f4_3",
+          "text": "What if documents are rejected?",
+          "category": "Verification"
+        },
+        {
+          "id": "f4",
+          "text": "What documents do I need?",
+          "category": "Verification"
+        },
+        {
+          "id": "f1_3_1",
+          "text": "How many photos should I upload?",
+          "category": "Selling"
+        }
+      ]
+    }
+  }
+}

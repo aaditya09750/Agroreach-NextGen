@@ -1,0 +1,1066 @@
+{
+  "initialQuestions": [
+    {
+      "id": "c1",
+      "text": "Where can I buy fresh vegetables?",
+      "category": "Purchase"
+    },
+    {
+      "id": "c2",
+      "text": "How to check today's prices?",
+      "category": "Pricing"
+    },
+    {
+      "id": "c3",
+      "text": "How to identify fresh vegetables?",
+      "category": "Quality"
+    },
+    {
+      "id": "c4",
+      "text": "What payment methods are available?",
+      "category": "Payment"
+    }
+  ],
+  "conversations": {
+    "c1": {
+      "answer": "You can purchase fresh vegetables from local farmer markets, our platform directly from farmers, supermarkets, or online grocery delivery services. Buying directly from farmers through our platform ensures maximum freshness and better prices.",
+      "relatedQuestions": [
+        {
+          "id": "c1_1",
+          "text": "How to buy directly from farmers?",
+          "category": "Purchase"
+        },
+        {
+          "id": "c1_2",
+          "text": "How to order online?",
+          "category": "Purchase"
+        },
+        {
+          "id": "c1_3",
+          "text": "How to place bulk orders?",
+          "category": "Purchase"
+        }
+      ]
+    },
+    "c1_1": {
+      "answer": "Use our platform to connect with verified farmers directly. Browse the farmer marketplace, select products, and place orders. You'll get fresher produce at better prices compared to retail stores. You can also visit local farmer markets or contact farmer producer organizations (FPOs).",
+      "relatedQuestions": [
+        {
+          "id": "c1_1_1",
+          "text": "What are the benefits of buying direct?",
+          "category": "Purchase"
+        },
+        {
+          "id": "c1_1_2",
+          "text": "How do I find verified farmers?",
+          "category": "Purchase"
+        },
+        {
+          "id": "c1_1_3",
+          "text": "Can I visit the farm before buying?",
+          "category": "Purchase"
+        }
+      ]
+    },
+    "c1_2": {
+      "answer": "Use our online platform or mobile app for convenient home delivery. Browse products, add to cart, select delivery slot, and complete payment. Many farmers and FPOs offer same-day or next-day delivery options in your area.",
+      "relatedQuestions": [
+        {
+          "id": "c1_2_1",
+          "text": "What are delivery charges?",
+          "category": "Delivery"
+        },
+        {
+          "id": "c1_2_2",
+          "text": "Can I schedule delivery time?",
+          "category": "Delivery"
+        },
+        {
+          "id": "c1_2_3",
+          "text": "What is minimum order value?",
+          "category": "Purchase"
+        }
+      ]
+    },
+    "c1_3": {
+      "answer": "For bulk orders (10kg+), contact wholesalers, APMC markets, or farmer organizations directly through our bulk order section. You'll get significant discounts on large quantities. Bulk orders typically require 24-48 hours advance notice.",
+      "relatedQuestions": [
+        {
+          "id": "c1_3_1",
+          "text": "What discounts on bulk orders?",
+          "category": "Pricing"
+        },
+        {
+          "id": "c1_3_2",
+          "text": "What is minimum bulk quantity?",
+          "category": "Purchase"
+        },
+        {
+          "id": "c1_3_3",
+          "text": "How to negotiate bulk prices?",
+          "category": "Pricing"
+        }
+      ]
+    },
+    "c2": {
+      "answer": "Use our Price Prediction tool in the top menu to check current and predicted market rates. Enter the crop name, select your location, choose quality grade, and view real-time prices from multiple sellers. Prices are updated daily based on market conditions.",
+      "relatedQuestions": [
+        {
+          "id": "c2_1",
+          "text": "Why do prices fluctuate?",
+          "category": "Pricing"
+        },
+        {
+          "id": "c2_2",
+          "text": "When are vegetables cheapest?",
+          "category": "Pricing"
+        },
+        {
+          "id": "c2_3",
+          "text": "What is difference between retail and wholesale price?",
+          "category": "Pricing"
+        }
+      ]
+    },
+    "c2_1": {
+      "answer": "Prices change based on seasonal availability, production levels, demand-supply balance, weather conditions, festivals, and transportation costs. Off-season vegetables are typically 2-3 times more expensive than in-season produce.",
+      "relatedQuestions": [
+        {
+          "id": "c2_1_1",
+          "text": "How to predict price changes?",
+          "category": "Pricing"
+        },
+        {
+          "id": "c2_1_2",
+          "text": "What affects vegetable prices most?",
+          "category": "Pricing"
+        },
+        {
+          "id": "c2_1_3",
+          "text": "Are organic vegetables more expensive?",
+          "category": "Quality"
+        }
+      ]
+    },
+    "c2_2": {
+      "answer": "Vegetables are cheapest during peak harvest season: Monsoon (June-Sep) for leafy vegetables, Winter (Nov-Feb) for carrots and root vegetables, Summer (Mar-May) for cucumbers and tomatoes. Buy seasonal produce to save 30-50% on costs.",
+      "relatedQuestions": [
+        {
+          "id": "c2_2_1",
+          "text": "What are seasonal vegetables right now?",
+          "category": "Quality"
+        },
+        {
+          "id": "c2_2_2",
+          "text": "How much can I save buying seasonal?",
+          "category": "Pricing"
+        },
+        {
+          "id": "c2_2_3",
+          "text": "Where to find seasonal vegetable calendar?",
+          "category": "Quality"
+        }
+      ]
+    },
+    "c2_3": {
+      "answer": "Retail prices include transportation costs, middleman commission, storage expenses, wastage handling, and taxes. Retail prices are typically 30-50% higher than wholesale rates. Buy directly from farmers through our platform to get prices closer to wholesale.",
+      "relatedQuestions": [
+        {
+          "id": "c2_3_1",
+          "text": "Can individuals buy at wholesale price?",
+          "category": "Pricing"
+        },
+        {
+          "id": "c2_3_2",
+          "text": "What is APMC market pricing?",
+          "category": "Pricing"
+        },
+        {
+          "id": "c2_3_3",
+          "text": "How to get best vegetable prices?",
+          "category": "Purchase"
+        }
+      ]
+    },
+    "c3": {
+      "answer": "Look for vibrant colors, crisp texture, natural fresh smell, no dark spots or bruises, and firm feel when touched. Check leaves are green and not wilted. For organic produce, look for certification labels. Our platform shows freshness ratings for each product.",
+      "relatedQuestions": [
+        {
+          "id": "c3_1",
+          "text": "What is difference between organic and regular?",
+          "category": "Quality"
+        },
+        {
+          "id": "c3_2",
+          "text": "What do Grade A, B, C mean?",
+          "category": "Quality"
+        },
+        {
+          "id": "c3_3",
+          "text": "How long do vegetables last?",
+          "category": "Storage"
+        }
+      ]
+    },
+    "c3_1": {
+      "answer": "Organic vegetables are grown without chemical fertilizers or pesticides, using only natural farming methods. They're healthier and environmentally friendly but slightly more expensive (15-25% premium). Regular vegetables use chemical inputs for faster growth and higher yields.",
+      "relatedQuestions": [
+        {
+          "id": "c3_1_1",
+          "text": "Are organic vegetables really better?",
+          "category": "Quality"
+        },
+        {
+          "id": "c3_1_2",
+          "text": "How to verify organic certification?",
+          "category": "Quality"
+        },
+        {
+          "id": "c3_1_3",
+          "text": "Where to buy organic vegetables?",
+          "category": "Purchase"
+        }
+      ]
+    },
+    "c3_2": {
+      "answer": "Grade A = Premium quality with perfect shape, size, and color. No defects. Highest price. Grade B = Good quality with slight size variations. Minor cosmetic imperfections. Moderate price. Grade C = Standard quality suitable for cooking. More variations in size and appearance. Lowest price but same nutrition.",
+      "relatedQuestions": [
+        {
+          "id": "c3_2_1",
+          "text": "Does grade affect nutritional value?",
+          "category": "Health"
+        },
+        {
+          "id": "c3_2_2",
+          "text": "Can I mix different grades in order?",
+          "category": "Purchase"
+        },
+        {
+          "id": "c3_2_3",
+          "text": "How much cheaper is Grade B or C?",
+          "category": "Pricing"
+        }
+      ]
+    },
+    "c3_3": {
+      "answer": "Leafy vegetables: 2-3 days refrigerated. Tomatoes: 4-5 days. Potatoes and onions: 2-3 weeks in cool dry place. Root vegetables: 1 week refrigerated. Always store in proper containers or bags. Use our storage tips guide for each vegetable type.",
+      "relatedQuestions": [
+        {
+          "id": "c3_3_1",
+          "text": "How to store vegetables properly?",
+          "category": "Storage"
+        },
+        {
+          "id": "c3_3_2",
+          "text": "Should all vegetables be refrigerated?",
+          "category": "Storage"
+        },
+        {
+          "id": "c3_3_3",
+          "text": "How to prevent vegetable spoilage?",
+          "category": "Storage"
+        }
+      ]
+    },
+    "c4": {
+      "answer": "We accept multiple payment methods: UPI (Google Pay, PhonePe, Paytm), Credit/Debit Cards (Visa, Mastercard, RuPay), Net Banking, Digital Wallets, and Cash on Delivery (COD). All payments are secure and encrypted. Choose your preferred method at checkout.",
+      "relatedQuestions": [
+        {
+          "id": "c4_1",
+          "text": "Is Cash on Delivery available?",
+          "category": "Payment"
+        },
+        {
+          "id": "c4_2",
+          "text": "Are online payments secure?",
+          "category": "Payment"
+        },
+        {
+          "id": "c4_3",
+          "text": "What is the return policy?",
+          "category": "Policy"
+        }
+      ]
+    },
+    "c4_1": {
+      "answer": "Yes, Cash on Delivery (COD) is available for most orders. Pay the delivery person in cash when you receive your order. COD may have a small additional charge and may not be available for very large orders or certain remote areas.",
+      "relatedQuestions": [
+        {
+          "id": "c4_1_1",
+          "text": "Is there extra charge for COD?",
+          "category": "Payment"
+        },
+        {
+          "id": "c4_1_2",
+          "text": "Can I pay partially online?",
+          "category": "Payment"
+        },
+        {
+          "id": "c4_1_3",
+          "text": "What if I'm not home for COD delivery?",
+          "category": "Delivery"
+        }
+      ]
+    },
+    "c4_2": {
+      "answer": "Yes, all online payments are 100% secure. We use industry-standard SSL encryption and secure payment gateways. Your card/bank details are never stored on our servers. All transactions are PCI-DSS compliant for maximum security.",
+      "relatedQuestions": [
+        {
+          "id": "c4_2_1",
+          "text": "What if payment fails?",
+          "category": "Payment"
+        },
+        {
+          "id": "c4_2_2",
+          "text": "How long for refund processing?",
+          "category": "Payment"
+        },
+        {
+          "id": "c4_2_3",
+          "text": "Can I get payment receipt?",
+          "category": "Payment"
+        }
+      ]
+    },
+    "c4_3": {
+      "answer": "Fresh produce can be returned the same day if damaged, spoiled, or not meeting quality standards. Keep the original bill and take photos as evidence. Packaged items can be returned within 1-2 days. Contact our support team to initiate return. Refund will be processed within 3-5 business days.",
+      "relatedQuestions": [
+        {
+          "id": "c4_3_1",
+          "text": "How to initiate a return?",
+          "category": "Policy"
+        },
+        {
+          "id": "c4_3_2",
+          "text": "What items cannot be returned?",
+          "category": "Policy"
+        },
+        {
+          "id": "c4_3_3",
+          "text": "Will I get full refund?",
+          "category": "Payment"
+        }
+      ]
+    },
+    "c1_1_1": {
+      "answer": "Benefits include: 30-40% lower prices, maximum freshness (harvest to delivery within 24 hours), direct support to local farmers, transparency in sourcing, reduced environmental impact from shorter supply chains, and often better quality compared to retail stores.",
+      "relatedQuestions": [
+        {
+          "id": "c1",
+          "text": "Where can I buy fresh vegetables?",
+          "category": "Purchase"
+        },
+        {
+          "id": "c3",
+          "text": "How to identify fresh vegetables?",
+          "category": "Quality"
+        },
+        {
+          "id": "c2_2",
+          "text": "When are vegetables cheapest?",
+          "category": "Pricing"
+        }
+      ]
+    },
+    "c1_1_2": {
+      "answer": "On our platform, verified farmers have a blue checkmark badge. Check their profile for ratings, reviews from other customers, years of farming experience, and certification details. All farmers undergo verification before listing products.",
+      "relatedQuestions": [
+        {
+          "id": "c1_1",
+          "text": "How to buy directly from farmers?",
+          "category": "Purchase"
+        },
+        {
+          "id": "c3_1_2",
+          "text": "How to verify organic certification?",
+          "category": "Quality"
+        },
+        {
+          "id": "c4_3",
+          "text": "What is the return policy?",
+          "category": "Policy"
+        }
+      ]
+    },
+    "c1_1_3": {
+      "answer": "Many farmers on our platform offer farm visits by appointment. Contact the farmer through the platform messaging system to schedule a visit. This is a great way to see farming practices firsthand and build trust before making larger purchases.",
+      "relatedQuestions": [
+        {
+          "id": "c1_1",
+          "text": "How to buy directly from farmers?",
+          "category": "Purchase"
+        },
+        {
+          "id": "c3_1",
+          "text": "What is difference between organic and regular?",
+          "category": "Quality"
+        },
+        {
+          "id": "c1_3",
+          "text": "How to place bulk orders?",
+          "category": "Purchase"
+        }
+      ]
+    },
+    "c1_2_1": {
+      "answer": "Delivery charges vary by location and order value. Free delivery on orders above ₹500. For orders below ₹500, standard delivery is ₹30-50 within city limits. Express delivery (same-day) has an additional charge of ₹50-80.",
+      "relatedQuestions": [
+        {
+          "id": "c1_2",
+          "text": "How to order online?",
+          "category": "Purchase"
+        },
+        {
+          "id": "c1_2_3",
+          "text": "What is minimum order value?",
+          "category": "Purchase"
+        },
+        {
+          "id": "c1_2_2",
+          "text": "Can I schedule delivery time?",
+          "category": "Delivery"
+        }
+      ]
+    },
+    "c1_2_2": {
+      "answer": "Yes, you can select your preferred delivery date and time slot during checkout. We offer morning (8am-12pm), afternoon (12pm-4pm), and evening (4pm-8pm) slots. Same-day delivery is available if you order before 10am.",
+      "relatedQuestions": [
+        {
+          "id": "c1_2",
+          "text": "How to order online?",
+          "category": "Purchase"
+        },
+        {
+          "id": "c1_2_1",
+          "text": "What are delivery charges?",
+          "category": "Delivery"
+        },
+        {
+          "id": "c4_1_3",
+          "text": "What if I'm not home for delivery?",
+          "category": "Delivery"
+        }
+      ]
+    },
+    "c1_2_3": {
+      "answer": "The minimum order value is ₹200 for most areas. Some sellers may have their own minimum quantities (e.g., 1kg minimum per vegetable type). There's no maximum limit - order as much as you need!",
+      "relatedQuestions": [
+        {
+          "id": "c1_2",
+          "text": "How to order online?",
+          "category": "Purchase"
+        },
+        {
+          "id": "c1_2_1",
+          "text": "What are delivery charges?",
+          "category": "Delivery"
+        },
+        {
+          "id": "c1_3",
+          "text": "How to place bulk orders?",
+          "category": "Purchase"
+        }
+      ]
+    },
+    "c1_3_1": {
+      "answer": "Bulk order discounts: 10-25kg: 10% off, 25-50kg: 15% off, 50-100kg: 20% off, 100kg+: 25% off. Discounts vary by vegetable type and season. Contact seller directly for custom bulk pricing on very large orders.",
+      "relatedQuestions": [
+        {
+          "id": "c1_3",
+          "text": "How to place bulk orders?",
+          "category": "Purchase"
+        },
+        {
+          "id": "c2",
+          "text": "How to check today's prices?",
+          "category": "Pricing"
+        },
+        {
+          "id": "c1_3_3",
+          "text": "How to negotiate bulk prices?",
+          "category": "Pricing"
+        }
+      ]
+    },
+    "c1_3_2": {
+      "answer": "Minimum bulk quantity is typically 10kg for most vegetables. Some sellers offer bulk rates starting at 5kg for premium or organic produce. Maximum quantity depends on availability - check product listing for current stock levels.",
+      "relatedQuestions": [
+        {
+          "id": "c1_3",
+          "text": "How to place bulk orders?",
+          "category": "Purchase"
+        },
+        {
+          "id": "c1_3_1",
+          "text": "What discounts on bulk orders?",
+          "category": "Pricing"
+        },
+        {
+          "id": "c1_2_3",
+          "text": "What is minimum order value?",
+          "category": "Purchase"
+        }
+      ]
+    },
+    "c1_3_3": {
+      "answer": "For bulk orders, you can send a custom quote request to sellers. Specify quantity, quality grade, delivery date, and your target price. Sellers will respond with their best offers. Negotiation works best for orders above 50kg.",
+      "relatedQuestions": [
+        {
+          "id": "c1_3",
+          "text": "How to place bulk orders?",
+          "category": "Purchase"
+        },
+        {
+          "id": "c1_3_1",
+          "text": "What discounts on bulk orders?",
+          "category": "Pricing"
+        },
+        {
+          "id": "c2_3",
+          "text": "What is difference between retail and wholesale price?",
+          "category": "Pricing"
+        }
+      ]
+    },
+    "c2_1_1": {
+      "answer": "Use our Price Prediction tool which uses AI and historical data to forecast prices up to 7 days ahead. Factors considered: weather forecasts, seasonal patterns, festival dates, and current market trends. Accuracy is typically 80-85%.",
+      "relatedQuestions": [
+        {
+          "id": "c2",
+          "text": "How to check today's prices?",
+          "category": "Pricing"
+        },
+        {
+          "id": "c2_1",
+          "text": "Why do prices fluctuate?",
+          "category": "Pricing"
+        },
+        {
+          "id": "c2_2",
+          "text": "When are vegetables cheapest?",
+          "category": "Pricing"
+        }
+      ]
+    },
+    "c2_1_2": {
+      "answer": "Main factors affecting prices: 1) Seasonal supply (biggest impact), 2) Weather conditions (rain/drought), 3) Festival demand, 4) Transportation fuel costs, 5) Storage availability. Seasonal supply typically causes 40-60% of price variations.",
+      "relatedQuestions": [
+        {
+          "id": "c2_1",
+          "text": "Why do prices fluctuate?",
+          "category": "Pricing"
+        },
+        {
+          "id": "c2_2",
+          "text": "When are vegetables cheapest?",
+          "category": "Pricing"
+        },
+        {
+          "id": "c2",
+          "text": "How to check today's prices?",
+          "category": "Pricing"
+        }
+      ]
+    },
+    "c2_1_3": {
+      "answer": "Yes, organic vegetables are typically 15-25% more expensive than regular produce. The premium covers higher production costs, manual labor, natural fertilizers, and certification fees. However, many customers find the health and environmental benefits worth the extra cost.",
+      "relatedQuestions": [
+        {
+          "id": "c3_1",
+          "text": "What is difference between organic and regular?",
+          "category": "Quality"
+        },
+        {
+          "id": "c3_1_1",
+          "text": "Are organic vegetables really better?",
+          "category": "Quality"
+        },
+        {
+          "id": "c2",
+          "text": "How to check today's prices?",
+          "category": "Pricing"
+        }
+      ]
+    },
+    "c2_2_1": {
+      "answer": "Current seasonal vegetables (varies by month): Summer - cucumber, bottle gourd, bitter gourd, okra, tomatoes. Monsoon - leafy greens, corn, beans. Winter - carrots, peas, cauliflower, cabbage, radish. Check our seasonal produce guide for month-by-month details.",
+      "relatedQuestions": [
+        {
+          "id": "c2_2",
+          "text": "When are vegetables cheapest?",
+          "category": "Pricing"
+        },
+        {
+          "id": "c2_2_3",
+          "text": "Where to find seasonal vegetable calendar?",
+          "category": "Quality"
+        },
+        {
+          "id": "c3",
+          "text": "How to identify fresh vegetables?",
+          "category": "Quality"
+        }
+      ]
+    },
+    "c2_2_2": {
+      "answer": "Buying seasonal vegetables can save you 30-50% compared to off-season prices. For example: tomatoes cost ₹20/kg in summer but ₹60/kg in monsoon. Carrots cost ₹30/kg in winter but ₹80/kg in summer. Plan meals around seasonal availability for maximum savings.",
+      "relatedQuestions": [
+        {
+          "id": "c2_2",
+          "text": "When are vegetables cheapest?",
+          "category": "Pricing"
+        },
+        {
+          "id": "c2",
+          "text": "How to check today's prices?",
+          "category": "Pricing"
+        },
+        {
+          "id": "c2_2_1",
+          "text": "What are seasonal vegetables right now?",
+          "category": "Quality"
+        }
+      ]
+    },
+    "c2_2_3": {
+      "answer": "Check our 'Seasonal Produce Guide' in the Resources section. It shows month-by-month availability, peak harvest times, and price trends for all major vegetables. You can also download a PDF calendar for reference while shopping.",
+      "relatedQuestions": [
+        {
+          "id": "c2_2",
+          "text": "When are vegetables cheapest?",
+          "category": "Pricing"
+        },
+        {
+          "id": "c2_2_1",
+          "text": "What are seasonal vegetables right now?",
+          "category": "Quality"
+        },
+        {
+          "id": "c1",
+          "text": "Where can I buy fresh vegetables?",
+          "category": "Purchase"
+        }
+      ]
+    },
+    "c2_3_1": {
+      "answer": "Yes! Our platform connects individual buyers directly with farmers, allowing you to get prices close to wholesale rates. For best wholesale-like prices, consider: 1) Buying in bulk (10kg+), 2) Joining group buying with neighbors, 3) Purchasing directly from farmer markets.",
+      "relatedQuestions": [
+        {
+          "id": "c2_3",
+          "text": "What is difference between retail and wholesale price?",
+          "category": "Pricing"
+        },
+        {
+          "id": "c1_1",
+          "text": "How to buy directly from farmers?",
+          "category": "Purchase"
+        },
+        {
+          "id": "c1_3",
+          "text": "How to place bulk orders?",
+          "category": "Purchase"
+        }
+      ]
+    },
+    "c2_3_2": {
+      "answer": "APMC (Agricultural Produce Market Committee) markets are wholesale markets where farmers sell to traders. APMC prices are typically 20-30% lower than retail but 10-15% higher than direct-from-farmer prices. Our platform shows APMC rates for reference.",
+      "relatedQuestions": [
+        {
+          "id": "c2_3",
+          "text": "What is difference between retail and wholesale price?",
+          "category": "Pricing"
+        },
+        {
+          "id": "c2",
+          "text": "How to check today's prices?",
+          "category": "Pricing"
+        },
+        {
+          "id": "c1_1",
+          "text": "How to buy directly from farmers?",
+          "category": "Purchase"
+        }
+      ]
+    },
+    "c2_3_3": {
+      "answer": "Best price tips: 1) Buy directly from farmers through our platform, 2) Purchase seasonal vegetables, 3) Buy in bulk for discounts, 4) Compare prices from multiple sellers, 5) Look for daily deals and flash sales, 6) Join group buying initiatives.",
+      "relatedQuestions": [
+        {
+          "id": "c2",
+          "text": "How to check today's prices?",
+          "category": "Pricing"
+        },
+        {
+          "id": "c1_1",
+          "text": "How to buy directly from farmers?",
+          "category": "Purchase"
+        },
+        {
+          "id": "c2_2",
+          "text": "When are vegetables cheapest?",
+          "category": "Pricing"
+        }
+      ]
+    },
+    "c3_1_1": {
+      "answer": "Yes, studies show organic vegetables have: 1) Higher antioxidant levels (20-40% more), 2) No pesticide residues, 3) Better mineral content, 4) Lower risk of chemical exposure. They're also better for soil health and environment. However, basic nutrition (calories, fiber) is similar to regular produce.",
+      "relatedQuestions": [
+        {
+          "id": "c3_1",
+          "text": "What is difference between organic and regular?",
+          "category": "Quality"
+        },
+        {
+          "id": "c3_1_2",
+          "text": "How to verify organic certification?",
+          "category": "Quality"
+        },
+        {
+          "id": "c3_1_3",
+          "text": "Where to buy organic vegetables?",
+          "category": "Purchase"
+        }
+      ]
+    },
+    "c3_1_2": {
+      "answer": "Look for official certification logos: NPOP (National Programme for Organic Production), India Organic logo, USDA Organic, or EU Organic. Check certification number and certifying agency details. On our platform, all organic claims are verified and certified farmers are clearly marked.",
+      "relatedQuestions": [
+        {
+          "id": "c3_1",
+          "text": "What is difference between organic and regular?",
+          "category": "Quality"
+        },
+        {
+          "id": "c1_1_2",
+          "text": "How to find verified farmers?",
+          "category": "Purchase"
+        },
+        {
+          "id": "c3_1_3",
+          "text": "Where to buy organic vegetables?",
+          "category": "Purchase"
+        }
+      ]
+    },
+    "c3_1_3": {
+      "answer": "Buy organic vegetables: 1) Through our platform's organic section (certified sellers), 2) Local organic farmer markets, 3) Organic stores and supermarkets, 4) Directly from certified organic farms, 5) Organic subscription boxes. Filter by 'Organic' tag on our platform to see all options.",
+      "relatedQuestions": [
+        {
+          "id": "c3_1",
+          "text": "What is difference between organic and regular?",
+          "category": "Quality"
+        },
+        {
+          "id": "c1",
+          "text": "Where can I buy fresh vegetables?",
+          "category": "Purchase"
+        },
+        {
+          "id": "c1_1",
+          "text": "How to buy directly from farmers?",
+          "category": "Purchase"
+        }
+      ]
+    },
+    "c3_2_1": {
+      "answer": "No, grading is based on appearance, size, and cosmetic quality only. All grades have the same nutritional value, vitamins, and minerals. Grade C vegetables are just as healthy as Grade A - they just look less perfect. Choose based on use: Grade A for salads, Grade B/C for cooking.",
+      "relatedQuestions": [
+        {
+          "id": "c3_2",
+          "text": "What do Grade A, B, C mean?",
+          "category": "Quality"
+        },
+        {
+          "id": "c3",
+          "text": "How to identify fresh vegetables?",
+          "category": "Quality"
+        },
+        {
+          "id": "c3_2_3",
+          "text": "How much cheaper is Grade B or C?",
+          "category": "Pricing"
+        }
+      ]
+    },
+    "c3_2_2": {
+      "answer": "Yes, absolutely! You can mix different grades in a single order. Many customers buy Grade A for raw consumption/salads and Grade B/C for cooking. Mixing grades is a smart way to save money while maintaining quality where it matters.",
+      "relatedQuestions": [
+        {
+          "id": "c3_2",
+          "text": "What do Grade A, B, C mean?",
+          "category": "Quality"
+        },
+        {
+          "id": "c1_2",
+          "text": "How to order online?",
+          "category": "Purchase"
+        },
+        {
+          "id": "c3_2_3",
+          "text": "How much cheaper is Grade B or C?",
+          "category": "Pricing"
+        }
+      ]
+    },
+    "c3_2_3": {
+      "answer": "Typical price differences: Grade B is 10-20% cheaper than Grade A. Grade C is 25-40% cheaper than Grade A. For example: If Grade A tomatoes are ₹40/kg, Grade B would be ₹32-36/kg, and Grade C would be ₹24-30/kg. Percentages vary by vegetable type.",
+      "relatedQuestions": [
+        {
+          "id": "c3_2",
+          "text": "What do Grade A, B, C mean?",
+          "category": "Quality"
+        },
+        {
+          "id": "c2",
+          "text": "How to check today's prices?",
+          "category": "Pricing"
+        },
+        {
+          "id": "c3_2_1",
+          "text": "Does grade affect nutritional value?",
+          "category": "Health"
+        }
+      ]
+    },
+    "c3_3_1": {
+      "answer": "Storage tips: 1) Don't wash before storing (wash before use), 2) Use breathable bags or containers, 3) Separate fruits and vegetables (ethylene gas), 4) Store leafy vegetables in paper towels, 5) Keep onions and potatoes in cool dark place (not refrigerator), 6) Use vegetable drawer in refrigerator.",
+      "relatedQuestions": [
+        {
+          "id": "c3_3",
+          "text": "How long do vegetables last?",
+          "category": "Storage"
+        },
+        {
+          "id": "c3_3_2",
+          "text": "Should all vegetables be refrigerated?",
+          "category": "Storage"
+        },
+        {
+          "id": "c3_3_3",
+          "text": "How to prevent vegetable spoilage?",
+          "category": "Storage"
+        }
+      ]
+    },
+    "c3_3_2": {
+      "answer": "Not all vegetables need refrigeration. Refrigerate: leafy greens, tomatoes (after ripening), carrots, cucumbers, peppers. Room temperature: onions, garlic, potatoes, pumpkins, winter squash. Never refrigerate: tomatoes (before ripening), onions, potatoes, garlic.",
+      "relatedQuestions": [
+        {
+          "id": "c3_3",
+          "text": "How long do vegetables last?",
+          "category": "Storage"
+        },
+        {
+          "id": "c3_3_1",
+          "text": "How to store vegetables properly?",
+          "category": "Storage"
+        },
+        {
+          "id": "c3_3_3",
+          "text": "How to prevent vegetable spoilage?",
+          "category": "Storage"
+        }
+      ]
+    },
+    "c3_3_3": {
+      "answer": "Spoilage prevention: 1) Buy only what you need, 2) Store properly (see storage tips), 3) Use FIFO method (first in, first out), 4) Check regularly for spoilage signs, 5) Keep refrigerator at 4°C, 6) Remove damaged pieces immediately, 7) Don't overcrowd storage areas.",
+      "relatedQuestions": [
+        {
+          "id": "c3_3",
+          "text": "How long do vegetables last?",
+          "category": "Storage"
+        },
+        {
+          "id": "c3_3_1",
+          "text": "How to store vegetables properly?",
+          "category": "Storage"
+        },
+        {
+          "id": "c3",
+          "text": "How to identify fresh vegetables?",
+          "category": "Quality"
+        }
+      ]
+    },
+    "c4_1_1": {
+      "answer": "COD charge is typically ₹20-30 extra for handling cash transactions. Some sellers offer free COD on orders above ₹500. The charge covers cash handling, reconciliation, and additional delivery logistics. Online payments (UPI, cards) have no extra charges.",
+      "relatedQuestions": [
+        {
+          "id": "c4_1",
+          "text": "Is Cash on Delivery available?",
+          "category": "Payment"
+        },
+        {
+          "id": "c4",
+          "text": "What payment methods are available?",
+          "category": "Payment"
+        },
+        {
+          "id": "c1_2_1",
+          "text": "What are delivery charges?",
+          "category": "Delivery"
+        }
+      ]
+    },
+    "c4_1_2": {
+      "answer": "Currently, partial payments are not supported. You need to pay the full amount either online during checkout or cash on delivery. However, you can use multiple payment methods across different orders if you're placing several orders.",
+      "relatedQuestions": [
+        {
+          "id": "c4",
+          "text": "What payment methods are available?",
+          "category": "Payment"
+        },
+        {
+          "id": "c4_1",
+          "text": "Is Cash on Delivery available?",
+          "category": "Payment"
+        },
+        {
+          "id": "c4_2",
+          "text": "Are online payments secure?",
+          "category": "Payment"
+        }
+      ]
+    },
+    "c4_1_3": {
+      "answer": "If you're not home: 1) Delivery person will call you, 2) You can ask them to leave with a neighbor (with your permission), 3) Reschedule delivery for later that day or next day, 4) For prepaid orders, safe drop-off can be arranged. Always provide alternate contact number during checkout.",
+      "relatedQuestions": [
+        {
+          "id": "c1_2_2",
+          "text": "Can I schedule delivery time?",
+          "category": "Delivery"
+        },
+        {
+          "id": "c4_1",
+          "text": "Is Cash on Delivery available?",
+          "category": "Payment"
+        },
+        {
+          "id": "c1_2",
+          "text": "How to order online?",
+          "category": "Purchase"
+        }
+      ]
+    },
+    "c4_2_1": {
+      "answer": "If payment fails: 1) Amount may be temporarily blocked (auto-refunded in 5-7 days), 2) Try again with same or different payment method, 3) Check card limits and bank balance, 4) Contact your bank if issue persists, 5) Our support team can help - contact us if payment fails multiple times.",
+      "relatedQuestions": [
+        {
+          "id": "c4_2",
+          "text": "Are online payments secure?",
+          "category": "Payment"
+        },
+        {
+          "id": "c4",
+          "text": "What payment methods are available?",
+          "category": "Payment"
+        },
+        {
+          "id": "c4_2_2",
+          "text": "How long for refund processing?",
+          "category": "Payment"
+        }
+      ]
+    },
+    "c4_2_2": {
+      "answer": "Refund processing times: UPI/Wallet: 1-3 business days, Credit/Debit Card: 5-7 business days, Net Banking: 3-5 business days. Refunds are initiated immediately after return approval. Bank processing times may vary. Check order history for refund status updates.",
+      "relatedQuestions": [
+        {
+          "id": "c4_3",
+          "text": "What is the return policy?",
+          "category": "Policy"
+        },
+        {
+          "id": "c4_2",
+          "text": "Are online payments secure?",
+          "category": "Payment"
+        },
+        {
+          "id": "c4_3_3",
+          "text": "Will I get full refund?",
+          "category": "Payment"
+        }
+      ]
+    },
+    "c4_2_3": {
+      "answer": "Yes, payment receipts are automatically sent to your registered email immediately after successful payment. You can also download receipts from 'Order History' section in your account. Receipts include order details, payment method, amount, and transaction ID.",
+      "relatedQuestions": [
+        {
+          "id": "c4",
+          "text": "What payment methods are available?",
+          "category": "Payment"
+        },
+        {
+          "id": "c4_2",
+          "text": "Are online payments secure?",
+          "category": "Payment"
+        },
+        {
+          "id": "c1_2",
+          "text": "How to order online?",
+          "category": "Purchase"
+        }
+      ]
+    },
+    "c4_3_1": {
+      "answer": "To initiate return: 1) Go to Order History, 2) Select the order, 3) Click 'Request Return', 4) Choose return reason and upload photos, 5) Submit request. Our team will review within 2-4 hours and approve if valid. Pickup will be scheduled or you can drop at collection center.",
+      "relatedQuestions": [
+        {
+          "id": "c4_3",
+          "text": "What is the return policy?",
+          "category": "Policy"
+        },
+        {
+          "id": "c4_3_2",
+          "text": "What items cannot be returned?",
+          "category": "Policy"
+        },
+        {
+          "id": "c4_2_2",
+          "text": "How long for refund processing?",
+          "category": "Payment"
+        }
+      ]
+    },
+    "c4_3_2": {
+      "answer": "Items that cannot be returned: 1) Products used or consumed, 2) Items without original packaging, 3) Returns requested after the return window, 4) Customized or personalized items. All fresh produce can be returned same day if quality issues are proven with photos.",
+      "relatedQuestions": [
+        {
+          "id": "c4_3",
+          "text": "What is the return policy?",
+          "category": "Policy"
+        },
+        {
+          "id": "c4_3_1",
+          "text": "How to initiate a return?",
+          "category": "Policy"
+        },
+        {
+          "id": "c3",
+          "text": "How to identify fresh vegetables?",
+          "category": "Quality"
+        }
+      ]
+    },
+    "c4_3_3": {
+      "answer": "Refund amount: Full refund if product is damaged, spoiled, or wrong item delivered. Partial refund may apply if: 1) Only part of order has issues, 2) Return after quality deterioration, 3) Missing photos/proof. Delivery charges are refunded only if error was from our side.",
+      "relatedQuestions": [
+        {
+          "id": "c4_3",
+          "text": "What is the return policy?",
+          "category": "Policy"
+        },
+        {
+          "id": "c4_2_2",
+          "text": "How long for refund processing?",
+          "category": "Payment"
+        },
+        {
+          "id": "c4_3_1",
+          "text": "How to initiate a return?",
+          "category": "Policy"
+        }
+      ]
+    }
+  }
+}
