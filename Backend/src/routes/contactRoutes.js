@@ -12,7 +12,7 @@ router.get('/test', (req, res) => {
 
 // @route   POST /api/contact
 // @desc    Send contact form message
-// @access  Private (requires authentication)
-router.post('/', protect, sendContactMessage);
+// @access  Public
+router.post('/', sendContactMessage);
 
 module.exports = router;

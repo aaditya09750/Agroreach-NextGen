@@ -4,6 +4,7 @@ import ARLogo from '../../assets/ARLogo.png';
 import TermsConditionsModal from '../modal/TermsConditionsModal';
 import PrivacyPolicyModal from '../modal/PrivacyPolicyModal';
 import Toast, { ToastType } from '../ui/Toast';
+import { newsletterService } from '../../services/newsletterService';
 
 // Scroll to top handler
 const scrollToTop = () => {
@@ -33,13 +34,20 @@ const Subscription: React.FC = () => {
     setIsLoading(true);
 
     try {
-      // Simulate newsletter subscription
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      setToast({ 
-        message: 'Successfully subscribed! Check your email for confirmation.', 
-        type: 'success' 
-      });
-      setEmail('');
+      const response = await newsletterService.subscribe(email);
+      
+      if (response.success) {
+        setToast({ 
+          message: response.message || 'Successfully subscribed! Check your email for confirmation.', 
+          type: 'success' 
+        });
+        setEmail('');
+      } else {
+        setToast({ 
+          message: response.message || 'Failed to subscribe. Please try again.', 
+          type: 'error' 
+        });
+      }
     } catch (error: unknown) {
       const err = error as { message?: string };
       setToast({ 

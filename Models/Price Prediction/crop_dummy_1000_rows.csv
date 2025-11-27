@@ -1,0 +1,1001 @@
+date,crop,price_per_unit,quality_grade,farmers_location,season_month,Modal Price
+2025-03-01,Fenugreek Leaves (Methi),30,B,Nashik,March,29
+2025-02-28,Cucumber,30,A,Satara,April,26
+2025-03-04,Ladyfinger (Bhindi / Okra),35,B,Satara,August,33
+2025-01-02,Green Peas,109,A,Sangli,April,106
+2025-02-27,Pumpkin,93,A,Pune,July,90
+2025-01-07,Beetroot,109,B,Nashik,December,109
+2025-03-01,Green Chilies,87,A,Pune,June,83
+2025-01-01,Coriander (Kothimbir),61,A,Satara,April,56
+2025-03-02,Fenugreek Leaves (Methi),99,B,Ahmednagar,February,98
+2025-02-18,Green Chilies,23,A,Satara,April,19
+2025-04-01,Pumpkin,118,B,Kolhapur,February,118
+2025-01-05,Pumpkin,97,A,Ahmednagar,August,97
+2025-03-25,Ridge Gourd (Dodka),73,A,Sangli,March,73
+2025-01-10,Beetroot,54,A,Sangli,October,50
+2025-03-05,Bottle Gourd (Dudhi),93,B,Satara,April,93
+2025-03-29,Cauliflower,42,B,Pune,January,41
+2025-01-30,Radish (Mula),118,A,Nashik,November,117
+2025-01-13,Cucumber,83,B,Satara,August,82
+2025-01-20,Beans,40,A,Solapur,February,40
+2025-01-26,Pumpkin,118,A,Kolhapur,June,115
+2025-01-31,Tomato,104,B,Ahmednagar,October,100
+2025-03-02,Green Chilies,76,B,Ahmednagar,February,73
+2025-02-10,Carrot,118,A,Nashik,January,115
+2025-01-10,Green Chilies,26,B,Ahmednagar,November,26
+2025-01-22,Pumpkin,107,B,Solapur,March,107
+2025-02-08,Tomato,58,B,Sangli,March,57
+2025-03-10,Cauliflower,110,B,Sangli,April,110
+2025-03-09,Beetroot,46,B,Kolhapur,April,43
+2025-01-08,Bitter Gourd (Karela),30,A,Nashik,July,26
+2025-03-27,Beans,112,B,Satara,August,107
+2025-03-17,Green Chilies,75,B,Satara,May,74
+2025-01-13,Spring Onion,21,B,Nashik,October,16
+2025-03-12,Coriander (Kothimbir),15,A,Kolhapur,May,14
+2025-03-21,Green Chilies,17,B,Solapur,August,14
+2025-02-18,Cauliflower,39,A,Nashik,May,38
+2025-03-28,Ridge Gourd (Dodka),92,B,Kolhapur,September,90
+2025-02-01,Carrot,40,A,Solapur,November,38
+2025-03-17,Coriander (Kothimbir),33,B,Ahmednagar,November,29
+2025-02-25,Cabbage,18,A,Nashik,March,17
+2025-02-02,Cauliflower,83,A,Pune,February,78
+2025-02-09,Cabbage,76,B,Nashik,July,73
+2025-01-08,Spring Onion,33,B,Sangli,March,31
+2025-02-06,Coriander (Kothimbir),103,B,Sangli,August,101
+2025-03-07,Bottle Gourd (Dudhi),120,B,Kolhapur,March,115
+2025-01-21,Ridge Gourd (Dodka),118,A,Kolhapur,March,115
+2025-01-16,Beans,48,A,Ahmednagar,March,47
+2025-01-03,Brinjal (Eggplant),62,A,Solapur,October,58
+2025-01-23,Spring Onion,118,A,Solapur,June,115
+2025-02-08,Beans,65,B,Ahmednagar,July,63
+2025-03-14,Green Peas,79,B,Nashik,March,74
+2025-01-31,Green Chilies,34,B,Ahmednagar,April,30
+2025-03-17,Ridge Gourd (Dodka),80,B,Sangli,December,75
+2025-04-01,Pumpkin,93,B,Nashik,April,88
+2025-02-04,Spring Onion,104,B,Solapur,February,100
+2025-02-02,Cabbage,55,B,Kolhapur,April,51
+2025-01-02,Beans,23,A,Solapur,June,18
+2025-03-25,Cabbage,47,A,Ahmednagar,July,42
+2025-01-21,Beans,15,A,Nashik,December,12
+2025-01-19,Brinjal (Eggplant),20,A,Sangli,March,20
+2025-01-18,Beetroot,72,B,Sangli,April,68
+2025-02-17,Ladyfinger (Bhindi / Okra),114,A,Pune,May,109
+2025-03-07,Coriander (Kothimbir),56,A,Pune,March,55
+2025-01-24,Beetroot,103,B,Nashik,February,100
+2025-03-13,Cabbage,82,B,Ahmednagar,June,82
+2025-01-04,Ladyfinger (Bhindi / Okra),91,A,Ahmednagar,June,91
+2025-01-03,Carrot,55,B,Nashik,April,50
+2025-02-16,Ladyfinger (Bhindi / Okra),17,B,Satara,October,17
+2025-03-12,Fenugreek Leaves (Methi),109,B,Satara,February,105
+2025-02-12,Ridge Gourd (Dodka),49,A,Sangli,May,46
+2025-01-07,Green Chilies,21,A,Solapur,March,17
+2025-01-17,Beetroot,87,B,Nashik,December,85
+2025-01-21,Green Peas,108,A,Sangli,August,107
+2025-03-02,Tomato,59,A,Pune,October,58
+2025-03-11,Coriander (Kothimbir),43,B,Pune,July,42
+2025-01-17,Carrot,90,B,Ahmednagar,February,89
+2025-03-21,Radish (Mula),49,B,Satara,April,45
+2025-02-19,Cabbage,119,A,Ahmednagar,September,118
+2025-03-26,Ladyfinger (Bhindi / Okra),104,B,Pune,January,99
+2025-03-09,Cucumber,49,A,Pune,February,44
+2025-03-19,Tomato,96,A,Pune,August,93
+2025-03-28,Spinach (Palak),15,A,Ahmednagar,February,15
+2025-02-06,Beetroot,99,A,Ahmednagar,October,94
+2025-01-07,Spring Onion,33,A,Solapur,May,32
+2025-03-15,Beetroot,34,B,Sangli,December,33
+2025-01-03,Green Chilies,60,B,Solapur,February,59
+2025-01-06,Radish (Mula),42,A,Solapur,July,39
+2025-02-01,Ridge Gourd (Dodka),54,B,Satara,July,49
+2025-03-12,Beetroot,118,B,Sangli,September,115
+2025-01-27,Green Chilies,71,B,Satara,August,68
+2025-02-09,Brinjal (Eggplant),24,A,Sangli,January,21
+2025-03-06,Bottle Gourd (Dudhi),27,A,Pune,August,26
+2025-01-19,Bitter Gourd (Karela),98,A,Sangli,August,93
+2025-01-29,Brinjal (Eggplant),120,A,Satara,January,117
+2025-03-11,Radish (Mula),97,B,Ahmednagar,May,92
+2025-01-17,Radish (Mula),111,B,Sangli,October,108
+2025-01-18,Coriander (Kothimbir),41,A,Pune,December,36
+2025-03-12,Beetroot,99,A,Ahmednagar,August,99
+2025-02-15,Spinach (Palak),35,B,Solapur,December,35
+2025-02-11,Beetroot,60,A,Ahmednagar,March,57
+2025-03-28,Bitter Gourd (Karela),99,A,Sangli,October,95
+2025-01-18,Spring Onion,42,B,Nashik,January,41
+2025-02-04,Green Chilies,46,A,Sangli,January,43
+2025-02-19,Coriander (Kothimbir),42,B,Satara,September,41
+2025-01-17,Cucumber,85,A,Pune,May,80
+2025-02-06,Tomato,76,B,Kolhapur,July,72
+2025-01-19,Tomato,57,B,Pune,May,56
+2025-02-03,Green Peas,51,B,Satara,February,47
+2025-02-11,Beetroot,61,A,Satara,July,60
+2025-03-02,Cabbage,103,B,Nashik,October,99
+2025-02-10,Spinach (Palak),38,A,Pune,January,38
+2025-03-13,Radish (Mula),114,A,Sangli,May,109
+2025-02-23,Bitter Gourd (Karela),93,A,Solapur,April,89
+2025-01-26,Spinach (Palak),74,B,Solapur,June,73
+2025-03-31,Ladyfinger (Bhindi / Okra),93,A,Solapur,April,92
+2025-02-06,Tomato,55,B,Pune,November,54
+2025-03-31,Coriander (Kothimbir),15,A,Pune,November,15
+2025-02-20,Bottle Gourd (Dudhi),92,B,Kolhapur,March,89
+2025-01-26,Tomato,95,B,Solapur,January,91
+2025-02-10,Beetroot,68,A,Kolhapur,October,68
+2025-02-03,Coriander (Kothimbir),92,B,Ahmednagar,July,89
+2025-02-01,Beetroot,74,A,Pune,November,74
+2025-01-01,Spring Onion,80,B,Kolhapur,October,78
+2025-01-16,Bottle Gourd (Dudhi),20,A,Solapur,January,17
+2025-02-16,Beetroot,43,B,Nashik,January,38
+2025-03-13,Beetroot,75,B,Satara,December,70
+2025-03-19,Green Chilies,71,A,Kolhapur,April,70
+2025-03-26,Green Peas,44,B,Ahmednagar,January,44
+2025-03-14,Ridge Gourd (Dodka),74,A,Ahmednagar,June,74
+2025-01-17,Cauliflower,115,A,Solapur,October,115
+2025-03-27,Beetroot,80,A,Ahmednagar,December,77
+2025-02-01,Coriander (Kothimbir),69,B,Ahmednagar,October,65
+2025-01-28,Tomato,32,B,Solapur,December,29
+2025-03-01,Radish (Mula),79,B,Nashik,January,74
+2025-03-07,Cabbage,77,B,Kolhapur,January,72
+2025-01-10,Cucumber,89,A,Nashik,May,85
+2025-03-10,Carrot,93,B,Nashik,January,92
+2025-01-26,Cabbage,57,B,Nashik,November,54
+2025-02-13,Cauliflower,20,B,Kolhapur,March,17
+2025-02-08,Fenugreek Leaves (Methi),26,A,Ahmednagar,September,26
+2025-01-11,Radish (Mula),89,A,Nashik,December,86
+2025-01-17,Carrot,43,A,Ahmednagar,March,41
+2025-03-06,Ridge Gourd (Dodka),93,B,Ahmednagar,October,88
+2025-02-13,Tomato,59,B,Ahmednagar,April,54
+2025-01-06,Brinjal (Eggplant),86,A,Ahmednagar,November,86
+2025-01-19,Coriander (Kothimbir),61,B,Ahmednagar,September,57
+2025-03-29,Ladyfinger (Bhindi / Okra),60,A,Solapur,June,60
+2025-02-22,Green Chilies,62,A,Satara,July,62
+2025-02-01,Ladyfinger (Bhindi / Okra),67,A,Solapur,December,67
+2025-02-28,Spring Onion,112,B,Pune,May,109
+2025-02-05,Green Peas,58,A,Sangli,December,58
+2025-03-08,Carrot,70,A,Sangli,December,66
+2025-01-04,Bitter Gourd (Karela),62,B,Kolhapur,January,62
+2025-01-25,Ridge Gourd (Dodka),109,A,Nashik,January,108
+2025-01-12,Beans,98,A,Kolhapur,November,98
+2025-03-27,Spring Onion,33,A,Nashik,July,28
+2025-02-10,Green Chilies,20,B,Kolhapur,July,16
+2025-01-25,Ladyfinger (Bhindi / Okra),96,A,Satara,March,95
+2025-02-06,Coriander (Kothimbir),38,A,Nashik,December,38
+2025-03-08,Bitter Gourd (Karela),85,A,Satara,May,85
+2025-03-15,Spring Onion,53,A,Ahmednagar,March,52
+2025-01-15,Bottle Gourd (Dudhi),120,B,Solapur,April,116
+2025-01-11,Pumpkin,26,A,Nashik,March,21
+2025-03-13,Ladyfinger (Bhindi / Okra),75,B,Pune,June,70
+2025-03-28,Pumpkin,21,B,Pune,October,16
+2025-01-02,Carrot,102,B,Ahmednagar,March,98
+2025-01-19,Bitter Gourd (Karela),79,B,Satara,August,77
+2025-02-04,Carrot,118,A,Satara,April,116
+2025-01-04,Cauliflower,20,A,Nashik,December,19
+2025-03-16,Brinjal (Eggplant),32,B,Sangli,March,28
+2025-03-08,Coriander (Kothimbir),108,A,Ahmednagar,May,107
+2025-02-18,Green Peas,58,B,Satara,December,53
+2025-03-17,Carrot,96,B,Pune,September,96
+2025-03-27,Coriander (Kothimbir),42,A,Pune,January,40
+2025-02-17,Bottle Gourd (Dudhi),60,A,Kolhapur,June,57
+2025-03-30,Cauliflower,63,A,Sangli,February,63
+2025-01-30,Beetroot,119,A,Nashik,April,115
+2025-01-22,Cucumber,44,A,Satara,October,43
+2025-02-13,Cabbage,65,A,Sangli,October,64
+2025-02-05,Spring Onion,22,A,Kolhapur,May,17
+2025-01-25,Ridge Gourd (Dodka),76,A,Ahmednagar,January,72
+2025-03-26,Bitter Gourd (Karela),64,B,Kolhapur,January,61
+2025-02-28,Ladyfinger (Bhindi / Okra),104,B,Pune,November,102
+2025-02-01,Cauliflower,16,B,Satara,October,16
+2025-01-29,Pumpkin,99,B,Sangli,June,95
+2025-01-19,Green Peas,102,A,Nashik,August,97
+2025-02-13,Bitter Gourd (Karela),19,A,Ahmednagar,August,19
+2025-03-21,Cucumber,42,A,Kolhapur,April,39
+2025-03-20,Green Peas,56,B,Sangli,August,55
+2025-01-14,Spring Onion,112,A,Solapur,December,112
+2025-01-27,Ridge Gourd (Dodka),71,B,Sangli,August,69
+2025-02-24,Cucumber,111,A,Ahmednagar,January,106
+2025-02-07,Ladyfinger (Bhindi / Okra),58,B,Sangli,October,53
+2025-02-16,Bitter Gourd (Karela),39,B,Ahmednagar,June,34
+2025-01-31,Tomato,60,A,Pune,November,59
+2025-02-07,Spring Onion,84,A,Pune,February,83
+2025-01-25,Bitter Gourd (Karela),100,B,Ahmednagar,October,100
+2025-01-20,Brinjal (Eggplant),64,B,Pune,April,63
+2025-03-23,Ladyfinger (Bhindi / Okra),93,B,Sangli,November,88
+2025-02-25,Green Peas,30,A,Ahmednagar,March,29
+2025-03-14,Green Peas,110,A,Sangli,May,105
+2025-01-08,Green Chilies,64,B,Kolhapur,May,62
+2025-01-16,Carrot,43,A,Ahmednagar,August,42
+2025-01-01,Coriander (Kothimbir),81,B,Kolhapur,April,78
+2025-02-13,Bitter Gourd (Karela),60,A,Pune,August,59
+2025-02-28,Brinjal (Eggplant),62,A,Pune,February,58
+2025-02-02,Cauliflower,46,B,Nashik,November,41
+2025-01-22,Radish (Mula),24,B,Sangli,March,19
+2025-01-04,Bottle Gourd (Dudhi),82,B,Solapur,December,82
+2025-02-23,Tomato,106,A,Sangli,September,103
+2025-03-19,Green Peas,48,A,Ahmednagar,November,43
+2025-03-18,Brinjal (Eggplant),58,B,Nashik,November,54
+2025-01-22,Ridge Gourd (Dodka),74,A,Ahmednagar,November,70
+2025-01-13,Brinjal (Eggplant),20,A,Nashik,January,19
+2025-03-13,Brinjal (Eggplant),50,B,Kolhapur,July,47
+2025-03-15,Tomato,15,B,Kolhapur,June,13
+2025-02-27,Spring Onion,33,B,Satara,December,30
+2025-03-07,Beans,48,A,Nashik,July,43
+2025-03-22,Carrot,68,B,Nashik,May,66
+2025-02-12,Tomato,103,B,Nashik,December,102
+2025-01-24,Radish (Mula),61,B,Nashik,December,61
+2025-03-26,Green Peas,42,A,Ahmednagar,November,39
+2025-03-11,Cabbage,83,B,Ahmednagar,February,83
+2025-03-01,Fenugreek Leaves (Methi),29,A,Pune,February,27
+2025-01-24,Cabbage,40,B,Solapur,September,36
+2025-03-15,Tomato,45,B,Kolhapur,April,44
+2025-02-06,Cabbage,29,B,Ahmednagar,November,28
+2025-01-29,Tomato,16,B,Ahmednagar,January,11
+2025-01-20,Green Chilies,30,B,Pune,April,27
+2025-03-22,Cucumber,103,A,Kolhapur,April,103
+2025-02-02,Carrot,51,A,Nashik,April,47
+2025-03-11,Brinjal (Eggplant),49,B,Ahmednagar,January,47
+2025-02-09,Coriander (Kothimbir),88,A,Nashik,January,88
+2025-03-26,Fenugreek Leaves (Methi),117,A,Solapur,June,114
+2025-03-02,Bottle Gourd (Dudhi),92,B,Nashik,March,92
+2025-03-30,Green Peas,78,A,Satara,August,73
+2025-01-05,Ladyfinger (Bhindi / Okra),90,A,Kolhapur,March,86
+2025-01-22,Bottle Gourd (Dudhi),42,B,Nashik,May,38
+2025-01-29,Radish (Mula),33,B,Pune,April,31
+2025-01-15,Bitter Gourd (Karela),67,B,Satara,January,62
+2025-01-10,Tomato,25,A,Sangli,March,24
+2025-02-21,Brinjal (Eggplant),18,B,Ahmednagar,November,16
+2025-01-12,Brinjal (Eggplant),105,B,Nashik,November,103
+2025-02-13,Coriander (Kothimbir),74,B,Kolhapur,April,72
+2025-03-11,Beetroot,56,B,Nashik,January,52
+2025-02-24,Green Peas,40,A,Kolhapur,June,38
+2025-01-06,Beans,84,B,Satara,November,79
+2025-01-02,Cauliflower,75,B,Sangli,August,75
+2025-03-07,Beans,23,A,Solapur,April,19
+2025-03-09,Beetroot,61,B,Sangli,October,61
+2025-02-07,Tomato,79,B,Pune,May,75
+2025-02-07,Beetroot,76,B,Satara,July,75
+2025-01-04,Fenugreek Leaves (Methi),104,A,Satara,July,102
+2025-03-29,Fenugreek Leaves (Methi),36,B,Nashik,October,33
+2025-02-02,Fenugreek Leaves (Methi),56,B,Solapur,March,51
+2025-03-20,Ridge Gourd (Dodka),60,B,Pune,October,55
+2025-03-10,Ridge Gourd (Dodka),93,A,Ahmednagar,September,92
+2025-02-02,Ridge Gourd (Dodka),32,A,Ahmednagar,July,32
+2025-02-08,Spring Onion,33,B,Nashik,January,32
+2025-01-26,Beans,55,A,Ahmednagar,March,54
+2025-02-06,Green Chilies,25,B,Pune,May,21
+2025-03-25,Spinach (Palak),33,A,Nashik,August,28
+2025-02-14,Tomato,56,A,Kolhapur,December,53
+2025-01-08,Brinjal (Eggplant),34,A,Satara,November,33
+2025-01-01,Green Peas,99,B,Satara,March,94
+2025-01-17,Fenugreek Leaves (Methi),86,B,Satara,August,81
+2025-01-30,Radish (Mula),54,A,Ahmednagar,July,52
+2025-01-31,Radish (Mula),19,A,Kolhapur,June,19
+2025-01-26,Green Peas,66,B,Nashik,November,64
+2025-01-27,Cucumber,39,B,Solapur,March,38
+2025-03-31,Spinach (Palak),34,A,Ahmednagar,January,33
+2025-03-06,Carrot,25,A,Solapur,June,21
+2025-02-21,Coriander (Kothimbir),39,A,Ahmednagar,March,34
+2025-03-23,Radish (Mula),58,B,Sangli,May,56
+2025-03-05,Carrot,99,B,Sangli,April,97
+2025-01-09,Tomato,22,A,Pune,January,17
+2025-03-04,Beans,30,B,Sangli,January,30
+2025-03-23,Coriander (Kothimbir),17,B,Sangli,June,14
+2025-02-24,Green Chilies,54,A,Nashik,November,54
+2025-04-01,Cabbage,24,A,Solapur,February,24
+2025-01-22,Tomato,69,A,Pune,December,67
+2025-02-26,Cabbage,48,B,Kolhapur,November,47
+2025-01-12,Tomato,47,A,Nashik,December,43
+2025-02-06,Pumpkin,66,B,Kolhapur,February,64
+2025-03-26,Coriander (Kothimbir),94,B,Solapur,April,90
+2025-01-12,Ridge Gourd (Dodka),79,A,Nashik,August,74
+2025-01-19,Beetroot,34,B,Kolhapur,April,33
+2025-01-10,Cauliflower,94,A,Ahmednagar,July,90
+2025-03-15,Brinjal (Eggplant),102,A,Ahmednagar,July,101
+2025-01-22,Spinach (Palak),25,B,Pune,March,24
+2025-01-26,Cauliflower,42,A,Sangli,August,38
+2025-02-24,Bitter Gourd (Karela),33,A,Sangli,May,29
+2025-02-10,Cauliflower,96,B,Satara,March,94
+2025-03-14,Bitter Gourd (Karela),118,A,Sangli,November,113
+2025-03-03,Ridge Gourd (Dodka),56,A,Nashik,November,56
+2025-02-23,Beetroot,46,B,Nashik,June,46
+2025-03-31,Pumpkin,98,A,Ahmednagar,June,96
+2025-01-06,Ladyfinger (Bhindi / Okra),52,B,Ahmednagar,October,47
+2025-01-11,Ridge Gourd (Dodka),113,B,Satara,November,112
+2025-01-04,Cabbage,77,A,Pune,February,73
+2025-01-16,Bottle Gourd (Dudhi),101,A,Ahmednagar,June,99
+2025-02-10,Carrot,71,A,Solapur,September,69
+2025-03-03,Ridge Gourd (Dodka),70,A,Ahmednagar,August,66
+2025-01-31,Brinjal (Eggplant),65,A,Nashik,September,62
+2025-01-05,Pumpkin,84,A,Nashik,August,83
+2025-01-20,Brinjal (Eggplant),98,B,Nashik,January,95
+2025-01-02,Radish (Mula),110,B,Nashik,April,105
+2025-01-09,Fenugreek Leaves (Methi),119,B,Pune,October,117
+2025-01-23,Green Peas,81,A,Solapur,May,81
+2025-04-01,Cabbage,54,B,Satara,December,51
+2025-03-31,Bottle Gourd (Dudhi),20,B,Solapur,February,19
+2025-02-03,Spinach (Palak),41,B,Ahmednagar,February,41
+2025-02-05,Spring Onion,44,A,Nashik,February,44
+2025-02-09,Fenugreek Leaves (Methi),89,B,Nashik,January,86
+2025-03-23,Tomato,48,B,Solapur,November,45
+2025-02-06,Beans,74,B,Ahmednagar,December,72
+2025-03-30,Ridge Gourd (Dodka),33,B,Satara,April,30
+2025-01-01,Ridge Gourd (Dodka),78,A,Sangli,July,74
+2025-01-10,Carrot,20,B,Kolhapur,May,18
+2025-03-27,Cauliflower,100,B,Sangli,December,97
+2025-01-15,Cauliflower,39,B,Nashik,November,37
+2025-02-27,Green Peas,100,A,Satara,September,98
+2025-03-06,Pumpkin,98,A,Solapur,January,95
+2025-03-08,Bitter Gourd (Karela),118,A,Kolhapur,February,118
+2025-01-08,Cauliflower,31,B,Sangli,February,30
+2025-01-08,Ridge Gourd (Dodka),64,B,Sangli,October,59
+2025-02-08,Bottle Gourd (Dudhi),111,B,Ahmednagar,March,107
+2025-03-13,Spring Onion,41,A,Kolhapur,October,39
+2025-02-08,Beans,97,B,Sangli,December,96
+2025-03-25,Cauliflower,49,A,Kolhapur,December,46
+2025-02-18,Fenugreek Leaves (Methi),73,B,Solapur,March,70
+2025-03-01,Carrot,87,A,Solapur,April,82
+2025-03-11,Carrot,18,B,Satara,October,17
+2025-01-07,Beans,16,A,Nashik,October,16
+2025-03-14,Green Chilies,22,B,Nashik,February,21
+2025-01-22,Carrot,42,B,Ahmednagar,May,38
+2025-02-10,Spring Onion,56,B,Kolhapur,June,55
+2025-03-09,Bitter Gourd (Karela),20,B,Nashik,August,16
+2025-03-18,Ridge Gourd (Dodka),72,B,Satara,December,68
+2025-03-17,Coriander (Kothimbir),56,A,Sangli,March,56
+2025-02-24,Cauliflower,73,A,Satara,September,73
+2025-01-06,Coriander (Kothimbir),96,B,Pune,February,93
+2025-02-17,Spinach (Palak),40,A,Sangli,February,38
+2025-03-21,Coriander (Kothimbir),90,A,Sangli,May,89
+2025-01-18,Fenugreek Leaves (Methi),105,B,Sangli,August,103
+2025-01-04,Cucumber,109,B,Nashik,November,109
+2025-01-29,Cucumber,31,B,Pune,June,31
+2025-03-30,Fenugreek Leaves (Methi),80,A,Sangli,May,77
+2025-02-25,Bottle Gourd (Dudhi),32,B,Pune,July,29
+2025-02-14,Tomato,75,B,Pune,February,73
+2025-01-22,Bottle Gourd (Dudhi),75,A,Pune,December,72
+2025-03-21,Green Peas,91,B,Ahmednagar,December,90
+2025-01-22,Spinach (Palak),101,B,Pune,March,97
+2025-02-08,Beans,96,B,Sangli,September,91
+2025-01-06,Beetroot,73,A,Sangli,March,69
+2025-03-28,Green Chilies,43,B,Sangli,July,38
+2025-01-20,Green Chilies,25,A,Kolhapur,September,25
+2025-03-14,Cabbage,30,B,Ahmednagar,February,27
+2025-02-27,Bottle Gourd (Dudhi),23,A,Solapur,September,19
+2025-03-20,Fenugreek Leaves (Methi),48,B,Satara,May,48
+2025-01-18,Ladyfinger (Bhindi / Okra),26,B,Solapur,January,23
+2025-03-11,Radish (Mula),87,B,Sangli,April,83
+2025-02-02,Beans,56,B,Ahmednagar,June,55
+2025-01-17,Beetroot,94,B,Sangli,September,91
+2025-01-20,Carrot,73,A,Sangli,September,69
+2025-01-23,Ladyfinger (Bhindi / Okra),39,B,Sangli,July,38
+2025-03-13,Brinjal (Eggplant),41,B,Kolhapur,October,36
+2025-02-06,Bitter Gourd (Karela),77,B,Pune,October,75
+2025-02-16,Cucumber,58,B,Kolhapur,March,58
+2025-02-06,Ridge Gourd (Dodka),82,B,Nashik,April,82
+2025-01-24,Beans,51,B,Ahmednagar,December,50
+2025-03-19,Pumpkin,74,B,Kolhapur,May,74
+2025-01-19,Tomato,107,B,Satara,December,106
+2025-01-20,Green Peas,119,A,Ahmednagar,February,118
+2025-01-20,Pumpkin,60,B,Kolhapur,October,59
+2025-03-28,Pumpkin,81,A,Sangli,August,79
+2025-01-06,Brinjal (Eggplant),78,A,Solapur,April,77
+2025-03-24,Radish (Mula),81,B,Nashik,November,80
+2025-02-19,Radish (Mula),67,A,Kolhapur,September,63
+2025-01-26,Cauliflower,85,B,Sangli,September,84
+2025-01-25,Spinach (Palak),87,A,Solapur,March,85
+2025-01-31,Spinach (Palak),109,A,Solapur,March,104
+2025-03-24,Spring Onion,33,B,Satara,September,31
+2025-02-02,Spinach (Palak),43,A,Nashik,March,39
+2025-03-05,Bitter Gourd (Karela),21,A,Sangli,November,20
+2025-01-20,Cabbage,99,A,Pune,October,98
+2025-03-10,Radish (Mula),63,A,Solapur,March,58
+2025-02-16,Brinjal (Eggplant),99,B,Pune,November,96
+2025-01-11,Beetroot,115,A,Solapur,August,111
+2025-01-28,Brinjal (Eggplant),74,A,Kolhapur,January,74
+2025-01-23,Coriander (Kothimbir),100,B,Satara,October,95
+2025-03-26,Cabbage,38,A,Pune,April,37
+2025-01-13,Ridge Gourd (Dodka),19,B,Nashik,June,18
+2025-02-20,Radish (Mula),52,B,Satara,January,52
+2025-01-31,Radish (Mula),24,A,Pune,November,20
+2025-03-17,Cauliflower,44,A,Sangli,March,44
+2025-02-06,Ridge Gourd (Dodka),15,B,Sangli,August,13
+2025-01-22,Ladyfinger (Bhindi / Okra),33,B,Nashik,July,33
+2025-01-24,Bitter Gourd (Karela),27,A,Solapur,September,22
+2025-02-11,Beetroot,17,B,Sangli,January,16
+2025-01-03,Beetroot,45,B,Nashik,December,40
+2025-01-03,Green Chilies,29,B,Kolhapur,July,28
+2025-03-06,Radish (Mula),101,A,Pune,June,101
+2025-02-24,Tomato,25,A,Nashik,May,24
+2025-01-18,Bitter Gourd (Karela),104,A,Solapur,February,102
+2025-03-05,Fenugreek Leaves (Methi),59,B,Ahmednagar,August,55
+2025-01-05,Fenugreek Leaves (Methi),51,B,Satara,November,46
+2025-01-24,Green Peas,29,B,Solapur,April,29
+2025-03-02,Radish (Mula),23,A,Satara,April,21
+2025-01-12,Tomato,56,B,Solapur,January,54
+2025-03-20,Green Chilies,108,B,Nashik,November,107
+2025-02-24,Green Chilies,115,B,Kolhapur,February,113
+2025-01-10,Coriander (Kothimbir),74,B,Ahmednagar,June,71
+2025-03-15,Carrot,57,B,Pune,June,56
+2025-02-11,Tomato,30,A,Ahmednagar,May,26
+2025-03-15,Bottle Gourd (Dudhi),59,B,Solapur,February,58
+2025-01-17,Beans,61,B,Pune,January,61
+2025-03-29,Spinach (Palak),82,B,Nashik,December,78
+2025-03-08,Tomato,113,A,Satara,July,108
+2025-03-04,Ridge Gourd (Dodka),78,A,Sangli,April,77
+2025-03-23,Beetroot,60,A,Satara,November,56
+2025-03-31,Carrot,75,B,Ahmednagar,March,75
+2025-01-20,Cauliflower,59,A,Nashik,September,58
+2025-01-23,Tomato,95,A,Pune,February,95
+2025-01-28,Cabbage,94,A,Satara,January,89
+2025-02-02,Carrot,72,A,Nashik,September,69
+2025-03-15,Cauliflower,66,A,Sangli,June,62
+2025-02-22,Spring Onion,109,A,Kolhapur,May,107
+2025-03-27,Tomato,47,B,Pune,November,44
+2025-02-26,Ridge Gourd (Dodka),63,A,Sangli,August,58
+2025-02-28,Beetroot,77,B,Sangli,November,73
+2025-03-02,Cauliflower,55,B,Sangli,June,51
+2025-03-14,Spring Onion,42,B,Nashik,June,39
+2025-02-06,Cucumber,118,B,Ahmednagar,January,114
+2025-01-20,Carrot,30,B,Pune,December,26
+2025-03-06,Pumpkin,98,A,Ahmednagar,May,94
+2025-01-17,Green Peas,72,B,Kolhapur,January,68
+2025-03-10,Beans,43,B,Pune,November,43
+2025-02-17,Cucumber,47,A,Sangli,July,47
+2025-01-05,Cucumber,55,B,Pune,April,54
+2025-01-09,Brinjal (Eggplant),65,B,Pune,November,61
+2025-02-21,Fenugreek Leaves (Methi),46,A,Sangli,January,45
+2025-03-01,Green Chilies,71,B,Nashik,February,71
+2025-01-19,Spring Onion,20,A,Satara,February,19
+2025-02-24,Coriander (Kothimbir),47,A,Kolhapur,August,42
+2025-03-09,Pumpkin,21,A,Pune,October,20
+2025-01-12,Cucumber,15,B,Sangli,October,11
+2025-01-18,Radish (Mula),26,A,Pune,August,25
+2025-02-07,Pumpkin,62,A,Ahmednagar,November,60
+2025-02-14,Bottle Gourd (Dudhi),105,A,Solapur,November,105
+2025-01-09,Beans,24,A,Pune,March,20
+2025-03-13,Bottle Gourd (Dudhi),66,B,Nashik,May,65
+2025-02-25,Bottle Gourd (Dudhi),90,B,Satara,December,85
+2025-01-06,Cabbage,29,B,Ahmednagar,June,27
+2025-03-29,Ridge Gourd (Dodka),104,B,Pune,November,103
+2025-01-05,Green Chilies,27,A,Nashik,January,23
+2025-03-10,Pumpkin,40,B,Pune,January,35
+2025-01-25,Green Chilies,75,B,Nashik,August,75
+2025-01-03,Beetroot,19,A,Ahmednagar,March,17
+2025-01-08,Ladyfinger (Bhindi / Okra),22,A,Kolhapur,October,22
+2025-03-07,Green Peas,34,A,Solapur,December,34
+2025-01-07,Ridge Gourd (Dodka),28,A,Satara,July,25
+2025-03-17,Spring Onion,74,B,Ahmednagar,December,73
+2025-02-04,Beans,36,B,Solapur,April,36
+2025-02-11,Ridge Gourd (Dodka),21,A,Kolhapur,July,18
+2025-02-27,Ladyfinger (Bhindi / Okra),59,A,Satara,June,57
+2025-02-24,Ridge Gourd (Dodka),33,B,Nashik,September,32
+2025-01-31,Spring Onion,113,B,Pune,March,113
+2025-02-13,Fenugreek Leaves (Methi),23,B,Kolhapur,December,21
+2025-03-10,Carrot,96,A,Pune,January,92
+2025-01-12,Spring Onion,25,B,Pune,September,24
+2025-02-05,Bitter Gourd (Karela),114,B,Sangli,February,114
+2025-03-30,Tomato,75,B,Sangli,March,74
+2025-01-17,Cabbage,66,B,Sangli,June,62
+2025-02-23,Tomato,16,A,Satara,February,12
+2025-02-28,Cucumber,72,B,Satara,January,72
+2025-01-16,Spring Onion,119,B,Kolhapur,January,116
+2025-03-05,Bottle Gourd (Dudhi),78,A,Pune,May,76
+2025-02-07,Brinjal (Eggplant),91,A,Kolhapur,November,89
+2025-01-25,Cauliflower,15,B,Ahmednagar,September,12
+2025-01-01,Cauliflower,45,A,Solapur,February,40
+2025-02-25,Coriander (Kothimbir),59,B,Ahmednagar,July,59
+2025-01-13,Brinjal (Eggplant),44,B,Sangli,October,39
+2025-01-05,Cauliflower,76,B,Satara,December,71
+2025-03-23,Coriander (Kothimbir),47,A,Ahmednagar,March,45
+2025-01-12,Carrot,93,B,Nashik,August,92
+2025-03-18,Spinach (Palak),80,A,Kolhapur,June,77
+2025-02-03,Green Chilies,34,A,Sangli,September,33
+2025-03-08,Bottle Gourd (Dudhi),76,A,Nashik,March,73
+2025-02-25,Carrot,105,B,Nashik,December,100
+2025-03-08,Fenugreek Leaves (Methi),49,B,Kolhapur,July,47
+2025-01-18,Ladyfinger (Bhindi / Okra),51,A,Sangli,April,47
+2025-03-04,Brinjal (Eggplant),102,B,Satara,January,99
+2025-02-11,Tomato,78,A,Kolhapur,September,77
+2025-01-31,Bitter Gourd (Karela),46,B,Ahmednagar,January,45
+2025-02-08,Cabbage,45,A,Ahmednagar,December,44
+2025-01-13,Carrot,85,A,Nashik,January,82
+2025-02-08,Beans,113,B,Satara,May,110
+2025-01-01,Fenugreek Leaves (Methi),49,B,Ahmednagar,March,44
+2025-01-25,Fenugreek Leaves (Methi),73,B,Ahmednagar,November,71
+2025-03-31,Coriander (Kothimbir),115,B,Pune,November,114
+2025-01-18,Green Chilies,22,B,Kolhapur,March,17
+2025-01-25,Green Peas,100,B,Satara,September,98
+2025-02-12,Cucumber,99,B,Sangli,December,99
+2025-02-22,Cauliflower,66,B,Nashik,January,65
+2025-02-12,Coriander (Kothimbir),17,B,Ahmednagar,November,15
+2025-02-11,Cabbage,24,B,Satara,April,21
+2025-01-27,Pumpkin,63,B,Kolhapur,September,63
+2025-03-12,Tomato,20,A,Ahmednagar,August,19
+2025-02-13,Green Peas,20,A,Satara,March,15
+2025-01-03,Cabbage,102,B,Solapur,July,98
+2025-01-09,Ridge Gourd (Dodka),50,A,Solapur,March,46
+2025-02-24,Ladyfinger (Bhindi / Okra),88,A,Ahmednagar,August,83
+2025-02-15,Tomato,111,B,Sangli,August,106
+2025-02-11,Ridge Gourd (Dodka),44,A,Kolhapur,August,43
+2025-02-20,Radish (Mula),64,A,Ahmednagar,April,60
+2025-03-23,Ridge Gourd (Dodka),15,A,Kolhapur,November,13
+2025-02-17,Beetroot,41,A,Nashik,May,36
+2025-01-27,Brinjal (Eggplant),29,A,Nashik,October,24
+2025-03-12,Bitter Gourd (Karela),17,A,Satara,February,12
+2025-03-31,Ladyfinger (Bhindi / Okra),75,A,Kolhapur,April,72
+2025-03-08,Ridge Gourd (Dodka),38,B,Pune,February,34
+2025-01-26,Brinjal (Eggplant),42,B,Solapur,September,40
+2025-01-07,Brinjal (Eggplant),36,A,Kolhapur,January,33
+2025-02-18,Spring Onion,104,B,Ahmednagar,September,102
+2025-02-13,Bottle Gourd (Dudhi),71,B,Solapur,June,67
+2025-03-14,Green Chilies,35,B,Satara,September,30
+2025-02-11,Bitter Gourd (Karela),47,B,Satara,July,45
+2025-01-08,Pumpkin,50,A,Ahmednagar,April,47
+2025-03-17,Tomato,43,B,Pune,October,41
+2025-01-23,Radish (Mula),113,B,Pune,October,111
+2025-02-18,Tomato,20,B,Solapur,May,19
+2025-01-14,Tomato,99,A,Kolhapur,December,99
+2025-02-20,Coriander (Kothimbir),69,B,Pune,June,67
+2025-01-02,Beetroot,16,A,Ahmednagar,March,16
+2025-01-13,Fenugreek Leaves (Methi),44,B,Satara,August,39
+2025-01-18,Cucumber,89,A,Sangli,November,86
+2025-02-03,Beans,28,B,Solapur,November,28
+2025-01-15,Beetroot,113,A,Solapur,July,112
+2025-03-30,Pumpkin,114,A,Solapur,May,111
+2025-01-20,Carrot,79,B,Nashik,June,77
+2025-02-15,Pumpkin,67,B,Ahmednagar,April,65
+2025-03-15,Spring Onion,16,A,Pune,April,13
+2025-01-30,Green Peas,115,A,Nashik,April,112
+2025-02-08,Fenugreek Leaves (Methi),96,A,Sangli,November,96
+2025-01-29,Brinjal (Eggplant),60,A,Satara,July,58
+2025-03-11,Green Chilies,81,B,Ahmednagar,April,80
+2025-02-19,Cabbage,92,A,Nashik,May,89
+2025-02-09,Cabbage,48,B,Solapur,January,48
+2025-01-02,Tomato,89,B,Satara,March,88
+2025-03-01,Spring Onion,114,B,Satara,July,114
+2025-03-29,Spring Onion,111,A,Kolhapur,December,111
+2025-02-03,Spinach (Palak),20,B,Ahmednagar,January,16
+2025-01-06,Carrot,46,B,Kolhapur,April,45
+2025-01-17,Beetroot,30,A,Nashik,September,28
+2025-01-09,Carrot,102,A,Satara,June,97
+2025-01-27,Ladyfinger (Bhindi / Okra),24,B,Ahmednagar,April,22
+2025-04-01,Beetroot,77,B,Pune,December,74
+2025-01-05,Green Peas,70,B,Kolhapur,September,69
+2025-03-01,Brinjal (Eggplant),21,A,Sangli,December,18
+2025-03-19,Tomato,87,B,Solapur,August,86
+2025-02-01,Cucumber,117,B,Ahmednagar,November,116
+2025-01-25,Coriander (Kothimbir),65,A,Kolhapur,November,62
+2025-02-12,Carrot,92,A,Sangli,January,90
+2025-03-09,Carrot,120,B,Satara,January,117
+2025-01-17,Beans,94,B,Satara,July,94
+2025-02-14,Cauliflower,115,A,Solapur,November,110
+2025-01-29,Ladyfinger (Bhindi / Okra),60,B,Solapur,October,56
+2025-01-25,Brinjal (Eggplant),80,A,Nashik,May,79
+2025-03-14,Ridge Gourd (Dodka),118,B,Sangli,March,116
+2025-01-06,Ladyfinger (Bhindi / Okra),99,A,Ahmednagar,August,94
+2025-02-11,Tomato,35,A,Solapur,June,34
+2025-01-31,Spring Onion,64,A,Satara,February,64
+2025-01-28,Pumpkin,107,A,Nashik,December,103
+2025-01-10,Green Peas,40,A,Solapur,April,35
+2025-03-15,Coriander (Kothimbir),33,A,Sangli,May,29
+2025-03-05,Ladyfinger (Bhindi / Okra),29,A,Satara,May,25
+2025-02-12,Green Peas,120,B,Nashik,September,119
+2025-01-08,Cucumber,63,A,Nashik,July,59
+2025-03-31,Tomato,16,A,Ahmednagar,August,12
+2025-02-06,Bottle Gourd (Dudhi),101,A,Kolhapur,August,100
+2025-01-08,Tomato,113,B,Ahmednagar,October,108
+2025-02-01,Tomato,32,B,Solapur,January,29
+2025-01-16,Cucumber,110,B,Ahmednagar,May,108
+2025-03-19,Green Chilies,27,B,Ahmednagar,August,22
+2025-03-26,Beans,25,A,Ahmednagar,October,25
+2025-01-27,Tomato,99,A,Solapur,December,97
+2025-03-01,Cauliflower,49,B,Pune,November,48
+2025-01-07,Tomato,65,B,Ahmednagar,October,60
+2025-02-01,Brinjal (Eggplant),50,A,Nashik,December,48
+2025-01-20,Ridge Gourd (Dodka),62,B,Solapur,January,57
+2025-01-24,Bitter Gourd (Karela),62,B,Ahmednagar,May,60
+2025-01-30,Spring Onion,77,A,Nashik,April,76
+2025-03-21,Coriander (Kothimbir),53,B,Ahmednagar,December,50
+2025-03-12,Bitter Gourd (Karela),35,A,Nashik,January,34
+2025-01-21,Radish (Mula),52,B,Kolhapur,August,52
+2025-03-19,Cauliflower,120,A,Pune,September,117
+2025-02-11,Radish (Mula),71,A,Solapur,August,71
+2025-02-18,Beetroot,101,B,Kolhapur,August,100
+2025-03-18,Brinjal (Eggplant),113,A,Ahmednagar,November,108
+2025-03-15,Bottle Gourd (Dudhi),113,B,Nashik,September,111
+2025-01-27,Tomato,86,A,Kolhapur,March,81
+2025-01-20,Tomato,115,A,Solapur,August,111
+2025-02-21,Radish (Mula),47,A,Pune,March,47
+2025-02-09,Coriander (Kothimbir),57,B,Pune,October,52
+2025-01-07,Bitter Gourd (Karela),50,B,Satara,October,49
+2025-01-22,Cabbage,27,A,Solapur,January,26
+2025-04-01,Cabbage,50,A,Kolhapur,June,49
+2025-02-22,Spring Onion,92,B,Solapur,September,92
+2025-02-25,Ladyfinger (Bhindi / Okra),94,B,Solapur,June,93
+2025-03-03,Fenugreek Leaves (Methi),99,B,Satara,January,97
+2025-03-02,Bottle Gourd (Dudhi),48,B,Satara,June,45
+2025-03-07,Tomato,95,A,Sangli,May,92
+2025-03-11,Bottle Gourd (Dudhi),94,A,Solapur,May,90
+2025-01-19,Cucumber,42,A,Satara,April,38
+2025-01-15,Spinach (Palak),51,A,Ahmednagar,July,47
+2025-02-20,Cucumber,39,A,Satara,December,34
+2025-01-14,Spring Onion,34,B,Nashik,August,31
+2025-03-31,Spinach (Palak),22,A,Solapur,August,19
+2025-01-13,Beans,95,B,Sangli,November,94
+2025-01-13,Cucumber,22,B,Sangli,January,21
+2025-02-27,Tomato,82,A,Sangli,June,81
+2025-03-12,Green Peas,119,A,Ahmednagar,June,114
+2025-02-21,Fenugreek Leaves (Methi),105,B,Sangli,September,103
+2025-01-27,Radish (Mula),109,A,Sangli,January,107
+2025-01-01,Spring Onion,27,A,Satara,February,23
+2025-02-06,Radish (Mula),67,B,Ahmednagar,November,66
+2025-01-31,Tomato,84,B,Ahmednagar,March,80
+2025-01-01,Ladyfinger (Bhindi / Okra),108,A,Kolhapur,September,108
+2025-03-07,Ladyfinger (Bhindi / Okra),27,B,Sangli,October,22
+2025-03-07,Green Chilies,98,A,Kolhapur,April,96
+2025-02-23,Ladyfinger (Bhindi / Okra),57,B,Kolhapur,May,53
+2025-02-20,Beans,19,B,Nashik,August,19
+2025-03-18,Tomato,52,A,Ahmednagar,February,50
+2025-02-12,Pumpkin,84,A,Sangli,January,84
+2025-02-25,Green Chilies,31,A,Nashik,July,27
+2025-01-18,Ridge Gourd (Dodka),64,B,Satara,November,63
+2025-02-07,Green Peas,95,B,Ahmednagar,March,92
+2025-03-15,Pumpkin,109,B,Solapur,August,107
+2025-01-12,Green Chilies,76,A,Ahmednagar,August,74
+2025-03-23,Carrot,25,B,Satara,April,22
+2025-03-26,Tomato,24,A,Nashik,July,24
+2025-01-15,Beetroot,108,B,Kolhapur,October,107
+2025-01-03,Brinjal (Eggplant),86,A,Sangli,January,84
+2025-01-27,Beans,120,A,Nashik,April,116
+2025-02-09,Brinjal (Eggplant),75,A,Ahmednagar,June,75
+2025-01-07,Carrot,96,B,Pune,June,93
+2025-01-26,Cauliflower,69,B,Nashik,September,68
+2025-03-30,Spinach (Palak),63,A,Pune,March,58
+2025-02-24,Spring Onion,83,B,Ahmednagar,April,83
+2025-03-02,Tomato,92,A,Sangli,May,87
+2025-01-25,Bottle Gourd (Dudhi),24,A,Ahmednagar,April,24
+2025-02-05,Spring Onion,76,A,Kolhapur,September,75
+2025-03-11,Green Chilies,92,B,Solapur,July,88
+2025-04-01,Cauliflower,93,A,Ahmednagar,September,91
+2025-03-03,Bitter Gourd (Karela),33,B,Kolhapur,March,28
+2025-03-09,Green Peas,23,A,Satara,November,23
+2025-01-11,Beetroot,75,B,Pune,March,74
+2025-02-17,Spinach (Palak),97,A,Sangli,June,93
+2025-02-12,Cabbage,17,B,Satara,April,16
+2025-03-13,Beans,90,B,Solapur,January,90
+2025-01-10,Fenugreek Leaves (Methi),32,A,Solapur,May,31
+2025-02-10,Beetroot,66,A,Ahmednagar,November,64
+2025-02-23,Ridge Gourd (Dodka),88,B,Nashik,August,87
+2025-02-24,Cucumber,75,B,Nashik,December,74
+2025-01-03,Spring Onion,107,A,Pune,September,103
+2025-03-04,Cabbage,58,B,Sangli,May,58
+2025-01-25,Tomato,33,B,Satara,August,29
+2025-01-21,Beetroot,65,A,Pune,September,60
+2025-03-16,Ridge Gourd (Dodka),21,A,Nashik,March,19
+2025-02-26,Pumpkin,84,A,Kolhapur,December,81
+2025-03-20,Brinjal (Eggplant),42,A,Sangli,March,40
+2025-04-01,Tomato,55,B,Nashik,November,53
+2025-01-13,Beans,106,A,Kolhapur,September,101
+2025-02-15,Green Chilies,61,B,Kolhapur,September,59
+2025-01-02,Brinjal (Eggplant),27,A,Nashik,March,26
+2025-02-12,Tomato,57,B,Sangli,February,54
+2025-03-26,Green Chilies,70,A,Solapur,December,65
+2025-03-10,Coriander (Kothimbir),44,A,Kolhapur,August,44
+2025-01-25,Brinjal (Eggplant),79,A,Kolhapur,August,74
+2025-02-16,Green Chilies,51,B,Pune,December,51
+2025-01-17,Coriander (Kothimbir),39,B,Ahmednagar,April,36
+2025-02-09,Tomato,85,A,Pune,April,83
+2025-03-26,Spring Onion,98,B,Nashik,February,95
+2025-01-23,Cabbage,21,B,Sangli,January,18
+2025-01-18,Cucumber,112,B,Sangli,April,107
+2025-01-03,Radish (Mula),32,A,Satara,August,30
+2025-02-23,Bitter Gourd (Karela),38,B,Ahmednagar,October,35
+2025-01-28,Carrot,102,B,Solapur,April,102
+2025-02-01,Beans,101,A,Nashik,May,96
+2025-02-01,Brinjal (Eggplant),58,A,Kolhapur,February,58
+2025-03-15,Pumpkin,83,B,Ahmednagar,April,82
+2025-01-28,Green Peas,104,B,Solapur,March,102
+2025-03-08,Pumpkin,16,A,Kolhapur,January,13
+2025-03-01,Bitter Gourd (Karela),87,A,Solapur,January,87
+2025-03-06,Radish (Mula),87,A,Kolhapur,November,85
+2025-02-11,Beans,61,A,Sangli,April,56
+2025-02-19,Beetroot,81,A,Sangli,January,78
+2025-03-07,Ridge Gourd (Dodka),80,B,Ahmednagar,February,78
+2025-02-08,Tomato,27,B,Ahmednagar,August,27
+2025-01-09,Pumpkin,17,B,Ahmednagar,May,14
+2025-03-12,Brinjal (Eggplant),71,B,Satara,October,67
+2025-01-07,Fenugreek Leaves (Methi),79,B,Sangli,April,78
+2025-01-12,Cauliflower,72,A,Sangli,February,67
+2025-03-09,Ladyfinger (Bhindi / Okra),27,B,Solapur,December,26
+2025-02-03,Beetroot,37,A,Pune,March,35
+2025-01-23,Pumpkin,56,A,Sangli,August,54
+2025-03-05,Tomato,97,A,Satara,September,96
+2025-03-25,Radish (Mula),50,B,Ahmednagar,September,48
+2025-03-23,Radish (Mula),60,B,Ahmednagar,December,58
+2025-01-09,Spring Onion,81,A,Solapur,March,78
+2025-03-09,Cucumber,114,B,Solapur,May,113
+2025-02-03,Bitter Gourd (Karela),35,B,Kolhapur,November,33
+2025-03-09,Ladyfinger (Bhindi / Okra),119,A,Ahmednagar,October,117
+2025-03-18,Cucumber,54,B,Nashik,February,54
+2025-02-14,Spinach (Palak),43,A,Kolhapur,July,40
+2025-03-27,Ridge Gourd (Dodka),80,A,Kolhapur,January,75
+2025-03-17,Green Peas,96,A,Kolhapur,August,91
+2025-03-10,Ladyfinger (Bhindi / Okra),74,B,Solapur,May,72
+2025-03-19,Spring Onion,89,A,Pune,December,84
+2025-03-19,Green Chilies,87,A,Pune,June,83
+2025-02-06,Spinach (Palak),45,B,Nashik,December,42
+2025-01-27,Bottle Gourd (Dudhi),38,A,Ahmednagar,October,38
+2025-03-15,Ladyfinger (Bhindi / Okra),87,B,Pune,April,82
+2025-02-12,Cucumber,73,A,Pune,August,69
+2025-01-17,Beetroot,90,B,Ahmednagar,July,88
+2025-03-26,Ladyfinger (Bhindi / Okra),21,B,Kolhapur,April,21
+2025-03-28,Pumpkin,102,A,Pune,February,98
+2025-03-29,Coriander (Kothimbir),69,A,Kolhapur,July,69
+2025-03-18,Carrot,20,B,Pune,December,16
+2025-01-11,Beetroot,61,A,Ahmednagar,November,57
+2025-01-25,Carrot,58,B,Nashik,March,56
+2025-03-12,Radish (Mula),62,B,Solapur,June,57
+2025-03-04,Cabbage,76,A,Ahmednagar,June,75
+2025-01-10,Bottle Gourd (Dudhi),79,B,Satara,December,75
+2025-03-20,Carrot,94,A,Nashik,April,91
+2025-02-14,Green Peas,91,A,Sangli,June,89
+2025-01-23,Beetroot,92,A,Satara,January,88
+2025-01-12,Cucumber,98,A,Pune,January,93
+2025-02-01,Bottle Gourd (Dudhi),47,B,Sangli,June,46
+2025-01-01,Bottle Gourd (Dudhi),84,B,Satara,March,81
+2025-01-31,Cauliflower,104,A,Nashik,November,99
+2025-01-11,Cabbage,34,A,Nashik,February,32
+2025-02-27,Brinjal (Eggplant),37,B,Pune,January,33
+2025-02-14,Green Peas,83,A,Pune,September,83
+2025-01-03,Carrot,74,A,Kolhapur,May,74
+2025-03-17,Carrot,120,A,Satara,August,117
+2025-01-15,Green Chilies,81,A,Solapur,September,76
+2025-02-01,Pumpkin,90,B,Satara,January,87
+2025-03-05,Radish (Mula),52,A,Sangli,August,50
+2025-01-03,Radish (Mula),73,A,Ahmednagar,November,73
+2025-01-26,Beans,71,A,Nashik,April,71
+2025-03-21,Tomato,80,A,Nashik,August,75
+2025-02-05,Bottle Gourd (Dudhi),44,B,Sangli,October,43
+2025-01-11,Cucumber,93,B,Nashik,August,90
+2025-02-26,Cauliflower,110,B,Pune,March,107
+2025-01-08,Coriander (Kothimbir),116,A,Solapur,January,116
+2025-03-18,Radish (Mula),21,A,Nashik,April,17
+2025-03-02,Spring Onion,68,A,Sangli,June,66
+2025-03-02,Carrot,28,A,Pune,November,26
+2025-01-02,Spring Onion,95,B,Satara,December,93
+2025-01-20,Green Peas,77,B,Sangli,May,76
+2025-02-21,Ladyfinger (Bhindi / Okra),36,A,Sangli,August,33
+2025-01-08,Tomato,30,B,Solapur,December,27
+2025-03-03,Cauliflower,102,B,Ahmednagar,October,102
+2025-01-21,Spinach (Palak),102,B,Kolhapur,December,102
+2025-03-10,Carrot,74,B,Kolhapur,September,74
+2025-03-21,Ladyfinger (Bhindi / Okra),25,B,Nashik,February,20
+2025-01-03,Beetroot,22,B,Kolhapur,December,22
+2025-01-27,Bottle Gourd (Dudhi),83,A,Pune,August,80
+2025-01-24,Green Chilies,108,B,Ahmednagar,November,106
+2025-01-01,Ladyfinger (Bhindi / Okra),17,A,Satara,July,16
+2025-01-11,Spring Onion,69,A,Pune,August,69
+2025-01-03,Cucumber,50,A,Ahmednagar,March,45
+2025-01-19,Fenugreek Leaves (Methi),57,A,Ahmednagar,January,56
+2025-03-02,Green Chilies,92,A,Sangli,September,89
+2025-02-11,Coriander (Kothimbir),40,B,Pune,May,35
+2025-03-05,Pumpkin,103,A,Sangli,May,103
+2025-01-18,Cabbage,55,A,Solapur,August,55
+2025-03-07,Green Chilies,56,A,Solapur,February,55
+2025-03-07,Spinach (Palak),22,A,Kolhapur,April,18
+2025-03-23,Spinach (Palak),103,A,Satara,November,102
+2025-01-02,Beetroot,89,B,Kolhapur,October,87
+2025-02-20,Cabbage,38,B,Kolhapur,May,33
+2025-02-01,Green Chilies,117,B,Nashik,June,116
+2025-01-23,Ladyfinger (Bhindi / Okra),64,A,Satara,January,61
+2025-02-16,Beetroot,105,B,Sangli,August,100
+2025-01-01,Bottle Gourd (Dudhi),108,A,Kolhapur,April,108
+2025-02-12,Ladyfinger (Bhindi / Okra),51,B,Ahmednagar,February,48
+2025-01-18,Ladyfinger (Bhindi / Okra),117,A,Ahmednagar,September,114
+2025-02-24,Beans,74,A,Kolhapur,March,73
+2025-02-18,Cabbage,56,B,Satara,January,52
+2025-01-18,Coriander (Kothimbir),81,B,Kolhapur,June,77
+2025-02-23,Carrot,20,B,Solapur,April,16
+2025-03-11,Carrot,24,A,Solapur,January,24
+2025-02-08,Bitter Gourd (Karela),41,B,Sangli,December,40
+2025-01-20,Carrot,119,A,Pune,July,115
+2025-02-07,Carrot,38,A,Ahmednagar,November,33
+2025-01-08,Coriander (Kothimbir),114,B,Pune,November,110
+2025-01-22,Ridge Gourd (Dodka),76,B,Kolhapur,July,73
+2025-02-17,Fenugreek Leaves (Methi),84,A,Nashik,April,83
+2025-01-08,Green Peas,103,B,Sangli,December,99
+2025-01-21,Green Peas,45,A,Solapur,February,42
+2025-02-28,Ridge Gourd (Dodka),30,A,Sangli,October,26
+2025-03-15,Cabbage,101,B,Pune,February,101
+2025-03-18,Tomato,21,A,Pune,April,20
+2025-02-21,Coriander (Kothimbir),64,A,Kolhapur,February,62
+2025-01-17,Beetroot,53,B,Kolhapur,December,50
+2025-01-30,Green Peas,24,B,Nashik,April,23
+2025-03-10,Spinach (Palak),28,A,Pune,April,23
+2025-02-04,Beans,39,B,Nashik,April,37
+2025-02-16,Cucumber,100,A,Pune,May,95
+2025-03-03,Green Peas,37,A,Nashik,August,36
+2025-03-25,Beetroot,70,A,Ahmednagar,July,70
+2025-01-17,Brinjal (Eggplant),59,B,Ahmednagar,March,59
+2025-03-31,Tomato,118,B,Pune,October,114
+2025-01-07,Fenugreek Leaves (Methi),35,B,Satara,February,30
+2025-02-18,Ladyfinger (Bhindi / Okra),115,A,Ahmednagar,August,114
+2025-03-24,Tomato,38,A,Nashik,April,34
+2025-03-19,Cauliflower,30,B,Ahmednagar,April,25
+2025-02-24,Ridge Gourd (Dodka),80,A,Solapur,July,80
+2025-03-16,Coriander (Kothimbir),55,A,Pune,August,53
+2025-01-07,Green Chilies,84,A,Sangli,January,79
+2025-03-31,Brinjal (Eggplant),102,B,Nashik,April,101
+2025-01-11,Beetroot,77,A,Solapur,November,75
+2025-03-26,Bitter Gourd (Karela),111,A,Nashik,October,111
+2025-03-07,Beetroot,59,A,Kolhapur,November,59
+2025-01-21,Carrot,59,A,Solapur,November,59
+2025-01-25,Ladyfinger (Bhindi / Okra),98,B,Nashik,September,96
+2025-02-11,Cauliflower,51,A,Ahmednagar,May,48
+2025-01-21,Brinjal (Eggplant),50,A,Satara,September,45
+2025-02-25,Cabbage,100,A,Satara,May,100
+2025-03-20,Carrot,76,A,Kolhapur,December,75
+2025-01-09,Beetroot,82,B,Nashik,August,80
+2025-03-24,Bitter Gourd (Karela),81,B,Solapur,February,76
+2025-02-09,Green Chilies,39,B,Satara,June,36
+2025-01-03,Spinach (Palak),63,A,Satara,July,61
+2025-02-27,Fenugreek Leaves (Methi),115,B,Nashik,November,112
+2025-03-24,Tomato,101,B,Satara,September,98
+2025-03-06,Spring Onion,90,A,Satara,August,87
+2025-03-04,Ridge Gourd (Dodka),94,A,Pune,October,94
+2025-01-02,Ridge Gourd (Dodka),72,B,Sangli,July,72
+2025-01-05,Cauliflower,58,A,Sangli,September,54
+2025-01-06,Radish (Mula),108,A,Nashik,August,106
+2025-02-07,Carrot,116,A,Solapur,January,111
+2025-03-11,Spring Onion,99,B,Sangli,July,96
+2025-03-31,Beetroot,38,A,Nashik,December,34
+2025-01-22,Radish (Mula),100,A,Kolhapur,September,98
+2025-01-09,Green Chilies,100,B,Nashik,July,99
+2025-03-26,Spinach (Palak),91,A,Kolhapur,February,86
+2025-03-13,Green Peas,29,A,Nashik,January,24
+2025-03-05,Radish (Mula),25,B,Ahmednagar,August,20
+2025-03-03,Coriander (Kothimbir),117,A,Kolhapur,August,115
+2025-01-21,Cabbage,71,B,Ahmednagar,July,68
+2025-01-02,Cucumber,94,A,Satara,June,90
+2025-02-20,Coriander (Kothimbir),120,A,Pune,July,119
+2025-03-04,Pumpkin,112,A,Pune,July,112
+2025-03-21,Green Peas,69,B,Solapur,July,65
+2025-03-15,Pumpkin,117,A,Solapur,April,113
+2025-03-19,Pumpkin,32,A,Sangli,July,27
+2025-01-14,Green Chilies,39,A,Solapur,February,36
+2025-01-23,Ridge Gourd (Dodka),81,B,Satara,April,79
+2025-02-23,Ridge Gourd (Dodka),19,B,Solapur,May,14
+2025-03-19,Brinjal (Eggplant),57,B,Kolhapur,July,55
+2025-02-07,Green Peas,33,B,Ahmednagar,January,30
+2025-01-23,Cucumber,76,A,Sangli,November,76
+2025-03-24,Pumpkin,22,B,Kolhapur,January,19
+2025-01-24,Fenugreek Leaves (Methi),48,B,Nashik,November,43
+2025-03-24,Brinjal (Eggplant),108,A,Kolhapur,August,104
+2025-03-13,Bottle Gourd (Dudhi),34,B,Solapur,July,32
+2025-02-20,Green Chilies,106,A,Kolhapur,April,102
+2025-03-19,Coriander (Kothimbir),106,A,Nashik,August,103
+2025-01-12,Spinach (Palak),68,B,Satara,December,65
+2025-01-24,Cucumber,60,B,Kolhapur,September,56
+2025-02-21,Cabbage,102,B,Sangli,January,98
+2025-01-06,Green Chilies,111,B,Satara,March,109
+2025-01-02,Beetroot,65,A,Satara,September,65
+2025-02-04,Green Chilies,85,B,Nashik,February,82
+2025-01-23,Cucumber,77,A,Kolhapur,September,72
+2025-02-04,Ladyfinger (Bhindi / Okra),110,A,Nashik,February,108
+2025-02-08,Cabbage,16,B,Ahmednagar,August,12
+2025-03-31,Spring Onion,25,A,Solapur,April,23
+2025-01-27,Beetroot,77,B,Sangli,February,75
+2025-03-03,Carrot,91,A,Satara,July,89
+2025-01-22,Cabbage,27,B,Nashik,June,26
+2025-02-18,Pumpkin,107,A,Nashik,April,105
+2025-01-09,Bottle Gourd (Dudhi),36,B,Solapur,January,32
+2025-03-25,Cabbage,99,A,Ahmednagar,July,98
+2025-03-17,Coriander (Kothimbir),113,A,Satara,October,113
+2025-04-01,Cabbage,86,B,Nashik,August,85
+2025-01-04,Tomato,61,A,Satara,October,57
+2025-02-28,Fenugreek Leaves (Methi),93,A,Sangli,May,93
+2025-02-28,Spring Onion,24,B,Ahmednagar,September,24
+2025-02-25,Carrot,85,A,Ahmednagar,April,84
+2025-02-28,Brinjal (Eggplant),41,A,Solapur,November,40
+2025-03-17,Cabbage,81,A,Pune,January,81
+2025-02-21,Green Chilies,94,A,Sangli,May,89
+2025-02-18,Carrot,112,A,Kolhapur,May,112
+2025-02-01,Bitter Gourd (Karela),21,A,Pune,August,18
+2025-03-27,Cucumber,21,B,Solapur,April,21
+2025-03-05,Coriander (Kothimbir),23,A,Pune,October,22
+2025-02-13,Cabbage,89,A,Pune,May,89
+2025-01-28,Bitter Gourd (Karela),78,A,Pune,January,76
+2025-03-06,Pumpkin,61,A,Solapur,April,60
+2025-01-05,Fenugreek Leaves (Methi),80,A,Nashik,March,77
+2025-03-26,Pumpkin,35,B,Kolhapur,November,31
+2025-02-11,Carrot,84,A,Solapur,May,80
+2025-01-19,Cauliflower,35,A,Sangli,September,31
+2025-03-23,Ladyfinger (Bhindi / Okra),87,A,Pune,August,82
+2025-03-20,Carrot,93,B,Solapur,July,88
+2025-02-10,Tomato,82,A,Pune,July,77
+2025-01-30,Green Peas,84,B,Pune,July,81
+2025-03-07,Spinach (Palak),33,B,Solapur,March,30
+2025-03-09,Cabbage,76,B,Solapur,October,73
+2025-01-02,Spring Onion,52,A,Ahmednagar,May,49
+2025-03-19,Beetroot,15,B,Ahmednagar,January,14
+2025-01-11,Bitter Gourd (Karela),76,A,Pune,October,75
+2025-03-06,Green Peas,88,B,Solapur,January,86
+2025-02-01,Tomato,88,A,Solapur,February,84
+2025-02-19,Carrot,16,A,Sangli,July,13
+2025-03-02,Bitter Gourd (Karela),85,B,Satara,October,84
+2025-03-07,Green Chilies,89,B,Sangli,February,88
+2025-03-12,Spinach (Palak),30,A,Kolhapur,October,29
+2025-03-30,Tomato,31,A,Ahmednagar,January,28
+2025-01-08,Cauliflower,47,A,Nashik,March,42
+2025-01-23,Coriander (Kothimbir),71,A,Solapur,May,67
+2025-01-10,Green Chilies,73,B,Nashik,March,69
+2025-02-21,Cucumber,99,A,Nashik,July,96
+2025-01-08,Bottle Gourd (Dudhi),47,A,Nashik,October,46
+2025-03-26,Spring Onion,120,A,Nashik,November,116
+2025-01-20,Ladyfinger (Bhindi / Okra),97,A,Nashik,September,92
+2025-02-20,Coriander (Kothimbir),26,B,Pune,January,22
+2025-03-24,Cabbage,44,A,Sangli,October,43
+2025-01-29,Green Chilies,111,B,Ahmednagar,March,107
+2025-03-15,Cucumber,40,A,Satara,October,40
+2025-04-01,Bottle Gourd (Dudhi),95,A,Sangli,August,95
+2025-01-13,Pumpkin,81,B,Solapur,January,81
+2025-01-02,Bitter Gourd (Karela),53,A,Ahmednagar,December,53
+2025-01-26,Beetroot,106,A,Ahmednagar,July,101
+2025-02-15,Carrot,80,A,Nashik,March,77
+2025-03-02,Spinach (Palak),59,A,Kolhapur,January,55
+2025-03-04,Spinach (Palak),71,A,Solapur,October,69
+2025-02-21,Ladyfinger (Bhindi / Okra),43,A,Sangli,July,39
+2025-03-17,Cucumber,21,A,Nashik,February,20
+2025-03-28,Carrot,106,A,Nashik,August,103
+2025-03-28,Brinjal (Eggplant),84,B,Satara,August,79
+2025-01-27,Coriander (Kothimbir),117,B,Sangli,February,113
+2025-01-20,Bottle Gourd (Dudhi),71,A,Kolhapur,December,71
+2025-03-03,Bottle Gourd (Dudhi),63,A,Solapur,December,60
+2025-03-11,Cucumber,36,A,Solapur,March,32
+2025-01-19,Cabbage,97,A,Nashik,July,97
+2025-03-25,Ridge Gourd (Dodka),29,A,Sangli,May,26
+2025-03-26,Green Peas,29,B,Ahmednagar,November,27
+2025-01-04,Beans,76,A,Solapur,May,75
+2025-02-07,Spring Onion,90,B,Satara,October,88
+2025-02-13,Beans,95,B,Satara,June,91
+2025-03-16,Green Chilies,23,B,Solapur,November,20
+2025-01-01,Brinjal (Eggplant),51,A,Nashik,November,50
+2025-03-29,Radish (Mula),93,B,Nashik,February,92
+2025-03-01,Beans,92,B,Nashik,February,90
+2025-01-17,Bottle Gourd (Dudhi),83,A,Ahmednagar,October,81
+2025-01-31,Bitter Gourd (Karela),42,B,Nashik,December,38
+2025-02-16,Spring Onion,93,B,Nashik,November,93
+2025-01-18,Spinach (Palak),110,B,Solapur,May,108
+2025-03-28,Cauliflower,98,B,Kolhapur,June,96
+2025-02-16,Green Peas,91,A,Ahmednagar,November,90
+2025-03-06,Carrot,114,A,Satara,December,109
+2025-03-20,Beans,114,B,Satara,January,109
+2025-03-09,Green Peas,72,B,Ahmednagar,November,71
+2025-02-13,Brinjal (Eggplant),54,B,Pune,May,50
+2025-03-11,Cucumber,87,B,Sangli,December,84
+2025-01-26,Ladyfinger (Bhindi / Okra),68,A,Pune,August,68
+2025-02-17,Bitter Gourd (Karela),48,A,Solapur,April,47
+2025-01-06,Beans,79,A,Pune,May,76
+2025-03-10,Pumpkin,51,B,Ahmednagar,May,48
+2025-03-26,Pumpkin,80,B,Satara,November,80
+2025-02-27,Bottle Gourd (Dudhi),66,A,Ahmednagar,February,65
+2025-02-20,Cabbage,66,B,Ahmednagar,December,64
+2025-02-28,Ridge Gourd (Dodka),33,B,Solapur,January,29
+2025-02-11,Radish (Mula),89,A,Solapur,June,85
+2025-02-05,Ladyfinger (Bhindi / Okra),25,A,Ahmednagar,January,20
+2025-02-10,Cabbage,44,A,Sangli,February,40
+2025-02-11,Beans,57,B,Kolhapur,January,53
+2025-03-20,Bottle Gourd (Dudhi),61,A,Nashik,May,59
+2025-02-06,Coriander (Kothimbir),102,B,Nashik,December,99
+2025-03-01,Fenugreek Leaves (Methi),102,A,Pune,October,99
+2025-03-11,Carrot,111,B,Satara,October,110
+2025-02-05,Beetroot,23,A,Nashik,November,19
+2025-02-27,Pumpkin,46,B,Ahmednagar,May,42
+2025-02-12,Pumpkin,77,B,Ahmednagar,December,76
+2025-01-27,Brinjal (Eggplant),21,B,Ahmednagar,August,18
+2025-01-14,Fenugreek Leaves (Methi),100,B,Kolhapur,June,98
+2025-03-19,Pumpkin,117,A,Ahmednagar,October,116
+2025-03-20,Ridge Gourd (Dodka),63,A,Kolhapur,March,59
+2025-03-29,Cabbage,46,B,Solapur,September,41
+2025-03-22,Carrot,104,B,Satara,April,102
+2025-03-22,Green Peas,66,B,Pune,December,62
+2025-02-19,Pumpkin,73,A,Satara,April,73
+2025-02-24,Spring Onion,85,A,Ahmednagar,October,85
+2025-02-01,Tomato,101,A,Sangli,October,101
+2025-01-31,Cabbage,82,A,Kolhapur,September,80

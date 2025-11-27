@@ -4,6 +4,7 @@ import { useCurrency } from '../../context/CurrencyContext';
 import { useFarmer } from '../../context/FarmerContext';
 import { useNavigate } from 'react-router-dom';
 import ContactNotification from '../ui/ContactNotification';
+import { contactService } from '../../services/contactService';
 
 const InfoItem: React.FC<{ icon: React.ReactNode; children: React.ReactNode }> = ({ icon, children }) => (
     <div className="flex flex-col items-center justify-center gap-2 p-5 text-center">
@@ -106,13 +107,6 @@ const ContactForm: React.FC = () => {
   
     const handleSubmit = async (e: React.FormEvent) => {
       e.preventDefault();
-      
-      // Check if farmer is logged in
-      if (!farmer) {
-        showNotification('error', 'Please sign in to send a message');
-        setTimeout(() => navigate('/signin'), 2000);
-        return;
-      }
 
       // Validate form fields
       if (!formState.name.trim() || !formState.email.trim() || !formState.subject.trim() || !formState.message.trim()) {
@@ -131,8 +125,19 @@ const ContactForm: React.FC = () => {
       showNotification('loading', 'Sending your message...');
 
       try {
-        // Simulate API call - replace with actual API call later
-        await new Promise(resolve => setTimeout(resolve, 1500));
+        // Get location based on currency
+        const location = currency === 'INR' 
+          ? 'India (INR)' 
+          : 'USA (USD)';
+
+        await contactService.sendMessage({
+          name: formState.name,
+          email: formState.email,
+          subject: formState.subject,
+          message: formState.message,
+          location: location,
+          currency: currency,
+        });
 
         showNotification('success', 'We received your message and will get back to you soon!');
         

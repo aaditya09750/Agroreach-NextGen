@@ -16,6 +16,8 @@ const contactRoutes = require('./src/routes/contactRoutes');
 const newsletterRoutes = require('./src/routes/newsletterRoutes');
 const farmerAuthRoutes = require('./src/routes/farmerAuthRoutes');
 const farmerProductRequestRoutes = require('./src/routes/farmerProductRequestRoutes');
+const farmerProductRoutes = require('./src/routes/farmerProductRoutes');
+const farmerRecommendationRoutes = require('./src/routes/farmerRecommendationRoutes');
 const adminProductRequestRoutes = require('./src/routes/adminProductRequestRoutes');
 const adminFarmerRoutes = require('./src/routes/adminFarmerRoutes');
 const errorHandler = require('./src/middleware/errorHandler');
@@ -69,6 +71,8 @@ app.use('/api/contact', contactRoutes);
 app.use('/api/newsletter', newsletterRoutes);
 app.use('/api/farmer/auth', farmerAuthRoutes);
 app.use('/api/farmer/product-requests', farmerProductRequestRoutes);
+app.use('/api/farmer/products', farmerProductRoutes);
+app.use('/api/farmer/recommendations', farmerRecommendationRoutes);
 app.use('/api/admin/product-requests', adminProductRequestRoutes);
 app.use('/api/admin/farmers', adminFarmerRoutes);
 

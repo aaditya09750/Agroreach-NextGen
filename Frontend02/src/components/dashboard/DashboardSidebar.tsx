@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Home, User, ShoppingBag, Brain, HelpCircle, Settings, LogOut } from 'lucide-react';
+import { Home, User, ShoppingBag, Brain, HelpCircle, Settings, LogOut, Package } from 'lucide-react';
 import { useFarmer } from '../../context/FarmerContext';
 
 interface SidebarLinkProps {
@@ -39,6 +39,7 @@ const DashboardSidebar: React.FC = () => {
     { to: '/dashboard', label: 'Overview', icon: <Home size={20} /> },
     { to: '/dashboard/profile', label: 'Profile', icon: <User size={20} /> },
     { to: '/dashboard/sell-product', label: 'Sell Product', icon: <ShoppingBag size={20} /> },
+    { to: '/dashboard/manage-products', label: 'Manage Products', icon: <Package size={20} /> },
     { to: '/dashboard/ai-model', label: 'AI Model', icon: <Brain size={20} /> },
     { to: '/dashboard/help-support', label: 'Help And Support', icon: <HelpCircle size={20} /> },
     { to: '/dashboard/settings', label: 'Settings', icon: <Settings size={20} /> },

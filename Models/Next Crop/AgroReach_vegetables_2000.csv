@@ -1,0 +1,2001 @@
+index,ph,soil_type,previous_crop,area_ha,weather,month,district
+1,6.21,red,Brinjal,2.82,1034mm/33.7C,Sep,Solapur
+2,7.77,loam,Brinjal,1.18,929mm/21.0C,Jun,Osmana bad
+3,7.18,red,Spinach,1.6,685mm/22.2C,Oct,Yavatmal
+4,6.82,alluvial,Radish,3.79,909mm/23.3C,Feb,Nashik
+5,5.62,clay,Cauliflower,2.52,825mm/27.0C,Nov,Chandrapur
+6,5.62,alluvial,Spinach,1.24,1021mm/23.3C,Sep,Beed
+7,5.36,clay,Bitter Gourd,4.84,1019mm/23.7C,Jun,Kolhapur
+8,7.54,black,Pumpkin,3.63,814mm/22.6C,May,Wardha
+9,6.82,sandy,Fenugreek Leaves,4.79,1191mm/15.8C,May,Gondia
+10,7.11,alluvial,Beans,2.25,1169mm/25.2C,Dec,Osmana bad
+11,5.26,red,Cauliflower,2.48,112mm/33.7C,Mar,Osmana bad
+12,7.82,black,Green Chilies,4.51,637mm/21.5C,Jun,Nagpur
+13,7.45,sandy,Pumpkin,2.72,904mm/21.1C,Apr,Gadchiroli
+14,5.77,red,Bottle Gourd,3.59,1158mm/15.8C,Dec,Aurangabad
+15,5.69,loam,Green Peas,1.41,351mm/22.4C,Oct,Latur
+16,5.7,red,Spring Onion,2.34,707mm/31.0C,Feb,Nagpur
+17,6.02,clay,Radish,0.79,784mm/19.8C,Mar,Satara
+18,6.62,clay,Coriander,1.19,389mm/33.6C,Sep,Pune
+19,6.37,loam,Green Chilies,0.2,574mm/28.3C,Nov,Ahmednagar
+20,5.99,black,Carrot,0.39,658mm/29.1C,Nov,Beed
+21,6.85,sandy,Ladyfinger,4.89,702mm/19.7C,Sep,Latur
+22,5.58,red,Green Peas,1.36,874mm/22.8C,Jun,Hingoli
+23,5.99,clay,Cauliflower,3.38,212mm/30.3C,Oct,Pune
+24,6.19,black,Cucumber,4.23,136mm/22.7C,Oct,Nagpur
+25,6.43,loam,Radish,2.84,350mm/25.7C,Sep,Nashik
+26,7.32,alluvial,Pumpkin,0.94,948mm/17.0C,Apr,Sangli
+27,5.74,clay,Coriander,3.69,408mm/31.1C,Nov,Kolhapur
+28,6.59,loam,Fenugreek Leaves,3.08,1001mm/18.8C,May,Latur
+29,6.8,red,Cabbage,3.71,358mm/15.4C,Oct,Latur
+30,5.33,sandy,Green Chilies,3.89,88mm/33.1C,Jun,Parbhani
+31,6.84,clay,Cabbage,4.88,1002mm/22.1C,Sep,Yavatmal
+32,5.66,clay,Ladyfinger,2.95,1155mm/19.6C,May,Gondia
+33,5.38,red,Cabbage,1.84,1154mm/30.9C,Aug,Gondia
+34,7.76,alluvial,Bottle Gourd,3.31,700mm/16.5C,Nov,Pune
+35,7.81,black,Brinjal,0.53,275mm/22.7C,Jan,Nashik
+36,7.38,sandy,Pumpkin,4.51,227mm/27.7C,May,Kolhapur
+37,6.02,clay,Beans,0.77,443mm/32.3C,Oct,Amravati
+38,5.46,sandy,Beans,1.77,481mm/34.9C,Jan,Satara
+39,7.05,clay,Beans,4.12,308mm/32.3C,Oct,Amravati
+40,6.39,sandy,Bottle Gourd,3.07,616mm/30.7C,Jun,Sangli
+41,5.53,loam,Spinach,2.09,1114mm/27.9C,Jul,Ahmednagar
+42,6.54,clay,Ladyfinger,2.47,205mm/33.7C,Dec,Amravati
+43,5.29,sandy,Cabbage,4.3,1192mm/28.8C,May,Satara
+44,7.66,black,Ladyfinger,1.83,768mm/30.9C,Jan,Gondia
+45,5.9,loam,Brinjal,4.37,360mm/24.0C,Jun,Solapur
+46,6.99,loam,Bitter Gourd,0.62,916mm/25.5C,Oct,Solapur
+47,6.04,black,Pumpkin,3.93,226mm/24.7C,May,Buldhana
+48,6.6,sandy,Radish,4.27,709mm/24.3C,Jun,Solapur
+49,6.68,red,Spinach,1.07,223mm/31.1C,Nov,Gadchiroli
+50,5.7,black,Beetroot,2.27,93mm/26.1C,Oct,Satara
+51,7.82,sandy,Ladyfinger,0.99,937mm/20.7C,Jul,Sangli
+52,7.29,black,Carrot,3.59,543mm/30.6C,Jul,Buldhana
+53,7.74,black,Beetroot,2.77,702mm/27.0C,Feb,Nagpur
+54,7.62,clay,Radish,3.25,151mm/25.0C,Dec,Solapur
+55,6.81,sandy,Cucumber,1.14,153mm/18.7C,Mar,Buldhana
+56,7.69,red,Bitter Gourd,1.22,576mm/15.3C,Dec,Yavatmal
+57,5.44,clay,Coriander,0.4,659mm/34.5C,Jun,Gadchiroli
+58,5.73,black,Cucumber,1.75,452mm/25.1C,Mar,Yavatmal
+59,5.32,alluvial,Coriander,2.89,403mm/26.5C,Feb,Latur
+60,6.08,black,Tomato,4.32,815mm/32.5C,Apr,Gadchiroli
+61,6.25,black,Bottle Gourd,3.4,425mm/29.8C,May,Yavatmal
+62,5.93,sandy,Ridge Gourd,2.29,798mm/24.2C,Nov,Pune
+63,7.44,sandy,Bottle Gourd,4.77,743mm/26.8C,Oct,Solapur
+64,6.16,clay,Fenugreek Leaves,3.65,90mm/27.4C,Sep,Nashik
+65,5.96,red,Green Peas,4.66,1118mm/15.8C,Mar,Jalgaon
+66,6.67,clay,Cabbage,2.73,490mm/16.8C,Mar,Parbhani
+67,5.58,loam,Green Peas,1.44,1155mm/30.1C,Jun,Jalgaon
+68,7.37,black,Bitter Gourd,0.45,656mm/17.5C,May,Aurangabad
+69,5.4,alluvial,Bitter Gourd,3.69,1068mm/15.9C,Jun,Hingoli
+70,7.86,black,Fenugreek Leaves,0.78,822mm/32.8C,Jul,Akola
+71,7.29,black,Cucumber,1.65,283mm/19.0C,Nov,Akola
+72,5.74,clay,Spring Onion,2.76,1019mm/34.9C,Mar,Gadchiroli
+73,5.21,alluvial,Green Chilies,2.91,1157mm/20.2C,May,Kolhapur
+74,7.4,alluvial,Spring Onion,3.08,1134mm/24.7C,Aug,Chandrapur
+75,7.11,alluvial,Ladyfinger,1.0,184mm/19.9C,Apr,Ahmednagar
+76,7.17,clay,Tomato,2.02,332mm/23.3C,Oct,Ahmednagar
+77,7.28,black,Beans,3.16,628mm/33.4C,Feb,Yavatmal
+78,5.4,clay,Tomato,4.86,378mm/18.8C,Apr,Ahmednagar
+79,6.17,sandy,Green Chilies,3.69,180mm/33.2C,Feb,Solapur
+80,5.51,sandy,Cucumber,4.63,915mm/21.5C,Mar,Osmana bad
+81,7.53,clay,Coriander,3.86,953mm/29.0C,Apr,Osmana bad
+82,6.88,alluvial,Bitter Gourd,3.04,526mm/30.5C,Apr,Akola
+83,6.09,black,Green Chilies,1.12,521mm/16.6C,Oct,Sangli
+84,5.37,clay,Ridge Gourd,3.4,752mm/16.4C,Sep,Hingoli
+85,6.04,clay,Beetroot,3.19,1088mm/24.6C,Oct,Parbhani
+86,6.08,clay,Pumpkin,3.09,1089mm/33.9C,Jun,Wardha
+87,7.17,loam,Cucumber,2.55,918mm/33.2C,Sep,Nanded
+88,6.92,sandy,Ridge Gourd,2.74,917mm/25.5C,Apr,Nanded
+89,7.6,alluvial,Beans,1.81,165mm/29.8C,Sep,Pune
+90,6.47,red,Green Peas,2.69,392mm/18.9C,Nov,Satara
+91,5.52,alluvial,Beans,1.15,984mm/17.5C,Sep,Aurangabad
+92,7.13,red,Bottle Gourd,4.06,210mm/28.1C,Jun,Gondia
+93,7.25,loam,Cucumber,1.09,868mm/30.5C,May,Gadchiroli
+94,6.72,clay,Beetroot,0.61,259mm/15.9C,Mar,Wardha
+95,7.28,loam,Spinach,2.29,1199mm/19.4C,May,Gondia
+96,6.53,loam,Beans,3.36,444mm/16.5C,Mar,Kolhapur
+97,6.61,black,Brinjal,2.3,879mm/30.4C,May,Amravati
+98,6.35,sandy,Tomato,1.53,491mm/34.2C,May,Nashik
+99,5.27,red,Cucumber,2.88,197mm/31.4C,Feb,Wardha
+100,5.49,clay,Pumpkin,1.87,670mm/31.5C,Sep,Pune
+101,5.28,red,Spring Onion,4.68,186mm/21.4C,Jul,Nanded
+102,6.92,alluvial,Ladyfinger,4.63,469mm/21.3C,Jun,Pune
+103,6.05,red,Brinjal,2.61,948mm/29.7C,May,Nanded
+104,6.57,alluvial,Cabbage,1.77,1013mm/23.2C,Apr,Chandrapur
+105,7.65,sandy,Coriander,3.74,683mm/25.0C,Aug,Sangli
+106,5.87,alluvial,Bottle Gourd,0.38,1176mm/27.2C,Feb,Nanded
+107,6.31,red,Coriander,2.48,939mm/20.5C,Aug,Kolhapur
+108,7.24,red,Bitter Gourd,1.81,92mm/31.4C,Jan,Solapur
+109,5.82,alluvial,Pumpkin,4.62,1154mm/22.6C,Oct,Ahmednagar
+110,5.41,loam,Bottle Gourd,0.26,201mm/16.9C,Jan,Amravati
+111,5.98,sandy,Radish,2.85,617mm/34.2C,Mar,Gadchiroli
+112,5.64,black,Coriander,3.76,455mm/24.1C,May,Amravati
+113,7.71,clay,Spring Onion,2.53,435mm/25.0C,Jun,Hingoli
+114,7.38,red,Brinjal,0.61,1147mm/17.7C,Apr,Parbhani
+115,6.91,clay,Carrot,4.87,202mm/30.4C,Jul,Aurangabad
+116,7.55,black,Brinjal,2.69,409mm/24.6C,Jul,Satara
+117,7.37,clay,Pumpkin,3.15,402mm/26.9C,Feb,Kolhapur
+118,5.7,black,Coriander,1.34,1192mm/25.0C,Feb,Kolhapur
+119,7.61,alluvial,Cucumber,2.52,873mm/33.3C,Feb,Hingoli
+120,6.66,loam,Ridge Gourd,2.26,618mm/24.7C,Feb,Beed
+121,7.38,red,Beetroot,0.56,336mm/18.5C,Sep,Satara
+122,7.62,black,Radish,0.71,950mm/32.7C,May,Satara
+123,6.06,clay,Fenugreek Leaves,4.22,888mm/19.5C,Nov,Pune
+124,5.5,red,Bitter Gourd,1.35,350mm/33.6C,Aug,Hingoli
+125,5.82,loam,Brinjal,1.14,647mm/27.7C,May,Kolhapur
+126,6.35,alluvial,Coriander,2.62,438mm/25.4C,Nov,Gondia
+127,7.41,red,Coriander,3.89,877mm/24.8C,May,Satara
+128,7.52,black,Pumpkin,0.5,290mm/22.7C,Jan,Amravati
+129,5.22,loam,Green Chilies,2.97,822mm/24.1C,Jun,Nanded
+130,6.58,clay,Cabbage,0.77,1126mm/20.3C,Apr,Nanded
+131,6.33,loam,Carrot,0.38,375mm/32.1C,Mar,Hingoli
+132,5.8,loam,Fenugreek Leaves,0.45,760mm/27.2C,Jun,Sangli
+133,5.52,sandy,Carrot,4.2,282mm/17.1C,Feb,Nagpur
+134,6.11,loam,Brinjal,0.77,323mm/15.2C,Aug,Wardha
+135,7.75,loam,Spinach,0.42,1150mm/33.9C,Jan,Chandrapur
+136,6.07,red,Cabbage,2.3,1116mm/17.6C,Dec,Amravati
+137,6.6,clay,Brinjal,4.25,444mm/34.4C,Sep,Solapur
+138,7.1,red,Spring Onion,1.46,152mm/25.9C,Aug,Nashik
+139,6.18,red,Pumpkin,2.22,1149mm/21.9C,Jan,Wardha
+140,7.82,black,Carrot,0.39,287mm/16.5C,Oct,Wardha
+141,7.8,red,Brinjal,2.36,203mm/20.7C,Dec,Osmana bad
+142,5.88,sandy,Ridge Gourd,2.97,622mm/22.4C,Sep,Sangli
+143,6.54,sandy,Spinach,2.94,978mm/28.9C,Feb,Latur
+144,6.01,black,Green Chilies,1.8,861mm/28.2C,Mar,Jalgaon
+145,5.97,alluvial,Green Chilies,1.71,990mm/34.4C,Feb,Yavatmal
+146,5.3,clay,Carrot,0.71,911mm/15.4C,Aug,Buldhana
+147,6.85,clay,Ladyfinger,1.96,705mm/28.9C,Feb,Pune
+148,6.56,red,Beetroot,0.68,1077mm/16.1C,Oct,Ahmednagar
+149,5.34,red,Fenugreek Leaves,3.88,246mm/32.3C,Feb,Buldhana
+150,5.95,alluvial,Radish,4.84,1168mm/31.2C,Jan,Ahmednagar
+151,7.65,red,Cabbage,4.86,826mm/20.3C,Jul,Yavatmal
+152,5.85,clay,Spring Onion,4.35,474mm/21.4C,Dec,Pune
+153,5.59,loam,Cucumber,3.08,702mm/34.7C,Feb,Osmana bad
+154,6.52,sandy,Ridge Gourd,3.56,612mm/23.9C,Oct,Nashik
+155,7.86,loam,Brinjal,1.57,218mm/21.5C,May,Amravati
+156,5.85,loam,Brinjal,3.23,464mm/28.4C,May,Akola
+157,7.01,clay,Beetroot,2.39,284mm/21.5C,Mar,Satara
+158,7.26,loam,Beetroot,2.51,1061mm/16.6C,Mar,Amravati
+159,5.84,alluvial,Brinjal,3.84,938mm/22.7C,Dec,Satara
+160,7.17,black,Ladyfinger,1.55,1053mm/23.9C,Mar,Amravati
+161,6.19,red,Green Chilies,1.73,404mm/17.5C,Jun,Sangli
+162,6.91,black,Cauliflower,4.64,367mm/27.8C,Apr,Parbhani
+163,6.91,sandy,Cauliflower,0.47,1046mm/15.6C,Mar,Wardha
+164,6.65,red,Cabbage,2.53,793mm/32.5C,Feb,Aurangabad
+165,5.44,loam,Carrot,4.58,1005mm/23.6C,Mar,Gondia
+166,7.46,sandy,Tomato,3.13,336mm/34.9C,Apr,Gadchiroli
+167,6.07,red,Green Peas,2.82,117mm/16.0C,Jun,Beed
+168,5.7,alluvial,Fenugreek Leaves,1.4,540mm/17.8C,Apr,Aurangabad
+169,5.31,alluvial,Tomato,1.85,436mm/19.2C,Aug,Jalgaon
+170,6.8,alluvial,Bitter Gourd,4.29,648mm/25.9C,Mar,Jalgaon
+171,7.03,alluvial,Beans,2.88,512mm/34.0C,Dec,Ahmednagar
+172,5.24,loam,Ladyfinger,2.67,656mm/21.8C,Mar,Amravati
+173,6.58,black,Beetroot,0.68,981mm/17.1C,Mar,Nagpur
+174,5.81,red,Bitter Gourd,0.28,872mm/27.9C,Aug,Satara
+175,6.94,loam,Radish,4.83,569mm/34.6C,Apr,Aurangabad
+176,5.67,alluvial,Ridge Gourd,2.01,128mm/28.1C,Jan,Latur
+177,7.07,black,Ridge Gourd,3.1,492mm/34.3C,Feb,Solapur
+178,6.24,sandy,Beetroot,0.58,499mm/22.5C,Oct,Aurangabad
+179,7.73,sandy,Spring Onion,3.48,923mm/16.4C,Feb,Akola
+180,5.57,sandy,Beetroot,4.68,513mm/31.7C,Mar,Jalgaon
+181,6.12,alluvial,Pumpkin,2.96,136mm/24.6C,Jun,Akola
+182,5.51,sandy,Tomato,0.81,1056mm/15.6C,Aug,Sangli
+183,7.7,clay,Brinjal,2.99,125mm/23.8C,Dec,Aurangabad
+184,7.57,red,Bitter Gourd,3.88,496mm/21.1C,Jan,Osmana bad
+185,5.9,red,Ladyfinger,2.15,326mm/15.1C,Sep,Ahmednagar
+186,6.98,alluvial,Beans,4.42,871mm/34.8C,Jan,Pune
+187,7.41,clay,Spring Onion,3.31,453mm/27.1C,Oct,Solapur
+188,6.7,loam,Cucumber,4.52,817mm/23.9C,Feb,Pune
+189,6.63,loam,Coriander,3.19,1191mm/32.4C,Mar,Wardha
+190,5.85,sandy,Bottle Gourd,0.83,680mm/23.1C,Jul,Satara
+191,5.45,black,Bottle Gourd,1.69,618mm/29.9C,Sep,Nashik
+192,7.62,loam,Spinach,1.17,140mm/29.8C,Mar,Pune
+193,7.63,black,Green Chilies,4.56,91mm/26.5C,Aug,Pune
+194,6.91,red,Radish,3.85,111mm/26.1C,Sep,Solapur
+195,6.12,black,Cucumber,3.45,316mm/16.1C,Oct,Gondia
+196,6.14,red,Spinach,1.64,637mm/34.9C,Jul,Hingoli
+197,7.16,clay,Fenugreek Leaves,1.08,1183mm/16.0C,Apr,Pune
+198,7.62,clay,Brinjal,3.83,1066mm/18.9C,Apr,Akola
+199,7.6,alluvial,Beans,2.48,552mm/25.7C,Apr,Gadchiroli
+200,7.31,alluvial,Ladyfinger,1.28,191mm/25.2C,Jun,Gadchiroli
+201,6.93,sandy,Beans,3.16,462mm/23.5C,Apr,Jalgaon
+202,5.43,loam,Brinjal,0.39,1005mm/17.5C,May,Aurangabad
+203,5.64,sandy,Spring Onion,1.77,196mm/29.1C,Sep,Nanded
+204,7.63,red,Beans,2.45,194mm/26.1C,Dec,Nanded
+205,6.84,sandy,Beans,0.91,893mm/15.8C,Jul,Parbhani
+206,5.22,black,Radish,4.93,723mm/18.2C,Aug,Parbhani
+207,5.47,red,Spring Onion,1.2,1001mm/16.5C,May,Amravati
+208,6.99,alluvial,Spring Onion,0.83,226mm/34.7C,May,Gondia
+209,5.21,clay,Pumpkin,1.18,764mm/29.3C,Nov,Buldhana
+210,5.63,alluvial,Ridge Gourd,3.89,454mm/32.5C,Jul,Latur
+211,6.68,loam,Brinjal,2.24,583mm/20.4C,Nov,Nashik
+212,7.07,red,Green Peas,2.91,947mm/22.8C,Dec,Nanded
+213,6.96,red,Pumpkin,0.3,759mm/22.5C,Aug,Chandrapur
+214,5.81,black,Bottle Gourd,0.37,540mm/25.3C,Sep,Chandrapur
+215,7.12,loam,Bitter Gourd,2.34,543mm/33.0C,Feb,Parbhani
+216,5.84,clay,Pumpkin,4.12,1105mm/25.4C,Mar,Pune
+217,6.08,red,Cauliflower,4.45,151mm/17.0C,Dec,Pune
+218,7.22,red,Coriander,0.62,416mm/16.6C,Dec,Latur
+219,6.95,black,Carrot,2.78,274mm/22.3C,Feb,Yavatmal
+220,7.49,sandy,Spring Onion,4.58,732mm/26.8C,Oct,Buldhana
+221,6.98,clay,Green Chilies,2.06,984mm/28.7C,Jul,Nagpur
+222,6.73,alluvial,Cabbage,4.18,645mm/18.5C,Dec,Amravati
+223,5.45,loam,Radish,0.84,652mm/26.2C,Feb,Satara
+224,6.19,red,Bitter Gourd,4.69,321mm/21.5C,Dec,Gadchiroli
+225,5.92,red,Beans,3.81,1183mm/15.5C,Feb,Gadchiroli
+226,5.86,alluvial,Bitter Gourd,4.72,845mm/23.5C,Feb,Sangli
+227,7.83,clay,Ridge Gourd,3.45,975mm/16.6C,Dec,Gondia
+228,6.26,sandy,Spring Onion,1.94,767mm/31.2C,Apr,Chandrapur
+229,7.61,red,Green Peas,4.7,126mm/26.2C,Jan,Beed
+230,6.9,clay,Ladyfinger,1.52,698mm/31.3C,Feb,Ahmednagar
+231,7.35,alluvial,Radish,1.79,202mm/15.4C,Mar,Osmana bad
+232,6.56,black,Radish,3.56,920mm/16.3C,Jul,Jalgaon
+233,6.76,sandy,Cabbage,3.87,686mm/18.0C,Oct,Pune
+234,6.53,loam,Carrot,4.66,645mm/23.1C,Jan,Solapur
+235,5.73,red,Ridge Gourd,1.18,1044mm/26.7C,Jun,Osmana bad
+236,7.15,clay,Brinjal,4.03,1162mm/28.4C,Mar,Sangli
+237,5.96,black,Spinach,3.75,905mm/21.7C,Mar,Beed
+238,5.27,loam,Beetroot,0.51,736mm/16.8C,Apr,Osmana bad
+239,6.94,clay,Green Peas,2.06,390mm/22.1C,Apr,Nanded
+240,5.68,clay,Ladyfinger,1.56,336mm/31.5C,Jul,Akola
+241,7.74,loam,Spinach,1.66,131mm/25.9C,Mar,Wardha
+242,7.78,black,Spring Onion,4.92,1170mm/18.6C,Aug,Nagpur
+243,7.67,alluvial,Beetroot,3.29,379mm/17.3C,Aug,Buldhana
+244,6.2,black,Cucumber,3.64,911mm/18.9C,Nov,Nashik
+245,5.24,sandy,Cabbage,4.89,1171mm/22.8C,Jul,Aurangabad
+246,7.71,red,Spring Onion,2.01,1154mm/26.1C,Feb,Chandrapur
+247,6.36,loam,Bitter Gourd,4.05,670mm/17.0C,May,Gadchiroli
+248,7.81,alluvial,Green Chilies,2.29,665mm/28.3C,Jun,Solapur
+249,7.8,loam,Spring Onion,4.37,263mm/29.1C,Dec,Parbhani
+250,7.5,loam,Coriander,1.07,208mm/24.2C,Oct,Aurangabad
+251,6.0,black,Green Chilies,4.75,580mm/23.6C,Apr,Latur
+252,6.24,red,Beans,1.25,571mm/31.9C,Oct,Ahmednagar
+253,7.5,sandy,Beans,1.77,1170mm/19.2C,May,Gadchiroli
+254,6.06,clay,Beans,3.83,364mm/15.1C,Sep,Jalgaon
+255,5.66,clay,Ladyfinger,2.09,268mm/33.2C,Nov,Nashik
+256,6.7,loam,Beans,3.12,467mm/24.0C,Jul,Amravati
+257,7.73,red,Brinjal,2.33,496mm/21.8C,Feb,Beed
+258,7.08,alluvial,Ridge Gourd,3.76,466mm/31.8C,Nov,Latur
+259,6.74,black,Beans,1.3,742mm/18.4C,Jan,Gondia
+260,5.46,red,Cabbage,0.48,292mm/32.9C,Feb,Latur
+261,6.86,red,Green Peas,1.64,373mm/27.1C,Mar,Latur
+262,7.87,black,Radish,2.48,620mm/35.0C,Nov,Nashik
+263,5.58,loam,Fenugreek Leaves,1.01,530mm/23.1C,Feb,Osmana bad
+264,6.6,red,Bottle Gourd,1.9,1164mm/21.4C,Nov,Buldhana
+265,7.57,clay,Fenugreek Leaves,2.12,869mm/22.3C,Mar,Amravati
+266,7.2,black,Green Chilies,0.48,970mm/22.4C,Oct,Yavatmal
+267,7.08,alluvial,Fenugreek Leaves,3.0,223mm/26.1C,Nov,Wardha
+268,7.1,sandy,Beetroot,4.44,1077mm/31.7C,Nov,Wardha
+269,6.17,loam,Cucumber,0.93,134mm/31.7C,Dec,Parbhani
+270,5.99,black,Spinach,3.07,876mm/21.7C,Dec,Osmana bad
+271,7.39,sandy,Brinjal,3.39,159mm/15.4C,Sep,Kolhapur
+272,7.39,sandy,Ridge Gourd,2.21,637mm/29.0C,Apr,Osmana bad
+273,7.54,alluvial,Green Chilies,3.57,551mm/15.3C,Dec,Akola
+274,7.67,red,Cucumber,2.17,668mm/23.9C,Sep,Buldhana
+275,6.58,alluvial,Cabbage,2.62,643mm/17.8C,Nov,Buldhana
+276,6.55,red,Beans,0.24,546mm/24.9C,Mar,Ahmednagar
+277,7.36,red,Ridge Gourd,3.52,1071mm/20.0C,Dec,Parbhani
+278,6.95,black,Coriander,3.37,1073mm/23.4C,Jan,Nagpur
+279,7.1,black,Ladyfinger,0.38,146mm/32.7C,Nov,Chandrapur
+280,7.35,loam,Pumpkin,1.97,782mm/22.9C,May,Sangli
+281,7.6,red,Radish,4.9,742mm/26.4C,Oct,Aurangabad
+282,6.11,sandy,Tomato,2.22,391mm/27.1C,Oct,Kolhapur
+283,6.21,clay,Cabbage,2.61,1044mm/32.3C,Feb,Gondia
+284,5.45,loam,Cabbage,4.57,535mm/23.1C,Apr,Satara
+285,6.76,black,Spinach,3.64,211mm/31.7C,Feb,Gadchiroli
+286,5.3,alluvial,Cauliflower,2.99,1008mm/20.5C,Feb,Latur
+287,6.46,loam,Bottle Gourd,4.03,713mm/33.9C,Mar,Solapur
+288,6.67,loam,Pumpkin,4.35,851mm/20.1C,May,Gadchiroli
+289,5.97,loam,Beetroot,2.39,591mm/27.1C,Apr,Jalgaon
+290,6.8,loam,Carrot,2.48,368mm/18.7C,Feb,Kolhapur
+291,5.28,clay,Ladyfinger,2.05,607mm/34.9C,Nov,Akola
+292,5.3,alluvial,Beans,4.84,1190mm/24.8C,Oct,Buldhana
+293,7.42,alluvial,Radish,3.55,878mm/20.7C,Feb,Kolhapur
+294,6.17,alluvial,Bitter Gourd,0.6,91mm/30.0C,Jun,Nashik
+295,5.54,red,Cabbage,4.34,920mm/16.1C,Jul,Nanded
+296,6.61,sandy,Bitter Gourd,2.51,185mm/26.2C,Dec,Latur
+297,7.28,alluvial,Bitter Gourd,0.53,925mm/30.8C,Oct,Kolhapur
+298,5.78,loam,Green Peas,2.84,560mm/20.5C,Jun,Nanded
+299,6.88,loam,Bottle Gourd,2.2,977mm/20.2C,Jul,Buldhana
+300,5.43,alluvial,Radish,4.41,718mm/22.7C,Jan,Yavatmal
+301,5.34,alluvial,Cauliflower,1.18,894mm/18.0C,Jun,Satara
+302,6.63,loam,Beans,4.17,496mm/31.8C,Nov,Gondia
+303,6.66,red,Spring Onion,2.88,164mm/30.8C,Mar,Nagpur
+304,6.92,black,Beetroot,0.46,547mm/31.5C,Jan,Gadchiroli
+305,7.16,black,Bottle Gourd,4.86,1076mm/22.9C,Aug,Satara
+306,7.83,alluvial,Pumpkin,2.66,552mm/32.5C,Apr,Nanded
+307,6.59,clay,Cauliflower,1.6,354mm/26.8C,Oct,Satara
+308,6.07,alluvial,Ladyfinger,2.45,569mm/34.2C,Aug,Aurangabad
+309,7.35,alluvial,Ladyfinger,4.32,608mm/30.6C,Oct,Wardha
+310,5.93,black,Cucumber,1.66,565mm/33.8C,Nov,Nanded
+311,6.39,loam,Carrot,1.12,1187mm/29.1C,Apr,Yavatmal
+312,5.41,alluvial,Green Peas,0.82,386mm/26.5C,Apr,Gondia
+313,5.27,loam,Coriander,1.63,519mm/28.2C,Dec,Nanded
+314,7.8,loam,Pumpkin,3.94,343mm/25.6C,Oct,Pune
+315,7.46,clay,Beetroot,2.46,500mm/24.0C,Apr,Chandrapur
+316,7.08,loam,Pumpkin,1.29,1072mm/25.9C,Jun,Buldhana
+317,6.3,black,Green Peas,1.0,83mm/25.6C,Sep,Yavatmal
+318,5.67,red,Fenugreek Leaves,1.8,1065mm/31.4C,May,Gadchiroli
+319,5.62,red,Beans,4.71,1140mm/17.3C,Dec,Parbhani
+320,5.88,sandy,Bottle Gourd,1.85,1134mm/25.0C,Oct,Pune
+321,6.68,alluvial,Bottle Gourd,4.94,1114mm/33.4C,Aug,Solapur
+322,7.13,black,Radish,2.53,245mm/29.7C,Aug,Wardha
+323,6.98,loam,Radish,1.06,1122mm/34.0C,Apr,Pune
+324,5.96,red,Green Chilies,4.48,624mm/29.9C,Nov,Osmana bad
+325,7.78,black,Cucumber,2.41,271mm/23.2C,Oct,Solapur
+326,7.19,red,Carrot,3.61,659mm/26.6C,Sep,Nagpur
+327,6.7,loam,Bottle Gourd,4.92,716mm/24.8C,Sep,Solapur
+328,6.85,red,Ridge Gourd,0.44,1162mm/29.1C,May,Wardha
+329,6.33,alluvial,Fenugreek Leaves,0.66,575mm/22.4C,Jun,Hingoli
+330,5.87,alluvial,Green Peas,3.66,88mm/17.4C,May,Osmana bad
+331,6.16,sandy,Beans,1.55,352mm/24.8C,Mar,Kolhapur
+332,7.25,sandy,Bottle Gourd,1.08,1111mm/19.4C,Nov,Nanded
+333,5.24,red,Cucumber,0.39,1136mm/16.5C,Aug,Wardha
+334,5.51,black,Cucumber,0.3,597mm/33.9C,Sep,Pune
+335,5.32,alluvial,Coriander,3.92,596mm/29.5C,Apr,Pune
+336,5.31,black,Coriander,0.85,768mm/17.4C,Sep,Yavatmal
+337,7.51,black,Bottle Gourd,2.45,418mm/31.2C,Sep,Osmana bad
+338,7.1,red,Spinach,3.11,466mm/19.6C,Jul,Pune
+339,6.48,black,Pumpkin,2.26,585mm/20.6C,Aug,Kolhapur
+340,5.46,alluvial,Cucumber,0.33,759mm/18.5C,Mar,Sangli
+341,6.53,loam,Beans,3.96,769mm/26.6C,May,Parbhani
+342,6.48,sandy,Beans,0.25,702mm/21.4C,Mar,Sangli
+343,5.67,loam,Cucumber,3.86,1032mm/32.0C,Jul,Yavatmal
+344,6.37,black,Ridge Gourd,4.49,574mm/21.7C,Jun,Nanded
+345,6.28,loam,Coriander,2.28,826mm/20.9C,Nov,Beed
+346,6.86,alluvial,Cabbage,2.77,424mm/31.8C,Mar,Pune
+347,6.91,alluvial,Coriander,2.49,899mm/27.8C,Sep,Wardha
+348,5.32,black,Ladyfinger,2.07,667mm/29.9C,Dec,Gadchiroli
+349,6.21,red,Radish,4.46,424mm/18.8C,Jan,Latur
+350,6.89,loam,Green Chilies,4.49,775mm/26.3C,Oct,Nagpur
+351,6.56,red,Spring Onion,1.81,248mm/29.6C,Mar,Solapur
+352,7.51,red,Cauliflower,3.15,112mm/25.3C,Nov,Chandrapur
+353,6.98,clay,Spring Onion,4.65,472mm/23.8C,Oct,Nagpur
+354,5.64,black,Green Peas,4.82,1025mm/17.3C,Nov,Wardha
+355,5.39,sandy,Fenugreek Leaves,2.64,1120mm/25.5C,Jul,Ahmednagar
+356,6.93,alluvial,Bottle Gourd,2.37,146mm/31.8C,Mar,Latur
+357,5.27,alluvial,Bottle Gourd,1.54,914mm/15.9C,Mar,Sangli
+358,6.78,black,Cabbage,4.8,316mm/17.6C,Feb,Satara
+359,7.74,sandy,Beetroot,0.89,552mm/34.5C,Sep,Beed
+360,6.75,alluvial,Radish,2.98,632mm/23.8C,Nov,Sangli
+361,6.25,black,Spring Onion,1.56,396mm/30.1C,Apr,Chandrapur
+362,6.94,alluvial,Spring Onion,1.54,965mm/19.0C,Oct,Chandrapur
+363,6.44,red,Bottle Gourd,2.14,337mm/30.6C,Jun,Sangli
+364,6.67,loam,Radish,4.99,836mm/32.8C,Feb,Satara
+365,7.74,loam,Fenugreek Leaves,0.46,1162mm/31.2C,Sep,Buldhana
+366,6.24,alluvial,Tomato,2.98,339mm/17.2C,Jul,Nagpur
+367,7.8,clay,Tomato,0.6,174mm/24.5C,Oct,Osmana bad
+368,7.64,sandy,Bitter Gourd,0.94,333mm/15.8C,May,Pune
+369,5.73,sandy,Bottle Gourd,2.31,807mm/31.8C,Jul,Sangli
+370,5.39,sandy,Radish,2.65,148mm/25.0C,Apr,Sangli
+371,5.47,red,Beans,1.44,168mm/15.6C,Oct,Hingoli
+372,5.25,sandy,Beetroot,1.72,292mm/28.9C,Jul,Satara
+373,5.45,loam,Bottle Gourd,0.62,991mm/23.3C,Feb,Gondia
+374,7.04,red,Ridge Gourd,1.66,412mm/30.4C,Jul,Kolhapur
+375,5.39,black,Beans,4.84,1084mm/21.4C,Apr,Nashik
+376,6.06,sandy,Beans,4.73,506mm/34.7C,Apr,Gondia
+377,7.48,sandy,Bitter Gourd,1.81,233mm/33.7C,Jan,Aurangabad
+378,5.26,black,Bottle Gourd,2.94,1180mm/20.3C,Dec,Amravati
+379,7.4,sandy,Green Peas,4.57,658mm/25.6C,Mar,Akola
+380,5.96,black,Green Chilies,0.23,242mm/26.1C,May,Akola
+381,5.52,red,Radish,4.09,274mm/16.9C,May,Chandrapur
+382,7.08,loam,Pumpkin,4.75,438mm/20.4C,Feb,Nashik
+383,6.9,black,Spinach,0.64,506mm/21.2C,Apr,Ahmednagar
+384,7.57,clay,Beetroot,0.97,565mm/29.4C,Jan,Pune
+385,7.18,black,Radish,4.81,409mm/29.8C,Sep,Gondia
+386,7.37,sandy,Green Peas,2.78,1070mm/20.1C,Jan,Akola
+387,5.96,red,Bottle Gourd,0.27,371mm/26.6C,Jun,Buldhana
+388,5.68,alluvial,Beetroot,1.44,826mm/23.3C,Jul,Solapur
+389,7.23,red,Ridge Gourd,2.36,169mm/33.0C,Mar,Nagpur
+390,7.38,alluvial,Beetroot,3.53,560mm/20.5C,Dec,Latur
+391,7.87,black,Bottle Gourd,3.72,752mm/17.0C,Jan,Buldhana
+392,6.31,loam,Brinjal,4.98,861mm/28.9C,Jul,Ahmednagar
+393,6.2,clay,Pumpkin,1.58,418mm/26.1C,Mar,Nagpur
+394,7.3,red,Radish,2.78,979mm/24.6C,Oct,Osmana bad
+395,6.12,sandy,Beans,2.76,686mm/31.8C,Dec,Osmana bad
+396,7.71,alluvial,Carrot,2.15,1156mm/21.5C,Dec,Amravati
+397,7.52,sandy,Spring Onion,1.01,582mm/19.7C,Jun,Pune
+398,6.36,loam,Bitter Gourd,4.89,901mm/26.6C,Dec,Pune
+399,7.23,alluvial,Cauliflower,4.3,244mm/17.9C,Jun,Aurangabad
+400,7.24,red,Spring Onion,2.59,1173mm/33.4C,Dec,Chandrapur
+401,5.48,black,Cabbage,3.1,98mm/18.5C,Apr,Akola
+402,7.64,sandy,Ladyfinger,1.29,1125mm/26.3C,Dec,Satara
+403,6.56,loam,Spring Onion,2.81,529mm/17.8C,Nov,Pune
+404,7.43,red,Tomato,3.54,1151mm/23.4C,Jun,Wardha
+405,6.06,red,Spring Onion,2.67,800mm/33.7C,Nov,Beed
+406,7.62,red,Cauliflower,4.95,186mm/31.1C,Oct,Amravati
+407,6.25,red,Bitter Gourd,3.13,1189mm/17.8C,Apr,Latur
+408,5.23,alluvial,Tomato,1.98,977mm/16.8C,Aug,Parbhani
+409,7.64,red,Ladyfinger,3.91,917mm/26.3C,Sep,Sangli
+410,5.45,sandy,Coriander,1.02,681mm/19.2C,Feb,Solapur
+411,6.06,loam,Brinjal,2.05,619mm/26.6C,Jul,Parbhani
+412,7.77,alluvial,Spinach,1.87,103mm/27.1C,Sep,Buldhana
+413,7.77,red,Pumpkin,2.27,1159mm/29.7C,Sep,Satara
+414,6.75,clay,Cauliflower,3.95,258mm/24.3C,Dec,Amravati
+415,6.91,clay,Bitter Gourd,2.52,872mm/15.9C,May,Kolhapur
+416,6.41,loam,Ladyfinger,4.01,889mm/28.2C,Jan,Jalgaon
+417,5.99,black,Tomato,2.97,728mm/31.3C,Jun,Nagpur
+418,6.09,black,Bottle Gourd,1.84,555mm/25.4C,Aug,Akola
+419,7.02,alluvial,Ridge Gourd,4.09,249mm/30.0C,Jan,Amravati
+420,7.23,alluvial,Beans,1.34,549mm/34.2C,Feb,Nashik
+421,7.34,alluvial,Beans,1.28,1121mm/32.8C,Jan,Nanded
+422,7.33,black,Ladyfinger,2.62,707mm/15.3C,May,Pune
+423,5.45,clay,Tomato,1.45,535mm/26.5C,Feb,Yavatmal
+424,6.53,black,Brinjal,0.24,890mm/29.3C,Oct,Yavatmal
+425,5.36,sandy,Beans,3.31,790mm/27.5C,Oct,Aurangabad
+426,6.68,red,Cabbage,2.65,367mm/30.8C,Apr,Buldhana
+427,6.39,alluvial,Carrot,2.34,578mm/17.1C,Jan,Wardha
+428,7.6,clay,Brinjal,4.84,382mm/21.8C,Jul,Wardha
+429,6.15,loam,Green Peas,2.94,517mm/29.2C,Aug,Latur
+430,5.52,loam,Brinjal,4.34,912mm/21.0C,May,Kolhapur
+431,5.59,red,Radish,0.87,841mm/19.6C,Feb,Wardha
+432,7.26,clay,Tomato,2.93,546mm/27.6C,Aug,Beed
+433,6.87,black,Beans,4.37,754mm/23.7C,Jan,Solapur
+434,5.47,black,Cucumber,3.0,217mm/24.1C,Jul,Kolhapur
+435,5.43,sandy,Beetroot,3.65,307mm/32.6C,Jan,Chandrapur
+436,7.09,sandy,Cucumber,1.99,907mm/20.7C,Dec,Parbhani
+437,5.4,black,Green Chilies,0.64,381mm/33.5C,Jun,Wardha
+438,7.42,loam,Bottle Gourd,2.4,612mm/26.6C,Jun,Buldhana
+439,7.11,alluvial,Carrot,2.09,523mm/34.1C,May,Parbhani
+440,5.42,loam,Beans,4.36,818mm/17.9C,Feb,Aurangabad
+441,5.43,sandy,Cauliflower,1.37,1062mm/20.3C,Feb,Parbhani
+442,7.86,red,Radish,4.84,103mm/24.1C,Sep,Yavatmal
+443,6.21,black,Coriander,4.8,825mm/21.3C,May,Amravati
+444,6.2,sandy,Carrot,1.39,404mm/17.1C,May,Wardha
+445,7.39,sandy,Brinjal,1.87,877mm/25.1C,Jul,Akola
+446,7.76,alluvial,Radish,4.5,234mm/15.4C,Jun,Beed
+447,7.86,black,Carrot,4.84,822mm/16.1C,Feb,Nagpur
+448,7.23,alluvial,Spinach,2.33,304mm/24.2C,Nov,Akola
+449,6.22,black,Beans,1.74,110mm/25.3C,Jan,Pune
+450,5.43,alluvial,Carrot,2.73,977mm/33.8C,May,Amravati
+451,7.3,loam,Green Peas,3.5,524mm/16.4C,Apr,Yavatmal
+452,6.71,red,Radish,1.51,609mm/22.6C,Dec,Hingoli
+453,6.35,red,Cucumber,3.74,953mm/26.1C,Mar,Kolhapur
+454,7.65,black,Carrot,0.45,155mm/33.9C,Feb,Osmana bad
+455,5.5,clay,Cucumber,0.44,396mm/23.7C,Oct,Ahmednagar
+456,6.53,sandy,Spinach,2.05,104mm/23.1C,Feb,Pune
+457,5.23,sandy,Cucumber,1.9,675mm/23.3C,Apr,Latur
+458,6.47,black,Green Chilies,1.72,979mm/15.7C,Feb,Kolhapur
+459,5.35,alluvial,Carrot,2.56,1092mm/18.2C,Apr,Pune
+460,5.52,clay,Spring Onion,1.74,80mm/19.1C,Mar,Nanded
+461,5.52,loam,Fenugreek Leaves,1.12,1189mm/28.8C,Sep,Beed
+462,6.95,alluvial,Radish,1.69,461mm/32.4C,Jul,Osmana bad
+463,7.21,alluvial,Brinjal,4.88,977mm/28.6C,Nov,Osmana bad
+464,6.78,black,Fenugreek Leaves,2.17,796mm/27.3C,Dec,Solapur
+465,7.8,black,Bottle Gourd,2.33,386mm/32.3C,Mar,Yavatmal
+466,6.21,sandy,Spring Onion,2.97,470mm/33.3C,Aug,Gondia
+467,5.97,black,Radish,4.92,1069mm/27.9C,Sep,Chandrapur
+468,7.55,black,Cauliflower,1.36,350mm/31.7C,Jul,Gondia
+469,5.8,black,Fenugreek Leaves,3.47,756mm/23.4C,Jun,Latur
+470,7.8,sandy,Ridge Gourd,3.64,924mm/28.2C,Apr,Buldhana
+471,5.23,loam,Carrot,3.12,570mm/18.9C,May,Aurangabad
+472,7.82,loam,Coriander,0.63,969mm/20.8C,Aug,Akola
+473,5.32,black,Ridge Gourd,3.45,825mm/15.2C,Mar,Buldhana
+474,7.61,sandy,Beans,0.51,507mm/23.0C,Feb,Buldhana
+475,6.62,loam,Tomato,3.06,811mm/34.5C,Mar,Parbhani
+476,7.88,alluvial,Cabbage,3.75,281mm/23.6C,Dec,Satara
+477,5.4,loam,Beetroot,1.21,915mm/22.2C,Jul,Satara
+478,6.7,loam,Pumpkin,4.24,214mm/27.0C,Aug,Yavatmal
+479,7.82,sandy,Beans,0.35,143mm/15.6C,Jan,Ahmednagar
+480,6.61,alluvial,Tomato,4.25,120mm/21.6C,Jul,Kolhapur
+481,6.9,sandy,Ladyfinger,2.41,992mm/25.7C,Sep,Nagpur
+482,7.08,black,Beans,1.24,447mm/22.7C,Dec,Parbhani
+483,6.43,red,Pumpkin,0.84,1107mm/22.8C,Mar,Aurangabad
+484,6.89,loam,Beetroot,4.78,981mm/16.1C,Mar,Nanded
+485,6.78,red,Fenugreek Leaves,0.55,1120mm/25.3C,Aug,Hingoli
+486,7.63,sandy,Cucumber,1.16,562mm/17.1C,Apr,Amravati
+487,5.32,sandy,Ladyfinger,1.87,1010mm/19.2C,Aug,Akola
+488,5.96,sandy,Cauliflower,3.18,698mm/33.9C,May,Sangli
+489,7.77,red,Bitter Gourd,2.82,180mm/23.0C,Mar,Pune
+490,7.6,sandy,Pumpkin,0.8,838mm/16.5C,Apr,Buldhana
+491,6.43,black,Ladyfinger,1.59,581mm/24.7C,Apr,Parbhani
+492,6.87,sandy,Ridge Gourd,1.35,460mm/34.7C,Aug,Kolhapur
+493,5.95,clay,Bottle Gourd,1.23,1081mm/21.5C,Jun,Nanded
+494,5.71,red,Spinach,2.17,134mm/30.2C,Jul,Osmana bad
+495,6.45,clay,Coriander,3.58,206mm/15.9C,Sep,Yavatmal
+496,6.15,sandy,Cabbage,1.24,322mm/21.2C,Jun,Chandrapur
+497,6.78,black,Cauliflower,1.96,582mm/22.9C,Mar,Nagpur
+498,5.41,loam,Spring Onion,2.08,382mm/31.1C,Mar,Aurangabad
+499,7.83,alluvial,Beans,4.89,1141mm/29.6C,Nov,Buldhana
+500,7.86,alluvial,Cabbage,4.78,726mm/15.0C,Mar,Ahmednagar
+501,7.09,sandy,Carrot,4.04,1199mm/30.4C,Dec,Gadchiroli
+502,6.65,black,Coriander,1.36,617mm/17.4C,Oct,Parbhani
+503,6.04,red,Green Chilies,0.53,314mm/27.9C,Feb,Yavatmal
+504,7.4,clay,Coriander,1.72,475mm/34.4C,Jan,Chandrapur
+505,7.05,clay,Pumpkin,1.48,995mm/21.3C,Nov,Aurangabad
+506,5.64,clay,Radish,2.63,160mm/20.2C,Oct,Pune
+507,7.66,red,Bitter Gourd,3.93,720mm/17.1C,Jan,Buldhana
+508,7.42,alluvial,Coriander,4.32,836mm/30.5C,Apr,Yavatmal
+509,7.76,black,Ladyfinger,4.26,547mm/31.4C,Mar,Jalgaon
+510,7.16,red,Cauliflower,1.93,788mm/21.5C,May,Nashik
+511,6.86,clay,Ladyfinger,3.5,1099mm/21.7C,Dec,Buldhana
+512,6.33,sandy,Bitter Gourd,1.7,981mm/23.9C,Sep,Kolhapur
+513,7.72,loam,Spinach,0.49,610mm/25.2C,Dec,Osmana bad
+514,7.54,red,Beetroot,3.57,108mm/35.0C,Aug,Gadchiroli
+515,5.32,red,Spring Onion,0.25,543mm/16.0C,Dec,Nashik
+516,5.27,black,Ladyfinger,2.16,319mm/27.8C,Sep,Gadchiroli
+517,6.22,black,Fenugreek Leaves,1.78,992mm/22.6C,May,Solapur
+518,7.39,red,Pumpkin,3.53,764mm/27.5C,Aug,Ahmednagar
+519,7.87,clay,Pumpkin,3.88,573mm/30.8C,Apr,Gadchiroli
+520,5.61,loam,Tomato,1.66,755mm/18.4C,May,Pune
+521,6.8,black,Spinach,4.1,745mm/27.1C,Dec,Wardha
+522,6.23,clay,Coriander,1.61,629mm/32.9C,Mar,Solapur
+523,7.82,sandy,Spring Onion,2.34,334mm/33.3C,May,Aurangabad
+524,7.47,black,Radish,3.69,174mm/31.6C,Dec,Parbhani
+525,7.46,clay,Spring Onion,3.53,557mm/19.9C,Mar,Chandrapur
+526,6.47,clay,Tomato,4.94,269mm/32.6C,May,Nanded
+527,6.32,loam,Spring Onion,1.28,835mm/34.6C,Nov,Yavatmal
+528,5.94,loam,Cucumber,3.38,212mm/15.5C,May,Sangli
+529,5.35,sandy,Bitter Gourd,3.13,589mm/15.7C,Jun,Wardha
+530,7.53,clay,Ridge Gourd,4.59,489mm/33.7C,Sep,Gadchiroli
+531,7.39,alluvial,Spring Onion,0.95,1066mm/16.7C,Jan,Aurangabad
+532,7.9,clay,Bitter Gourd,3.81,338mm/33.1C,Dec,Pune
+533,7.89,loam,Ridge Gourd,2.93,378mm/33.3C,Oct,Sangli
+534,6.7,alluvial,Green Chilies,1.52,640mm/33.4C,Jun,Buldhana
+535,7.28,black,Cucumber,2.48,376mm/29.6C,Jan,Gadchiroli
+536,7.75,black,Radish,1.8,206mm/27.3C,Jun,Satara
+537,7.49,red,Brinjal,2.98,1074mm/28.8C,Feb,Buldhana
+538,5.87,loam,Pumpkin,4.47,87mm/21.2C,Aug,Buldhana
+539,6.42,red,Ladyfinger,2.93,399mm/30.6C,Nov,Yavatmal
+540,5.55,alluvial,Bitter Gourd,3.23,140mm/30.8C,Mar,Solapur
+541,7.78,loam,Fenugreek Leaves,2.69,876mm/17.7C,Oct,Gadchiroli
+542,6.84,sandy,Beetroot,0.45,1005mm/19.6C,Jun,Yavatmal
+543,5.82,clay,Coriander,1.32,795mm/27.2C,Jun,Akola
+544,7.01,sandy,Beans,2.56,273mm/20.5C,Apr,Nagpur
+545,6.87,alluvial,Coriander,1.69,934mm/33.2C,May,Aurangabad
+546,6.17,loam,Beans,1.07,291mm/29.7C,Feb,Chandrapur
+547,5.51,alluvial,Beetroot,2.62,300mm/34.8C,Oct,Akola
+548,7.01,clay,Cabbage,1.75,358mm/22.3C,Oct,Nashik
+549,6.6,black,Spring Onion,1.44,895mm/31.4C,Aug,Osmana bad
+550,7.29,black,Radish,2.43,593mm/28.9C,Oct,Nanded
+551,6.6,alluvial,Beans,0.84,1002mm/16.1C,Jul,Nagpur
+552,7.5,red,Brinjal,4.65,669mm/24.0C,Oct,Nashik
+553,6.69,loam,Green Chilies,4.36,819mm/19.4C,Jun,Kolhapur
+554,6.71,loam,Bottle Gourd,3.6,1093mm/23.0C,Jul,Nagpur
+555,7.57,black,Green Chilies,0.71,981mm/27.4C,Dec,Wardha
+556,6.29,sandy,Bottle Gourd,3.92,571mm/32.9C,Jan,Osmana bad
+557,5.56,clay,Cucumber,4.08,793mm/20.0C,May,Chandrapur
+558,5.28,sandy,Green Chilies,3.89,495mm/31.0C,Jul,Nagpur
+559,7.24,sandy,Cauliflower,0.75,108mm/24.1C,Jan,Nagpur
+560,6.87,alluvial,Pumpkin,3.29,241mm/31.5C,Feb,Gadchiroli
+561,7.1,black,Spinach,4.2,140mm/30.5C,Sep,Osmana bad
+562,5.78,black,Tomato,2.97,1174mm/31.1C,Dec,Nanded
+563,5.57,black,Beans,3.3,545mm/22.6C,Mar,Chandrapur
+564,5.24,alluvial,Carrot,2.4,552mm/30.9C,Jun,Yavatmal
+565,6.15,red,Brinjal,2.74,573mm/30.5C,Jul,Chandrapur
+566,6.79,sandy,Ladyfinger,0.37,935mm/32.1C,Sep,Gondia
+567,6.26,alluvial,Ladyfinger,3.27,1002mm/34.5C,May,Jalgaon
+568,6.38,loam,Green Peas,0.59,528mm/20.4C,Apr,Buldhana
+569,7.64,clay,Bottle Gourd,2.29,105mm/29.1C,Nov,Parbhani
+570,6.14,red,Beans,1.6,587mm/29.9C,Dec,Beed
+571,6.59,loam,Cauliflower,2.82,308mm/29.2C,Feb,Beed
+572,7.32,sandy,Green Peas,0.84,1138mm/24.4C,Mar,Solapur
+573,6.27,black,Bitter Gourd,3.52,970mm/23.8C,May,Parbhani
+574,6.88,sandy,Spinach,4.02,674mm/18.5C,Nov,Akola
+575,7.53,alluvial,Spring Onion,0.98,1135mm/33.2C,Feb,Kolhapur
+576,7.76,clay,Ladyfinger,0.7,80mm/22.2C,Apr,Nagpur
+577,5.6,alluvial,Tomato,0.9,212mm/24.6C,Jan,Gadchiroli
+578,7.7,red,Beans,4.41,595mm/34.0C,Apr,Akola
+579,6.53,red,Green Chilies,2.74,842mm/33.8C,Jul,Nanded
+580,5.9,clay,Bitter Gourd,2.44,657mm/24.6C,Dec,Buldhana
+581,6.44,loam,Tomato,0.71,128mm/31.4C,Mar,Beed
+582,7.85,loam,Tomato,3.32,841mm/19.8C,Oct,Ahmednagar
+583,6.53,red,Cabbage,4.37,1178mm/23.3C,Aug,Hingoli
+584,6.09,red,Cabbage,4.18,873mm/16.4C,Jun,Wardha
+585,6.91,black,Bitter Gourd,3.21,398mm/31.7C,Jun,Latur
+586,5.85,loam,Radish,0.56,777mm/27.2C,Jan,Osmana bad
+587,5.4,clay,Cucumber,0.74,926mm/25.7C,May,Wardha
+588,5.55,loam,Coriander,0.44,121mm/24.7C,Mar,Kolhapur
+589,5.55,black,Bottle Gourd,1.44,608mm/30.6C,Oct,Gondia
+590,5.61,alluvial,Pumpkin,0.85,371mm/32.9C,Jan,Solapur
+591,5.57,red,Beans,1.45,176mm/23.3C,Aug,Beed
+592,6.93,red,Bitter Gourd,2.05,153mm/19.6C,Jul,Jalgaon
+593,5.69,black,Radish,4.73,837mm/32.3C,Jul,Nanded
+594,6.13,clay,Radish,3.13,287mm/19.6C,Dec,Gondia
+595,7.62,red,Bottle Gourd,4.21,489mm/25.6C,Oct,Akola
+596,6.48,sandy,Radish,3.61,1068mm/33.3C,Oct,Yavatmal
+597,7.0,red,Cucumber,0.74,153mm/18.8C,Oct,Gondia
+598,5.67,sandy,Radish,3.73,333mm/17.3C,Apr,Nanded
+599,5.72,black,Pumpkin,1.52,899mm/31.3C,Nov,Nanded
+600,5.31,black,Ridge Gourd,3.27,411mm/22.8C,Jun,Aurangabad
+601,5.66,red,Bottle Gourd,1.84,826mm/31.0C,Sep,Pune
+602,5.95,loam,Cucumber,4.99,534mm/34.2C,Mar,Gadchiroli
+603,5.68,sandy,Coriander,1.47,392mm/24.9C,Sep,Buldhana
+604,5.44,clay,Ridge Gourd,1.54,913mm/27.5C,Apr,Jalgaon
+605,5.53,red,Ridge Gourd,4.67,897mm/25.0C,May,Wardha
+606,6.44,clay,Bitter Gourd,0.32,607mm/30.7C,Jul,Kolhapur
+607,5.76,red,Beans,3.54,121mm/28.3C,Jun,Aurangabad
+608,6.18,loam,Bitter Gourd,3.68,357mm/21.6C,Oct,Hingoli
+609,6.56,loam,Bottle Gourd,4.21,145mm/29.6C,Aug,Yavatmal
+610,7.06,loam,Radish,4.88,1099mm/31.5C,Aug,Parbhani
+611,5.31,alluvial,Coriander,4.88,488mm/30.9C,Aug,Nanded
+612,7.36,loam,Cucumber,0.51,676mm/17.4C,Mar,Gondia
+613,6.9,black,Green Chilies,4.14,184mm/15.6C,Oct,Buldhana
+614,5.42,black,Radish,3.3,1071mm/17.2C,Jun,Nanded
+615,7.56,alluvial,Spinach,3.31,714mm/33.7C,Jul,Sangli
+616,7.69,sandy,Bitter Gourd,0.82,1164mm/15.6C,Sep,Aurangabad
+617,5.36,clay,Green Chilies,3.32,472mm/26.3C,Oct,Kolhapur
+618,5.95,red,Spring Onion,4.92,565mm/34.4C,Oct,Sangli
+619,7.38,red,Cucumber,4.58,1103mm/17.7C,Dec,Hingoli
+620,7.22,alluvial,Cucumber,2.31,522mm/22.9C,Apr,Latur
+621,5.7,black,Beetroot,0.39,344mm/28.8C,May,Akola
+622,5.77,red,Beetroot,1.94,217mm/32.5C,Aug,Hingoli
+623,6.2,black,Fenugreek Leaves,4.17,386mm/15.7C,Jan,Aurangabad
+624,6.51,sandy,Radish,3.57,397mm/34.0C,Dec,Gondia
+625,6.87,clay,Ridge Gourd,2.4,533mm/21.1C,Jun,Hingoli
+626,6.2,sandy,Ridge Gourd,0.46,910mm/22.3C,Apr,Gondia
+627,6.45,alluvial,Bottle Gourd,2.25,266mm/25.7C,May,Satara
+628,7.22,loam,Green Peas,2.45,1100mm/18.9C,Nov,Hingoli
+629,5.3,loam,Ladyfinger,4.66,714mm/33.9C,May,Buldhana
+630,5.88,loam,Bitter Gourd,3.28,770mm/18.6C,Feb,Chandrapur
+631,7.13,sandy,Carrot,1.7,1137mm/22.7C,Aug,Chandrapur
+632,7.62,red,Brinjal,2.72,250mm/28.6C,Feb,Hingoli
+633,6.58,clay,Bitter Gourd,0.52,1162mm/34.3C,Apr,Nanded
+634,6.64,loam,Ladyfinger,4.87,1198mm/29.4C,Dec,Kolhapur
+635,5.49,alluvial,Coriander,1.93,254mm/16.8C,May,Gadchiroli
+636,6.41,alluvial,Radish,2.49,133mm/16.0C,Jan,Gadchiroli
+637,6.64,loam,Coriander,1.91,428mm/18.9C,Jun,Ahmednagar
+638,5.85,loam,Carrot,3.48,659mm/28.0C,Feb,Kolhapur
+639,5.93,clay,Spring Onion,3.38,361mm/24.7C,May,Hingoli
+640,6.22,loam,Fenugreek Leaves,3.63,902mm/28.2C,Jun,Kolhapur
+641,5.25,clay,Coriander,1.49,1032mm/20.8C,Nov,Hingoli
+642,6.07,alluvial,Pumpkin,1.72,1111mm/19.0C,Aug,Osmana bad
+643,5.77,loam,Ladyfinger,0.8,570mm/15.8C,Sep,Chandrapur
+644,6.08,sandy,Beans,3.35,328mm/15.0C,Dec,Nanded
+645,5.52,sandy,Radish,0.39,1196mm/34.9C,Jun,Satara
+646,7.6,alluvial,Green Peas,3.07,903mm/34.8C,May,Sangli
+647,6.8,clay,Brinjal,4.37,711mm/19.8C,Dec,Gondia
+648,7.03,sandy,Beetroot,4.48,201mm/21.6C,Apr,Wardha
+649,7.33,clay,Tomato,2.36,917mm/22.9C,Feb,Chandrapur
+650,6.55,sandy,Coriander,2.4,832mm/22.0C,Feb,Buldhana
+651,5.43,sandy,Fenugreek Leaves,0.57,791mm/28.5C,Jul,Gadchiroli
+652,6.65,clay,Bottle Gourd,3.42,159mm/16.3C,May,Latur
+653,6.78,red,Cucumber,4.14,981mm/15.1C,Jul,Beed
+654,7.21,sandy,Ridge Gourd,1.37,97mm/17.2C,Nov,Kolhapur
+655,6.37,loam,Green Chilies,2.22,281mm/28.3C,Jan,Sangli
+656,5.54,alluvial,Pumpkin,4.23,398mm/24.4C,Jan,Beed
+657,5.97,red,Bitter Gourd,4.41,345mm/31.2C,May,Wardha
+658,6.18,clay,Bitter Gourd,1.37,854mm/30.2C,Feb,Nagpur
+659,6.94,red,Fenugreek Leaves,2.84,492mm/26.2C,Aug,Ahmednagar
+660,6.74,black,Beans,1.12,480mm/22.3C,Mar,Nanded
+661,6.16,black,Pumpkin,0.69,361mm/26.3C,Jan,Gondia
+662,7.86,sandy,Pumpkin,4.57,830mm/20.9C,Feb,Pune
+663,6.84,sandy,Fenugreek Leaves,4.14,377mm/33.6C,Oct,Nashik
+664,5.84,loam,Bottle Gourd,3.85,588mm/18.9C,Oct,Nashik
+665,5.47,alluvial,Bottle Gourd,0.43,854mm/20.0C,Jul,Jalgaon
+666,5.61,red,Spinach,4.25,350mm/22.0C,Jun,Chandrapur
+667,5.86,black,Coriander,2.3,818mm/26.6C,Dec,Gadchiroli
+668,5.63,sandy,Beans,1.84,138mm/17.5C,Aug,Kolhapur
+669,5.7,alluvial,Bitter Gourd,2.82,165mm/23.5C,Jul,Amravati
+670,5.97,red,Brinjal,0.64,798mm/21.3C,Oct,Buldhana
+671,5.67,sandy,Cauliflower,3.83,662mm/30.9C,Aug,Ahmednagar
+672,7.62,sandy,Green Peas,3.0,684mm/17.2C,Mar,Jalgaon
+673,5.42,black,Bottle Gourd,1.1,943mm/26.0C,Jun,Jalgaon
+674,6.62,black,Spinach,1.1,138mm/33.2C,Jul,Amravati
+675,6.31,sandy,Beans,1.08,467mm/16.0C,Oct,Satara
+676,7.85,clay,Green Peas,0.47,672mm/21.6C,Nov,Satara
+677,5.5,sandy,Ladyfinger,3.02,988mm/24.1C,Jan,Wardha
+678,6.27,alluvial,Carrot,4.23,478mm/28.4C,Jan,Sangli
+679,7.82,sandy,Green Peas,0.28,372mm/26.8C,Jul,Beed
+680,7.54,loam,Cabbage,0.44,882mm/31.0C,Nov,Hingoli
+681,7.41,loam,Pumpkin,2.95,969mm/27.5C,Mar,Hingoli
+682,5.9,loam,Coriander,4.13,1039mm/32.2C,Mar,Osmana bad
+683,5.66,clay,Cabbage,1.77,352mm/34.6C,May,Wardha
+684,7.01,clay,Cucumber,1.88,599mm/30.9C,Nov,Gondia
+685,7.71,sandy,Beetroot,3.06,647mm/25.0C,Jun,Wardha
+686,6.7,loam,Beetroot,1.52,731mm/15.4C,Feb,Kolhapur
+687,6.74,clay,Green Chilies,0.33,699mm/21.4C,Mar,Akola
+688,5.96,black,Green Peas,3.73,665mm/28.1C,Jun,Sangli
+689,7.28,sandy,Spinach,3.2,995mm/24.6C,Mar,Chandrapur
+690,5.71,alluvial,Brinjal,2.99,1132mm/26.8C,May,Gadchiroli
+691,6.07,red,Bottle Gourd,3.76,920mm/28.0C,Sep,Nashik
+692,6.35,sandy,Green Chilies,3.44,409mm/25.2C,Dec,Wardha
+693,6.57,red,Cucumber,1.19,174mm/17.8C,Mar,Kolhapur
+694,5.85,loam,Ridge Gourd,1.89,432mm/18.6C,Dec,Satara
+695,5.51,red,Ladyfinger,0.81,1063mm/34.5C,Nov,Jalgaon
+696,6.85,loam,Fenugreek Leaves,0.82,1122mm/21.6C,Jun,Osmana bad
+697,5.98,black,Cucumber,3.45,705mm/30.9C,Nov,Nashik
+698,6.77,red,Cabbage,4.32,795mm/33.1C,May,Osmana bad
+699,5.62,sandy,Beetroot,4.82,334mm/23.9C,May,Hingoli
+700,6.5,loam,Bitter Gourd,3.22,755mm/16.4C,Nov,Beed
+701,6.64,sandy,Beans,1.08,1172mm/25.4C,Jun,Satara
+702,5.34,clay,Cauliflower,0.71,219mm/31.6C,Jun,Wardha
+703,6.11,loam,Green Chilies,4.1,759mm/29.0C,Jan,Latur
+704,5.56,red,Cabbage,2.98,216mm/25.3C,Nov,Yavatmal
+705,5.37,loam,Spring Onion,3.17,421mm/19.3C,Sep,Yavatmal
+706,7.87,sandy,Cucumber,3.95,1051mm/26.7C,May,Solapur
+707,6.07,black,Pumpkin,3.58,741mm/18.6C,Jan,Akola
+708,7.39,loam,Coriander,4.21,494mm/30.9C,Aug,Ahmednagar
+709,5.89,red,Cabbage,0.47,422mm/24.5C,Jul,Akola
+710,7.04,clay,Brinjal,3.79,732mm/32.2C,Jul,Akola
+711,7.25,alluvial,Brinjal,4.28,402mm/22.9C,May,Nanded
+712,6.81,black,Radish,1.57,390mm/16.6C,Jan,Osmana bad
+713,6.47,clay,Fenugreek Leaves,3.27,649mm/32.2C,Sep,Pune
+714,6.31,loam,Fenugreek Leaves,1.71,426mm/17.1C,Nov,Osmana bad
+715,6.14,sandy,Radish,4.8,461mm/21.8C,Sep,Wardha
+716,7.71,sandy,Cauliflower,0.36,600mm/23.8C,Aug,Nashik
+717,7.44,red,Carrot,2.98,1197mm/19.2C,May,Ahmednagar
+718,7.81,sandy,Green Chilies,1.0,743mm/33.1C,Mar,Aurangabad
+719,5.54,black,Cucumber,3.62,119mm/24.3C,Aug,Aurangabad
+720,7.17,sandy,Coriander,1.04,653mm/18.5C,Jan,Aurangabad
+721,7.73,red,Tomato,1.33,660mm/31.1C,Mar,Latur
+722,5.69,alluvial,Spring Onion,2.57,249mm/30.7C,Dec,Sangli
+723,5.38,loam,Pumpkin,4.59,590mm/20.7C,Nov,Satara
+724,7.2,loam,Brinjal,1.22,1063mm/24.7C,Jul,Wardha
+725,6.75,sandy,Bottle Gourd,0.89,420mm/30.7C,Apr,Amravati
+726,7.47,clay,Cabbage,3.84,698mm/18.3C,Jul,Amravati
+727,5.58,loam,Coriander,2.6,810mm/15.5C,Dec,Pune
+728,7.35,alluvial,Cauliflower,4.58,809mm/34.4C,Nov,Chandrapur
+729,5.74,sandy,Ladyfinger,0.9,1134mm/15.9C,May,Jalgaon
+730,5.64,red,Ridge Gourd,3.3,187mm/32.4C,Jun,Gadchiroli
+731,5.64,alluvial,Tomato,1.32,497mm/27.9C,Jul,Chandrapur
+732,7.4,sandy,Beetroot,0.95,762mm/31.7C,Oct,Beed
+733,7.0,alluvial,Radish,3.48,335mm/30.3C,Dec,Nashik
+734,6.61,loam,Cauliflower,3.05,917mm/22.0C,Jul,Osmana bad
+735,6.17,red,Cauliflower,3.82,632mm/25.6C,Jul,Satara
+736,7.57,sandy,Cabbage,1.69,650mm/18.2C,Jul,Gadchiroli
+737,6.26,black,Carrot,2.35,1127mm/17.7C,Nov,Latur
+738,7.4,red,Bitter Gourd,2.15,1027mm/15.2C,Jul,Amravati
+739,6.39,black,Green Chilies,4.92,500mm/25.3C,Mar,Satara
+740,6.22,alluvial,Bitter Gourd,1.6,561mm/28.0C,Dec,Gadchiroli
+741,6.45,clay,Spring Onion,1.62,1016mm/30.8C,Mar,Pune
+742,6.01,red,Spinach,1.9,477mm/24.0C,Jul,Chandrapur
+743,7.22,alluvial,Bottle Gourd,2.91,387mm/28.8C,Feb,Gondia
+744,6.56,black,Pumpkin,1.41,798mm/25.8C,Feb,Solapur
+745,5.83,loam,Bitter Gourd,4.59,237mm/20.9C,Mar,Osmana bad
+746,7.63,loam,Cabbage,1.48,730mm/19.5C,Apr,Sangli
+747,6.24,clay,Ridge Gourd,4.5,306mm/18.2C,Jun,Parbhani
+748,6.67,red,Cabbage,0.7,322mm/25.3C,Aug,Gadchiroli
+749,7.65,red,Ridge Gourd,3.35,1148mm/26.7C,Oct,Sangli
+750,6.89,red,Cauliflower,4.55,731mm/31.6C,Oct,Chandrapur
+751,5.52,alluvial,Ridge Gourd,1.01,171mm/28.4C,Jul,Osmana bad
+752,7.74,clay,Coriander,4.85,1180mm/26.9C,Apr,Nashik
+753,6.89,red,Spring Onion,2.37,258mm/34.1C,Feb,Aurangabad
+754,6.1,alluvial,Pumpkin,4.74,956mm/16.8C,Feb,Latur
+755,5.58,loam,Spinach,3.45,1122mm/29.9C,Apr,Aurangabad
+756,7.34,black,Cabbage,1.65,450mm/30.8C,Jun,Gadchiroli
+757,6.87,alluvial,Coriander,1.1,949mm/22.2C,Mar,Sangli
+758,6.64,loam,Brinjal,1.66,300mm/32.2C,Jun,Gadchiroli
+759,7.61,loam,Brinjal,0.65,517mm/33.6C,May,Pune
+760,7.33,black,Bottle Gourd,0.89,460mm/25.8C,May,Kolhapur
+761,5.61,loam,Green Peas,0.7,822mm/31.6C,Feb,Sangli
+762,6.04,clay,Radish,2.23,644mm/16.3C,Aug,Kolhapur
+763,5.87,black,Spinach,4.02,571mm/22.6C,May,Ahmednagar
+764,7.21,loam,Ladyfinger,0.88,834mm/34.9C,Nov,Wardha
+765,5.29,sandy,Cabbage,0.83,626mm/24.0C,Feb,Satara
+766,6.74,alluvial,Beetroot,3.29,907mm/34.1C,Jul,Latur
+767,7.26,loam,Brinjal,1.15,1111mm/26.4C,Sep,Beed
+768,7.57,clay,Pumpkin,0.67,1016mm/18.0C,Sep,Hingoli
+769,6.12,red,Radish,1.0,687mm/33.2C,Jan,Chandrapur
+770,7.42,loam,Carrot,4.63,714mm/30.7C,Jul,Aurangabad
+771,5.5,red,Beetroot,4.14,759mm/17.3C,Sep,Beed
+772,7.49,sandy,Coriander,1.9,84mm/15.0C,Jun,Parbhani
+773,5.54,loam,Pumpkin,3.35,287mm/17.6C,Jan,Kolhapur
+774,6.27,black,Cucumber,2.78,90mm/15.9C,Feb,Latur
+775,7.35,red,Ladyfinger,3.45,1015mm/24.9C,Apr,Osmana bad
+776,5.6,sandy,Brinjal,3.48,619mm/19.9C,Apr,Solapur
+777,5.82,black,Bitter Gourd,3.22,466mm/21.7C,Feb,Gondia
+778,7.15,black,Bitter Gourd,1.48,286mm/20.4C,Aug,Sangli
+779,7.14,black,Pumpkin,0.39,636mm/28.1C,Feb,Sangli
+780,6.93,black,Cabbage,2.39,872mm/20.2C,Mar,Latur
+781,7.07,loam,Ladyfinger,4.48,1147mm/28.8C,Apr,Latur
+782,6.67,alluvial,Bottle Gourd,2.93,1021mm/34.7C,Sep,Nagpur
+783,5.88,loam,Fenugreek Leaves,4.2,255mm/17.3C,Oct,Aurangabad
+784,6.13,loam,Green Peas,4.96,671mm/20.6C,Jan,Satara
+785,5.69,sandy,Spinach,0.99,935mm/27.7C,Aug,Jalgaon
+786,7.65,sandy,Bitter Gourd,3.52,519mm/17.8C,Dec,Amravati
+787,6.78,alluvial,Beans,3.44,776mm/19.0C,May,Hingoli
+788,6.28,sandy,Green Peas,4.9,167mm/34.1C,Jul,Gondia
+789,6.45,clay,Bitter Gourd,4.93,1111mm/29.9C,Aug,Osmana bad
+790,7.76,alluvial,Ridge Gourd,3.5,631mm/20.4C,May,Yavatmal
+791,5.61,sandy,Beans,1.37,582mm/27.8C,Aug,Yavatmal
+792,6.78,alluvial,Ladyfinger,4.03,324mm/20.1C,Oct,Hingoli
+793,6.57,loam,Bottle Gourd,0.71,310mm/21.2C,Nov,Satara
+794,6.85,loam,Brinjal,3.95,927mm/34.3C,Aug,Parbhani
+795,5.25,alluvial,Radish,4.57,390mm/19.4C,Sep,Nanded
+796,7.55,clay,Radish,2.04,1121mm/16.1C,Feb,Osmana bad
+797,7.72,clay,Fenugreek Leaves,3.23,311mm/29.4C,Mar,Gondia
+798,6.73,alluvial,Beans,2.26,809mm/25.5C,Jan,Pune
+799,7.08,sandy,Green Chilies,2.3,1097mm/28.1C,Apr,Chandrapur
+800,7.69,red,Pumpkin,1.69,382mm/22.8C,May,Yavatmal
+801,7.11,clay,Fenugreek Leaves,3.86,892mm/20.0C,Nov,Nashik
+802,5.61,black,Bitter Gourd,4.69,103mm/33.6C,Jan,Parbhani
+803,6.76,loam,Ladyfinger,4.72,604mm/15.7C,Aug,Wardha
+804,6.84,alluvial,Green Chilies,1.04,791mm/25.3C,Feb,Hingoli
+805,6.35,black,Pumpkin,4.4,457mm/18.6C,Jan,Latur
+806,7.19,alluvial,Ridge Gourd,3.74,451mm/31.0C,Feb,Buldhana
+807,7.72,loam,Cabbage,1.41,1056mm/24.4C,May,Chandrapur
+808,7.7,loam,Green Peas,0.52,556mm/32.3C,Sep,Nagpur
+809,6.42,clay,Bottle Gourd,1.49,336mm/34.6C,Sep,Wardha
+810,5.51,clay,Spring Onion,4.58,147mm/23.5C,Feb,Nashik
+811,7.86,black,Green Chilies,3.24,752mm/18.4C,Feb,Jalgaon
+812,7.47,alluvial,Coriander,3.66,338mm/23.5C,Mar,Solapur
+813,5.54,loam,Bitter Gourd,1.43,1198mm/20.6C,Jul,Satara
+814,7.69,black,Fenugreek Leaves,3.65,1049mm/28.3C,Nov,Beed
+815,7.55,red,Bitter Gourd,0.33,266mm/30.7C,Mar,Gadchiroli
+816,6.6,black,Ridge Gourd,2.0,864mm/26.9C,Jan,Chandrapur
+817,6.8,sandy,Spring Onion,3.21,487mm/20.8C,Jun,Ahmednagar
+818,6.28,black,Carrot,0.9,420mm/32.7C,Mar,Beed
+819,5.35,sandy,Bottle Gourd,4.15,730mm/29.3C,Jan,Amravati
+820,6.11,sandy,Cabbage,1.33,1142mm/21.4C,Apr,Latur
+821,7.37,sandy,Green Chilies,3.33,460mm/34.1C,Jan,Osmana bad
+822,5.21,red,Spring Onion,2.14,929mm/20.3C,Jan,Amravati
+823,6.1,black,Spring Onion,3.06,404mm/18.3C,Dec,Gondia
+824,6.28,black,Cucumber,0.72,923mm/23.5C,Feb,Nagpur
+825,6.65,red,Fenugreek Leaves,0.28,628mm/23.5C,Oct,Ahmednagar
+826,7.68,loam,Spinach,4.57,105mm/24.8C,Aug,Kolhapur
+827,6.14,clay,Pumpkin,1.49,1111mm/23.9C,Feb,Aurangabad
+828,6.14,black,Beetroot,4.13,612mm/28.6C,Nov,Nagpur
+829,7.19,clay,Green Chilies,5.0,1128mm/33.2C,Feb,Parbhani
+830,6.42,alluvial,Fenugreek Leaves,1.21,1024mm/23.1C,Nov,Nashik
+831,5.81,alluvial,Bottle Gourd,1.47,372mm/25.8C,Nov,Ahmednagar
+832,6.42,red,Carrot,3.38,510mm/18.5C,Oct,Osmana bad
+833,5.58,alluvial,Spinach,4.83,477mm/32.8C,Oct,Jalgaon
+834,5.68,alluvial,Bottle Gourd,4.6,675mm/29.7C,Aug,Satara
+835,6.55,loam,Brinjal,2.61,944mm/26.7C,Dec,Gondia
+836,6.33,loam,Fenugreek Leaves,4.02,788mm/17.6C,Jun,Gondia
+837,7.67,loam,Spring Onion,0.85,1191mm/28.2C,Dec,Jalgaon
+838,6.18,alluvial,Spring Onion,4.89,1110mm/21.7C,Nov,Nashik
+839,6.77,red,Bitter Gourd,4.83,1055mm/31.1C,Apr,Akola
+840,6.91,sandy,Fenugreek Leaves,0.99,1021mm/31.9C,Mar,Buldhana
+841,5.24,sandy,Cauliflower,1.64,442mm/28.0C,Jan,Solapur
+842,6.99,clay,Green Peas,0.68,350mm/23.1C,Nov,Buldhana
+843,5.68,sandy,Carrot,1.5,1083mm/26.3C,Mar,Hingoli
+844,7.79,sandy,Carrot,4.12,313mm/26.9C,Dec,Ahmednagar
+845,5.6,loam,Cucumber,2.02,106mm/20.1C,Sep,Buldhana
+846,6.32,loam,Cucumber,0.62,696mm/18.4C,May,Amravati
+847,5.43,alluvial,Spring Onion,1.84,398mm/34.3C,Jun,Aurangabad
+848,7.89,clay,Bitter Gourd,4.91,954mm/20.9C,May,Gadchiroli
+849,6.56,black,Bitter Gourd,3.22,276mm/21.3C,Jan,Gadchiroli
+850,6.81,clay,Spring Onion,2.2,334mm/20.5C,Oct,Jalgaon
+851,5.38,clay,Cauliflower,1.0,415mm/23.9C,Jan,Buldhana
+852,7.22,red,Fenugreek Leaves,4.93,1069mm/20.7C,Apr,Parbhani
+853,5.77,alluvial,Beetroot,4.14,593mm/20.6C,Mar,Wardha
+854,7.62,red,Beetroot,1.55,321mm/16.4C,Nov,Gadchiroli
+855,5.75,clay,Green Chilies,0.54,836mm/18.5C,Aug,Latur
+856,5.71,clay,Spring Onion,0.47,532mm/20.9C,Dec,Ahmednagar
+857,5.3,clay,Brinjal,0.78,747mm/20.4C,Dec,Sangli
+858,6.47,sandy,Green Chilies,2.99,210mm/32.7C,Jul,Nagpur
+859,6.73,red,Fenugreek Leaves,4.66,335mm/15.4C,Nov,Aurangabad
+860,5.38,clay,Ladyfinger,2.58,142mm/17.8C,Jul,Sangli
+861,7.29,loam,Spinach,4.25,881mm/30.3C,Aug,Buldhana
+862,6.42,alluvial,Bottle Gourd,2.34,94mm/28.4C,Oct,Hingoli
+863,6.62,alluvial,Cabbage,3.6,802mm/17.9C,Jul,Chandrapur
+864,6.39,loam,Cauliflower,3.71,693mm/23.1C,Oct,Satara
+865,6.28,alluvial,Cabbage,1.04,1148mm/29.8C,Feb,Wardha
+866,6.71,sandy,Green Peas,1.93,410mm/25.6C,Apr,Wardha
+867,5.62,sandy,Fenugreek Leaves,3.26,1168mm/28.1C,Nov,Akola
+868,5.69,black,Carrot,0.54,1133mm/18.1C,Jun,Beed
+869,7.53,black,Cabbage,1.94,399mm/27.6C,Mar,Latur
+870,7.75,black,Coriander,2.77,184mm/24.8C,Mar,Satara
+871,6.21,alluvial,Carrot,4.98,409mm/32.5C,Jun,Pune
+872,5.93,sandy,Spinach,2.48,1150mm/21.6C,Jan,Latur
+873,6.94,sandy,Spring Onion,4.12,720mm/26.4C,Jan,Yavatmal
+874,6.3,sandy,Cabbage,2.27,541mm/34.0C,May,Nashik
+875,5.27,loam,Spinach,4.02,489mm/17.0C,Jan,Beed
+876,5.62,sandy,Spinach,3.06,350mm/27.9C,Oct,Yavatmal
+877,7.13,loam,Radish,4.46,464mm/31.9C,Aug,Nashik
+878,6.98,black,Pumpkin,2.17,299mm/25.1C,Feb,Satara
+879,5.27,black,Pumpkin,3.1,643mm/31.7C,Jun,Jalgaon
+880,5.8,alluvial,Ridge Gourd,3.22,175mm/20.5C,Oct,Ahmednagar
+881,5.82,black,Green Peas,2.2,907mm/20.2C,Oct,Buldhana
+882,7.01,alluvial,Brinjal,0.89,1047mm/28.7C,May,Jalgaon
+883,5.25,clay,Tomato,0.65,190mm/19.8C,Oct,Solapur
+884,5.48,clay,Brinjal,0.28,496mm/25.9C,Dec,Latur
+885,7.36,red,Fenugreek Leaves,4.39,882mm/31.2C,Dec,Buldhana
+886,5.68,alluvial,Green Peas,1.34,786mm/33.9C,Apr,Latur
+887,6.96,red,Bitter Gourd,1.22,554mm/27.1C,Jan,Gadchiroli
+888,5.84,red,Beetroot,3.73,190mm/22.2C,Mar,Amravati
+889,5.47,clay,Ladyfinger,1.74,211mm/20.3C,Dec,Wardha
+890,5.86,alluvial,Radish,2.63,177mm/21.1C,Apr,Amravati
+891,7.15,clay,Tomato,0.98,1104mm/29.4C,Feb,Parbhani
+892,7.51,red,Brinjal,4.81,731mm/28.0C,Dec,Buldhana
+893,7.44,alluvial,Tomato,4.29,123mm/23.3C,Feb,Parbhani
+894,6.27,red,Bitter Gourd,4.35,1147mm/26.7C,Feb,Sangli
+895,7.0,sandy,Cabbage,2.15,241mm/23.8C,Nov,Kolhapur
+896,5.75,alluvial,Green Peas,3.86,211mm/25.7C,Jan,Aurangabad
+897,5.99,alluvial,Spinach,0.89,553mm/18.1C,Oct,Parbhani
+898,7.62,red,Cabbage,0.24,785mm/23.7C,Feb,Akola
+899,5.24,sandy,Fenugreek Leaves,0.3,354mm/15.7C,Jun,Sangli
+900,5.43,loam,Ladyfinger,3.02,322mm/26.1C,Mar,Nashik
+901,5.76,clay,Carrot,2.39,601mm/15.3C,Oct,Gondia
+902,5.27,red,Brinjal,2.69,862mm/28.1C,May,Nashik
+903,5.69,alluvial,Beans,0.24,289mm/31.2C,Jan,Yavatmal
+904,6.77,clay,Beetroot,2.23,105mm/17.7C,Aug,Amravati
+905,6.34,clay,Brinjal,3.65,401mm/15.7C,Apr,Latur
+906,7.61,clay,Brinjal,2.32,134mm/21.5C,Sep,Nagpur
+907,7.41,loam,Bottle Gourd,3.71,747mm/23.0C,Apr,Osmana bad
+908,6.12,black,Coriander,1.32,678mm/15.2C,Feb,Beed
+909,5.9,red,Ladyfinger,4.1,412mm/34.7C,Mar,Osmana bad
+910,6.23,black,Coriander,3.02,1023mm/27.1C,May,Nashik
+911,6.79,black,Cabbage,1.21,1029mm/28.7C,Dec,Nanded
+912,5.92,black,Radish,1.34,546mm/21.3C,Oct,Nanded
+913,6.89,clay,Spinach,3.21,1061mm/21.2C,Jun,Nagpur
+914,6.31,sandy,Radish,4.18,630mm/18.8C,Jul,Sangli
+915,6.69,clay,Pumpkin,2.2,375mm/30.8C,Apr,Wardha
+916,6.38,clay,Spinach,1.44,1098mm/20.9C,Jul,Nagpur
+917,6.0,alluvial,Spring Onion,4.36,1193mm/34.3C,Oct,Wardha
+918,7.76,alluvial,Cucumber,3.41,791mm/24.4C,Mar,Nagpur
+919,7.26,black,Cabbage,2.35,818mm/24.2C,Jul,Buldhana
+920,5.58,clay,Cabbage,2.54,312mm/31.6C,Apr,Osmana bad
+921,7.54,black,Beans,1.18,1103mm/30.7C,Aug,Gondia
+922,6.52,alluvial,Tomato,3.21,560mm/20.3C,Sep,Nashik
+923,7.62,sandy,Bottle Gourd,1.92,1052mm/29.9C,Jul,Kolhapur
+924,7.36,red,Cauliflower,4.98,414mm/28.5C,Aug,Beed
+925,6.35,black,Cabbage,2.5,954mm/29.5C,Aug,Osmana bad
+926,5.26,sandy,Bitter Gourd,2.53,443mm/20.8C,Feb,Solapur
+927,5.93,red,Green Chilies,2.92,639mm/23.5C,Sep,Ahmednagar
+928,6.66,loam,Pumpkin,4.6,953mm/31.9C,Jun,Jalgaon
+929,6.91,black,Bottle Gourd,4.04,1078mm/25.5C,Nov,Pune
+930,5.9,black,Spring Onion,2.37,588mm/20.2C,Apr,Amravati
+931,5.58,loam,Beetroot,3.65,928mm/28.7C,May,Amravati
+932,7.45,loam,Brinjal,3.01,977mm/19.4C,Oct,Jalgaon
+933,7.86,black,Cauliflower,2.56,365mm/32.3C,May,Latur
+934,6.62,loam,Pumpkin,1.12,898mm/23.1C,Jul,Satara
+935,5.66,clay,Spinach,2.43,1097mm/20.7C,Sep,Satara
+936,5.94,red,Spinach,1.38,92mm/18.1C,Jul,Jalgaon
+937,5.25,red,Ladyfinger,4.59,665mm/20.0C,Sep,Solapur
+938,7.67,red,Beans,1.81,527mm/34.5C,Apr,Ahmednagar
+939,5.52,clay,Cauliflower,4.77,920mm/34.6C,Oct,Aurangabad
+940,6.76,loam,Ladyfinger,2.76,968mm/17.4C,Oct,Pune
+941,5.94,sandy,Cauliflower,3.23,1116mm/26.8C,Apr,Buldhana
+942,6.7,loam,Cabbage,2.81,1067mm/18.2C,Jun,Buldhana
+943,6.96,black,Spinach,0.82,381mm/23.6C,Aug,Pune
+944,7.44,alluvial,Pumpkin,2.0,539mm/25.1C,Sep,Chandrapur
+945,5.76,red,Spring Onion,0.68,1011mm/17.1C,Jan,Nashik
+946,5.23,loam,Green Peas,3.19,658mm/33.6C,Jan,Nanded
+947,5.57,sandy,Spinach,2.34,930mm/27.2C,Aug,Kolhapur
+948,7.63,black,Tomato,3.93,1039mm/20.0C,Nov,Kolhapur
+949,7.56,clay,Carrot,1.26,413mm/31.6C,Jul,Aurangabad
+950,6.81,clay,Fenugreek Leaves,0.99,1157mm/32.1C,Sep,Amravati
+951,6.82,sandy,Spinach,2.15,711mm/29.8C,Nov,Gondia
+952,7.0,black,Ridge Gourd,4.65,1061mm/24.8C,Mar,Chandrapur
+953,5.67,red,Spinach,3.61,638mm/17.3C,Oct,Jalgaon
+954,7.67,loam,Bitter Gourd,2.21,237mm/25.5C,Dec,Satara
+955,6.33,black,Ladyfinger,2.68,968mm/20.0C,May,Nagpur
+956,6.23,clay,Green Chilies,0.6,741mm/16.4C,Mar,Satara
+957,6.6,sandy,Spring Onion,4.93,756mm/17.5C,May,Pune
+958,5.33,sandy,Green Peas,3.4,637mm/25.8C,Oct,Aurangabad
+959,5.65,loam,Cabbage,1.57,1150mm/20.1C,Jan,Wardha
+960,7.19,sandy,Ridge Gourd,3.01,566mm/24.8C,Nov,Kolhapur
+961,5.42,sandy,Ridge Gourd,0.73,603mm/25.7C,Apr,Kolhapur
+962,6.83,black,Green Chilies,4.84,1109mm/17.5C,Jun,Gondia
+963,5.86,red,Beetroot,1.04,937mm/17.2C,Feb,Chandrapur
+964,6.25,loam,Ridge Gourd,3.31,765mm/30.5C,Jul,Osmana bad
+965,5.98,black,Spinach,1.38,1019mm/22.0C,Aug,Wardha
+966,6.16,red,Ladyfinger,3.64,131mm/21.4C,Jan,Parbhani
+967,7.14,black,Cucumber,3.93,620mm/26.3C,Apr,Chandrapur
+968,6.0,alluvial,Fenugreek Leaves,3.43,870mm/24.9C,Nov,Pune
+969,6.73,black,Bottle Gourd,3.15,498mm/18.7C,Apr,Solapur
+970,6.49,sandy,Fenugreek Leaves,4.48,943mm/21.8C,May,Amravati
+971,6.99,red,Ridge Gourd,0.58,239mm/17.8C,Dec,Nagpur
+972,7.73,loam,Pumpkin,1.79,303mm/22.1C,Dec,Beed
+973,7.18,loam,Fenugreek Leaves,1.39,99mm/23.1C,Apr,Solapur
+974,5.78,red,Tomato,4.94,137mm/24.5C,Sep,Amravati
+975,5.28,sandy,Bottle Gourd,2.07,802mm/24.9C,Jul,Nashik
+976,5.91,clay,Fenugreek Leaves,3.72,694mm/34.8C,Feb,Gadchiroli
+977,6.81,black,Spring Onion,3.49,701mm/30.1C,Jan,Ahmednagar
+978,5.34,sandy,Beetroot,1.22,1123mm/23.3C,Sep,Gadchiroli
+979,6.54,alluvial,Cucumber,1.35,212mm/25.4C,Jan,Beed
+980,6.81,red,Coriander,1.55,1137mm/17.5C,Jun,Yavatmal
+981,6.1,black,Bottle Gourd,2.17,671mm/16.7C,Feb,Yavatmal
+982,7.28,loam,Pumpkin,1.32,1181mm/27.4C,Apr,Gadchiroli
+983,5.49,clay,Green Chilies,0.29,1092mm/30.2C,Jun,Latur
+984,5.4,alluvial,Fenugreek Leaves,4.42,86mm/26.5C,May,Kolhapur
+985,7.17,loam,Beans,4.83,615mm/34.9C,Nov,Nanded
+986,6.54,red,Carrot,1.84,295mm/16.4C,Jun,Nanded
+987,7.06,black,Ridge Gourd,1.82,1157mm/17.7C,Mar,Gondia
+988,6.37,red,Green Peas,0.23,927mm/28.0C,May,Osmana bad
+989,5.87,black,Ridge Gourd,3.47,124mm/25.7C,Feb,Gadchiroli
+990,7.41,sandy,Cucumber,4.16,975mm/16.2C,Jul,Buldhana
+991,7.36,clay,Ladyfinger,0.9,775mm/29.4C,Mar,Gondia
+992,7.08,sandy,Pumpkin,0.97,397mm/30.6C,Jan,Chandrapur
+993,5.93,sandy,Radish,3.99,444mm/15.8C,Aug,Nanded
+994,6.79,red,Bottle Gourd,3.16,452mm/31.0C,Aug,Aurangabad
+995,6.17,clay,Ridge Gourd,0.42,324mm/16.0C,Mar,Gondia
+996,5.45,black,Green Peas,3.19,557mm/15.2C,Jul,Gondia
+997,7.68,black,Ridge Gourd,1.68,785mm/15.4C,Sep,Pune
+998,5.57,alluvial,Bitter Gourd,1.97,610mm/25.2C,Aug,Buldhana
+999,7.77,loam,Ladyfinger,3.89,333mm/23.8C,Mar,Amravati
+1000,6.4,alluvial,Radish,4.09,740mm/16.2C,Feb,Wardha
+1001,5.7,alluvial,Cauliflower,2.12,1116mm/15.6C,Oct,Jalgaon
+1002,6.66,black,Bitter Gourd,4.75,167mm/24.6C,Jul,Wardha
+1003,7.56,red,Ladyfinger,2.15,125mm/34.9C,Jul,Yavatmal
+1004,7.18,sandy,Spinach,3.9,1012mm/16.3C,Sep,Nagpur
+1005,7.38,sandy,Green Chilies,2.52,824mm/24.1C,May,Ahmednagar
+1006,6.98,sandy,Bottle Gourd,4.51,842mm/31.3C,Apr,Hingoli
+1007,7.07,clay,Spring Onion,4.56,823mm/30.7C,Aug,Amravati
+1008,7.49,black,Beans,0.62,637mm/29.5C,Apr,Ahmednagar
+1009,5.87,red,Ridge Gourd,4.7,676mm/23.4C,Apr,Gondia
+1010,6.52,clay,Bitter Gourd,4.16,82mm/24.0C,Dec,Gadchiroli
+1011,5.8,loam,Brinjal,4.0,236mm/22.0C,Dec,Kolhapur
+1012,7.87,red,Tomato,1.16,590mm/17.7C,Feb,Solapur
+1013,7.75,alluvial,Coriander,4.06,766mm/17.0C,Jan,Pune
+1014,5.31,red,Radish,4.28,650mm/18.1C,Apr,Hingoli
+1015,7.11,red,Carrot,1.59,318mm/21.7C,Jul,Wardha
+1016,7.7,sandy,Ridge Gourd,4.77,686mm/18.4C,Dec,Gadchiroli
+1017,5.69,red,Beans,0.44,413mm/26.7C,Sep,Pune
+1018,6.73,alluvial,Bottle Gourd,0.92,441mm/33.8C,Sep,Hingoli
+1019,7.67,alluvial,Spring Onion,2.78,176mm/21.4C,Dec,Beed
+1020,5.29,black,Coriander,2.96,95mm/22.1C,Oct,Solapur
+1021,7.08,red,Green Chilies,3.3,455mm/29.5C,Jan,Chandrapur
+1022,6.0,sandy,Cauliflower,0.28,699mm/23.6C,May,Nashik
+1023,7.7,red,Cucumber,4.81,903mm/18.7C,Jul,Pune
+1024,7.82,loam,Spinach,0.41,497mm/18.5C,Jul,Satara
+1025,7.75,loam,Bottle Gourd,0.89,647mm/24.9C,Oct,Amravati
+1026,6.48,sandy,Green Chilies,0.27,310mm/27.0C,Jun,Hingoli
+1027,7.53,black,Beans,2.92,782mm/21.4C,Nov,Jalgaon
+1028,7.48,black,Tomato,4.67,925mm/33.8C,Oct,Kolhapur
+1029,6.06,alluvial,Spring Onion,3.4,100mm/33.9C,Apr,Osmana bad
+1030,7.44,alluvial,Ladyfinger,4.15,977mm/33.3C,Mar,Gadchiroli
+1031,5.3,clay,Brinjal,0.26,450mm/25.6C,Dec,Nanded
+1032,6.81,sandy,Green Peas,2.8,157mm/27.8C,Sep,Osmana bad
+1033,5.82,red,Bitter Gourd,2.41,727mm/17.2C,Dec,Ahmednagar
+1034,5.53,sandy,Brinjal,2.6,1077mm/34.7C,Oct,Gadchiroli
+1035,5.41,clay,Pumpkin,0.55,519mm/32.4C,Apr,Ahmednagar
+1036,7.08,alluvial,Coriander,3.49,825mm/15.4C,Aug,Gondia
+1037,6.12,sandy,Spring Onion,2.62,845mm/24.7C,Jan,Satara
+1038,7.16,sandy,Ridge Gourd,3.87,808mm/34.5C,Jul,Hingoli
+1039,5.38,alluvial,Coriander,2.53,859mm/23.9C,Dec,Yavatmal
+1040,6.05,clay,Tomato,0.92,680mm/15.8C,Jun,Nanded
+1041,6.66,alluvial,Bitter Gourd,3.31,372mm/28.1C,Dec,Aurangabad
+1042,7.33,black,Tomato,1.03,1018mm/26.9C,Jan,Amravati
+1043,6.06,red,Radish,4.39,1190mm/26.8C,Apr,Kolhapur
+1044,6.89,alluvial,Spinach,3.14,1064mm/17.5C,Dec,Nashik
+1045,7.59,clay,Spring Onion,0.95,570mm/22.9C,May,Aurangabad
+1046,6.86,loam,Cucumber,4.82,654mm/19.1C,Nov,Nanded
+1047,5.83,black,Beans,2.69,119mm/16.3C,Aug,Kolhapur
+1048,5.27,loam,Pumpkin,0.55,599mm/22.8C,Apr,Jalgaon
+1049,7.55,alluvial,Carrot,3.21,625mm/30.1C,Mar,Buldhana
+1050,5.26,black,Tomato,1.42,562mm/21.3C,Feb,Chandrapur
+1051,7.56,red,Coriander,4.06,422mm/21.1C,Apr,Amravati
+1052,6.63,alluvial,Coriander,4.13,212mm/33.6C,Nov,Ahmednagar
+1053,7.74,red,Green Chilies,4.9,585mm/26.5C,Oct,Latur
+1054,7.36,sandy,Ladyfinger,2.61,909mm/31.5C,Apr,Gadchiroli
+1055,7.89,loam,Ladyfinger,2.38,945mm/26.3C,Oct,Nanded
+1056,6.15,black,Spring Onion,3.82,372mm/32.5C,May,Akola
+1057,7.27,red,Bottle Gourd,0.84,677mm/32.0C,Jul,Amravati
+1058,6.29,clay,Spring Onion,2.83,769mm/21.8C,Sep,Jalgaon
+1059,6.5,red,Cauliflower,2.82,581mm/20.3C,Feb,Chandrapur
+1060,6.89,clay,Green Peas,0.63,814mm/27.8C,May,Parbhani
+1061,7.56,alluvial,Fenugreek Leaves,2.21,329mm/34.1C,Nov,Sangli
+1062,7.86,black,Carrot,4.3,680mm/28.2C,Oct,Buldhana
+1063,7.27,red,Carrot,4.31,1060mm/25.6C,Sep,Parbhani
+1064,6.33,red,Cucumber,0.68,229mm/16.3C,Dec,Jalgaon
+1065,6.34,black,Bottle Gourd,0.64,659mm/26.9C,Mar,Gadchiroli
+1066,7.19,red,Brinjal,1.46,400mm/22.9C,Jan,Yavatmal
+1067,5.84,clay,Bottle Gourd,4.4,611mm/18.4C,Feb,Chandrapur
+1068,5.5,red,Bottle Gourd,0.82,571mm/21.6C,Jun,Ahmednagar
+1069,6.16,loam,Spring Onion,3.66,1180mm/27.9C,May,Aurangabad
+1070,5.98,alluvial,Bitter Gourd,0.69,252mm/30.1C,Jan,Nanded
+1071,6.0,sandy,Bottle Gourd,3.19,296mm/30.5C,Jan,Parbhani
+1072,5.83,clay,Brinjal,1.91,90mm/27.2C,Nov,Hingoli
+1073,5.31,loam,Carrot,3.99,1115mm/28.9C,Apr,Wardha
+1074,5.25,alluvial,Beans,1.32,514mm/33.9C,Dec,Gadchiroli
+1075,7.87,black,Spring Onion,3.27,897mm/25.3C,Apr,Hingoli
+1076,6.35,clay,Beans,1.33,1010mm/20.0C,Jun,Parbhani
+1077,6.24,sandy,Cabbage,3.63,770mm/28.6C,Jun,Chandrapur
+1078,7.04,alluvial,Pumpkin,4.39,934mm/27.5C,Oct,Nashik
+1079,5.79,sandy,Carrot,0.81,398mm/25.3C,Jun,Nashik
+1080,7.76,black,Brinjal,4.36,700mm/34.6C,Jan,Jalgaon
+1081,7.32,black,Bottle Gourd,3.05,476mm/26.3C,Oct,Yavatmal
+1082,5.44,clay,Cauliflower,0.81,539mm/29.5C,Sep,Wardha
+1083,6.33,red,Spring Onion,2.25,798mm/27.6C,Nov,Latur
+1084,7.57,black,Carrot,0.97,1120mm/25.6C,Jul,Amravati
+1085,7.75,alluvial,Pumpkin,3.56,584mm/26.6C,Jul,Buldhana
+1086,6.46,red,Green Peas,3.84,1172mm/26.6C,Nov,Wardha
+1087,6.86,loam,Carrot,0.71,797mm/24.2C,Jul,Sangli
+1088,5.65,sandy,Ladyfinger,2.63,1072mm/33.3C,Feb,Aurangabad
+1089,7.88,red,Bitter Gourd,4.11,778mm/27.3C,Feb,Buldhana
+1090,5.83,sandy,Ridge Gourd,4.69,429mm/15.8C,Jun,Wardha
+1091,7.75,red,Brinjal,2.66,486mm/28.7C,Jul,Akola
+1092,6.95,loam,Cabbage,4.76,1190mm/25.7C,Mar,Satara
+1093,6.84,black,Brinjal,2.77,1058mm/25.4C,Apr,Amravati
+1094,6.58,loam,Cucumber,2.09,136mm/25.2C,Dec,Gondia
+1095,5.82,black,Spinach,4.27,1165mm/34.9C,Mar,Pune
+1096,5.68,black,Brinjal,2.57,844mm/15.8C,Jul,Solapur
+1097,5.8,sandy,Carrot,2.47,1027mm/29.2C,Jul,Gondia
+1098,5.7,alluvial,Cucumber,2.55,837mm/26.2C,Apr,Yavatmal
+1099,7.3,loam,Ridge Gourd,4.26,828mm/22.8C,Jul,Parbhani
+1100,6.15,red,Spring Onion,4.19,325mm/31.9C,May,Akola
+1101,5.36,loam,Cucumber,2.14,988mm/27.7C,Jan,Pune
+1102,7.82,sandy,Radish,1.8,1005mm/21.3C,Oct,Buldhana
+1103,7.59,black,Cabbage,2.56,869mm/23.5C,Apr,Solapur
+1104,7.7,sandy,Tomato,2.95,251mm/28.3C,Jul,Amravati
+1105,7.89,clay,Coriander,1.34,1129mm/25.3C,Feb,Nashik
+1106,5.67,clay,Beans,4.01,555mm/34.1C,Feb,Beed
+1107,6.27,red,Beans,2.54,113mm/33.6C,Jan,Ahmednagar
+1108,7.25,sandy,Spring Onion,1.8,895mm/25.9C,Feb,Ahmednagar
+1109,7.08,red,Bitter Gourd,0.71,833mm/31.8C,Oct,Buldhana
+1110,5.62,red,Green Peas,1.35,734mm/34.0C,Aug,Solapur
+1111,7.4,clay,Brinjal,4.76,949mm/29.2C,Nov,Beed
+1112,5.81,red,Green Peas,1.66,1149mm/19.0C,Aug,Amravati
+1113,5.8,clay,Fenugreek Leaves,1.01,886mm/33.9C,Aug,Nanded
+1114,6.65,black,Ladyfinger,2.41,1063mm/30.5C,Jan,Yavatmal
+1115,6.8,sandy,Cucumber,1.67,555mm/29.7C,Jan,Gadchiroli
+1116,6.77,red,Ridge Gourd,0.37,566mm/31.5C,Dec,Osmana bad
+1117,5.45,clay,Ladyfinger,1.75,699mm/15.6C,Oct,Gondia
+1118,7.57,loam,Brinjal,2.81,856mm/32.2C,Apr,Wardha
+1119,5.92,red,Carrot,2.85,288mm/30.0C,Jun,Satara
+1120,5.55,alluvial,Green Chilies,1.91,756mm/17.1C,Aug,Osmana bad
+1121,7.6,black,Ridge Gourd,2.35,743mm/29.8C,Feb,Chandrapur
+1122,7.78,black,Pumpkin,4.83,230mm/15.9C,Mar,Satara
+1123,7.53,loam,Bottle Gourd,2.01,934mm/29.9C,Jun,Gondia
+1124,7.39,clay,Spring Onion,1.44,449mm/30.0C,Oct,Beed
+1125,6.97,red,Fenugreek Leaves,1.37,905mm/29.7C,Apr,Gondia
+1126,6.69,clay,Brinjal,2.4,456mm/23.0C,Dec,Nashik
+1127,5.43,black,Radish,3.85,1108mm/31.0C,Feb,Nanded
+1128,6.3,clay,Green Peas,1.19,834mm/27.2C,Jul,Jalgaon
+1129,6.21,black,Ridge Gourd,3.6,719mm/15.7C,Apr,Sangli
+1130,5.9,clay,Brinjal,0.3,901mm/27.0C,Aug,Pune
+1131,7.15,loam,Cauliflower,2.21,439mm/25.3C,Aug,Pune
+1132,6.54,sandy,Bottle Gourd,3.92,1160mm/16.7C,Jul,Parbhani
+1133,5.42,loam,Beetroot,1.83,998mm/25.4C,Oct,Beed
+1134,5.79,loam,Brinjal,2.91,199mm/25.5C,Sep,Gondia
+1135,7.04,sandy,Bitter Gourd,1.18,178mm/17.5C,Apr,Pune
+1136,5.41,sandy,Carrot,3.76,593mm/33.6C,Jul,Chandrapur
+1137,7.5,red,Tomato,0.45,444mm/31.2C,Oct,Parbhani
+1138,6.54,red,Fenugreek Leaves,4.29,660mm/24.9C,Oct,Amravati
+1139,6.5,loam,Ridge Gourd,1.15,907mm/33.9C,Dec,Buldhana
+1140,6.8,loam,Ridge Gourd,4.4,1196mm/31.1C,Jan,Nagpur
+1141,7.43,black,Coriander,1.89,1022mm/24.2C,Apr,Yavatmal
+1142,6.14,black,Radish,3.67,400mm/27.5C,Feb,Akola
+1143,7.03,red,Coriander,1.73,935mm/27.1C,Sep,Aurangabad
+1144,6.73,alluvial,Pumpkin,4.55,482mm/27.9C,May,Satara
+1145,5.92,alluvial,Ridge Gourd,0.81,332mm/24.4C,Mar,Nagpur
+1146,7.57,red,Spring Onion,1.06,239mm/22.9C,Apr,Jalgaon
+1147,7.35,black,Bottle Gourd,2.57,284mm/29.4C,Jun,Buldhana
+1148,6.98,black,Bitter Gourd,0.59,937mm/29.2C,Oct,Sangli
+1149,7.5,alluvial,Ridge Gourd,1.14,800mm/19.9C,Jan,Nagpur
+1150,7.54,clay,Carrot,4.73,212mm/28.8C,Jul,Amravati
+1151,7.11,clay,Cucumber,4.89,509mm/20.4C,Aug,Latur
+1152,7.46,black,Cabbage,2.01,491mm/26.0C,Jul,Sangli
+1153,7.08,clay,Bitter Gourd,4.63,1130mm/27.3C,Jul,Nagpur
+1154,7.04,sandy,Spring Onion,2.82,1163mm/25.7C,Sep,Osmana bad
+1155,6.87,red,Cucumber,1.49,953mm/34.2C,Apr,Wardha
+1156,7.23,red,Cabbage,3.57,449mm/18.4C,Jul,Amravati
+1157,5.63,black,Green Peas,3.36,978mm/23.4C,Sep,Beed
+1158,7.58,loam,Radish,4.95,952mm/16.3C,May,Amravati
+1159,7.55,alluvial,Beetroot,1.47,849mm/25.9C,Feb,Latur
+1160,5.28,black,Radish,3.43,1017mm/24.9C,May,Yavatmal
+1161,7.43,clay,Cauliflower,0.45,633mm/31.4C,Apr,Nanded
+1162,5.55,alluvial,Cabbage,0.75,1171mm/18.4C,Aug,Ahmednagar
+1163,6.1,loam,Cabbage,0.22,638mm/27.1C,May,Akola
+1164,7.21,clay,Green Peas,5.0,884mm/26.1C,Sep,Yavatmal
+1165,5.63,sandy,Pumpkin,4.05,481mm/33.7C,Sep,Chandrapur
+1166,7.41,clay,Beetroot,3.98,285mm/22.4C,Mar,Yavatmal
+1167,7.45,sandy,Cucumber,2.65,946mm/31.4C,Oct,Pune
+1168,6.57,alluvial,Spring Onion,1.64,458mm/18.4C,Jun,Nashik
+1169,5.22,sandy,Tomato,0.93,144mm/17.6C,Jun,Buldhana
+1170,5.98,alluvial,Tomato,1.57,1127mm/15.6C,Apr,Chandrapur
+1171,6.87,alluvial,Ladyfinger,2.0,570mm/27.4C,Nov,Latur
+1172,7.85,alluvial,Spinach,3.83,1123mm/19.0C,Oct,Gondia
+1173,6.91,alluvial,Fenugreek Leaves,2.79,990mm/31.0C,Mar,Kolhapur
+1174,5.9,alluvial,Radish,0.57,215mm/15.2C,Jan,Buldhana
+1175,6.91,clay,Fenugreek Leaves,0.29,594mm/23.6C,Dec,Nanded
+1176,6.66,alluvial,Brinjal,0.69,952mm/17.3C,Jul,Jalgaon
+1177,7.31,clay,Fenugreek Leaves,2.17,288mm/28.4C,May,Buldhana
+1178,5.49,alluvial,Tomato,4.68,728mm/29.4C,Oct,Latur
+1179,7.25,sandy,Green Peas,3.26,706mm/19.5C,Jul,Osmana bad
+1180,6.66,alluvial,Beetroot,4.05,848mm/31.3C,Jan,Sangli
+1181,7.8,loam,Cauliflower,2.44,126mm/24.4C,Aug,Parbhani
+1182,6.12,alluvial,Coriander,1.94,601mm/31.2C,Mar,Solapur
+1183,6.91,alluvial,Beans,0.72,213mm/16.9C,Jul,Kolhapur
+1184,7.72,sandy,Carrot,4.4,515mm/18.1C,Dec,Osmana bad
+1185,5.48,red,Fenugreek Leaves,3.96,765mm/26.4C,Mar,Latur
+1186,7.73,sandy,Beetroot,1.01,430mm/32.5C,Mar,Satara
+1187,7.06,loam,Spring Onion,2.66,883mm/27.0C,Oct,Gadchiroli
+1188,5.38,red,Brinjal,2.54,797mm/33.7C,Sep,Chandrapur
+1189,6.01,black,Ridge Gourd,3.2,580mm/18.2C,Feb,Akola
+1190,7.11,black,Beetroot,4.74,1189mm/30.8C,Apr,Parbhani
+1191,5.38,loam,Pumpkin,2.98,1029mm/33.2C,Jun,Sangli
+1192,6.77,sandy,Coriander,2.79,568mm/30.9C,Mar,Latur
+1193,6.13,clay,Bitter Gourd,0.44,975mm/23.0C,Dec,Akola
+1194,6.88,loam,Fenugreek Leaves,0.5,367mm/26.9C,Oct,Latur
+1195,5.32,red,Green Chilies,1.1,1077mm/25.7C,Oct,Sangli
+1196,7.55,red,Radish,0.36,930mm/19.9C,Jul,Nashik
+1197,7.83,alluvial,Green Peas,3.77,1029mm/17.5C,Jul,Wardha
+1198,7.82,black,Pumpkin,3.67,569mm/26.8C,May,Beed
+1199,7.22,red,Ridge Gourd,0.85,624mm/20.8C,Mar,Ahmednagar
+1200,5.55,loam,Pumpkin,4.21,1011mm/33.0C,Feb,Ahmednagar
+1201,7.25,red,Green Peas,0.94,738mm/25.0C,Apr,Buldhana
+1202,5.27,loam,Cauliflower,1.65,90mm/32.8C,Apr,Buldhana
+1203,5.26,clay,Fenugreek Leaves,1.4,475mm/20.1C,Nov,Hingoli
+1204,6.07,alluvial,Brinjal,1.99,488mm/24.5C,Aug,Gadchiroli
+1205,6.52,black,Spinach,1.42,1106mm/30.1C,Aug,Kolhapur
+1206,7.28,red,Ladyfinger,2.55,786mm/29.7C,May,Jalgaon
+1207,7.04,loam,Ladyfinger,2.16,698mm/18.1C,Jun,Gondia
+1208,6.4,sandy,Fenugreek Leaves,4.94,867mm/17.0C,Aug,Nagpur
+1209,5.94,black,Beetroot,0.47,746mm/28.8C,Jan,Nanded
+1210,7.89,clay,Green Peas,0.88,961mm/28.9C,May,Parbhani
+1211,6.35,loam,Tomato,0.45,114mm/25.3C,Apr,Chandrapur
+1212,6.42,alluvial,Bottle Gourd,3.2,484mm/19.7C,Apr,Jalgaon
+1213,5.64,alluvial,Cucumber,0.46,238mm/24.8C,Nov,Wardha
+1214,7.35,clay,Cucumber,4.21,628mm/19.0C,Feb,Osmana bad
+1215,7.07,clay,Ladyfinger,2.66,1064mm/31.7C,Oct,Chandrapur
+1216,5.8,alluvial,Beans,2.73,358mm/20.0C,Jan,Buldhana
+1217,5.42,red,Carrot,2.9,510mm/31.1C,Jun,Chandrapur
+1218,7.04,red,Green Chilies,1.02,1193mm/19.8C,Jul,Osmana bad
+1219,6.97,loam,Beetroot,1.15,439mm/17.6C,May,Amravati
+1220,5.94,sandy,Green Chilies,1.73,1118mm/23.7C,Aug,Jalgaon
+1221,7.77,loam,Cabbage,3.05,857mm/27.7C,Sep,Nanded
+1222,5.61,sandy,Tomato,1.21,1055mm/30.3C,Nov,Yavatmal
+1223,6.37,clay,Cabbage,0.76,802mm/20.9C,Nov,Gadchiroli
+1224,7.75,black,Green Chilies,4.86,404mm/17.9C,Feb,Osmana bad
+1225,6.33,loam,Ladyfinger,0.31,1153mm/21.2C,Nov,Kolhapur
+1226,6.92,loam,Green Peas,4.05,148mm/30.2C,Apr,Gadchiroli
+1227,6.27,sandy,Cauliflower,3.98,95mm/22.6C,Nov,Parbhani
+1228,5.94,clay,Ladyfinger,1.63,948mm/31.2C,Sep,Latur
+1229,7.86,clay,Tomato,0.85,211mm/20.8C,May,Satara
+1230,6.31,sandy,Brinjal,0.9,352mm/15.5C,Mar,Ahmednagar
+1231,7.61,clay,Bitter Gourd,3.55,563mm/33.9C,Jun,Buldhana
+1232,5.82,alluvial,Spinach,3.29,1151mm/31.9C,Mar,Parbhani
+1233,5.78,red,Spring Onion,3.96,115mm/27.9C,May,Ahmednagar
+1234,5.28,alluvial,Green Peas,4.7,1107mm/31.4C,Mar,Parbhani
+1235,6.96,black,Ladyfinger,3.52,819mm/30.9C,Jun,Buldhana
+1236,6.2,loam,Beetroot,0.95,476mm/26.0C,Dec,Parbhani
+1237,7.53,black,Coriander,1.37,545mm/26.5C,Oct,Sangli
+1238,6.48,loam,Green Peas,4.24,926mm/28.4C,May,Wardha
+1239,7.81,red,Brinjal,1.2,148mm/32.5C,Sep,Gondia
+1240,5.7,clay,Beetroot,0.55,146mm/33.9C,Mar,Nagpur
+1241,7.55,alluvial,Ladyfinger,3.58,563mm/15.5C,Jun,Hingoli
+1242,7.3,sandy,Cucumber,2.13,228mm/31.9C,Aug,Hingoli
+1243,7.28,alluvial,Green Chilies,4.62,663mm/16.3C,Jul,Satara
+1244,7.48,red,Tomato,3.32,781mm/17.8C,Jun,Hingoli
+1245,7.25,black,Ladyfinger,0.63,361mm/24.9C,Feb,Aurangabad
+1246,6.89,sandy,Brinjal,4.75,608mm/22.9C,Jul,Ahmednagar
+1247,5.55,clay,Fenugreek Leaves,1.44,659mm/20.3C,Aug,Ahmednagar
+1248,5.29,red,Beetroot,1.82,373mm/29.3C,Jan,Gondia
+1249,7.69,sandy,Fenugreek Leaves,2.13,592mm/22.4C,Sep,Parbhani
+1250,6.86,red,Radish,0.45,999mm/17.0C,Apr,Parbhani
+1251,7.35,red,Spinach,2.58,1031mm/30.7C,Aug,Amravati
+1252,6.5,clay,Spinach,0.79,1111mm/28.0C,Oct,Solapur
+1253,5.52,loam,Ladyfinger,2.12,618mm/20.0C,Jul,Buldhana
+1254,5.54,sandy,Cucumber,1.88,1194mm/32.7C,Oct,Osmana bad
+1255,7.05,clay,Cabbage,3.91,1108mm/23.6C,Jul,Amravati
+1256,6.36,red,Pumpkin,4.06,672mm/34.5C,Feb,Latur
+1257,5.74,clay,Ridge Gourd,0.94,194mm/19.2C,Jan,Nanded
+1258,6.53,loam,Green Peas,1.96,286mm/28.9C,Apr,Chandrapur
+1259,5.37,alluvial,Carrot,1.99,191mm/33.1C,Dec,Ahmednagar
+1260,6.77,sandy,Radish,0.93,264mm/22.4C,Feb,Sangli
+1261,5.93,loam,Cauliflower,4.03,300mm/27.7C,Aug,Buldhana
+1262,7.35,black,Bottle Gourd,3.59,1173mm/21.2C,Oct,Akola
+1263,6.04,sandy,Green Chilies,1.11,701mm/21.9C,Jul,Gondia
+1264,6.43,loam,Green Chilies,1.96,647mm/25.8C,Aug,Satara
+1265,5.23,red,Cabbage,0.71,680mm/24.4C,Nov,Akola
+1266,5.4,sandy,Cabbage,3.22,210mm/16.2C,Jun,Kolhapur
+1267,6.26,sandy,Green Peas,0.78,250mm/27.1C,Jan,Yavatmal
+1268,6.5,clay,Bitter Gourd,4.93,1071mm/32.3C,Dec,Chandrapur
+1269,6.82,red,Green Peas,3.95,325mm/32.1C,Sep,Jalgaon
+1270,5.99,black,Bitter Gourd,2.07,447mm/26.2C,Jun,Nagpur
+1271,7.08,alluvial,Coriander,2.98,695mm/32.5C,Dec,Nanded
+1272,7.52,loam,Carrot,4.57,521mm/25.3C,Oct,Nanded
+1273,7.31,clay,Cabbage,2.86,778mm/18.3C,Jan,Nashik
+1274,5.31,loam,Bitter Gourd,1.04,855mm/29.7C,Jan,Jalgaon
+1275,6.5,black,Coriander,2.02,1002mm/17.3C,Aug,Solapur
+1276,5.48,black,Cucumber,4.25,104mm/23.4C,Jun,Buldhana
+1277,5.85,sandy,Ladyfinger,3.29,843mm/16.4C,Aug,Amravati
+1278,7.86,black,Bitter Gourd,3.32,513mm/25.6C,Aug,Pune
+1279,5.58,loam,Cucumber,4.36,989mm/19.9C,Nov,Sangli
+1280,6.55,red,Bottle Gourd,4.49,185mm/26.6C,Aug,Gadchiroli
+1281,6.87,red,Carrot,4.62,247mm/32.3C,Oct,Jalgaon
+1282,7.1,sandy,Coriander,0.66,183mm/32.5C,Jul,Akola
+1283,6.71,alluvial,Beans,2.81,599mm/24.9C,Jul,Gondia
+1284,5.23,loam,Beans,3.75,1146mm/28.1C,Oct,Hingoli
+1285,6.08,loam,Spring Onion,3.83,828mm/21.0C,Apr,Ahmednagar
+1286,6.6,black,Bitter Gourd,3.11,128mm/18.6C,Sep,Gadchiroli
+1287,5.44,loam,Fenugreek Leaves,1.0,582mm/29.3C,Dec,Pune
+1288,6.15,clay,Carrot,4.03,1065mm/15.9C,Feb,Gondia
+1289,5.29,alluvial,Coriander,3.66,146mm/28.3C,Nov,Aurangabad
+1290,5.41,black,Bottle Gourd,0.61,1046mm/16.4C,Sep,Nashik
+1291,6.27,clay,Beans,2.43,692mm/29.4C,Oct,Amravati
+1292,5.56,sandy,Pumpkin,1.04,776mm/29.5C,Mar,Nagpur
+1293,6.73,red,Bottle Gourd,1.82,438mm/15.2C,Feb,Wardha
+1294,7.06,sandy,Coriander,0.29,1029mm/24.2C,Apr,Chandrapur
+1295,7.36,red,Pumpkin,2.12,1191mm/25.5C,May,Nanded
+1296,5.74,sandy,Cauliflower,2.84,802mm/28.7C,Feb,Gadchiroli
+1297,5.65,loam,Ridge Gourd,3.17,850mm/26.2C,Jan,Satara
+1298,5.48,clay,Bottle Gourd,3.38,160mm/21.2C,Oct,Buldhana
+1299,6.92,red,Green Peas,4.21,549mm/16.9C,Nov,Ahmednagar
+1300,7.11,black,Bitter Gourd,1.23,389mm/28.4C,May,Nanded
+1301,5.29,clay,Green Peas,0.78,1081mm/21.1C,Sep,Chandrapur
+1302,7.73,black,Cucumber,4.29,348mm/27.0C,Dec,Nagpur
+1303,5.34,clay,Spinach,0.95,95mm/17.8C,Dec,Buldhana
+1304,6.66,clay,Cauliflower,4.88,892mm/15.2C,May,Chandrapur
+1305,7.11,sandy,Radish,4.24,561mm/26.7C,Dec,Parbhani
+1306,7.55,red,Green Chilies,2.6,348mm/34.0C,Nov,Nashik
+1307,7.13,red,Ladyfinger,4.91,395mm/20.7C,Oct,Latur
+1308,7.36,clay,Tomato,0.67,1087mm/23.6C,Sep,Jalgaon
+1309,6.12,loam,Cabbage,1.65,468mm/31.5C,Dec,Gadchiroli
+1310,7.4,loam,Brinjal,3.26,1078mm/22.1C,Oct,Jalgaon
+1311,5.42,black,Pumpkin,1.88,776mm/20.8C,Jun,Nashik
+1312,7.62,black,Ridge Gourd,4.66,800mm/20.3C,Mar,Pune
+1313,6.68,sandy,Beans,0.52,421mm/29.5C,Apr,Chandrapur
+1314,7.41,clay,Radish,2.84,383mm/18.3C,Apr,Pune
+1315,6.42,black,Beetroot,3.04,895mm/24.1C,Jan,Nagpur
+1316,6.94,black,Ladyfinger,3.33,1109mm/17.1C,Mar,Wardha
+1317,6.62,alluvial,Radish,1.43,925mm/16.4C,Mar,Osmana bad
+1318,7.18,clay,Ridge Gourd,1.95,461mm/24.5C,Jan,Latur
+1319,5.42,sandy,Pumpkin,4.25,382mm/27.0C,Sep,Aurangabad
+1320,5.36,black,Ridge Gourd,1.14,239mm/29.3C,Nov,Aurangabad
+1321,5.87,sandy,Cauliflower,4.17,260mm/18.0C,Jan,Hingoli
+1322,5.63,red,Fenugreek Leaves,2.9,456mm/24.0C,Sep,Sangli
+1323,7.55,sandy,Brinjal,3.86,95mm/18.8C,Jan,Solapur
+1324,5.79,loam,Cucumber,3.63,332mm/20.1C,Feb,Akola
+1325,7.83,loam,Bitter Gourd,1.2,110mm/32.4C,Feb,Yavatmal
+1326,6.11,sandy,Green Chilies,2.93,368mm/21.8C,Jun,Nashik
+1327,5.69,loam,Brinjal,4.37,627mm/29.7C,Jul,Chandrapur
+1328,7.33,red,Beetroot,2.27,937mm/31.3C,Nov,Chandrapur
+1329,6.98,clay,Bottle Gourd,4.84,600mm/29.3C,Jan,Latur
+1330,6.55,loam,Brinjal,2.37,83mm/20.6C,Mar,Osmana bad
+1331,6.7,loam,Ridge Gourd,0.89,95mm/24.3C,Feb,Gadchiroli
+1332,7.14,sandy,Beetroot,2.07,1035mm/33.4C,Aug,Akola
+1333,5.82,red,Carrot,4.77,342mm/32.6C,Sep,Nashik
+1334,7.89,clay,Bitter Gourd,1.73,344mm/22.5C,Feb,Beed
+1335,7.83,sandy,Cauliflower,4.37,457mm/17.2C,Feb,Latur
+1336,6.96,sandy,Beans,4.43,555mm/27.3C,Oct,Akola
+1337,5.74,alluvial,Spring Onion,1.88,517mm/27.5C,Sep,Satara
+1338,7.04,red,Tomato,0.6,95mm/25.1C,Apr,Sangli
+1339,5.39,clay,Fenugreek Leaves,3.68,947mm/25.0C,May,Buldhana
+1340,5.28,red,Ridge Gourd,1.7,1063mm/29.2C,Nov,Gondia
+1341,5.9,clay,Spinach,3.96,85mm/31.6C,Sep,Nashik
+1342,6.45,red,Pumpkin,2.32,886mm/19.2C,Jun,Aurangabad
+1343,7.54,sandy,Coriander,2.53,698mm/34.1C,Oct,Hingoli
+1344,7.16,sandy,Beans,3.93,484mm/27.3C,Dec,Parbhani
+1345,7.21,black,Cucumber,2.04,673mm/34.0C,Sep,Gondia
+1346,6.35,loam,Pumpkin,2.33,91mm/25.9C,Sep,Sangli
+1347,6.13,alluvial,Pumpkin,2.01,957mm/24.3C,Jul,Jalgaon
+1348,6.2,red,Green Peas,1.96,157mm/27.2C,Dec,Wardha
+1349,7.87,alluvial,Bottle Gourd,2.72,693mm/26.8C,Oct,Solapur
+1350,5.31,black,Bottle Gourd,4.08,891mm/25.9C,Sep,Akola
+1351,7.54,loam,Green Chilies,1.94,1180mm/17.8C,May,Gadchiroli
+1352,6.76,red,Spring Onion,2.72,161mm/29.0C,May,Chandrapur
+1353,6.38,clay,Beetroot,3.42,288mm/19.4C,Dec,Kolhapur
+1354,7.16,loam,Bitter Gourd,1.49,601mm/27.8C,Aug,Latur
+1355,6.51,sandy,Beetroot,1.53,1073mm/25.6C,Oct,Yavatmal
+1356,7.56,black,Spinach,4.68,707mm/21.4C,Apr,Beed
+1357,7.63,loam,Cabbage,3.67,638mm/33.8C,Sep,Solapur
+1358,6.34,loam,Bottle Gourd,2.97,170mm/20.7C,Jul,Jalgaon
+1359,5.95,sandy,Beetroot,3.31,939mm/24.3C,Jul,Chandrapur
+1360,6.8,red,Bitter Gourd,0.34,635mm/16.9C,Mar,Yavatmal
+1361,7.66,clay,Ladyfinger,3.17,904mm/34.0C,Apr,Beed
+1362,5.77,sandy,Bitter Gourd,2.65,1062mm/34.3C,Jul,Gadchiroli
+1363,6.88,clay,Bottle Gourd,2.82,572mm/19.5C,Nov,Parbhani
+1364,6.91,red,Beetroot,1.93,154mm/23.4C,Nov,Yavatmal
+1365,7.18,loam,Bitter Gourd,0.59,450mm/27.1C,May,Nagpur
+1366,5.56,clay,Brinjal,1.13,669mm/30.5C,Dec,Nanded
+1367,7.13,black,Carrot,4.76,383mm/26.9C,Mar,Pune
+1368,7.65,black,Coriander,2.16,1058mm/19.2C,Jan,Nanded
+1369,5.69,sandy,Green Peas,2.44,454mm/30.7C,Jul,Latur
+1370,5.84,red,Ridge Gourd,0.45,267mm/17.1C,Jun,Gondia
+1371,7.82,sandy,Ridge Gourd,0.38,1189mm/24.0C,Oct,Pune
+1372,5.69,sandy,Bottle Gourd,3.64,923mm/34.1C,Jul,Ahmednagar
+1373,7.51,alluvial,Ladyfinger,2.78,1150mm/29.1C,Feb,Solapur
+1374,6.53,sandy,Cauliflower,2.64,554mm/29.7C,Dec,Amravati
+1375,5.87,alluvial,Tomato,1.37,1169mm/20.0C,Apr,Sangli
+1376,7.55,black,Carrot,3.77,505mm/20.5C,Feb,Solapur
+1377,6.4,black,Brinjal,1.01,212mm/30.7C,Aug,Amravati
+1378,6.59,sandy,Carrot,1.11,393mm/31.7C,Jul,Nashik
+1379,6.17,black,Beetroot,2.41,1088mm/28.8C,Jan,Akola
+1380,6.8,red,Ladyfinger,1.57,740mm/28.2C,Feb,Kolhapur
+1381,5.64,alluvial,Tomato,1.39,827mm/15.2C,Feb,Chandrapur
+1382,6.26,alluvial,Carrot,3.3,489mm/32.8C,Apr,Yavatmal
+1383,7.82,sandy,Spring Onion,3.32,759mm/24.8C,Mar,Pune
+1384,5.9,black,Radish,4.16,193mm/32.4C,Jan,Aurangabad
+1385,6.97,clay,Green Chilies,2.21,1158mm/16.2C,Dec,Nanded
+1386,6.08,alluvial,Coriander,0.55,763mm/22.6C,Feb,Beed
+1387,7.29,sandy,Spinach,1.51,225mm/18.2C,Nov,Chandrapur
+1388,5.55,sandy,Coriander,4.9,1113mm/18.1C,Sep,Sangli
+1389,7.82,red,Beans,3.06,914mm/17.9C,Jan,Satara
+1390,6.43,loam,Pumpkin,3.61,292mm/18.1C,Sep,Satara
+1391,5.84,loam,Cucumber,0.24,106mm/23.1C,Jul,Kolhapur
+1392,5.4,alluvial,Bottle Gourd,2.69,869mm/30.3C,Feb,Parbhani
+1393,5.66,red,Pumpkin,0.38,153mm/23.9C,Feb,Pune
+1394,6.6,red,Pumpkin,2.93,865mm/22.9C,May,Buldhana
+1395,6.11,red,Coriander,4.62,316mm/18.1C,May,Yavatmal
+1396,7.44,alluvial,Bottle Gourd,4.85,457mm/16.3C,Apr,Ahmednagar
+1397,6.36,loam,Ridge Gourd,2.79,985mm/19.8C,Dec,Latur
+1398,5.87,red,Beans,2.4,732mm/33.2C,Oct,Jalgaon
+1399,6.87,black,Ladyfinger,4.74,275mm/30.4C,Oct,Gondia
+1400,7.11,sandy,Beans,3.43,972mm/19.6C,Dec,Satara
+1401,5.65,sandy,Cauliflower,0.51,1164mm/22.2C,Mar,Nashik
+1402,5.65,clay,Tomato,2.44,926mm/31.3C,Apr,Gadchiroli
+1403,5.3,clay,Cucumber,1.35,643mm/19.1C,Oct,Gadchiroli
+1404,7.19,alluvial,Carrot,2.46,1097mm/32.2C,Apr,Wardha
+1405,6.99,alluvial,Brinjal,2.39,1148mm/19.9C,Feb,Parbhani
+1406,6.48,sandy,Brinjal,2.99,875mm/24.0C,May,Parbhani
+1407,7.48,black,Bottle Gourd,1.91,1130mm/34.7C,May,Buldhana
+1408,7.38,loam,Brinjal,0.99,928mm/29.1C,May,Solapur
+1409,6.78,loam,Beetroot,2.62,1165mm/33.8C,Nov,Aurangabad
+1410,7.54,alluvial,Bitter Gourd,4.18,712mm/33.4C,Nov,Gondia
+1411,5.76,black,Tomato,3.39,685mm/16.4C,Oct,Sangli
+1412,5.5,alluvial,Green Peas,1.82,604mm/22.7C,Jan,Gadchiroli
+1413,5.93,loam,Bottle Gourd,4.69,242mm/31.1C,Jun,Akola
+1414,5.35,alluvial,Ladyfinger,4.58,1061mm/19.7C,Nov,Hingoli
+1415,6.63,red,Beetroot,1.2,252mm/34.1C,Feb,Aurangabad
+1416,7.73,alluvial,Carrot,0.39,143mm/28.9C,Jul,Osmana bad
+1417,5.31,sandy,Bitter Gourd,3.76,1054mm/20.9C,Apr,Sangli
+1418,5.53,alluvial,Beans,4.17,537mm/19.0C,May,Gondia
+1419,6.42,sandy,Carrot,4.85,1058mm/31.1C,May,Yavatmal
+1420,7.72,black,Cabbage,4.47,359mm/18.9C,May,Buldhana
+1421,6.05,loam,Green Peas,3.08,375mm/21.4C,Feb,Buldhana
+1422,6.57,clay,Beetroot,2.74,763mm/25.2C,May,Ahmednagar
+1423,5.31,clay,Pumpkin,0.33,454mm/30.6C,Mar,Beed
+1424,5.6,loam,Spring Onion,1.38,108mm/26.8C,Apr,Satara
+1425,7.86,clay,Cucumber,2.41,132mm/25.6C,Feb,Gondia
+1426,7.81,alluvial,Cauliflower,3.22,155mm/20.0C,Apr,Amravati
+1427,5.21,black,Bottle Gourd,2.87,196mm/33.4C,Sep,Osmana bad
+1428,7.77,black,Beans,3.76,825mm/33.0C,Aug,Amravati
+1429,6.93,loam,Pumpkin,1.54,374mm/27.8C,Nov,Osmana bad
+1430,7.54,clay,Bottle Gourd,2.91,1124mm/23.0C,Dec,Yavatmal
+1431,6.43,alluvial,Bottle Gourd,0.62,1139mm/20.3C,Mar,Aurangabad
+1432,6.59,black,Radish,2.19,576mm/29.9C,Jan,Buldhana
+1433,6.52,black,Spring Onion,3.8,123mm/19.4C,Jan,Nagpur
+1434,7.0,red,Green Chilies,3.53,684mm/26.6C,Jun,Nagpur
+1435,5.58,red,Radish,4.96,533mm/29.0C,Mar,Latur
+1436,5.28,black,Cauliflower,1.53,586mm/18.2C,Apr,Nashik
+1437,6.03,loam,Spinach,2.59,100mm/23.5C,Jan,Satara
+1438,7.1,sandy,Beetroot,1.78,699mm/16.4C,Aug,Chandrapur
+1439,5.75,sandy,Cauliflower,2.31,1174mm/24.5C,Jan,Solapur
+1440,7.02,alluvial,Cucumber,4.31,416mm/16.5C,May,Parbhani
+1441,7.82,black,Brinjal,3.48,989mm/31.4C,Jun,Wardha
+1442,5.45,black,Cucumber,4.44,92mm/34.2C,Feb,Buldhana
+1443,7.02,black,Cucumber,1.18,1057mm/23.3C,Jul,Jalgaon
+1444,6.4,loam,Bottle Gourd,4.39,254mm/22.7C,Jul,Akola
+1445,7.54,red,Brinjal,0.49,320mm/17.2C,Jan,Jalgaon
+1446,5.68,black,Ridge Gourd,4.47,804mm/19.1C,Apr,Nashik
+1447,7.07,black,Spinach,1.78,770mm/19.6C,Dec,Yavatmal
+1448,7.46,clay,Beans,1.71,826mm/23.0C,Apr,Gadchiroli
+1449,7.75,loam,Coriander,2.66,574mm/30.6C,May,Ahmednagar
+1450,7.04,alluvial,Coriander,4.72,707mm/29.3C,Jan,Amravati
+1451,6.54,black,Tomato,0.43,1100mm/25.0C,Jan,Nanded
+1452,6.87,clay,Carrot,1.89,125mm/33.8C,Jul,Jalgaon
+1453,7.55,sandy,Beetroot,4.31,89mm/25.0C,Sep,Jalgaon
+1454,6.74,alluvial,Radish,2.1,728mm/28.0C,Jan,Chandrapur
+1455,5.28,black,Spring Onion,1.16,719mm/19.5C,Feb,Hingoli
+1456,7.71,black,Bottle Gourd,2.24,988mm/24.6C,Jun,Nashik
+1457,7.06,clay,Coriander,2.05,1109mm/19.3C,Jun,Hingoli
+1458,7.03,loam,Tomato,4.59,627mm/16.5C,Feb,Osmana bad
+1459,5.78,black,Fenugreek Leaves,3.86,474mm/30.9C,Sep,Nagpur
+1460,6.98,sandy,Bottle Gourd,2.62,828mm/24.2C,Apr,Sangli
+1461,6.26,black,Radish,4.94,129mm/30.6C,Jul,Hingoli
+1462,6.96,sandy,Brinjal,2.43,457mm/21.7C,Jun,Satara
+1463,5.49,alluvial,Spinach,0.48,1079mm/19.1C,Nov,Akola
+1464,6.98,alluvial,Pumpkin,1.46,853mm/17.6C,Nov,Osmana bad
+1465,7.9,red,Spinach,2.29,947mm/17.8C,Mar,Nashik
+1466,5.33,red,Carrot,0.95,82mm/31.8C,Aug,Hingoli
+1467,7.84,sandy,Carrot,4.75,354mm/27.1C,Jul,Aurangabad
+1468,6.3,loam,Pumpkin,3.88,294mm/25.2C,Sep,Yavatmal
+1469,7.55,black,Carrot,1.49,408mm/21.2C,Mar,Nagpur
+1470,7.31,black,Cauliflower,3.04,205mm/30.4C,Jan,Chandrapur
+1471,6.73,red,Tomato,3.66,296mm/31.6C,Feb,Gadchiroli
+1472,7.19,sandy,Cabbage,4.72,911mm/30.8C,Dec,Gondia
+1473,7.57,black,Carrot,4.43,590mm/27.8C,Nov,Buldhana
+1474,6.29,black,Tomato,2.67,411mm/21.9C,Dec,Amravati
+1475,6.08,loam,Spinach,3.92,979mm/21.8C,Jan,Latur
+1476,7.0,clay,Pumpkin,2.9,713mm/30.4C,Nov,Pune
+1477,7.38,red,Ladyfinger,2.85,275mm/34.7C,May,Ahmednagar
+1478,7.26,red,Beans,0.75,537mm/16.6C,Oct,Nashik
+1479,7.35,clay,Beetroot,0.81,88mm/26.5C,Feb,Wardha
+1480,6.38,black,Spinach,2.74,1162mm/17.9C,Mar,Solapur
+1481,7.41,loam,Bottle Gourd,1.49,478mm/32.7C,Aug,Hingoli
+1482,5.52,loam,Cucumber,0.3,559mm/30.2C,Oct,Hingoli
+1483,6.67,red,Cucumber,3.67,995mm/20.3C,May,Amravati
+1484,5.22,loam,Cauliflower,0.36,663mm/30.3C,Apr,Pune
+1485,6.08,alluvial,Pumpkin,3.06,369mm/18.5C,May,Jalgaon
+1486,6.19,clay,Brinjal,2.79,1098mm/28.6C,Oct,Nashik
+1487,6.27,black,Green Peas,4.85,406mm/24.3C,Jun,Jalgaon
+1488,7.08,alluvial,Cabbage,2.52,715mm/23.0C,Dec,Osmana bad
+1489,6.25,clay,Cabbage,0.51,947mm/22.3C,Jul,Pune
+1490,6.41,sandy,Spring Onion,2.85,507mm/15.8C,Sep,Akola
+1491,5.84,red,Beetroot,4.24,995mm/33.8C,Jan,Latur
+1492,6.21,loam,Spring Onion,4.98,427mm/16.9C,Apr,Hingoli
+1493,5.81,sandy,Cauliflower,2.27,1130mm/15.7C,Dec,Aurangabad
+1494,5.4,loam,Bitter Gourd,1.74,1096mm/20.1C,Dec,Sangli
+1495,6.83,alluvial,Fenugreek Leaves,4.55,380mm/26.7C,Sep,Jalgaon
+1496,7.0,black,Beans,1.12,245mm/32.4C,May,Aurangabad
+1497,6.87,black,Cauliflower,3.15,1099mm/27.9C,Aug,Latur
+1498,6.45,black,Bottle Gourd,2.15,142mm/17.7C,Dec,Satara
+1499,6.23,loam,Cauliflower,0.4,301mm/34.4C,Jan,Nanded
+1500,7.53,sandy,Fenugreek Leaves,1.87,705mm/28.5C,Apr,Nashik
+1501,6.6,black,Radish,1.47,275mm/23.6C,Dec,Nanded
+1502,6.49,sandy,Pumpkin,3.49,1074mm/29.8C,Dec,Solapur
+1503,5.27,loam,Bitter Gourd,4.75,787mm/15.3C,Sep,Latur
+1504,6.12,alluvial,Coriander,1.49,1160mm/17.3C,Jan,Nashik
+1505,6.23,sandy,Spring Onion,4.1,801mm/20.0C,Jan,Nagpur
+1506,6.28,alluvial,Green Chilies,0.47,719mm/34.1C,Apr,Buldhana
+1507,6.77,loam,Green Chilies,2.78,294mm/30.3C,Mar,Sangli
+1508,6.64,loam,Spring Onion,0.54,169mm/22.3C,Jul,Buldhana
+1509,6.84,red,Bitter Gourd,4.68,1182mm/27.7C,Nov,Amravati
+1510,7.27,loam,Beetroot,3.88,973mm/24.5C,Mar,Solapur
+1511,7.4,loam,Bitter Gourd,3.36,482mm/34.6C,Jan,Chandrapur
+1512,7.14,clay,Spinach,4.15,1119mm/22.3C,Dec,Yavatmal
+1513,7.78,black,Bottle Gourd,3.31,977mm/23.2C,Nov,Buldhana
+1514,5.25,red,Fenugreek Leaves,4.85,363mm/18.3C,Oct,Yavatmal
+1515,5.73,red,Cabbage,3.63,697mm/33.3C,Feb,Osmana bad
+1516,5.22,red,Bottle Gourd,4.64,691mm/15.3C,Oct,Nanded
+1517,6.95,clay,Cabbage,2.68,479mm/19.9C,Apr,Parbhani
+1518,7.62,alluvial,Cauliflower,0.76,165mm/17.4C,Jan,Nanded
+1519,5.86,loam,Beans,2.74,415mm/32.2C,Jan,Gondia
+1520,7.7,black,Coriander,0.81,253mm/20.9C,Dec,Satara
+1521,5.36,sandy,Pumpkin,3.04,580mm/28.6C,Aug,Nagpur
+1522,7.72,alluvial,Ridge Gourd,2.52,395mm/23.1C,Jul,Nagpur
+1523,6.15,loam,Cauliflower,3.19,1184mm/16.7C,Aug,Kolhapur
+1524,5.47,clay,Brinjal,0.25,776mm/25.1C,Apr,Pune
+1525,6.51,loam,Coriander,1.14,1174mm/33.1C,Jun,Gadchiroli
+1526,5.89,loam,Green Chilies,2.56,745mm/16.1C,Mar,Aurangabad
+1527,5.97,clay,Cabbage,4.76,1174mm/31.8C,Nov,Ahmednagar
+1528,6.03,red,Bottle Gourd,2.04,228mm/16.6C,Aug,Nanded
+1529,7.37,red,Fenugreek Leaves,2.24,535mm/21.7C,Apr,Hingoli
+1530,6.66,black,Bottle Gourd,3.63,1045mm/23.0C,Mar,Wardha
+1531,6.04,black,Ladyfinger,3.1,1008mm/26.2C,Apr,Beed
+1532,6.85,red,Green Chilies,1.63,853mm/31.1C,Jun,Hingoli
+1533,7.13,alluvial,Cabbage,2.17,461mm/29.6C,Nov,Satara
+1534,5.94,sandy,Cauliflower,1.24,1140mm/23.6C,Jul,Solapur
+1535,6.32,loam,Spring Onion,4.84,476mm/18.5C,Jul,Hingoli
+1536,5.53,sandy,Green Peas,0.83,939mm/19.1C,Dec,Pune
+1537,5.69,loam,Spinach,1.98,1186mm/26.6C,Apr,Ahmednagar
+1538,7.04,red,Green Peas,0.32,785mm/20.2C,Aug,Solapur
+1539,5.69,black,Beans,1.26,294mm/16.2C,Jul,Akola
+1540,6.62,alluvial,Green Peas,3.95,423mm/26.1C,Feb,Buldhana
+1541,7.11,black,Ridge Gourd,1.17,544mm/31.4C,Aug,Chandrapur
+1542,5.49,sandy,Carrot,0.58,718mm/34.3C,Sep,Nagpur
+1543,6.73,black,Green Chilies,2.48,770mm/28.5C,May,Nanded
+1544,5.89,red,Beetroot,0.25,553mm/20.6C,Apr,Akola
+1545,7.8,alluvial,Spring Onion,0.61,142mm/26.1C,Apr,Amravati
+1546,6.51,sandy,Ladyfinger,4.08,383mm/29.3C,Apr,Osmana bad
+1547,7.38,alluvial,Radish,3.9,413mm/34.8C,Jun,Buldhana
+1548,6.69,loam,Bottle Gourd,4.59,490mm/29.4C,Nov,Nashik
+1549,5.32,black,Spinach,4.3,159mm/30.9C,Apr,Aurangabad
+1550,6.91,alluvial,Bottle Gourd,3.48,1180mm/29.4C,Jul,Parbhani
+1551,7.77,clay,Green Peas,0.45,156mm/29.9C,Jul,Kolhapur
+1552,6.82,black,Cabbage,3.96,1112mm/22.5C,May,Amravati
+1553,7.41,loam,Cucumber,4.26,324mm/33.6C,May,Ahmednagar
+1554,7.59,alluvial,Coriander,4.04,111mm/22.8C,Oct,Latur
+1555,5.82,sandy,Coriander,2.64,841mm/33.2C,Aug,Gadchiroli
+1556,5.77,loam,Beetroot,1.32,909mm/15.6C,Jul,Yavatmal
+1557,6.85,clay,Brinjal,4.26,1159mm/15.4C,Jul,Latur
+1558,6.31,alluvial,Spring Onion,3.69,543mm/16.9C,Jun,Ahmednagar
+1559,7.47,red,Green Chilies,4.91,1058mm/24.4C,Jul,Osmana bad
+1560,7.63,black,Carrot,0.95,777mm/33.8C,Jul,Ahmednagar
+1561,6.15,sandy,Carrot,1.28,613mm/34.0C,Oct,Chandrapur
+1562,5.84,red,Bitter Gourd,1.22,843mm/15.6C,Feb,Buldhana
+1563,7.31,alluvial,Pumpkin,4.0,449mm/21.1C,Oct,Aurangabad
+1564,5.94,alluvial,Cauliflower,1.1,284mm/32.4C,Feb,Akola
+1565,7.42,loam,Fenugreek Leaves,0.52,944mm/27.3C,Oct,Gadchiroli
+1566,6.34,alluvial,Bitter Gourd,4.99,938mm/16.8C,Jul,Osmana bad
+1567,7.0,sandy,Ladyfinger,0.32,433mm/35.0C,Oct,Satara
+1568,5.46,red,Coriander,4.21,1006mm/21.2C,Jul,Solapur
+1569,6.88,sandy,Ridge Gourd,1.95,240mm/34.6C,Jul,Wardha
+1570,6.42,clay,Radish,4.24,523mm/21.1C,May,Amravati
+1571,6.78,clay,Carrot,2.86,542mm/30.7C,Jan,Gondia
+1572,5.65,black,Cucumber,4.53,552mm/28.5C,Feb,Hingoli
+1573,7.19,black,Fenugreek Leaves,4.65,1142mm/31.5C,Sep,Buldhana
+1574,7.53,clay,Green Peas,0.24,669mm/33.8C,Aug,Nagpur
+1575,5.79,alluvial,Carrot,0.56,348mm/20.8C,Aug,Latur
+1576,5.46,sandy,Radish,1.4,414mm/23.5C,Oct,Hingoli
+1577,5.26,clay,Pumpkin,3.41,1171mm/20.4C,Jan,Yavatmal
+1578,6.93,black,Bitter Gourd,4.46,465mm/26.4C,Jun,Nanded
+1579,6.84,clay,Beans,2.41,1197mm/28.5C,Sep,Beed
+1580,6.68,alluvial,Carrot,3.11,1150mm/22.1C,Aug,Hingoli
+1581,5.83,clay,Beans,1.1,953mm/18.3C,Mar,Wardha
+1582,6.26,sandy,Beetroot,4.06,803mm/21.4C,Apr,Osmana bad
+1583,6.81,red,Pumpkin,4.84,281mm/30.1C,Mar,Osmana bad
+1584,6.54,alluvial,Spring Onion,1.49,376mm/19.7C,Jun,Gadchiroli
+1585,7.87,black,Carrot,2.58,572mm/30.7C,Sep,Kolhapur
+1586,5.57,sandy,Cabbage,0.61,1002mm/24.7C,Aug,Nashik
+1587,7.08,clay,Radish,2.88,1169mm/15.0C,Oct,Wardha
+1588,6.29,clay,Bottle Gourd,2.61,1041mm/30.0C,Apr,Nanded
+1589,6.36,red,Bottle Gourd,0.89,705mm/16.3C,Feb,Hingoli
+1590,7.14,black,Green Peas,2.32,1018mm/31.6C,Aug,Kolhapur
+1591,7.07,black,Cabbage,1.8,94mm/16.2C,Aug,Parbhani
+1592,7.88,loam,Spinach,2.7,278mm/18.7C,Dec,Jalgaon
+1593,5.55,black,Fenugreek Leaves,3.01,114mm/22.8C,Nov,Ahmednagar
+1594,5.48,red,Cucumber,0.24,1061mm/34.0C,Jun,Gadchiroli
+1595,7.16,loam,Beetroot,3.85,550mm/17.5C,Aug,Sangli
+1596,6.76,loam,Cucumber,3.62,871mm/27.1C,Sep,Amravati
+1597,5.94,clay,Radish,1.96,427mm/23.8C,Jan,Satara
+1598,5.41,clay,Ridge Gourd,0.45,992mm/32.4C,Sep,Hingoli
+1599,5.43,black,Brinjal,3.82,754mm/21.5C,Feb,Kolhapur
+1600,7.61,loam,Carrot,4.78,1039mm/31.3C,Jan,Gadchiroli
+1601,5.72,clay,Spinach,1.35,200mm/26.7C,Aug,Gadchiroli
+1602,6.07,red,Coriander,1.75,121mm/24.7C,Aug,Amravati
+1603,5.81,clay,Brinjal,1.08,1045mm/17.5C,Nov,Nashik
+1604,6.16,alluvial,Cucumber,2.97,93mm/33.0C,Apr,Ahmednagar
+1605,5.39,alluvial,Ridge Gourd,0.94,897mm/23.7C,Aug,Jalgaon
+1606,6.6,clay,Carrot,1.91,951mm/28.7C,Jul,Buldhana
+1607,5.38,loam,Pumpkin,3.55,943mm/21.7C,Feb,Jalgaon
+1608,7.36,loam,Green Peas,2.89,1140mm/33.3C,May,Beed
+1609,5.83,sandy,Beans,2.06,714mm/33.7C,Oct,Beed
+1610,6.66,alluvial,Carrot,2.22,693mm/27.9C,Apr,Sangli
+1611,7.58,red,Spring Onion,2.9,1125mm/29.6C,Mar,Ahmednagar
+1612,6.96,loam,Pumpkin,0.23,1034mm/15.6C,Jan,Buldhana
+1613,6.64,black,Green Peas,0.58,878mm/15.3C,May,Parbhani
+1614,6.08,alluvial,Cauliflower,4.43,325mm/26.2C,Oct,Ahmednagar
+1615,6.1,red,Bottle Gourd,0.57,324mm/17.0C,Aug,Pune
+1616,7.01,red,Tomato,3.59,473mm/18.5C,Dec,Akola
+1617,7.88,loam,Beans,4.62,87mm/26.8C,Sep,Chandrapur
+1618,6.99,red,Fenugreek Leaves,1.5,369mm/15.7C,Jul,Buldhana
+1619,6.71,loam,Coriander,1.98,991mm/33.2C,Dec,Nagpur
+1620,7.17,clay,Coriander,2.93,795mm/28.1C,Nov,Amravati
+1621,6.46,alluvial,Bottle Gourd,4.43,485mm/20.4C,Jan,Nashik
+1622,5.36,sandy,Beans,4.72,832mm/34.5C,Jan,Nashik
+1623,6.72,clay,Green Peas,3.75,873mm/21.9C,Jan,Kolhapur
+1624,7.79,alluvial,Tomato,0.62,186mm/21.2C,Feb,Amravati
+1625,5.67,loam,Pumpkin,3.41,87mm/25.4C,Jan,Nanded
+1626,7.06,alluvial,Cucumber,2.17,160mm/17.8C,Apr,Amravati
+1627,5.74,loam,Green Peas,2.46,765mm/26.2C,Oct,Chandrapur
+1628,6.65,clay,Ladyfinger,0.44,407mm/24.4C,Sep,Ahmednagar
+1629,5.46,black,Cauliflower,1.12,381mm/19.6C,Dec,Pune
+1630,6.42,black,Brinjal,3.99,1142mm/30.1C,Apr,Solapur
+1631,7.24,alluvial,Cabbage,2.38,1107mm/32.9C,Apr,Buldhana
+1632,6.14,black,Tomato,1.65,1180mm/24.2C,Jul,Solapur
+1633,7.0,loam,Beetroot,2.04,724mm/24.3C,Nov,Wardha
+1634,7.35,red,Fenugreek Leaves,4.3,355mm/25.5C,Sep,Chandrapur
+1635,7.7,loam,Green Chilies,3.8,700mm/18.8C,Jul,Gadchiroli
+1636,5.83,red,Cauliflower,1.51,1009mm/33.3C,Jan,Beed
+1637,6.28,clay,Radish,0.76,262mm/26.7C,Jan,Nanded
+1638,5.61,sandy,Coriander,1.41,151mm/29.1C,Apr,Jalgaon
+1639,7.88,red,Pumpkin,4.62,805mm/32.5C,Apr,Hingoli
+1640,7.7,black,Green Chilies,2.99,1123mm/25.1C,Jan,Chandrapur
+1641,6.66,loam,Pumpkin,2.76,894mm/31.4C,Jun,Sangli
+1642,7.47,clay,Coriander,3.06,969mm/27.7C,Oct,Sangli
+1643,6.61,black,Spring Onion,1.96,93mm/21.7C,Feb,Akola
+1644,6.88,clay,Bitter Gourd,4.07,834mm/20.5C,Nov,Parbhani
+1645,5.44,sandy,Coriander,2.71,819mm/27.7C,May,Latur
+1646,7.24,loam,Spring Onion,0.76,342mm/16.1C,Aug,Ahmednagar
+1647,5.54,alluvial,Ridge Gourd,0.82,337mm/26.8C,Mar,Yavatmal
+1648,7.43,loam,Pumpkin,2.78,488mm/22.0C,Sep,Nagpur
+1649,7.31,sandy,Radish,4.7,1127mm/24.9C,Jul,Chandrapur
+1650,7.11,loam,Spring Onion,1.68,221mm/23.3C,Sep,Sangli
+1651,5.3,alluvial,Beetroot,4.37,981mm/29.3C,Jan,Wardha
+1652,6.02,red,Beetroot,3.87,353mm/16.3C,May,Ahmednagar
+1653,5.91,clay,Ridge Gourd,1.39,544mm/28.0C,Dec,Nagpur
+1654,6.17,alluvial,Beetroot,0.37,1142mm/18.2C,Mar,Buldhana
+1655,5.44,black,Bitter Gourd,0.69,955mm/31.9C,Apr,Amravati
+1656,7.73,sandy,Bitter Gourd,3.7,957mm/34.3C,Apr,Akola
+1657,6.7,red,Cucumber,1.16,1177mm/20.3C,Nov,Gondia
+1658,6.02,black,Bitter Gourd,1.98,640mm/20.4C,Dec,Satara
+1659,6.27,black,Beetroot,2.61,801mm/34.4C,Jul,Latur
+1660,6.41,sandy,Fenugreek Leaves,3.68,486mm/21.8C,Oct,Latur
+1661,6.82,red,Beans,0.74,773mm/24.7C,Nov,Yavatmal
+1662,6.59,black,Bitter Gourd,2.15,574mm/20.2C,Aug,Latur
+1663,7.68,black,Coriander,2.53,637mm/20.3C,Nov,Sangli
+1664,6.54,red,Bitter Gourd,2.8,934mm/15.5C,Oct,Osmana bad
+1665,7.88,loam,Bottle Gourd,4.13,157mm/20.1C,May,Wardha
+1666,7.5,black,Cauliflower,1.02,1121mm/29.9C,Dec,Pune
+1667,5.76,clay,Spinach,4.08,1007mm/34.2C,Oct,Aurangabad
+1668,7.71,red,Beans,3.53,1130mm/34.8C,Jul,Osmana bad
+1669,5.51,black,Spring Onion,2.87,543mm/32.8C,Mar,Nashik
+1670,7.41,sandy,Radish,3.56,903mm/15.3C,Mar,Latur
+1671,6.23,alluvial,Bottle Gourd,2.18,830mm/31.4C,Mar,Parbhani
+1672,7.57,clay,Tomato,0.86,135mm/27.0C,Dec,Yavatmal
+1673,7.54,alluvial,Spinach,3.4,1131mm/23.7C,Apr,Nanded
+1674,7.38,alluvial,Bitter Gourd,2.72,801mm/19.6C,Jun,Chandrapur
+1675,7.33,black,Ladyfinger,3.27,120mm/15.8C,May,Ahmednagar
+1676,6.02,clay,Ridge Gourd,1.82,339mm/27.5C,Aug,Gondia
+1677,5.42,clay,Spinach,4.55,935mm/28.0C,Dec,Nagpur
+1678,6.29,loam,Beetroot,3.02,519mm/16.3C,May,Latur
+1679,5.67,alluvial,Green Peas,0.61,1065mm/20.8C,Nov,Nagpur
+1680,7.08,clay,Cucumber,2.36,215mm/33.5C,Dec,Sangli
+1681,6.13,loam,Ridge Gourd,3.83,988mm/27.5C,May,Latur
+1682,7.83,red,Beans,4.01,669mm/32.9C,Oct,Nagpur
+1683,6.93,loam,Spinach,2.57,769mm/25.4C,Feb,Satara
+1684,7.42,sandy,Radish,4.49,787mm/24.6C,Dec,Osmana bad
+1685,5.56,black,Green Chilies,1.48,374mm/19.8C,Nov,Amravati
+1686,7.53,red,Ridge Gourd,2.17,885mm/24.9C,Nov,Amravati
+1687,7.69,red,Spring Onion,4.51,807mm/30.9C,May,Aurangabad
+1688,6.52,sandy,Coriander,4.5,548mm/20.2C,Dec,Yavatmal
+1689,6.84,loam,Green Chilies,3.49,965mm/19.6C,Jul,Parbhani
+1690,7.26,black,Pumpkin,4.32,280mm/31.7C,Feb,Amravati
+1691,5.67,loam,Beetroot,0.63,899mm/31.2C,Jun,Sangli
+1692,6.56,clay,Radish,4.35,639mm/25.4C,Jul,Wardha
+1693,6.28,loam,Brinjal,1.74,1155mm/23.1C,May,Jalgaon
+1694,5.6,red,Radish,1.06,913mm/25.0C,Sep,Jalgaon
+1695,6.19,black,Pumpkin,1.35,104mm/25.4C,Apr,Amravati
+1696,5.38,loam,Spinach,2.21,834mm/19.5C,Oct,Nagpur
+1697,5.27,black,Fenugreek Leaves,1.41,277mm/23.5C,Jan,Satara
+1698,5.56,black,Green Peas,1.74,516mm/25.8C,Aug,Kolhapur
+1699,7.8,clay,Spinach,0.85,666mm/27.5C,Aug,Solapur
+1700,6.68,clay,Cucumber,1.62,706mm/23.2C,Jul,Gadchiroli
+1701,7.81,red,Radish,2.95,537mm/22.8C,Aug,Akola
+1702,6.37,sandy,Green Peas,2.32,214mm/32.8C,Feb,Akola
+1703,6.04,black,Green Chilies,1.86,118mm/24.9C,Mar,Amravati
+1704,6.57,sandy,Green Chilies,3.78,898mm/16.9C,Sep,Gadchiroli
+1705,6.39,red,Spring Onion,4.49,174mm/23.5C,Jan,Solapur
+1706,5.49,black,Pumpkin,3.83,447mm/25.4C,Aug,Chandrapur
+1707,6.93,black,Carrot,1.79,833mm/32.8C,Aug,Satara
+1708,5.78,alluvial,Cauliflower,3.77,895mm/24.2C,Jul,Satara
+1709,6.87,sandy,Green Chilies,0.93,835mm/29.3C,Nov,Nanded
+1710,6.96,loam,Beans,0.83,676mm/28.3C,May,Beed
+1711,5.61,clay,Cauliflower,1.86,706mm/29.3C,Apr,Buldhana
+1712,5.37,loam,Green Chilies,4.08,695mm/21.1C,Oct,Yavatmal
+1713,7.31,sandy,Cabbage,1.38,191mm/18.2C,Oct,Ahmednagar
+1714,6.44,clay,Spinach,0.5,663mm/30.8C,Oct,Gadchiroli
+1715,5.36,loam,Cauliflower,0.83,310mm/29.6C,Oct,Parbhani
+1716,7.89,alluvial,Brinjal,4.32,332mm/27.6C,Jun,Buldhana
+1717,5.36,clay,Fenugreek Leaves,3.24,640mm/21.6C,Dec,Nanded
+1718,7.08,black,Spinach,1.42,151mm/32.9C,Nov,Ahmednagar
+1719,7.86,loam,Cucumber,2.87,301mm/33.1C,Jan,Yavatmal
+1720,5.85,clay,Ridge Gourd,2.73,885mm/25.0C,May,Osmana bad
+1721,5.58,alluvial,Tomato,3.35,240mm/29.1C,Apr,Chandrapur
+1722,5.53,clay,Beetroot,1.32,185mm/29.5C,Apr,Sangli
+1723,6.02,clay,Green Peas,4.35,855mm/15.4C,Jul,Satara
+1724,5.47,alluvial,Tomato,1.68,81mm/29.1C,Sep,Jalgaon
+1725,7.07,loam,Tomato,3.53,1025mm/18.9C,Aug,Wardha
+1726,5.37,red,Tomato,0.28,259mm/22.7C,Nov,Wardha
+1727,6.58,loam,Fenugreek Leaves,1.99,663mm/32.2C,Dec,Satara
+1728,7.89,sandy,Fenugreek Leaves,1.89,202mm/24.0C,Aug,Nagpur
+1729,7.4,alluvial,Beetroot,2.81,523mm/26.6C,May,Aurangabad
+1730,6.86,loam,Brinjal,0.55,1186mm/21.9C,Jun,Ahmednagar
+1731,6.03,clay,Tomato,3.99,711mm/31.6C,Feb,Nashik
+1732,6.88,alluvial,Cabbage,1.25,507mm/20.5C,Nov,Nashik
+1733,6.62,black,Cauliflower,3.45,891mm/21.7C,Mar,Wardha
+1734,6.35,loam,Fenugreek Leaves,4.06,738mm/20.3C,May,Beed
+1735,5.55,alluvial,Cucumber,2.9,344mm/18.2C,Feb,Latur
+1736,7.59,loam,Pumpkin,3.76,234mm/34.7C,Mar,Parbhani
+1737,6.41,alluvial,Spinach,3.38,975mm/33.6C,Apr,Jalgaon
+1738,5.73,clay,Beetroot,1.91,1072mm/33.5C,Jun,Yavatmal
+1739,6.19,black,Cabbage,4.08,465mm/19.7C,May,Osmana bad
+1740,6.32,black,Radish,1.61,493mm/25.0C,Oct,Sangli
+1741,7.43,sandy,Bottle Gourd,2.94,794mm/19.3C,Apr,Buldhana
+1742,7.18,alluvial,Beetroot,3.78,672mm/28.6C,Feb,Osmana bad
+1743,7.28,loam,Bottle Gourd,2.02,918mm/25.3C,Dec,Nashik
+1744,5.23,black,Radish,1.65,1148mm/33.8C,Nov,Nanded
+1745,6.32,black,Green Chilies,2.4,227mm/15.8C,May,Beed
+1746,6.5,red,Brinjal,4.13,782mm/33.4C,May,Latur
+1747,5.25,red,Green Peas,4.66,475mm/24.0C,Nov,Yavatmal
+1748,5.9,black,Cabbage,2.82,930mm/34.6C,Jul,Aurangabad
+1749,7.25,alluvial,Radish,3.38,952mm/33.4C,Jan,Hingoli
+1750,5.57,sandy,Bitter Gourd,4.54,873mm/26.7C,Apr,Ahmednagar
+1751,6.65,black,Beetroot,0.67,581mm/23.6C,Nov,Gondia
+1752,5.78,clay,Carrot,1.31,1097mm/34.9C,May,Hingoli
+1753,5.23,loam,Spinach,3.6,774mm/33.5C,Aug,Chandrapur
+1754,5.85,sandy,Fenugreek Leaves,4.15,1180mm/34.8C,Dec,Kolhapur
+1755,7.83,clay,Coriander,4.31,916mm/18.3C,Dec,Chandrapur
+1756,7.36,sandy,Green Peas,2.19,749mm/28.4C,Aug,Jalgaon
+1757,7.79,clay,Beetroot,0.63,678mm/25.4C,Jan,Hingoli
+1758,6.52,loam,Cabbage,2.3,725mm/32.7C,May,Jalgaon
+1759,5.5,loam,Green Peas,1.31,1102mm/28.5C,Oct,Satara
+1760,6.68,red,Beans,1.6,529mm/31.4C,Jan,Akola
+1761,6.43,alluvial,Cucumber,3.91,1139mm/25.9C,Jan,Hingoli
+1762,7.48,clay,Tomato,0.56,299mm/15.9C,Feb,Osmana bad
+1763,5.46,red,Fenugreek Leaves,4.17,350mm/33.2C,Feb,Buldhana
+1764,6.52,clay,Ridge Gourd,2.25,871mm/20.6C,Sep,Wardha
+1765,5.61,red,Radish,3.06,913mm/29.3C,Apr,Pune
+1766,6.08,loam,Spring Onion,0.63,417mm/15.9C,Mar,Gadchiroli
+1767,7.19,sandy,Beetroot,1.82,430mm/33.2C,Nov,Nagpur
+1768,6.49,red,Brinjal,0.63,571mm/34.5C,Jan,Yavatmal
+1769,6.21,clay,Ridge Gourd,4.82,88mm/33.3C,Dec,Wardha
+1770,6.27,clay,Cauliflower,4.07,640mm/22.8C,Feb,Satara
+1771,6.44,alluvial,Bitter Gourd,2.41,871mm/24.6C,Jun,Nashik
+1772,7.32,loam,Ladyfinger,1.27,112mm/18.8C,Sep,Nanded
+1773,7.61,clay,Cabbage,4.68,645mm/31.0C,May,Jalgaon
+1774,7.78,black,Carrot,1.85,541mm/34.1C,Apr,Sangli
+1775,7.32,sandy,Carrot,0.97,438mm/16.2C,May,Satara
+1776,6.05,red,Cucumber,2.9,272mm/19.7C,Sep,Amravati
+1777,7.06,alluvial,Spring Onion,4.73,835mm/32.4C,Dec,Nanded
+1778,6.38,sandy,Cucumber,0.22,557mm/27.3C,Jul,Nanded
+1779,5.89,loam,Beans,1.34,732mm/16.8C,Aug,Osmana bad
+1780,7.47,alluvial,Tomato,4.7,930mm/18.3C,Apr,Akola
+1781,5.3,red,Radish,1.02,872mm/20.0C,Nov,Latur
+1782,7.63,red,Radish,0.74,667mm/22.0C,Aug,Gondia
+1783,6.45,black,Bitter Gourd,2.94,749mm/23.0C,Jun,Latur
+1784,6.92,loam,Green Peas,4.34,393mm/26.3C,May,Osmana bad
+1785,6.98,alluvial,Carrot,2.49,648mm/29.1C,Dec,Ahmednagar
+1786,7.62,alluvial,Coriander,4.97,911mm/34.5C,Jul,Gadchiroli
+1787,6.92,clay,Brinjal,3.46,95mm/24.8C,Jun,Amravati
+1788,6.86,black,Spring Onion,0.56,151mm/25.4C,Mar,Akola
+1789,5.38,black,Carrot,4.97,145mm/25.6C,May,Buldhana
+1790,6.6,alluvial,Cauliflower,2.16,1158mm/20.7C,Sep,Gadchiroli
+1791,5.61,alluvial,Cabbage,1.58,1053mm/31.4C,Jul,Jalgaon
+1792,7.19,sandy,Spinach,2.88,587mm/21.3C,Dec,Aurangabad
+1793,6.58,sandy,Tomato,1.66,916mm/30.7C,Apr,Aurangabad
+1794,7.04,sandy,Pumpkin,0.61,873mm/30.4C,Jul,Nagpur
+1795,5.31,black,Beetroot,0.21,501mm/27.7C,May,Beed
+1796,5.43,clay,Radish,2.36,557mm/27.0C,Nov,Aurangabad
+1797,7.13,red,Cucumber,4.22,567mm/22.7C,Feb,Gondia
+1798,5.39,sandy,Ridge Gourd,2.95,157mm/22.6C,Jun,Gondia
+1799,5.39,clay,Bitter Gourd,5.0,520mm/21.9C,Jul,Akola
+1800,5.23,loam,Ridge Gourd,1.58,691mm/27.0C,Aug,Gondia
+1801,7.78,sandy,Coriander,1.55,996mm/22.3C,Jun,Aurangabad
+1802,7.19,red,Carrot,0.97,688mm/26.1C,Aug,Pune
+1803,6.15,loam,Ladyfinger,0.99,974mm/24.3C,Jul,Osmana bad
+1804,6.0,loam,Spinach,1.57,890mm/24.9C,Feb,Wardha
+1805,6.14,red,Coriander,4.01,605mm/16.1C,Jun,Nagpur
+1806,7.29,sandy,Beetroot,4.55,475mm/16.0C,Sep,Sangli
+1807,6.99,black,Tomato,4.88,1103mm/28.2C,Dec,Nanded
+1808,5.7,red,Spring Onion,1.31,824mm/21.9C,Jun,Hingoli
+1809,5.67,red,Cucumber,4.43,94mm/18.9C,Apr,Yavatmal
+1810,5.47,red,Green Chilies,1.78,717mm/17.9C,Jul,Akola
+1811,6.98,loam,Tomato,0.74,779mm/26.4C,Mar,Akola
+1812,7.26,clay,Carrot,4.38,84mm/24.9C,May,Latur
+1813,5.92,black,Tomato,3.25,1091mm/32.0C,Jan,Sangli
+1814,5.26,sandy,Pumpkin,0.99,248mm/23.0C,Oct,Beed
+1815,5.42,sandy,Ladyfinger,2.26,1079mm/25.1C,Mar,Aurangabad
+1816,7.81,clay,Beans,1.58,303mm/20.7C,Aug,Latur
+1817,6.0,red,Pumpkin,3.74,123mm/27.2C,Sep,Nashik
+1818,7.28,black,Tomato,2.38,1009mm/22.9C,Sep,Ahmednagar
+1819,6.89,sandy,Fenugreek Leaves,4.95,102mm/26.4C,Oct,Nashik
+1820,6.23,alluvial,Cabbage,0.46,1146mm/27.2C,Feb,Sangli
+1821,5.76,sandy,Brinjal,1.9,382mm/32.3C,Apr,Nashik
+1822,5.53,red,Radish,2.51,1078mm/30.7C,May,Yavatmal
+1823,6.86,alluvial,Green Peas,2.62,700mm/16.4C,Mar,Satara
+1824,7.29,clay,Ladyfinger,1.72,915mm/33.8C,Nov,Gadchiroli
+1825,6.94,black,Green Peas,3.7,1139mm/26.1C,Jan,Satara
+1826,6.63,clay,Ladyfinger,4.4,1126mm/23.4C,Jun,Buldhana
+1827,5.31,clay,Bitter Gourd,4.71,170mm/25.7C,Oct,Hingoli
+1828,7.81,black,Spinach,4.06,629mm/24.6C,Feb,Solapur
+1829,7.36,black,Ridge Gourd,4.28,1141mm/21.9C,Sep,Wardha
+1830,5.99,sandy,Bottle Gourd,2.84,1146mm/31.9C,Jan,Satara
+1831,7.85,sandy,Fenugreek Leaves,4.16,596mm/20.9C,Nov,Latur
+1832,6.83,black,Ridge Gourd,1.66,202mm/16.7C,Sep,Amravati
+1833,6.77,alluvial,Ridge Gourd,2.11,1053mm/24.4C,Jul,Pune
+1834,7.22,loam,Pumpkin,1.72,502mm/23.7C,Nov,Hingoli
+1835,7.39,sandy,Green Peas,2.44,883mm/21.9C,Oct,Hingoli
+1836,6.97,loam,Carrot,1.57,713mm/30.2C,Feb,Osmana bad
+1837,5.55,alluvial,Spinach,4.82,175mm/21.9C,Jun,Akola
+1838,6.11,black,Cabbage,1.7,1046mm/22.9C,Aug,Sangli
+1839,7.71,alluvial,Beetroot,0.67,509mm/24.5C,Feb,Latur
+1840,5.81,sandy,Radish,2.73,616mm/15.0C,May,Ahmednagar
+1841,6.2,clay,Green Chilies,0.47,166mm/20.7C,Dec,Kolhapur
+1842,6.37,black,Ladyfinger,0.73,1073mm/20.4C,Nov,Nagpur
+1843,6.39,red,Cucumber,1.25,901mm/22.4C,Jun,Beed
+1844,6.85,loam,Cauliflower,2.43,1016mm/18.4C,Mar,Sangli
+1845,7.75,alluvial,Spring Onion,2.28,270mm/25.1C,Dec,Ahmednagar
+1846,5.85,black,Tomato,4.04,221mm/15.4C,Feb,Satara
+1847,5.53,alluvial,Bitter Gourd,3.75,919mm/33.2C,Nov,Sangli
+1848,5.73,black,Cucumber,2.25,645mm/28.9C,Jun,Sangli
+1849,7.59,sandy,Carrot,1.8,823mm/22.2C,Mar,Satara
+1850,6.94,sandy,Beetroot,1.72,918mm/16.0C,Feb,Parbhani
+1851,5.97,sandy,Cucumber,3.92,1053mm/26.4C,Jan,Satara
+1852,7.4,alluvial,Bottle Gourd,0.45,254mm/31.8C,Aug,Nashik
+1853,7.53,red,Tomato,0.26,264mm/17.6C,Jan,Hingoli
+1854,7.49,sandy,Bottle Gourd,4.02,898mm/24.2C,Dec,Wardha
+1855,7.68,black,Green Peas,2.49,1184mm/21.5C,May,Nagpur
+1856,5.88,sandy,Bitter Gourd,0.83,866mm/24.7C,Nov,Amravati
+1857,7.24,clay,Ladyfinger,1.33,840mm/20.0C,Jun,Akola
+1858,6.44,sandy,Tomato,4.68,514mm/20.0C,Nov,Aurangabad
+1859,7.47,alluvial,Bitter Gourd,4.33,148mm/16.0C,Dec,Yavatmal
+1860,7.17,red,Fenugreek Leaves,3.61,954mm/17.1C,Dec,Jalgaon
+1861,7.3,clay,Bottle Gourd,2.51,983mm/33.7C,Mar,Nagpur
+1862,6.97,alluvial,Green Chilies,2.7,633mm/25.7C,Jul,Hingoli
+1863,5.68,alluvial,Spinach,4.88,130mm/15.2C,Feb,Gondia
+1864,6.67,alluvial,Tomato,4.84,803mm/27.0C,Jul,Chandrapur
+1865,7.86,black,Pumpkin,1.23,1106mm/27.2C,Feb,Amravati
+1866,7.73,alluvial,Cucumber,4.09,926mm/25.2C,May,Buldhana
+1867,5.32,black,Pumpkin,1.15,358mm/15.7C,Jul,Chandrapur
+1868,5.65,alluvial,Ridge Gourd,1.22,192mm/19.3C,Nov,Kolhapur
+1869,5.56,loam,Coriander,3.45,446mm/30.9C,Nov,Solapur
+1870,7.16,clay,Bitter Gourd,2.14,807mm/29.4C,Mar,Yavatmal
+1871,7.41,loam,Coriander,4.67,1085mm/25.3C,Nov,Osmana bad
+1872,5.78,alluvial,Spinach,0.63,799mm/16.3C,Apr,Beed
+1873,6.57,clay,Tomato,2.66,1102mm/17.4C,Jan,Yavatmal
+1874,7.47,clay,Cauliflower,4.61,256mm/21.5C,Mar,Kolhapur
+1875,7.18,red,Cauliflower,4.54,1176mm/30.6C,Sep,Hingoli
+1876,6.66,loam,Green Peas,0.95,88mm/25.9C,Oct,Yavatmal
+1877,6.79,red,Coriander,1.96,1003mm/19.5C,May,Nagpur
+1878,6.57,clay,Beetroot,3.17,1131mm/25.7C,Aug,Chandrapur
+1879,6.0,black,Brinjal,0.97,106mm/32.5C,Feb,Aurangabad
+1880,6.73,clay,Green Peas,4.85,164mm/23.3C,Mar,Hingoli
+1881,7.06,red,Cauliflower,4.59,545mm/32.3C,Jul,Osmana bad
+1882,7.56,loam,Tomato,1.0,91mm/29.3C,Oct,Akola
+1883,6.92,alluvial,Ridge Gourd,0.78,1133mm/15.6C,Apr,Ahmednagar
+1884,7.26,alluvial,Spring Onion,0.61,651mm/30.2C,Sep,Satara
+1885,5.63,loam,Cucumber,4.57,993mm/16.1C,Jul,Akola
+1886,6.45,alluvial,Green Peas,1.13,1124mm/21.6C,Nov,Hingoli
+1887,5.23,alluvial,Cabbage,2.2,520mm/26.8C,Dec,Nanded
+1888,5.87,red,Green Peas,2.35,547mm/21.2C,Jan,Aurangabad
+1889,7.16,loam,Spinach,3.08,393mm/23.2C,Apr,Nagpur
+1890,7.88,sandy,Fenugreek Leaves,0.54,1038mm/27.5C,Oct,Sangli
+1891,5.47,black,Radish,1.29,418mm/18.2C,Nov,Yavatmal
+1892,6.28,black,Tomato,4.67,445mm/23.0C,Jun,Amravati
+1893,7.36,alluvial,Cabbage,4.56,554mm/30.0C,Jun,Satara
+1894,5.75,black,Carrot,3.95,106mm/29.2C,Oct,Buldhana
+1895,6.7,loam,Bitter Gourd,0.29,880mm/21.2C,Jun,Sangli
+1896,7.18,loam,Cabbage,1.77,943mm/21.7C,May,Amravati
+1897,6.86,clay,Carrot,3.21,818mm/18.8C,Mar,Nanded
+1898,5.71,clay,Ladyfinger,1.52,494mm/19.6C,Feb,Nagpur
+1899,6.16,black,Pumpkin,4.57,508mm/34.9C,Mar,Ahmednagar
+1900,7.32,sandy,Cauliflower,3.24,1091mm/32.0C,Sep,Kolhapur
+1901,6.7,clay,Bitter Gourd,0.55,158mm/22.8C,Mar,Amravati
+1902,5.21,clay,Radish,4.56,623mm/27.6C,Mar,Nagpur
+1903,7.25,loam,Ridge Gourd,4.8,373mm/18.8C,Jan,Yavatmal
+1904,5.3,sandy,Beetroot,0.57,563mm/33.1C,Feb,Latur
+1905,7.21,alluvial,Spinach,2.76,893mm/24.0C,Nov,Latur
+1906,5.75,black,Fenugreek Leaves,1.66,125mm/32.1C,Dec,Ahmednagar
+1907,7.79,clay,Beetroot,2.09,277mm/31.5C,Mar,Parbhani
+1908,6.19,sandy,Green Peas,1.06,150mm/32.9C,Feb,Amravati
+1909,6.08,sandy,Bottle Gourd,2.97,977mm/26.1C,Aug,Hingoli
+1910,5.6,black,Bitter Gourd,4.8,1148mm/24.5C,Jun,Chandrapur
+1911,6.03,sandy,Tomato,2.61,891mm/16.5C,Jul,Akola
+1912,7.57,sandy,Brinjal,0.6,946mm/31.1C,Jan,Latur
+1913,7.89,sandy,Cabbage,3.18,341mm/26.3C,Jun,Gondia
+1914,6.19,clay,Green Chilies,1.83,436mm/23.2C,Feb,Nagpur
+1915,6.41,black,Pumpkin,4.31,1116mm/29.0C,Jun,Nagpur
+1916,7.15,sandy,Brinjal,2.29,365mm/27.2C,Mar,Nanded
+1917,7.59,sandy,Cucumber,1.13,649mm/24.5C,Jul,Solapur
+1918,6.8,clay,Cauliflower,1.12,577mm/34.0C,Mar,Ahmednagar
+1919,6.26,black,Bottle Gourd,3.89,784mm/33.2C,Sep,Pune
+1920,6.31,loam,Beans,1.47,111mm/19.2C,Mar,Parbhani
+1921,7.08,clay,Ridge Gourd,3.88,638mm/21.1C,Jul,Hingoli
+1922,5.21,black,Tomato,1.19,1022mm/30.0C,Dec,Parbhani
+1923,6.87,sandy,Radish,1.74,116mm/22.8C,Apr,Wardha
+1924,6.16,black,Green Chilies,2.43,264mm/33.6C,Aug,Sangli
+1925,7.34,black,Spinach,4.73,451mm/17.7C,Feb,Latur
+1926,5.45,alluvial,Cauliflower,4.67,424mm/25.0C,Aug,Amravati
+1927,6.79,black,Fenugreek Leaves,1.19,157mm/20.8C,Sep,Yavatmal
+1928,6.5,loam,Radish,1.92,343mm/26.5C,Aug,Satara
+1929,6.93,black,Radish,0.92,803mm/34.2C,Jun,Solapur
+1930,5.38,loam,Beetroot,2.65,591mm/29.3C,Oct,Sangli
+1931,6.77,sandy,Pumpkin,2.41,655mm/24.8C,Jan,Latur
+1932,6.72,loam,Beans,4.52,510mm/29.8C,Jul,Parbhani
+1933,6.71,sandy,Brinjal,4.66,180mm/21.1C,Jan,Buldhana
+1934,6.83,sandy,Beetroot,2.04,323mm/34.2C,Jul,Buldhana
+1935,7.03,loam,Cabbage,2.56,184mm/33.6C,Feb,Aurangabad
+1936,7.37,clay,Bottle Gourd,4.5,1150mm/18.4C,Aug,Aurangabad
+1937,5.93,red,Radish,4.07,897mm/32.9C,Feb,Nanded
+1938,7.43,black,Beetroot,0.22,223mm/25.6C,Mar,Pune
+1939,6.55,alluvial,Cabbage,1.74,869mm/32.8C,Dec,Parbhani
+1940,5.41,red,Pumpkin,2.22,738mm/24.2C,Mar,Nagpur
+1941,5.36,black,Spring Onion,1.3,916mm/22.8C,Jan,Buldhana
+1942,6.1,black,Green Chilies,1.16,830mm/32.9C,May,Amravati
+1943,7.32,sandy,Bottle Gourd,0.38,843mm/22.6C,May,Solapur
+1944,7.11,black,Beetroot,3.29,771mm/18.6C,Oct,Ahmednagar
+1945,7.33,alluvial,Radish,1.46,798mm/25.8C,May,Parbhani
+1946,6.6,black,Cauliflower,0.45,1129mm/29.6C,Sep,Wardha
+1947,6.39,loam,Ridge Gourd,1.31,1085mm/24.4C,Jun,Pune
+1948,5.6,red,Radish,4.05,601mm/29.6C,Jun,Gondia
+1949,6.09,loam,Fenugreek Leaves,4.29,797mm/23.9C,Mar,Jalgaon
+1950,6.37,alluvial,Beetroot,2.52,796mm/23.5C,May,Aurangabad
+1951,5.44,black,Spring Onion,2.2,197mm/29.1C,Oct,Kolhapur
+1952,5.8,alluvial,Bitter Gourd,4.89,102mm/24.2C,Jul,Pune
+1953,6.82,sandy,Brinjal,1.16,106mm/29.6C,Mar,Pune
+1954,7.19,loam,Ladyfinger,1.23,1184mm/18.6C,Feb,Gondia
+1955,7.9,loam,Cauliflower,1.6,854mm/23.7C,May,Ahmednagar
+1956,7.72,clay,Bottle Gourd,1.03,1187mm/26.3C,Mar,Kolhapur
+1957,6.93,black,Bitter Gourd,2.02,375mm/20.7C,May,Nagpur
+1958,6.34,sandy,Bitter Gourd,4.57,1080mm/34.1C,Sep,Gondia
+1959,6.92,loam,Green Chilies,3.15,950mm/17.9C,Nov,Kolhapur
+1960,7.32,loam,Carrot,2.18,832mm/23.8C,Oct,Sangli
+1961,5.52,sandy,Spring Onion,4.69,421mm/22.8C,Jan,Wardha
+1962,6.31,alluvial,Ridge Gourd,0.43,855mm/16.4C,Apr,Gondia
+1963,7.47,alluvial,Radish,1.21,335mm/34.8C,Oct,Buldhana
+1964,6.24,black,Beetroot,2.92,694mm/32.6C,May,Hingoli
+1965,6.74,clay,Coriander,3.15,903mm/34.4C,Feb,Parbhani
+1966,6.79,loam,Spinach,0.39,811mm/29.9C,Dec,Kolhapur
+1967,5.7,clay,Tomato,2.13,957mm/22.4C,Feb,Nagpur
+1968,6.18,alluvial,Cabbage,3.32,553mm/15.4C,Jan,Aurangabad
+1969,6.1,alluvial,Carrot,3.55,1120mm/34.6C,Aug,Yavatmal
+1970,5.27,red,Radish,3.26,1151mm/22.4C,Feb,Gondia
+1971,5.27,black,Ladyfinger,1.74,445mm/25.8C,Mar,Latur
+1972,7.45,red,Tomato,0.65,1024mm/16.9C,Dec,Hingoli
+1973,5.94,red,Ladyfinger,2.25,510mm/21.3C,Feb,Parbhani
+1974,6.6,red,Radish,0.82,309mm/17.7C,Apr,Nagpur
+1975,6.01,black,Coriander,4.75,647mm/15.8C,Jan,Buldhana
+1976,7.74,black,Brinjal,2.48,872mm/18.9C,Mar,Jalgaon
+1977,5.9,sandy,Radish,1.72,1054mm/19.8C,May,Latur
+1978,6.36,clay,Coriander,3.88,925mm/21.6C,Oct,Gadchiroli
+1979,7.56,clay,Beans,2.59,697mm/25.2C,Jan,Satara
+1980,7.47,sandy,Spring Onion,1.69,1177mm/20.4C,Apr,Buldhana
+1981,5.7,sandy,Fenugreek Leaves,4.1,295mm/22.9C,Jun,Hingoli
+1982,7.37,alluvial,Green Peas,4.36,1002mm/24.1C,Apr,Satara
+1983,6.44,red,Ridge Gourd,3.43,368mm/27.7C,Jul,Gondia
+1984,6.5,sandy,Ridge Gourd,0.43,936mm/32.1C,Jul,Gondia
+1985,5.56,loam,Fenugreek Leaves,2.92,860mm/30.5C,Jun,Gadchiroli
+1986,5.42,clay,Pumpkin,3.86,643mm/19.5C,Sep,Jalgaon
+1987,7.17,sandy,Tomato,0.86,92mm/18.3C,Feb,Pune
+1988,6.54,loam,Radish,1.3,419mm/15.9C,Oct,Hingoli
+1989,6.38,loam,Cabbage,4.44,391mm/24.0C,Aug,Satara
+1990,7.17,loam,Pumpkin,0.3,418mm/15.4C,Aug,Yavatmal
+1991,7.27,alluvial,Pumpkin,3.81,438mm/18.5C,Nov,Gadchiroli
+1992,5.63,alluvial,Beans,2.47,840mm/20.2C,Oct,Sangli
+1993,6.85,loam,Green Peas,2.34,121mm/27.1C,Nov,Hingoli
+1994,5.57,alluvial,Cucumber,0.23,1049mm/29.5C,Apr,Nashik
+1995,7.23,red,Pumpkin,4.13,543mm/18.1C,Jun,Yavatmal
+1996,6.97,loam,Spring Onion,1.93,877mm/15.6C,Nov,Latur
+1997,7.78,red,Pumpkin,2.8,610mm/21.8C,Jun,Kolhapur
+1998,5.39,red,Green Peas,3.45,951mm/33.7C,May,Ahmednagar
+1999,5.35,loam,Cauliflower,3.57,271mm/19.5C,Jan,Satara
+2000,5.96,clay,Ridge Gourd,4.79,1184mm/26.8C,Mar,Osmana bad

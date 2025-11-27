@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Plus, Minus } from 'lucide-react';
+import { Plus, Minus, RefreshCw, BarChart3, TrendingUp, DollarSign, Calendar, MapPin } from 'lucide-react';
 import { Routes, Route } from 'react-router-dom';
 import DashboardBanner from '../../components/sections/DashboardBanner';
 import DashboardSidebar from '../../components/dashboard/DashboardSidebar';
@@ -10,6 +10,7 @@ import AccountSettingsForm from '../../components/settings/AccountSettingsForm';
 import BillingAddressForm from '../../components/settings/BillingAddressForm';
 import Dropdown from '../../components/ui/Dropdown';
 import ProductRequestTable from '../../components/farmer/ProductRequestTable';
+import ManageProductsTable from '../../components/farmer/ManageProductsTable';
 import farmerProductRequestService, { ProductRequest } from '../../services/farmerProductRequestService';
 import { useNotification } from '../../context/NotificationContext';
 
@@ -388,6 +389,18 @@ const AiModelSection: React.FC = () => {
   
   // Price Prediction State
   const [priceFormData, setPriceFormData] = useState({
+    date: new Date().toISOString().split('T')[0],
+    crop: '',
+    qualityGrade: '',
+    farmersLocation: '',
+    seasonMonth: '',
+  });
+  const [pricePrediction, setPricePrediction] = useState<any>(null);
+  const [priceLoading, setPriceLoading] = useState(false);
+  const [priceError, setPriceError] = useState('');
+
+  // Crop Prediction State
+  const [cropFormData, setCropFormData] = useState({
     ph: '',
     soilType: '',
     previousCrop: '',
@@ -396,18 +409,6 @@ const AiModelSection: React.FC = () => {
     temperature: '',
     month: '',
     district: '',
-  });
-  const [pricePrediction, setPricePrediction] = useState<any>(null);
-  const [priceLoading, setPriceLoading] = useState(false);
-  const [priceError, setPriceError] = useState('');
-
-  // Crop Prediction State
-  const [cropFormData, setCropFormData] = useState({
-    date: new Date().toISOString().split('T')[0],
-    crop: '',
-    qualityGrade: '',
-    farmersLocation: '',
-    seasonMonth: '',
   });
   const [cropPrediction, setCropPrediction] = useState<any>(null);
   const [cropLoading, setCropLoading] = useState(false);
@@ -436,38 +437,26 @@ const AiModelSection: React.FC = () => {
   };
 
   const validatePriceForm = () => {
-    const { ph, soilType, previousCrop, areaHa, rainfall, temperature, month, district } = priceFormData;
+    const { date, crop, qualityGrade, farmersLocation, seasonMonth } = priceFormData;
 
-    if (!ph || parseFloat(ph) < 5.0 || parseFloat(ph) > 8.5) {
-      setPriceError('pH should be between 5.0 and 8.5');
+    if (!date) {
+      setPriceError('Please select date');
       return false;
     }
-    if (!soilType) {
-      setPriceError('Please select soil type');
+    if (!crop) {
+      setPriceError('Please select crop');
       return false;
     }
-    if (!previousCrop) {
-      setPriceError('Please select previous crop');
+    if (!qualityGrade) {
+      setPriceError('Please select quality grade');
       return false;
     }
-    if (!areaHa || parseFloat(areaHa) < 0.1 || parseFloat(areaHa) > 10.0) {
-      setPriceError('Area should be between 0.1 and 10.0 hectares');
+    if (!farmersLocation) {
+      setPriceError('Please enter farmer location');
       return false;
     }
-    if (!rainfall || parseFloat(rainfall) < 50 || parseFloat(rainfall) > 1500) {
-      setPriceError('Rainfall should be between 50 and 1500 mm');
-      return false;
-    }
-    if (!temperature || parseFloat(temperature) < 15 || parseFloat(temperature) > 35) {
-      setPriceError('Temperature should be between 15 and 35°C');
-      return false;
-    }
-    if (!month) {
-      setPriceError('Please select planting month');
-      return false;
-    }
-    if (!district) {
-      setPriceError('Please select district');
+    if (!seasonMonth) {
+      setPriceError('Please select season month');
       return false;
     }
     return true;
@@ -511,8 +500,11 @@ const AiModelSection: React.FC = () => {
 
   const handlePriceReset = () => {
     setPriceFormData({
-      ph: '', soilType: '', previousCrop: '', areaHa: '',
-      rainfall: '', temperature: '', month: '', district: ''
+      date: new Date().toISOString().split('T')[0],
+      crop: '',
+      qualityGrade: '',
+      farmersLocation: '',
+      seasonMonth: ''
     });
     setPricePrediction(null);
     setPriceError('');
@@ -525,12 +517,39 @@ const AiModelSection: React.FC = () => {
   };
 
   const validateCropForm = () => {
-    const { date, crop, qualityGrade, farmersLocation, seasonMonth } = cropFormData;
-    if (!date) { setCropError('Please select date'); return false; }
-    if (!crop) { setCropError('Please select crop'); return false; }
-    if (!qualityGrade) { setCropError('Please select quality grade'); return false; }
-    if (!farmersLocation || farmersLocation.trim() === '') { setCropError('Please enter location'); return false; }
-    if (!seasonMonth) { setCropError('Please select month'); return false; }
+    const { ph, soilType, previousCrop, areaHa, rainfall, temperature, month, district } = cropFormData;
+    if (!ph || parseFloat(ph) < 5.0 || parseFloat(ph) > 8.5) {
+      setCropError('pH should be between 5.0 and 8.5');
+      return false;
+    }
+    if (!soilType) {
+      setCropError('Please select soil type');
+      return false;
+    }
+    if (!previousCrop) {
+      setCropError('Please select previous crop');
+      return false;
+    }
+    if (!areaHa || parseFloat(areaHa) < 0.1 || parseFloat(areaHa) > 10.0) {
+      setCropError('Area should be between 0.1 and 10.0 hectares');
+      return false;
+    }
+    if (!rainfall || parseFloat(rainfall) < 50 || parseFloat(rainfall) > 1500) {
+      setCropError('Rainfall should be between 50 and 1500 mm');
+      return false;
+    }
+    if (!temperature || parseFloat(temperature) < 15 || parseFloat(temperature) > 35) {
+      setCropError('Temperature should be between 15 and 35°C');
+      return false;
+    }
+    if (!month) {
+      setCropError('Please select planting month');
+      return false;
+    }
+    if (!district) {
+      setCropError('Please select district');
+      return false;
+    }
     return true;
   };
 
@@ -545,13 +564,7 @@ const AiModelSection: React.FC = () => {
       const response = await fetch('http://localhost:5001/api/predict-next-crop', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          date: cropFormData.date,
-          crop: cropFormData.crop,
-          quality_grade: cropFormData.qualityGrade,
-          farmers_location: cropFormData.farmersLocation,
-          season_month: cropFormData.seasonMonth
-        }),
+        body: JSON.stringify(cropFormData),
       });
 
       const data = await response.json();
@@ -578,8 +591,14 @@ const AiModelSection: React.FC = () => {
 
   const handleCropReset = () => {
     setCropFormData({
-      date: new Date().toISOString().split('T')[0],
-      crop: '', qualityGrade: '', farmersLocation: '', seasonMonth: ''
+      ph: '',
+      soilType: '',
+      previousCrop: '',
+      areaHa: '',
+      rainfall: '',
+      temperature: '',
+      month: '',
+      district: ''
     });
     setCropPrediction(null);
     setCropError('');
@@ -652,62 +671,37 @@ const AiModelSection: React.FC = () => {
           <p className="text-text-muted text-sm mb-6">Get estimated market prices for your crops</p>
           
           <form onSubmit={handlePriceSubmit} className="space-y-5">
-            <div className="grid grid-cols-2 gap-4">
-              <div>
-                <label className="block text-sm font-medium text-text-dark mb-2">Soil pH *</label>
-                <input type="number" name="ph" step="0.1" min="5.0" max="8.5" value={priceFormData.ph} onChange={handlePriceChange} placeholder="5.3 to 8.0" required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray placeholder-text-muted focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" />
-                <small className="text-xs text-text-muted">Range: 5.0 - 8.5</small>
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-text-dark mb-2">Soil Type *</label>
-                <select name="soilType" value={priceFormData.soilType} onChange={handlePriceChange} required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors">
-                  <option value="">Select Soil Type</option>
-                  {soilTypes.map((soil, index) => (<option key={index} value={soil}>{soil}</option>))}
-                </select>
-              </div>
+            <div>
+              <label className="block text-sm font-medium text-text-dark mb-2">Date *</label>
+              <input type="date" name="date" value={priceFormData.date} onChange={handlePriceChange} required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" />
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-text-dark mb-2">Previous Crop *</label>
-              <select name="previousCrop" value={priceFormData.previousCrop} onChange={handlePriceChange} required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors">
-                <option value="">Select previous crop</option>
+              <label className="block text-sm font-medium text-text-dark mb-2">Crop *</label>
+              <select name="crop" value={priceFormData.crop} onChange={handlePriceChange} required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors">
+                <option value="">Select crop</option>
                 {crops.map((crop, index) => (<option key={index} value={crop}>{crop}</option>))}
               </select>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
-              <div>
-                <label className="block text-sm font-medium text-text-dark mb-2">Farm Area (hectares) *</label>
-                <input type="number" name="areaHa" step="0.1" min="0.1" max="10.0" value={priceFormData.areaHa} onChange={handlePriceChange} placeholder="0.2 to 5.0" required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray placeholder-text-muted focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" />
-                <small className="text-xs text-text-muted">Range: 0.1 - 10.0 hectares</small>
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-text-dark mb-2">Expected Rainfall (mm) *</label>
-                <input type="number" name="rainfall" step="10" min="50" max="1500" value={priceFormData.rainfall} onChange={handlePriceChange} placeholder="80 to 1200" required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray placeholder-text-muted focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" />
-                <small className="text-xs text-text-muted">Range: 50 - 1500 mm</small>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-2 gap-4">
-              <div>
-                <label className="block text-sm font-medium text-text-dark mb-2">Average Temperature (°C) *</label>
-                <input type="number" name="temperature" step="0.5" min="15" max="35" value={priceFormData.temperature} onChange={handlePriceChange} placeholder="16 to 33" required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray placeholder-text-muted focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" />
-                <small className="text-xs text-text-muted">Range: 15 - 35°C</small>
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-text-dark mb-2">Planting Month *</label>
-                <select name="month" value={priceFormData.month} onChange={handlePriceChange} required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors">
-                  <option value="">Select month</option>
-                  {months.map((month) => (<option key={month} value={month}>{month}</option>))}
-                </select>
-              </div>
+            <div>
+              <label className="block text-sm font-medium text-text-dark mb-2">Quality Grade *</label>
+              <select name="qualityGrade" value={priceFormData.qualityGrade} onChange={handlePriceChange} required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors">
+                <option value="">Select grade</option>
+                {qualityGrades.map((grade) => (<option key={grade} value={grade}>Grade {grade}</option>))}
+              </select>
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-text-dark mb-2">District *</label>
-              <select name="district" value={priceFormData.district} onChange={handlePriceChange} required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors">
-                <option value="">Select District</option>
-                {districts.map((district, index) => (<option key={index} value={district}>{district}</option>))}
+              <label className="block text-sm font-medium text-text-dark mb-2">Farmer's Location *</label>
+              <input type="text" name="farmersLocation" value={priceFormData.farmersLocation} onChange={handlePriceChange} placeholder="Enter your location" required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray placeholder-text-muted focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-text-dark mb-2">Season Month *</label>
+              <select name="seasonMonth" value={priceFormData.seasonMonth} onChange={handlePriceChange} required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors">
+                <option value="">Select month</option>
+                {months.map((month) => (<option key={month} value={month}>{month}</option>))}
               </select>
             </div>
 
@@ -726,36 +720,63 @@ const AiModelSection: React.FC = () => {
           {pricePrediction && (
             <div className="mt-6">
               <h4 className="text-base font-semibold text-text-dark mb-4">Price Prediction Result</h4>
-              <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg border border-green-200 p-6 space-y-5">
-                <div className="text-center pb-4 border-b border-green-200">
-                  <div className="text-sm text-text-muted mb-2">Predicted Modal Price</div>
+              <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg border border-green-200 p-6 space-y-5 shadow-sm">
+                <div className="text-center pb-5 border-b border-green-200">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <div className="p-1.5 bg-green-100 rounded-lg">
+                      <DollarSign className="w-4 h-4 text-green-600" />
+                    </div>
+                    <div className="text-sm text-text-muted">Predicted Modal Price</div>
+                  </div>
                   <div className="text-4xl font-bold text-green-600 mb-1">₹ {pricePrediction.predicted_price?.toFixed(2) || '0.00'}</div>
                   <div className="text-sm text-text-muted">per quintal</div>
                 </div>
-                <div className="space-y-3">
-                  <div className="text-sm font-medium text-text-dark">Expected Price Range</div>
-                  <div className="flex items-center justify-between gap-4">
-                    <div className="text-center flex-1">
+                
+                <div className="bg-white border border-green-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <div className="flex items-center gap-2 mb-3">
+                    <div className="p-1.5 bg-green-100 rounded-lg">
+                      <TrendingUp className="w-4 h-4 text-green-600" />
+                    </div>
+                    <div className="text-sm font-semibold text-text-dark">Expected Price Range</div>
+                  </div>
+                  <div className="flex items-center justify-between gap-4 mb-3">
+                    <div className="text-center flex-1 p-3 bg-orange-50 rounded-lg border border-orange-200">
                       <div className="text-xs text-text-muted mb-1">Minimum</div>
                       <div className="text-lg font-bold text-orange-600">₹ {pricePrediction.min_price?.toFixed(2) || '0.00'}</div>
                     </div>
                     <div className="text-2xl text-text-muted">—</div>
-                    <div className="text-center flex-1">
+                    <div className="text-center flex-1 p-3 bg-green-50 rounded-lg border border-green-200">
                       <div className="text-xs text-text-muted mb-1">Maximum</div>
                       <div className="text-lg font-bold text-green-600">₹ {pricePrediction.max_price?.toFixed(2) || '0.00'}</div>
                     </div>
                   </div>
-                  <div className="w-full bg-green-200 rounded-full h-2.5">
-                    <div className="bg-gradient-to-r from-orange-500 via-yellow-500 to-green-500 h-2.5 rounded-full" style={{ width: '100%' }}></div>
+                  <div className="w-full bg-gray-100 rounded-full h-2 overflow-hidden">
+                    <div className="bg-gradient-to-r from-orange-500 via-yellow-500 to-green-500 h-2 rounded-full transition-all duration-500" style={{ width: '100%' }}></div>
                   </div>
                 </div>
-                <div className="grid grid-cols-2 gap-3 pt-4 border-t border-green-200">
-                  <div className="text-sm"><span className="text-text-muted">Previous Crop:</span><span className="ml-2 font-medium text-text-dark">{priceFormData.previousCrop}</span></div>
-                  <div className="text-sm"><span className="text-text-muted">Soil Type:</span><span className="ml-2 font-medium text-text-dark">{priceFormData.soilType}</span></div>
-                  <div className="text-sm"><span className="text-text-muted">District:</span><span className="ml-2 font-medium text-text-dark">{priceFormData.district}</span></div>
-                  <div className="text-sm"><span className="text-text-muted">Month:</span><span className="ml-2 font-medium text-text-dark">{priceFormData.month}</span></div>
+
+                <div className="bg-white border border-green-200 rounded-lg p-4 shadow-sm">
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="flex items-start gap-2">
+                      <div className="text-text-muted text-xs mt-0.5">Crop:</div>
+                      <div className="font-medium text-text-dark text-sm">{priceFormData.crop}</div>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <div className="text-text-muted text-xs mt-0.5">Quality:</div>
+                      <div className="font-medium text-text-dark text-sm">Grade {priceFormData.qualityGrade}</div>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <MapPin className="w-3.5 h-3.5 text-text-muted mt-0.5 flex-shrink-0" />
+                      <div className="font-medium text-text-dark text-sm">{priceFormData.farmersLocation}</div>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <Calendar className="w-3.5 h-3.5 text-text-muted mt-0.5 flex-shrink-0" />
+                      <div className="font-medium text-text-dark text-sm">{priceFormData.seasonMonth}</div>
+                    </div>
+                  </div>
                 </div>
-                <div className="bg-blue-50 border border-blue-200 rounded-md p-3 text-xs text-blue-700"><strong>Note:</strong> These prices are estimates and may vary based on market conditions.</div>
+
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 text-xs text-blue-700"><strong>Note:</strong> These prices are estimates and may vary based on market conditions.</div>
               </div>
             </div>
           )}
@@ -785,37 +806,62 @@ const AiModelSection: React.FC = () => {
           <p className="text-text-muted text-sm mb-6">Get recommendations for your next crop</p>
           
           <form onSubmit={handleCropSubmit} className="space-y-5">
-            <div>
-              <label className="block text-sm font-medium text-text-dark mb-2">Date *</label>
-              <input type="date" name="date" value={cropFormData.date} onChange={handleCropChange} required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" />
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label className="block text-sm font-medium text-text-dark mb-2">Soil pH *</label>
+                <input type="number" name="ph" step="0.1" min="5.0" max="8.5" value={cropFormData.ph} onChange={handleCropChange} placeholder="5.3 to 8.0" required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray placeholder-text-muted focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" />
+                <small className="text-xs text-text-muted">Range: 5.0 - 8.5</small>
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-text-dark mb-2">Soil Type *</label>
+                <select name="soilType" value={cropFormData.soilType} onChange={handleCropChange} required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors">
+                  <option value="">Select Soil Type</option>
+                  {soilTypes.map((soil, index) => (<option key={index} value={soil}>{soil}</option>))}
+                </select>
+              </div>
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-text-dark mb-2">Current/Previous Crop *</label>
-              <select name="crop" value={cropFormData.crop} onChange={handleCropChange} required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors">
-                <option value="">Select current crop</option>
+              <label className="block text-sm font-medium text-text-dark mb-2">Previous Crop *</label>
+              <select name="previousCrop" value={cropFormData.previousCrop} onChange={handleCropChange} required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors">
+                <option value="">Select previous crop</option>
                 {crops.map((crop, index) => (<option key={index} value={crop}>{crop}</option>))}
               </select>
             </div>
 
-            <div>
-              <label className="block text-sm font-medium text-text-dark mb-2">Soil Quality Grade *</label>
-              <select name="qualityGrade" value={cropFormData.qualityGrade} onChange={handleCropChange} required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors">
-                <option value="">Select grade</option>
-                {qualityGrades.map((grade) => (<option key={grade} value={grade}>Grade {grade}</option>))}
-              </select>
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label className="block text-sm font-medium text-text-dark mb-2">Farm Area (hectares) *</label>
+                <input type="number" name="areaHa" step="0.1" min="0.1" max="10.0" value={cropFormData.areaHa} onChange={handleCropChange} placeholder="0.2 to 5.0" required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray placeholder-text-muted focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" />
+                <small className="text-xs text-text-muted">Range: 0.1 - 10.0 hectares</small>
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-text-dark mb-2">Expected Rainfall (mm) *</label>
+                <input type="number" name="rainfall" step="10" min="50" max="1500" value={cropFormData.rainfall} onChange={handleCropChange} placeholder="80 to 1200" required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray placeholder-text-muted focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" />
+                <small className="text-xs text-text-muted">Range: 50 - 1500 mm</small>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label className="block text-sm font-medium text-text-dark mb-2">Average Temperature (°C) *</label>
+                <input type="number" name="temperature" step="0.5" min="15" max="35" value={cropFormData.temperature} onChange={handleCropChange} placeholder="16 to 33" required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray placeholder-text-muted focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" />
+                <small className="text-xs text-text-muted">Range: 15 - 35°C</small>
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-text-dark mb-2">Planting Month *</label>
+                <select name="month" value={cropFormData.month} onChange={handleCropChange} required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors">
+                  <option value="">Select month</option>
+                  {months.map((month) => (<option key={month} value={month}>{month}</option>))}
+                </select>
+              </div>
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-text-dark mb-2">Farmer's Location *</label>
-              <input type="text" name="farmersLocation" value={cropFormData.farmersLocation} onChange={handleCropChange} placeholder="Enter your village/city" required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray placeholder-text-muted focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" />
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-text-dark mb-2">Planting Season Month *</label>
-              <select name="seasonMonth" value={cropFormData.seasonMonth} onChange={handleCropChange} required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors">
-                <option value="">Select month</option>
-                {months.map((month) => (<option key={month} value={month}>{month}</option>))}
+              <label className="block text-sm font-medium text-text-dark mb-2">District *</label>
+              <select name="district" value={cropFormData.district} onChange={handleCropChange} required className="w-full px-4 py-3 border border-border-color rounded-md text-text-dark-gray focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors">
+                <option value="">Select District</option>
+                {districts.map((district, index) => (<option key={index} value={district}>{district}</option>))}
               </select>
             </div>
 
@@ -852,19 +898,46 @@ const AiModelSection: React.FC = () => {
                   </div>
                 )}
                 <div className="grid grid-cols-2 gap-3 pt-4 border-t border-green-200">
-                  <div className="text-sm"><span className="text-text-muted">Previous:</span><span className="ml-2 font-medium text-text-dark">{cropFormData.crop}</span></div>
-                  <div className="text-sm"><span className="text-text-muted">Soil Grade:</span><span className="ml-2 font-medium text-text-dark">{cropFormData.qualityGrade}</span></div>
-                  <div className="text-sm"><span className="text-text-muted">Location:</span><span className="ml-2 font-medium text-text-dark">{cropFormData.farmersLocation}</span></div>
-                  <div className="text-sm"><span className="text-text-muted">Month:</span><span className="ml-2 font-medium text-text-dark">{cropFormData.seasonMonth}</span></div>
+                  <div className="text-sm"><span className="text-text-muted">Previous:</span><span className="ml-2 font-medium text-text-dark">{cropFormData.previousCrop}</span></div>
+                  <div className="text-sm"><span className="text-text-muted">Soil Grade:</span><span className="ml-2 font-medium text-text-dark">pH {cropFormData.ph}</span></div>
+                  <div className="text-sm"><span className="text-text-muted">Location:</span><span className="ml-2 font-medium text-text-dark">{cropFormData.district}</span></div>
+                  <div className="text-sm"><span className="text-text-muted">Month:</span><span className="ml-2 font-medium text-text-dark">{cropFormData.month}</span></div>
                 </div>
-                {cropPrediction.benefits && (
-                  <div className="bg-white border border-green-200 rounded-md p-4 space-y-2">
-                    <div className="text-sm font-medium text-text-dark mb-2">Expected Benefits</div>
-                    <ul className="space-y-1.5 text-sm text-text-dark-gray">
-                      {cropPrediction.benefits.map((benefit: string, index: number) => (
-                        <li key={index} className="flex items-start gap-2"><span className="text-green-500 mt-0.5">✓</span><span>{benefit}</span></li>
+                {cropPrediction.rotation_benefit && (
+                  <div className="bg-white border border-green-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="p-1.5 bg-green-100 rounded-lg">
+                        <RefreshCw className="w-4 h-4 text-green-600" />
+                      </div>
+                      <div className="text-sm font-semibold text-text-dark">Crop Rotation Benefit</div>
+                    </div>
+                    <p className="text-sm text-text-dark-gray leading-relaxed">{cropPrediction.rotation_benefit}</p>
+                  </div>
+                )}
+                {cropPrediction.top_crops && cropPrediction.top_crops.length > 0 && (
+                  <div className="bg-white border border-green-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+                    <div className="flex items-center gap-2 mb-4">
+                      <div className="p-1.5 bg-green-100 rounded-lg">
+                        <BarChart3 className="w-4 h-4 text-green-600" />
+                      </div>
+                      <div className="text-sm font-semibold text-text-dark">Top 5 Alternative Crops</div>
+                    </div>
+                    <div className="space-y-3">
+                      {cropPrediction.top_crops.slice(0, 5).map((item: any, index: number) => (
+                        <div key={index} className="flex items-center gap-3 p-2 rounded-lg hover:bg-green-50 transition-colors">
+                          <div className="flex items-center justify-center w-7 h-7 bg-gradient-to-br from-green-100 to-green-200 rounded-full text-xs font-bold text-green-700">{index + 1}</div>
+                          <div className="flex-1">
+                            <div className="flex justify-between items-center mb-1.5">
+                              <span className="text-sm font-medium text-text-dark">{item.crop}</span>
+                              <span className="text-xs font-bold text-green-600">{item.probability}%</span>
+                            </div>
+                            <div className="w-full bg-gray-100 rounded-full h-2 overflow-hidden">
+                              <div className="bg-gradient-to-r from-green-400 via-green-500 to-green-600 h-2 rounded-full transition-all duration-500 ease-out" style={{ width: `${item.probability}%` }}></div>
+                            </div>
+                          </div>
+                        </div>
                       ))}
-                    </ul>
+                    </div>
                   </div>
                 )}
                 <div className="bg-blue-50 border border-blue-200 rounded-md p-3 text-xs text-blue-700"><strong>Note:</strong> This recommendation is based on your land conditions. Please consult agricultural experts.</div>
@@ -1064,6 +1137,7 @@ const DashboardPage: React.FC = () => {
                 <Route index element={<DashboardOverview />} />
                 <Route path="profile" element={<ProfileSection />} />
                 <Route path="sell-product" element={<SellProductSection />} />
+                <Route path="manage-products" element={<ManageProductsTable />} />
                 <Route path="ai-model" element={<AiModelSection />} />
                 <Route path="help-support" element={<HelpSupportSection />} />
                 <Route path="settings" element={<SettingsSection />} />

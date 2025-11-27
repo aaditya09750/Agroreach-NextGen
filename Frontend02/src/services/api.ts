@@ -13,10 +13,17 @@ export const api = axios.create({
 // Add token to requests
 api.interceptors.request.use(
   (config) => {
-    const token = localStorage.getItem('farmer_token');
+    // Public endpoints that don't require authentication
+    const publicEndpoints = ['/contact', '/newsletter/subscribe', '/newsletter/unsubscribe'];
+    const isPublicEndpoint = publicEndpoints.some(endpoint => config.url?.includes(endpoint));
     
-    if (token) {
-      config.headers.Authorization = `Bearer ${token}`;
+    // Only add token for non-public endpoints
+    if (!isPublicEndpoint) {
+      const token = localStorage.getItem('farmer_token');
+      
+      if (token) {
+        config.headers.Authorization = `Bearer ${token}`;
+      }
     }
     
     return config;
