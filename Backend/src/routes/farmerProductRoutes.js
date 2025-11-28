@@ -12,6 +12,9 @@ router.get('/', farmerProductController.getMyProducts);
 // Get product statistics
 router.get('/stats', farmerProductController.getProductStats);
 
+// Get dashboard statistics
+router.get('/dashboard-stats', farmerProductController.getDashboardStats);
+
 // Get audit data
 router.get('/audit', farmerProductController.getAuditData);
 

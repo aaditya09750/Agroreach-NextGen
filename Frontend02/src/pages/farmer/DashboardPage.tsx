@@ -13,14 +13,92 @@ import ProductRequestTable from '../../components/farmer/ProductRequestTable';
 import ManageProductsTable from '../../components/farmer/ManageProductsTable';
 import farmerProductRequestService, { ProductRequest } from '../../services/farmerProductRequestService';
 import { useNotification } from '../../context/NotificationContext';
+import dashboardService, { DashboardStats, WeatherData } from '../../services/dashboardService';
 
 const DashboardOverview: React.FC = () => {
+  const [stats, setStats] = useState<DashboardStats | null>(null);
+  const [weather, setWeather] = useState<WeatherData | null>(null);
+  const [fields, setFields] = useState<FieldData[]>([]);
+  const [selectedField, setSelectedField] = useState(0);
+  const [yieldAnalysis, setYieldAnalysis] = useState<YieldAnalysis | null>(null);
+  const [selectedCrop, setSelectedCrop] = useState('corn');
+  const [selectedYear, setSelectedYear] = useState(new Date().getFullYear());
+  const [loading, setLoading] = useState(true);
+  const { addNotification } = useNotification();
+
+  useEffect(() => {
+    fetchDashboardData();
+  }, []);
+
+  useEffect(() => {
+    if (!loading) {
+      fetchYieldAnalysis(selectedCrop, selectedYear);
+    }
+  }, [selectedCrop, selectedYear, loading]);
+
+  const fetchDashboardData = async () => {
+    try {
+      setLoading(true);
+      const [statsData, weatherData, fieldsData] = await Promise.all([
+        dashboardService.getDashboardStats(),
+        dashboardService.getWeatherData(),
+        dashboardService.getFieldData()
+      ]);
+      setStats(statsData);
+      setWeather(weatherData);
+      setFields(fieldsData);
+      
+      // Fetch initial yield analysis
+      const yieldData = await dashboardService.getYieldAnalysis(selectedCrop, selectedYear);
+      setYieldAnalysis(yieldData);
+    } catch (error: any) {
+      console.error('Error fetching dashboard data:', error);
+      addNotification('Failed to load dashboard data', 'error');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const fetchYieldAnalysis = async (crop: string, year: number) => {
+    try {
+      const yieldData = await dashboardService.getYieldAnalysis(crop, year);
+      setYieldAnalysis(yieldData);
+    } catch (error) {
+      console.error('Error fetching yield analysis:', error);
+    }
+  };
+
+  if (loading || !stats || !weather) {
+    return (
+      <section className="space-y-6">
+        <div className="animate-pulse">
+          <div className="h-10 bg-gray-200 rounded w-1/3 mb-4"></div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="h-64 bg-gray-200 rounded"></div>
+            <div className="h-64 bg-gray-200 rounded"></div>
+            <div className="h-64 bg-gray-200 rounded"></div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="space-y-6">
       {/* Greeting Header */}
-      <div className="mb-6">
-        <h1 className="text-3xl font-semibold text-text-dark mb-2">Good Morning !</h1>
-        <p className="text-text-dark-gray text-sm">Optimize Your Farm Operations with Real-Time Insights</p>
+      <div className="mb-6 flex items-center justify-between">
+        <div>
+          <h1 className="text-3xl font-semibold text-text-dark mb-2">Good Afternoon !</h1>
+          <p className="text-text-dark-gray text-sm">Optimize Your Farm Operations with Real-Time Insights</p>
+        </div>
+        <button
+          onClick={fetchDashboardData}
+          className="flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors"
+          title="Refresh Dashboard"
+        >
+          <RefreshCw className="w-4 h-4" />
+          <span className="text-sm font-medium">Refresh</span>
+        </button>
       </div>
 
       {/* Top Row: Weather, Total Land Area, Revenue */}
@@ -29,21 +107,21 @@ const DashboardOverview: React.FC = () => {
         <div className="border border-border-color rounded-lg p-6 bg-white">
           <div className="flex items-center gap-2 mb-4">
             <div className="w-3 h-3 bg-primary rounded-full"></div>
-            <span className="text-sm font-medium text-text-dark">Chicago</span>
+            <span className="text-sm font-medium text-text-dark">{weather.location}</span>
           </div>
           <div className="mb-4">
-            <div className="text-sm text-text-dark-gray mb-1">Monday</div>
-            <div className="text-xs text-text-muted">27 Aug, 2024</div>
+            <div className="text-sm text-text-dark-gray mb-1">{weather.day}</div>
+            <div className="text-xs text-text-muted">{weather.date}</div>
           </div>
           <div className="flex items-center justify-between">
             <div>
-              <div className="text-5xl font-semibold text-text-dark mb-1">24° C</div>
-              <div className="text-sm text-text-dark-gray">High: 27 Low: 10</div>
+              <div className="text-5xl font-semibold text-text-dark mb-1">{weather.temperature}° C</div>
+              <div className="text-sm text-text-dark-gray">High: {weather.high} Low: {weather.low}</div>
             </div>
             <div className="text-center">
               <div className="text-6xl mb-2">⛅</div>
-              <div className="text-lg font-medium text-text-dark">Cloudy</div>
-              <div className="text-xs text-text-muted">Feels Like 26</div>
+              <div className="text-lg font-medium text-text-dark">{weather.condition}</div>
+              <div className="text-xs text-text-muted">Feels Like {weather.feelsLike}</div>
             </div>
           </div>
         </div>
@@ -54,8 +132,10 @@ const DashboardOverview: React.FC = () => {
             <h3 className="text-sm font-medium text-text-muted">Total Land Area</h3>
             <button className="w-8 h-8 rounded-full bg-primary hover:bg-primary text-white flex items-center justify-center text-xl font-medium transition-colors">+</button>
           </div>
-          <div className="text-4xl font-semibold text-text-dark mb-2">1,200 acres</div>
-          <div className="text-sm text-primary font-medium">+8.08% from last month</div>
+          <div className="text-4xl font-semibold text-text-dark mb-2">{stats.estimatedLandArea.toLocaleString()} acres</div>
+          <div className={`text-sm font-medium ${stats.landAreaGrowth >= 0 ? 'text-primary' : 'text-red-500'}`}>
+            {stats.landAreaGrowth >= 0 ? '+' : ''}{stats.landAreaGrowth.toFixed(2)}% from last month
+          </div>
         </div>
 
         {/* Revenue Card */}
@@ -64,8 +144,10 @@ const DashboardOverview: React.FC = () => {
             <h3 className="text-sm font-medium text-text-muted">Revenue</h3>
             <button className="w-8 h-8 rounded-full bg-[#8b5cf6] hover:bg-[#7c3aed] text-white flex items-center justify-center transition-colors">💵</button>
           </div>
-          <div className="text-4xl font-semibold text-text-dark mb-2">$50,000</div>
-          <div className="text-sm text-primary font-medium">+12.45% from last month</div>
+          <div className="text-4xl font-semibold text-text-dark mb-2">₹{parseFloat(stats.monthlyRevenue).toLocaleString()}</div>
+          <div className={`text-sm font-medium ${stats.revenueGrowth >= 0 ? 'text-primary' : 'text-red-500'}`}>
+            {stats.revenueGrowth >= 0 ? '+' : ''}{stats.revenueGrowth}% from last month
+          </div>
         </div>
       </div>
 
@@ -729,7 +811,7 @@ const AiModelSection: React.FC = () => {
                     <div className="text-sm text-text-muted">Predicted Modal Price</div>
                   </div>
                   <div className="text-4xl font-bold text-green-600 mb-1">₹ {pricePrediction.predicted_price?.toFixed(2) || '0.00'}</div>
-                  <div className="text-sm text-text-muted">per quintal</div>
+                  <div className="text-sm text-text-muted">per kg</div>
                 </div>
                 
                 <div className="bg-white border border-green-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
