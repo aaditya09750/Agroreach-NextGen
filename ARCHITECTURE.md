@@ -16,7 +16,7 @@ For setup and deployment instructions, see [README.md](README.md) and [docs/DEPL
                                             └────────┬───────────────────────┘
    ┌──────────────────────────────┐ HTTPS            │
    │ Frontend02 (Farmer Portal)   │     API ─────────┤
-   │  agroreach-farmer.vercel.app │──────────────────┤
+   │  agroreach-farmer-ai.vercel.app │──────────────────┤
    └──────────────────────────────┘ HTTPS (ML calls) │
                                     ────────┐        ▼
                                             ▼  ┌──────────────────┐

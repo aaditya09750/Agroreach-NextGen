@@ -3,7 +3,7 @@
 Step-by-step procedure to deploy AgroReach NextGen to production. End-state:
 
 - Frontend01 → `https://agroreach-shop.vercel.app` (Vercel)
-- Frontend02 → `https://agroreach-farmer.vercel.app` (Vercel)
+- Frontend02 → `https://agroreach-farmer-ai.vercel.app` (Vercel)
 - Node API → `https://agroreach-api.onrender.com` (Render)
 - ML service → `https://agroreach-ml.onrender.com` (Render)
 - Database → MongoDB Atlas (existing)
@@ -45,11 +45,11 @@ If the repo doesn't exist yet, create it on github.com first, then `git remote a
 
 ---
 
-## Phase B — MongoDB Atlas (5 min, skip if already provisioned)
+## Phase B — MongoDB Atlas (5 min, do not skip)
 
-Your `.env` already points at an Atlas cluster, so this phase is likely already done. Confirm the following:
+Your `.env` may already point at an Atlas cluster, but you still need to verify the IP allow-list. **This is the single most common deploy-day failure** — if Atlas refuses connections from Render, the Node service crashes on startup with `mongoose.connect()` rejection and Render returns 502 to every request.
 
-- **Network Access** → IP Allow List → `0.0.0.0/0` (Render free dyno IPs are dynamic; restrict later via VPC peering on a paid plan)
+- **Network Access** → IP Allow List → **add `0.0.0.0/0`** (Render free-tier dyno IPs are dynamic and not announced; restrict later via VPC peering on a paid plan)
 - **Database Access** → at least one user with `readWrite` on the target database
 - **SRV string** → ends with `?retryWrites=true&w=majority` (defaults are fine)
 
@@ -159,7 +159,7 @@ Same flow, second project:
    VITE_ML_API_URL      = https://agroreach-ml.onrender.com
    VITE_WEATHER_API_KEY = (leave blank — Open-Meteo is keyless)
    ```
-4. **Deploy**, wait ~2 minutes, copy URL: `https://agroreach-farmer.vercel.app`
+4. **Deploy**, wait ~2 minutes, copy URL: `https://agroreach-farmer-ai.vercel.app`
 
 ---
 
@@ -169,13 +169,13 @@ Now that you have the Vercel URLs, return to Render:
 
 1. **`agroreach-api`** → Environment → set:
    ```
-   FRONTEND_URLS = https://agroreach-shop.vercel.app,https://agroreach-farmer.vercel.app
+   FRONTEND_URLS = https://agroreach-shop.vercel.app,https://agroreach-farmer-ai.vercel.app
    ```
    Save (auto-redeploys, takes ~30 s).
 
 2. **`agroreach-ml`** → Environment → set:
    ```
-   ALLOWED_ORIGINS = https://agroreach-farmer.vercel.app
+   ALLOWED_ORIGINS = https://agroreach-farmer-ai.vercel.app
    ```
    Save (auto-redeploys).
 
@@ -200,7 +200,7 @@ Now that you have the Vercel URLs, return to Render:
 
 ### F.3 Farmer portal
 
-1. Visit `https://agroreach-farmer.vercel.app`.
+1. Visit `https://agroreach-farmer-ai.vercel.app`.
 2. Sign up as a new farmer (any email + a real city like "Pune" or "Mumbai" for the location).
 3. Login. Land on the dashboard.
 4. Weather widget should load real data with humidity, wind, AQI.
@@ -246,6 +246,14 @@ If cold starts hurt UX, upgrade either service to Starter ($7/mo each) → no sl
 ---
 
 ## Troubleshooting
+
+### Backend returns HTTP 502 / `Operation buffering timed out after 10000ms`
+
+Cause: `mongoose.connect()` failed → `process.exit(1)` in `server.js` → Render keeps restarting and failing the health check. Almost always means **Atlas Network Access doesn't include Render's IPs**. Fix: Atlas → Network Access → Add IP Address → "Allow access from anywhere" (`0.0.0.0/0`). Render auto-restarts; backend recovers within a minute.
+
+### Vercel build fails with `Could not resolve "../../assets/<lowercase>/<File>.png"`
+
+Cause: a Linux case-sensitivity bug. Windows and macOS treat `assets/about/X.png` and `assets/About/X.png` as the same path; Linux (Vercel's build env) does not. Fix: open the failing file, change the import path to match the on-disk directory name **exactly** (case included). Tip: run `git config core.ignorecase false` locally so future case changes show up as real diffs.
 
 ### Build fails on Render: `npm error ERESOLVE`
 

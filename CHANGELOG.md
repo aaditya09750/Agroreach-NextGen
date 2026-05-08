@@ -17,6 +17,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.1] - 2026-05-09
+
+First production deployment. All four tiers live and verified.
+
+### Added
+
+- **Production environment** live across Vercel (two projects) + Render (two services) + MongoDB Atlas + Cloudinary.
+  - Frontend01: `https://agroreach-shop.vercel.app`
+  - Frontend02: `https://agroreach-farmer-ai.vercel.app`
+  - Backend API: `https://agroreach-api.onrender.com`
+  - ML service: `https://agroreach-ml.onrender.com`
+- End-to-end smoke test passed: signin returns valid JWT, products endpoint returns Cloudinary-backed catalog (83 products), price + crop predictions return live values, CORS preflight succeeds for both Vercel origins against both Render services, Cloudinary `q_auto,f_auto` delivers 1.3 MB PNG as 12 KB WebP (~99 % size reduction).
+
+### Fixed
+
+- **Linux case-sensitivity bug** in `Frontend01/src/components/sections/AboutFeatures.tsx`: import path `../../assets/about/AboutMan.png` (lowercase) did not match the on-disk directory `About/` (capital A). Worked locally on Windows; failed on Vercel's Linux build with `Could not resolve` from Rollup. Corrected the import to use the exact case.
+
+### Documentation
+
+- `docs/DEPLOYMENT.md` updated with the production-verified Vercel URL for Frontend02 (`agroreach-farmer-ai.vercel.app`).
+- `docs/DEPLOYMENT.md` troubleshooting section now leads with the Atlas IP-whitelist failure mode (the single most common deploy-day blocker) and the Linux case-sensitivity gotcha.
+
+---
+
 ## [1.0.0] - 2026-05-08
 
 The first production-deployable release. Brings every layer from "works on my machine" to
