@@ -6,7 +6,7 @@ import Icon4 from '../../assets/Icon (3).png';
 import Icon5 from '../../assets/Icon (4).png';
 import Icon6 from '../../assets/Icon (5).png';
 import BgImage from '../../assets/BG.png';
-import aboutManImage from '../../assets/about/AboutMan.png';
+import aboutManImage from '../../assets/About/AboutMan.png';
 import { useTranslation } from '../../i18n/useTranslation';
 
 const FeatureItem: React.FC<{ icon: string; title: string; description: string; }> = ({ icon, title, description }) => (
