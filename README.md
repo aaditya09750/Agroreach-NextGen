@@ -19,6 +19,20 @@ A four-tier full-stack agricultural marketplace connecting farmers, customers, a
 
 ---
 
+## Live URLs
+
+| Tier | URL |
+| ---- | --- |
+| Customer + Admin storefront | https://agroreach-shop.vercel.app |
+| Farmer Portal | https://agroreach-farmer-ai.vercel.app |
+| Backend API | https://agroreach-api.onrender.com |
+| ML service (price + crop) | https://agroreach-ml.onrender.com |
+| Source code | https://github.com/aaditya09750/Agroreach-NextGen |
+
+> **Note on cold starts:** Render's free tier sleeps services after ~15 minutes of inactivity. The first request after sleep takes 30-60 s to wake the dyno (especially the ML service, which reloads `.pkl` artefacts). Subsequent calls are instant.
+
+---
+
 ## Core Features
 
 - **Customer Storefront:** Browse 41+ farm-fresh products across Vegetables, Fresh Fruit, Dry Fruits, and Dairy categories. Search, filter, sort, paginate, multi-image product gallery, modal-based detail view, persistent cart, secure checkout with billing address validation, order history with progress tracker, and PDF invoice export.
@@ -655,14 +669,14 @@ The repo includes a Postman collection at `Backend/AR-Ecommerce-API.postman_coll
 
 ## Deployment
 
-| Tier | Host | Notes |
-| ---- | ---- | ----- |
-| Frontend01 (Customer + Admin) | Vercel | Root: `Frontend01`, env: `VITE_API_BASE_URL` |
-| Frontend02 (Farmer Portal) | Vercel | Root: `Frontend02`, env: `VITE_API_BASE_URL` + `VITE_ML_API_URL` |
-| Backend (Node/Express) | Render Web Service | Root: `Backend`, build: `npm install`, start: `node server.js` |
-| ML Service (Flask) | Render Web Service | Root: `Backend`, build: `pip install -r requirements_ai.txt`, start: `gunicorn backend_api:app -b 0.0.0.0:$PORT --timeout 120 --workers 1` |
-| Database | MongoDB Atlas (Free M0) | Network access `0.0.0.0/0` for Render's dynamic IPs |
-| File storage | Cloudinary (Free 25 GB) | Folder `agroreach/products/` and `agroreach/` |
+| Tier | Host | Live URL | Notes |
+| ---- | ---- | -------- | ----- |
+| Frontend01 (Customer + Admin) | Vercel | https://agroreach-shop.vercel.app | Root: `Frontend01`, env: `VITE_API_BASE_URL` |
+| Frontend02 (Farmer Portal) | Vercel | https://agroreach-farmer-ai.vercel.app | Root: `Frontend02`, env: `VITE_API_BASE_URL` + `VITE_ML_API_URL` |
+| Backend (Node/Express) | Render Web Service | https://agroreach-api.onrender.com | Root: `Backend`, build: `npm install`, start: `node server.js` |
+| ML Service (Flask) | Render Web Service | https://agroreach-ml.onrender.com | Root: `Backend`, build: `pip install -r requirements_ai.txt`, start: `gunicorn backend_api:app -b 0.0.0.0:$PORT --timeout 120 --workers 1` |
+| Database | MongoDB Atlas (Free M0) | — | Network access `0.0.0.0/0` for Render's dynamic IPs |
+| File storage | Cloudinary (Free 25 GB) | — | Folder `agroreach/products/` and `agroreach/` |
 
 Infrastructure-as-code: [`render.yaml`](render.yaml) at repo root provisions both Render services via Blueprint. [`Frontend01/vercel.json`](Frontend01/vercel.json) and [`Frontend02/vercel.json`](Frontend02/vercel.json) configure SPA rewrites.
 
