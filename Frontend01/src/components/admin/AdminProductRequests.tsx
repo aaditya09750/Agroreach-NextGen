@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Search, Filter, Eye, CheckCircle, XCircle, ChevronDown, Calendar, User, Mail, Phone, MapPin, Package, DollarSign, X } from 'lucide-react';
 import adminProductRequestService, { ProductRequest } from '../../services/adminProductRequestService';
+import { getImageUrl } from '../../utils/imageUtils';
 
 const AdminProductRequests: React.FC = () => {
   const [requests, setRequests] = useState<ProductRequest[]>([]);
@@ -346,7 +347,7 @@ const AdminProductRequests: React.FC = () => {
                     <td className="py-4 px-6">
                       <div className="flex items-center gap-3">
                         <img
-                          src={`http://localhost:5000${request.images[0]}`}
+                          src={getImageUrl(request.images[0])}
                           alt={request.productName}
                           className="w-12 h-12 object-cover rounded-lg border border-gray-200"
                         />
@@ -410,7 +411,7 @@ const AdminProductRequests: React.FC = () => {
               <div>
                 <h3 className="text-lg font-semibold text-gray-800 mb-3">Product Image</h3>
                 <img
-                  src={`http://localhost:5000${selectedRequest.images[0]}`}
+                  src={getImageUrl(selectedRequest.images[0])}
                   alt={selectedRequest.productName}
                   className="w-64 h-64 object-cover rounded-lg border border-gray-200"
                 />

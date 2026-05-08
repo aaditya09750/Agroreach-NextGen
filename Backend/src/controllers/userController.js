@@ -70,9 +70,9 @@ exports.updateProfile = async (req, res) => {
       if (user.profileImage) {
         await imageHandler.deleteImage(user.profileImage);
       }
-      
-      // Set new profile image URL
-      user.profileImage = imageHandler.getImageUrl(req.file.filename);
+
+      // req.file.path is the Cloudinary secure_url
+      user.profileImage = req.file.path;
     }
 
     await user.save();
@@ -99,7 +99,7 @@ exports.updateProfile = async (req, res) => {
     
     // Clean up uploaded file if update failed
     if (req.file) {
-      imageHandler.deleteImage(imageHandler.getImageUrl(req.file.filename));
+      imageHandler.deleteImage(req.file.path);
     }
     
     res.status(500).json({

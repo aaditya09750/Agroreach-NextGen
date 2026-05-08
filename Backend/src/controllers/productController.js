@@ -1,12 +1,22 @@
 const Product = require('../models/Product');
+const NodeCache = require('node-cache');
 const { getPagination, buildPaginationResponse } = require('../utils/helpers');
 const imageHandler = require('../utils/imageHandler');
+
+const productCache = new NodeCache({ stdTTL: 60, checkperiod: 120 });
 
 // @desc    Get all products with filters
 // @route   GET /api/products
 // @access  Public
 exports.getAllProducts = async (req, res) => {
   try {
+    // 60-second cache keyed on full query — busiest endpoint
+    const cacheKey = `products:${JSON.stringify(req.query)}`;
+    const cached = productCache.get(cacheKey);
+    if (cached) {
+      return res.status(200).json(cached);
+    }
+
     const {
       category,
       minPrice,
@@ -90,23 +100,24 @@ exports.getAllProducts = async (req, res) => {
     // Pagination
     const { skip, limit: limitNum, page: pageNum } = getPagination(page, limit);
 
-    // Get products
-    const products = await Product.find(filter)
-      .sort(sortQuery)
-      .skip(skip)
-      .limit(limitNum)
-      .populate('seller', 'firstName lastName email');
-
-    // Get total count
-    const total = await Product.countDocuments(filter);
+    // Get products + total in parallel
+    const [products, total] = await Promise.all([
+      Product.find(filter)
+        .sort(sortQuery)
+        .skip(skip)
+        .limit(limitNum)
+        .populate('seller', 'firstName lastName email')
+        .lean(),
+      Product.countDocuments(filter),
+    ]);
 
     // Build response
     const response = buildPaginationResponse(products, total, pageNum, limitNum);
 
-    res.status(200).json({
-      success: true,
-      ...response
-    });
+    const payload = { success: true, ...response };
+    productCache.set(cacheKey, payload);
+
+    res.status(200).json(payload);
   } catch (error) {
     console.error('Get all products error:', error);
     res.status(500).json({
@@ -132,7 +143,8 @@ exports.getProductById = async (req, res) => {
     }
 
     const product = await Product.findById(req.params.id)
-      .populate('seller', 'firstName lastName email');
+      .populate('seller', 'firstName lastName email')
+      .lean();
 
     if (!product) {
       return res.status(404).json({
@@ -170,12 +182,13 @@ exports.createProduct = async (req, res) => {
       productData.stockQuantity = 0;
     }
 
-    // Handle image uploads
+    // Handle image uploads (file.path is Cloudinary secure_url)
     if (req.files && req.files.length > 0) {
-      productData.images = req.files.map(file => imageHandler.getImageUrl(file.filename));
+      productData.images = req.files.map(file => file.path);
     }
 
     const product = await Product.create(productData);
+    productCache.flushAll();
 
     res.status(201).json({
       success: true,
@@ -184,11 +197,11 @@ exports.createProduct = async (req, res) => {
     });
   } catch (error) {
     console.error('Create product error:', error);
-    
+
     // Clean up uploaded files if product creation failed
     if (req.files && req.files.length > 0) {
       req.files.forEach(file => {
-        imageHandler.deleteImage(imageHandler.getImageUrl(file.filename));
+        imageHandler.deleteImage(file.path);
       });
     }
     
@@ -225,15 +238,14 @@ exports.updateProduct = async (req, res) => {
 
     const updateData = { ...req.body };
 
-    // Handle new image uploads
+    // Handle new image uploads (file.path is Cloudinary secure_url)
     if (req.files && req.files.length > 0) {
       // Delete old images if replacing
       if (product.images && product.images.length > 0) {
         await imageHandler.deleteMultipleImages(product.images);
       }
-      
-      // Add new images
-      updateData.images = req.files.map(file => imageHandler.getImageUrl(file.filename));
+
+      updateData.images = req.files.map(file => file.path);
     }
 
     const updatedProduct = await Product.findByIdAndUpdate(
@@ -244,6 +256,7 @@ exports.updateProduct = async (req, res) => {
         runValidators: true
       }
     );
+    productCache.flushAll();
 
     res.status(200).json({
       success: true,
@@ -252,11 +265,11 @@ exports.updateProduct = async (req, res) => {
     });
   } catch (error) {
     console.error('Update product error:', error);
-    
+
     // Clean up uploaded files if update failed
     if (req.files && req.files.length > 0) {
       req.files.forEach(file => {
-        imageHandler.deleteImage(imageHandler.getImageUrl(file.filename));
+        imageHandler.deleteImage(file.path);
       });
     }
     
@@ -298,6 +311,7 @@ exports.deleteProduct = async (req, res) => {
 
     // Hard delete - permanently remove from database
     await Product.findByIdAndDelete(req.params.id);
+    productCache.flushAll();
 
     res.status(200).json({
       success: true,
@@ -364,7 +378,8 @@ exports.searchProducts = async (req, res) => {
       isActive: true
     })
       .limit(parseInt(limit) || 10)
-      .select('name price images category');
+      .select('name price images category')
+      .lean();
 
     res.status(200).json({
       success: true,

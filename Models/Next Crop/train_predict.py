@@ -2,8 +2,6 @@
 # 🌾 CROP PREDICTION MODEL - COMPLETE STANDALONE CODE
 # ============================================================================
 # Author: Agricultural AI System
-# Description: Data generation + Model training + Predictions - सब एक साथ!
-# Run करो और model खुद train हो जाएगा!
 # ============================================================================
 
 import pandas as pd
@@ -244,7 +242,7 @@ class CropPredictor:
 
 
 # ============================================================================
-# MAIN EXECUTION - RUN सब कुछ!
+# MAIN EXECUTION - RUN
 # ============================================================================
 
 if __name__ == "__main__":

@@ -15,7 +15,7 @@ exports.createProductRequest = async (req, res) => {
       });
     }
     
-    const initialImage = `/uploads/${req.file.filename}`;
+    const initialImage = req.file.path;
     
     // Get farmer details
     const farmer = await Farmer.findById(farmerId);
@@ -128,7 +128,7 @@ exports.completeProductDetails = async (req, res) => {
       stockUnit
     } = req.body;
     
-    const additionalImages = req.files ? req.files.map(f => `/uploads/${f.filename}`) : [];
+    const additionalImages = req.files ? req.files.map(f => f.path) : [];
     
     // Get the approved request
     const request = await ProductRequest.findOne({

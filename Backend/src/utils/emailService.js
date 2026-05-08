@@ -8,12 +8,6 @@ const createTransporter = () => {
       return null;
     }
 
-    console.log('Creating email transporter with:', {
-      service: process.env.EMAIL_SERVICE,
-      user: process.env.EMAIL_USER,
-      passLength: process.env.EMAIL_PASS?.length
-    });
-    
     return nodemailer.createTransport({
       service: process.env.EMAIL_SERVICE || 'gmail',
       auth: {
@@ -227,7 +221,7 @@ exports.sendOrderConfirmation = async (email, orderDetails) => {
           <div style="margin-top: 25px; padding-top: 25px; border-top: 1px solid #e0e0e0;">
             <p style="color: #999; margin: 5px 0; font-size: 12px;">
               If you have any questions, please contact us at:<br>
-              <a href="mailto:agroreach01@gmail.com" style="color: #2c5f2d; text-decoration: none;">agroreach01@gmail.com</a>
+              <a href="mailto:${process.env.ADMIN_EMAIL || 'agroreach01@gmail.com'}" style="color: #2c5f2d; text-decoration: none;">${process.env.ADMIN_EMAIL || 'agroreach01@gmail.com'}</a>
             </p>
           </div>
         </div>

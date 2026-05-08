@@ -1,19 +1,22 @@
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
-const BASE_URL = API_BASE_URL.replace('/api', '');
-
+/**
+ * After Cloudinary migration, every stored image URL is a full HTTPS URL.
+ * Pass through unchanged; legacy /uploads paths returned as-is (will surface
+ * as broken images, signaling stale data that needs re-upload).
+ */
 export const getImageUrl = (imagePath: string | undefined): string => {
   if (!imagePath) return '';
-  
-  // If it's already a full URL (http/https), return as is
   if (imagePath.startsWith('http://') || imagePath.startsWith('https://')) {
     return imagePath;
   }
-  
-  // If it starts with /uploads, prepend the base URL
-  if (imagePath.startsWith('/uploads')) {
-    return `${BASE_URL}${imagePath}`;
-  }
-  
-  // Otherwise, return as is (might be a data URL)
   return imagePath;
+};
+
+/**
+ * Cloudinary on-the-fly transform: auto format (WebP/AVIF), auto quality,
+ * width cap. Pass-through for non-Cloudinary URLs.
+ */
+export const optimizedImage = (url: string | undefined, width = 800): string => {
+  const resolved = getImageUrl(url);
+  if (!resolved.includes('res.cloudinary.com')) return resolved;
+  return resolved.replace('/upload/', `/upload/q_auto,f_auto,w_${width}/`);
 };

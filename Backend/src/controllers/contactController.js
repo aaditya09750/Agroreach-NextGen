@@ -1,19 +1,16 @@
 const { sendEmail } = require('../utils/emailService');
 
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'agroreach01@gmail.com';
+
 // @desc    Send contact form message
 // @route   POST /api/contact
 // @access  Private (requires authentication)
 exports.sendContactMessage = async (req, res) => {
   try {
-    console.log('Contact form request received');
-    console.log('Request body:', req.body);
-    console.log('User:', req.user);
-
     const { name, email, subject, message, location, currency } = req.body;
 
     // Validate required fields
     if (!name || !email || !subject || !message) {
-      console.log('Validation failed: Missing fields');
       return res.status(400).json({
         success: false,
         message: 'Please provide all required fields: name, email, subject, and message'
@@ -23,7 +20,6 @@ exports.sendContactMessage = async (req, res) => {
     // Validate email format
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      console.log('Validation failed: Invalid email');
       return res.status(400).json({
         success: false,
         message: 'Please provide a valid email address'
@@ -32,9 +28,6 @@ exports.sendContactMessage = async (req, res) => {
 
     // Get user info from authenticated request
     const userId = req.user?.id || req.user?._id;
-    const userName = req.user?.name || name;
-
-    console.log('Preparing to send emails...');
 
     // Prepare email content for admin
     const adminEmailHtml = `
@@ -114,7 +107,7 @@ exports.sendContactMessage = async (req, res) => {
           </div>
           
           <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
-            If you have any urgent concerns, please feel free to reach out to us directly at agroreach01@gmail.com.
+            If you have any urgent concerns, please feel free to reach out to us directly at ${ADMIN_EMAIL}.
           </p>
           
           <p style="color: #666; line-height: 1.6;">
@@ -131,12 +124,10 @@ exports.sendContactMessage = async (req, res) => {
 
     // Send email to admin
     await sendEmail({
-      to: 'agroreach01@gmail.com',
+      to: ADMIN_EMAIL,
       subject: `Contact Form: ${subject}`,
       html: adminEmailHtml
     });
-
-    console.log('Admin email sent successfully');
 
     // Send confirmation email to user
     await sendEmail({
@@ -145,8 +136,6 @@ exports.sendContactMessage = async (req, res) => {
       html: userEmailHtml
     });
 
-    console.log('User confirmation email sent successfully');
-
     res.status(200).json({
       success: true,
       message: 'Your message has been sent successfully. We will get back to you soon!'
@@ -154,7 +143,6 @@ exports.sendContactMessage = async (req, res) => {
 
   } catch (error) {
     console.error('Contact form error:', error);
-    console.error('Error stack:', error.stack);
     res.status(500).json({
       success: false,
       message: 'Failed to send message. Please try again later.',

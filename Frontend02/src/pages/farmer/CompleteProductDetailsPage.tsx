@@ -6,6 +6,7 @@ import DashboardSidebar from '../../components/dashboard/DashboardSidebar';
 import farmerProductRequestService, { ProductRequest } from '../../services/farmerProductRequestService';
 import { useNotification } from '../../context/NotificationContext';
 import Dropdown from '../../components/ui/Dropdown';
+import { getImageUrl } from '../../utils/imageUtils';
 
 const CompleteProductDetailsPage: React.FC = () => {
   const { requestId } = useParams<{ requestId: string }>();
@@ -175,7 +176,7 @@ const CompleteProductDetailsPage: React.FC = () => {
                   <div className="mt-4">
                     <p className="text-sm text-text-muted mb-2">Initial Image</p>
                     <img
-                      src={`http://localhost:5000${request.images[0]}`}
+                      src={getImageUrl(request.images[0])}
                       alt={request.productName}
                       className="w-32 h-32 object-cover rounded-lg border border-border-color"
                     />

@@ -1,6 +1,5 @@
 const Farmer = require('../models/Farmer');
 const jwt = require('jsonwebtoken');
-const { uploadToCloudinary } = require('../utils/imageHandler');
 
 // Generate JWT Token
 const generateToken = (id) => {
@@ -148,12 +147,9 @@ exports.updateProfile = async (req, res) => {
     if (req.body.address) farmer.address = req.body.address;
     if (req.body.zipcode) farmer.zipcode = req.body.zipcode;
 
-    // Handle photo upload if present
+    // Handle photo upload if present (req.file.path is Cloudinary secure_url)
     if (req.file) {
-      // Store the relative path to the uploaded file
-      const imageUrl = `/uploads/${req.file.filename}`;
-      farmer.photo = imageUrl;
-      console.log('Photo uploaded successfully:', imageUrl);
+      farmer.photo = req.file.path;
     }
 
     const updatedFarmer = await farmer.save();

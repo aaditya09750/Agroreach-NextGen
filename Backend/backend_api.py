@@ -53,7 +53,14 @@ os.chdir(os.path.dirname(__file__))
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+
+# CORS — env-driven allow-list (comma-separated origins)
+allowed_origins = [o.strip() for o in os.getenv('ALLOWED_ORIGINS', '').split(',') if o.strip()]
+if allowed_origins:
+    CORS(app, origins=allowed_origins, supports_credentials=True)
+else:
+    # No allow-list configured: permissive (dev only)
+    CORS(app)
 
 @app.route('/health', methods=['GET'])
 def health_check():
@@ -250,14 +257,15 @@ def get_crop_dropdown_options():
         }), 500
 
 if __name__ == '__main__':
-    print("\n" + "="*70)
-    print("🚀 STARTING AI MODEL API SERVER")
-    print("="*70)
-    print(f"Price Model: {'✅ Loaded' if price_model_loaded else '❌ Not Loaded'}")
-    print(f"Crop Model: {'✅ Loaded' if crop_model_loaded else '❌ Not Loaded'}")
-    print(f"\nServer running on: http://localhost:5001")
-    print(f"Frontend should connect to: http://localhost:5001/api/predict-price")
-    print(f"                          and http://localhost:5001/api/predict-next-crop")
-    print("="*70 + "\n")
-    
-    app.run(host='0.0.0.0', port=5001, debug=True)
+    port = int(os.getenv('PORT', 5001))
+    debug = os.getenv('FLASK_DEBUG', 'false').lower() == 'true'
+
+    print("\n" + "=" * 70)
+    print("STARTING AI MODEL API SERVER")
+    print("=" * 70)
+    print(f"Price Model: {'Loaded' if price_model_loaded else 'Not Loaded'}")
+    print(f"Crop Model:  {'Loaded' if crop_model_loaded else 'Not Loaded'}")
+    print(f"Listening on 0.0.0.0:{port}  (debug={debug})")
+    print("=" * 70 + "\n")
+
+    app.run(host='0.0.0.0', port=port, debug=debug)

@@ -9,11 +9,6 @@ const { getPagination, buildPaginationResponse } = require('../utils/helpers');
 // @access  Private
 exports.createOrder = async (req, res) => {
   try {
-    console.log('=== CREATE ORDER START ===');
-    console.log('Authenticated user ID:', req.user._id);
-    console.log('Authenticated user email:', req.user.email);
-    console.log('Create order request body:', req.body);
-    
     const {
       items,
       billingAddress,
@@ -26,8 +21,6 @@ exports.createOrder = async (req, res) => {
       currency = 'USD' // Default to USD if not provided
     } = req.body;
 
-    console.log('Currency received:', currency);
-
     // Validate items
     if (!items || items.length === 0) {
       return res.status(400).json({
@@ -35,8 +28,6 @@ exports.createOrder = async (req, res) => {
         message: 'Order must contain at least one item'
       });
     }
-
-    console.log('Processing order with', items.length, 'items');
 
     // Prepare order items with product details
     const orderItems = [];
@@ -96,8 +87,6 @@ exports.createOrder = async (req, res) => {
     
     let orderId = `ORD-${year}-${String(nextNumber).padStart(5, '0')}`;
 
-    console.log('Generated order ID:', orderId);
-
     // Create order with retry mechanism for duplicate key errors
     let order;
     let retries = 0;
@@ -119,33 +108,22 @@ exports.createOrder = async (req, res) => {
           status: 'pending'
         });
 
-        console.log('Saving order...');
         await order.save();
-        console.log('Order saved successfully!');
-        break; // Success, exit loop
+        break;
       } catch (error) {
         if (error.code === 11000 && retries < maxRetries - 1) {
-          // Duplicate key error, generate new ID with timestamp
           retries++;
           const timestamp = Date.now().toString().slice(-4);
           orderId = `ORD-${year}-${String(nextNumber).padStart(5, '0')}-${timestamp}`;
-          console.log(`Duplicate order ID detected, retrying with: ${orderId}`);
         } else {
-          throw error; // Re-throw if not duplicate or max retries reached
+          throw error;
         }
       }
     }
-    
+
     if (!order) {
       throw new Error('Failed to create order after multiple attempts');
     }
-    console.log('Order ID:', order._id);
-    console.log('Order belongs to user:', order.user);
-    console.log('Order belongs to user (toString):', order.user.toString());
-    console.log('Authenticated user ID (toString):', req.user._id.toString());
-    console.log('User IDs match:', order.user.toString() === req.user._id.toString());
-    console.log('Order orderId:', order.orderId);
-    console.log('=== CREATE ORDER END ===');
 
     // Clear user's cart
     await Cart.findOneAndUpdate(
@@ -174,18 +152,14 @@ exports.createOrder = async (req, res) => {
           minute: '2-digit'
         })
       });
-      console.log('Order confirmation email sent to:', billingAddress.email);
     } catch (emailError) {
       console.error('Failed to send order confirmation email:', emailError);
-      // Don't fail the order if email fails
     }
 
-    // Populate order
     const populatedOrder = await Order.findById(order._id)
       .populate('items.product', 'name images')
-      .populate('user', 'firstName lastName email');
-
-    console.log('Order created successfully:', populatedOrder.orderId);
+      .populate('user', 'firstName lastName email')
+      .lean();
 
     res.status(201).json({
       success: true,
@@ -209,44 +183,25 @@ exports.createOrder = async (req, res) => {
 // @access  Private
 exports.getUserOrders = async (req, res) => {
   try {
-    console.log('=== GET USER ORDERS START ===');
-    console.log('Fetching orders for user ID:', req.user._id);
-    console.log('Fetching orders for user ID (toString):', req.user._id.toString());
-    console.log('User email:', req.user.email);
-    
     const { page, limit, status } = req.query;
 
-    // Build filter
     const filter = { user: req.user._id };
-    
-    console.log('Filter being used:', JSON.stringify(filter));
-    console.log('Filter user ID (toString):', filter.user.toString());
-    
     if (status) {
       filter.status = status;
     }
 
-    // Pagination
     const { skip, limit: limitNum, page: pageNum } = getPagination(page, limit);
 
-    // Get orders
-    const orders = await Order.find(filter)
-      .sort({ createdAt: -1 })
-      .skip(skip)
-      .limit(limitNum)
-      .populate('items.product', 'name images');
+    const [orders, total] = await Promise.all([
+      Order.find(filter)
+        .sort({ createdAt: -1 })
+        .skip(skip)
+        .limit(limitNum)
+        .populate('items.product', 'name images')
+        .lean(),
+      Order.countDocuments(filter),
+    ]);
 
-    console.log('Get user orders - Found', orders.length, 'orders for user:', req.user.email);
-    if (orders.length > 0) {
-      console.log('First order ID:', orders[0].orderId);
-      console.log('First order items:', JSON.stringify(orders[0].items, null, 2));
-    }
-    console.log('=== GET USER ORDERS END ===');
-
-    // Get total count
-    const total = await Order.countDocuments(filter);
-
-    // Build response
     const response = buildPaginationResponse(orders, total, pageNum, limitNum);
 
     res.status(200).json({
@@ -279,7 +234,8 @@ exports.getOrderById = async (req, res) => {
 
     const order = await Order.findById(req.params.id)
       .populate('items.product', 'name images')
-      .populate('user', 'firstName lastName email');
+      .populate('user', 'firstName lastName email')
+      .lean();
 
     if (!order) {
       return res.status(404).json({
@@ -287,9 +243,6 @@ exports.getOrderById = async (req, res) => {
         message: 'Order not found'
       });
     }
-
-    console.log('Get order by ID - Order found:', order.orderId);
-    console.log('Get order by ID - Items:', JSON.stringify(order.items, null, 2));
 
     // Check if order belongs to user (unless admin)
     if (order.user._id.toString() !== req.user._id.toString() && req.user.role !== 'admin') {

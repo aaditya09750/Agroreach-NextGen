@@ -13,6 +13,7 @@ import ProductRequestTable from '../../components/farmer/ProductRequestTable';
 import ManageProductsTable from '../../components/farmer/ManageProductsTable';
 import farmerProductRequestService, { ProductRequest } from '../../services/farmerProductRequestService';
 import { useNotification } from '../../context/NotificationContext';
+import { useFarmer } from '../../context/FarmerContext';
 import dashboardService, { DashboardStats, WeatherData } from '../../services/dashboardService';
 
 const DashboardOverview: React.FC = () => {
@@ -25,10 +26,13 @@ const DashboardOverview: React.FC = () => {
   const [selectedYear, setSelectedYear] = useState(new Date().getFullYear());
   const [loading, setLoading] = useState(true);
   const { addNotification } = useNotification();
+  const { farmer } = useFarmer();
 
   useEffect(() => {
     fetchDashboardData();
-  }, []);
+    // Re-fetch weather when farmer changes (e.g. profile updated their location)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [farmer?.location]);
 
   useEffect(() => {
     if (!loading) {
@@ -41,7 +45,7 @@ const DashboardOverview: React.FC = () => {
       setLoading(true);
       const [statsData, weatherData, fieldsData] = await Promise.all([
         dashboardService.getDashboardStats(),
-        dashboardService.getWeatherData(),
+        dashboardService.getWeatherData(farmer?.location || 'Pune'),
         dashboardService.getFieldData()
       ]);
       setStats(statsData);
@@ -103,7 +107,7 @@ const DashboardOverview: React.FC = () => {
 
       {/* Top Row: Weather, Total Land Area, Revenue */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {/* Weather Card */}
+        {/* Weather Card — live data from Open-Meteo */}
         <div className="border border-border-color rounded-lg p-6 bg-white">
           <div className="flex items-center gap-2 mb-4">
             <div className="w-3 h-3 bg-primary rounded-full"></div>
@@ -116,14 +120,41 @@ const DashboardOverview: React.FC = () => {
           <div className="flex items-center justify-between">
             <div>
               <div className="text-5xl font-semibold text-text-dark mb-1">{weather.temperature}° C</div>
-              <div className="text-sm text-text-dark-gray">High: {weather.high} Low: {weather.low}</div>
+              <div className="text-sm text-text-dark-gray">High: {weather.high}° Low: {weather.low}°</div>
             </div>
             <div className="text-center">
-              <div className="text-6xl mb-2">⛅</div>
+              <div className="text-6xl mb-2">{weather.emoji ?? '⛅'}</div>
               <div className="text-lg font-medium text-text-dark">{weather.condition}</div>
-              <div className="text-xs text-text-muted">Feels Like {weather.feelsLike}</div>
+              <div className="text-xs text-text-muted">Feels like {weather.feelsLike}°</div>
             </div>
           </div>
+          {(weather.humidity !== undefined || weather.windSpeed !== undefined || weather.aqi !== undefined) && (
+            <div className="mt-4 pt-3 border-t border-border-color grid grid-cols-3 gap-2 text-center">
+              {weather.humidity !== undefined && (
+                <div>
+                  <div className="text-xs text-text-muted">Humidity</div>
+                  <div className="text-sm font-medium text-text-dark">{weather.humidity}%</div>
+                </div>
+              )}
+              {weather.windSpeed !== undefined && (
+                <div>
+                  <div className="text-xs text-text-muted">Wind</div>
+                  <div className="text-sm font-medium text-text-dark">{weather.windSpeed} km/h</div>
+                </div>
+              )}
+              {weather.aqi !== undefined && (
+                <div>
+                  <div className="text-xs text-text-muted">AQI</div>
+                  <div className="text-sm font-medium text-text-dark">
+                    {weather.aqi}
+                    {weather.aqiLabel && (
+                      <span className="text-xs text-text-muted ml-1">({weather.aqiLabel})</span>
+                    )}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
         </div>
 
         {/* Total Land Area Card */}
@@ -552,7 +583,9 @@ const AiModelSection: React.FC = () => {
     setPriceError('');
 
     try {
-      const response = await fetch('http://localhost:5001/api/predict-price', {
+      const ML_BASE = import.meta.env.VITE_ML_API_URL;
+      if (!ML_BASE) throw new Error('VITE_ML_API_URL is not set');
+      const response = await fetch(`${ML_BASE}/api/predict-price`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(priceFormData),
@@ -643,7 +676,9 @@ const AiModelSection: React.FC = () => {
     setCropError('');
 
     try {
-      const response = await fetch('http://localhost:5001/api/predict-next-crop', {
+      const ML_BASE = import.meta.env.VITE_ML_API_URL;
+      if (!ML_BASE) throw new Error('VITE_ML_API_URL is not set');
+      const response = await fetch(`${ML_BASE}/api/predict-next-crop`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(cropFormData),

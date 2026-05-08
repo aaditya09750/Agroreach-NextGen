@@ -1,0 +1,24 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/
+
+# Local environment files (only .env.example is committed)
+**/.env
+**/.env.local
+**/.env.production
+
+# Python caches
+**/__pycache__/
+*.pyc
+*.pyo
+
+# Build / dependency artefacts that should never reach git
+**/node_modules/
+**/dist/
+**/dist-ssr/
+
+# Local upload directory (legacy — Cloudinary is now the source of truth)
+Backend/uploads/

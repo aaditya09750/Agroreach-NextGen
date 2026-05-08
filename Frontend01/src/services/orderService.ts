@@ -119,16 +119,9 @@ export const orderService = {
   },
 
   getMyOrders: async () => {
-    console.log('orderService.getMyOrders: Calling GET /orders/user');
-    console.log('orderService.getMyOrders: API base URL:', import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api');
     try {
       const response = await api.get('/orders/user');
-      console.log('orderService.getMyOrders: Response received:', response);
-      console.log('orderService.getMyOrders: Response data:', response.data);
-      console.log('orderService.getMyOrders: Response data type:', typeof response.data);
-      console.log('orderService.getMyOrders: Response data keys:', response.data ? Object.keys(response.data) : 'null');
-      console.log('orderService.getMyOrders: Response status:', response.status);
-      
+
       // Log the actual structure
       if (response.data && response.data.data) {
         console.log('orderService.getMyOrders: Found response.data.data, length:', response.data.data.length);

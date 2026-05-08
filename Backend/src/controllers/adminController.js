@@ -119,7 +119,8 @@ exports.getDashboardStats = async (req, res) => {
       .sort({ createdAt: -1 })
       .limit(10)
       .populate('user', 'firstName lastName email')
-      .select('orderId total status createdAt');
+      .select('orderId total status createdAt')
+      .lean();
 
     res.status(200).json({
       success: true,
@@ -163,20 +164,9 @@ exports.getAllOrders = async (req, res) => {
   try {
     const { page, limit, status, search, startDate, endDate, userId } = req.query;
 
-    console.log('getAllOrders called with params:', { page, limit, status, search, startDate, endDate, userId });
-
-    // Build filter
     const filter = {};
-
-    // Filter by user ID if provided
-    if (userId) {
-      filter.user = userId;
-      console.log('Filtering orders by userId:', userId);
-    }
-
-    if (status) {
-      filter.status = status;
-    }
+    if (userId) filter.user = userId;
+    if (status) filter.status = status;
 
     if (search) {
       filter.$or = [
@@ -192,29 +182,23 @@ exports.getAllOrders = async (req, res) => {
       if (endDate) filter.createdAt.$lte = new Date(endDate);
     }
 
-    // Pagination - skip pagination if filtering by userId
     const { skip, limit: limitNum, page: pageNum } = getPagination(page, limit);
 
-    // Get orders
     let ordersQuery = Order.find(filter)
       .sort({ createdAt: -1 })
       .populate('user', 'firstName lastName email')
-      .populate('items.product', 'name images');
-    
-    // Only apply pagination if not filtering by userId (to get all user's orders)
+      .populate('items.product', 'name images')
+      .lean();
+
     if (!userId) {
       ordersQuery = ordersQuery.skip(skip).limit(limitNum);
     }
-    
-    const orders = await ordersQuery;
 
-    // Get total count
-    const total = await Order.countDocuments(filter);
+    const [orders, total] = await Promise.all([
+      ordersQuery,
+      Order.countDocuments(filter),
+    ]);
 
-    console.log(`Found ${orders.length} orders for filter:`, filter);
-    console.log(`Total orders in DB matching filter: ${total}`);
-
-    // Build response
     const response = buildPaginationResponse(orders, total, pageNum, limitNum);
 
     res.status(200).json({
@@ -238,7 +222,8 @@ exports.getOrderDetails = async (req, res) => {
   try {
     const order = await Order.findById(req.params.id)
       .populate('user', 'firstName lastName email phone')
-      .populate('items.product', 'name images price');
+      .populate('items.product', 'name images price')
+      .lean();
 
     if (!order) {
       return res.status(404).json({
@@ -377,24 +362,20 @@ exports.getAllUsers = async (req, res) => {
     // Pagination - if no limit provided, fetch all users
     const { skip, limit: limitNum, page: pageNum } = getPagination(page, limit);
 
-    // Get users
     let userQuery = User.find(filter)
       .select('-password')
-      .sort({ createdAt: -1 });
-    
-    // Only apply pagination if limit is provided
+      .sort({ createdAt: -1 })
+      .lean();
+
     if (limit) {
       userQuery = userQuery.skip(skip).limit(limitNum);
     }
-    
-    const users = await userQuery;
 
-    // Get total count
-    const total = await User.countDocuments(filter);
+    const [users, total] = await Promise.all([
+      userQuery,
+      User.countDocuments(filter),
+    ]);
 
-    console.log(`Fetching users - Total in DB: ${total}, Returned: ${users.length}`);
-
-    // Build response
     const response = buildPaginationResponse(users, total, pageNum, limitNum);
 
     res.status(200).json({
@@ -517,8 +498,8 @@ exports.getRecentProducts = async (req, res) => {
     const products = await Product.find({ isActive: true })
       .sort({ createdAt: -1 })
       .skip(skip)
-      .limit(limitNum);
-      // Removed .select() to return all fields
+      .limit(limitNum)
+      .lean();
 
     res.status(200).json({
       success: true,

@@ -3,6 +3,7 @@ import { Edit2, Trash2, FileText, Download, Package, TrendingUp, AlertCircle, Li
 import { farmerProductService, FarmerProduct, ProductStats } from '../../services/farmerProductService';
 import { generateAuditReport } from '../../utils/auditReportGenerator';
 import { useNotification } from '../../context/NotificationContext';
+import { getImageUrl } from '../../utils/imageUtils';
 import RecommendationsPanel from './RecommendationsPanel';
 
 interface EditModalProps {
@@ -362,7 +363,7 @@ const ManageProductsTable: React.FC = () => {
                     <td className="px-6 py-4">
                       <div className="flex items-center gap-3">
                         <img
-                          src={product.images[0]?.startsWith('http') ? product.images[0] : `http://localhost:5000${product.images[0]}`}
+                          src={getImageUrl(product.images[0])}
                           alt={product.name}
                           className="w-12 h-12 object-cover rounded-md border border-border-color"
                           onError={(e) => {

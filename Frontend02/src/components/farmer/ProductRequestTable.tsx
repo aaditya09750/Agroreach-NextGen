@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ProductRequest } from '../../services/farmerProductRequestService';
 import { Clock, CheckCircle, XCircle, Eye, Trash2, X } from 'lucide-react';
+import { getImageUrl } from '../../utils/imageUtils';
 
 interface ProductRequestTableProps {
   requests: ProductRequest[];
@@ -106,7 +107,7 @@ const ProductRequestTable: React.FC<ProductRequestTableProps> = ({ requests, onD
               <td className="py-4 px-4">
                 <div className="flex items-center gap-3">
                   <img
-                    src={`http://localhost:5000${request.images[0]}`}
+                    src={getImageUrl(request.images[0])}
                     alt={request.productName}
                     className="w-12 h-12 object-cover rounded-lg border border-border-color"
                   />
@@ -187,7 +188,7 @@ const ProductRequestTable: React.FC<ProductRequestTableProps> = ({ requests, onD
             <div className="mb-4 p-4 bg-gray-50 rounded-lg border border-border-color">
               <div className="flex items-center gap-3 mb-3">
                 <img
-                  src={`http://localhost:5000${selectedRequest.images[0]}`}
+                  src={getImageUrl(selectedRequest.images[0])}
                   alt={selectedRequest.productName}
                   className="w-12 h-12 object-cover rounded-lg border border-border-color"
                 />

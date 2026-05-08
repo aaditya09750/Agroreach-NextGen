@@ -34,13 +34,16 @@ const SignInForm: React.FC = () => {
 
     try {
       const user = await login(formState.email, formState.password);
-      
-      // Only navigate if login was successful
+
       if (user) {
-        // Redirect to the page they tried to visit or home page
-        const locationState = location.state as { from?: { pathname?: string } } | null;
-        const from = locationState?.from?.pathname || '/';
-        navigate(from, { replace: true });
+        // Admins always land on the admin dashboard, regardless of where they came from
+        if (user.role === 'admin') {
+          navigate('/admin/dashboard', { replace: true });
+        } else {
+          const locationState = location.state as { from?: { pathname?: string } } | null;
+          const from = locationState?.from?.pathname || '/';
+          navigate(from, { replace: true });
+        }
       } else {
         setError(t('auth.loginFailed'));
       }

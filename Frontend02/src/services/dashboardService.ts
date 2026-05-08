@@ -1,4 +1,5 @@
 import api from './api';
+import { getCurrentWeather } from './weatherService';
 
 export interface DashboardStats {
   totalProducts: number;
@@ -21,6 +22,16 @@ export interface WeatherData {
   feelsLike: number;
   day: string;
   date: string;
+  // Optional, populated by Open-Meteo
+  emoji?: string;
+  weatherCode?: number;
+  isDay?: boolean;
+  humidity?: number;
+  windSpeed?: number;
+  aqi?: number;
+  aqiLabel?: string;
+  pm25?: number;
+  pm10?: number;
 }
 
 export interface FieldData {
@@ -55,24 +66,29 @@ const dashboardService = {
     }
   },
 
-  // Get weather data (mock for now - can be replaced with real weather API)
+  // Live weather via Open-Meteo (geocoded from the farmer's location string)
   getWeatherData: async (location: string = 'Pune'): Promise<WeatherData> => {
-    // This would call a real weather API in production
-    // For now, returning mock data
-    const currentDate = new Date();
-    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    
-    return {
-      location,
-      temperature: 24,
-      high: 27,
-      low: 10,
-      condition: 'Cloudy',
-      feelsLike: 26,
-      day: days[currentDate.getDay()],
-      date: `${currentDate.getDate()} ${months[currentDate.getMonth()]}, ${currentDate.getFullYear()}`
-    };
+    try {
+      const snapshot = await getCurrentWeather(location);
+      // The snapshot already includes every WeatherData field
+      return snapshot;
+    } catch (err) {
+      console.warn('Live weather fetch failed, returning fallback:', err);
+      const now = new Date();
+      const days   = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+      const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      return {
+        location: location || 'Pune',
+        temperature: 24,
+        high: 27,
+        low: 10,
+        condition: 'Unavailable',
+        feelsLike: 24,
+        day: days[now.getDay()],
+        date: `${now.getDate()} ${months[now.getMonth()]}, ${now.getFullYear()}`,
+        emoji: '☁️',
+      };
+    }
   },
 
   // Get field data from farmer's products

@@ -1,53 +1,36 @@
-const fs = require('fs');
-const path = require('path');
+const cloudinary = require('../config/cloudinary');
 
-// Get image URL from filename
-exports.getImageUrl = (filename) => {
-  return `/uploads/${filename}`;
+// Cloudinary returns full HTTPS URLs already; pass through as-is.
+exports.getImageUrl = (url) => url || '';
+
+// Extract Cloudinary public_id from a secure_url like
+// https://res.cloudinary.com/<cloud>/image/upload/v123/agroreach/abc.jpg
+const extractPublicId = (url) => {
+  if (!url || typeof url !== 'string') return null;
+  const match = url.match(/\/upload\/(?:v\d+\/)?(.+?)\.[a-zA-Z0-9]+$/);
+  return match ? match[1] : null;
 };
 
-// Get full image path
-exports.getImagePath = (filename) => {
-  return path.join(__dirname, '../../uploads', filename);
-};
+exports.getPublicIdFromUrl = extractPublicId;
 
-// Delete image from local storage
 exports.deleteImage = async (imageUrl) => {
   try {
-    // Extract filename from URL (e.g., /uploads/filename.jpg -> filename.jpg)
-    const filename = imageUrl.split('/').pop();
-    const filePath = path.join(__dirname, '../../uploads', filename);
-    
-    // Check if file exists and delete
-    if (fs.existsSync(filePath)) {
-      fs.unlinkSync(filePath);
-      return true;
-    }
-    return false;
+    const publicId = extractPublicId(imageUrl);
+    if (!publicId) return false;
+    const result = await cloudinary.uploader.destroy(publicId);
+    return result?.result === 'ok' || result?.result === 'not found';
   } catch (error) {
-    console.error('Image deletion failed:', error);
+    console.error('Cloudinary delete failed:', error?.message || error);
     return false;
   }
 };
 
-// Get filename from URL
-exports.getFilenameFromUrl = (imageUrl) => {
-  return imageUrl.split('/').pop();
+exports.deleteMultipleImages = async (imageUrls = []) => {
+  if (!Array.isArray(imageUrls) || imageUrls.length === 0) return [];
+  return Promise.all(imageUrls.map((url) => exports.deleteImage(url)));
 };
 
-// Delete multiple images
-exports.deleteMultipleImages = async (imageUrls) => {
-  try {
-    const deletePromises = imageUrls.map(url => this.deleteImage(url));
-    return await Promise.all(deletePromises);
-  } catch (error) {
-    console.error('Multiple image deletion failed:', error);
-    return false;
-  }
-};
-
-// Validate image file
 exports.isValidImage = (file) => {
-  const allowedTypes = ['image/jpeg', 'image/jpg', 'image/png', 'image/gif', 'image/webp'];
-  return allowedTypes.includes(file.mimetype);
+  const allowed = ['image/jpeg', 'image/jpg', 'image/png', 'image/gif', 'image/webp'];
+  return allowed.includes(file.mimetype);
 };

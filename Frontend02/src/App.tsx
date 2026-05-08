@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Suspense, lazy } from 'react';
 import { FarmerProvider } from './context/FarmerContext';
 import { NotificationProvider } from './context/NotificationContext';
 import { CurrencyProvider } from './context/CurrencyContext';
@@ -8,19 +9,24 @@ import ProtectedRoute from './components/routes/ProtectedRoute';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 
-// Pages - will be created
+// Always-visited pages stay eager
 import HomePage from './pages/farmer/HomePage';
 import ContactPage from './pages/farmer/ContactPage';
 import SignInPage from './pages/farmer/SignInPage';
 import SignUpPage from './pages/farmer/SignUpPage';
-import DashboardPage from './pages/farmer/DashboardPage';
-import CompleteProductDetailsPage from './pages/farmer/CompleteProductDetailsPage';
 
-// Notification Component
+// Heavy / less-frequent pages — lazy loaded
+const DashboardPage = lazy(() => import('./pages/farmer/DashboardPage'));
+const CompleteProductDetailsPage = lazy(() => import('./pages/farmer/CompleteProductDetailsPage'));
+
 import NotificationToast from './components/ui/NotificationToast';
-
-// Chatbot Component
 import Chatbot from './components/chatbot/Chatbot';
+
+const RouteFallback = () => (
+  <div className="min-h-[60vh] flex items-center justify-center text-text-muted">
+    Loading…
+  </div>
+);
 
 function App() {
   return (
@@ -28,47 +34,52 @@ function App() {
       <NotificationProvider>
         <FarmerProvider>
           <Router>
-          <div className="flex flex-col min-h-screen">
-            <Header />
-            <main className="flex-grow">
-              <NotificationToast />
-              <Routes>
-                {/* Public Routes */}
-                <Route path="/" element={<HomePage />} />
-                <Route path="/contact" element={<ContactPage />} />
-                <Route path="/signin" element={<SignInPage />} />
-                <Route path="/signup" element={<SignUpPage />} />
-                
-                {/* Protected Dashboard Routes */}
-                <Route
-                  path="/dashboard/*"
-                  element={
-                    <ProtectedRoute>
-                      <DashboardPage />
-                    </ProtectedRoute>
-                  }
-                />
-                
-                {/* Complete Product Details Page */}
-                <Route
-                  path="/dashboard/complete-product/:requestId"
-                  element={
-                    <ProtectedRoute>
-                      <CompleteProductDetailsPage />
-                    </ProtectedRoute>
-                  }
-                />
-                
-                {/* 404 Not Found */}
-                <Route path="*" element={<div className="min-h-screen flex items-center justify-center"><h1 className="text-2xl font-bold">404 - Page Not Found</h1></div>} />
-              </Routes>
-            </main>
-            <Footer />
-          </div>
-        </Router>
-      </FarmerProvider>
-    </NotificationProvider>
-    <Chatbot />
+            <div className="flex flex-col min-h-screen">
+              <Header />
+              <main className="flex-grow">
+                <NotificationToast />
+                <Suspense fallback={<RouteFallback />}>
+                  <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/contact" element={<ContactPage />} />
+                    <Route path="/signin" element={<SignInPage />} />
+                    <Route path="/signup" element={<SignUpPage />} />
+
+                    <Route
+                      path="/dashboard/*"
+                      element={
+                        <ProtectedRoute>
+                          <DashboardPage />
+                        </ProtectedRoute>
+                      }
+                    />
+
+                    <Route
+                      path="/dashboard/complete-product/:requestId"
+                      element={
+                        <ProtectedRoute>
+                          <CompleteProductDetailsPage />
+                        </ProtectedRoute>
+                      }
+                    />
+
+                    <Route
+                      path="*"
+                      element={
+                        <div className="min-h-screen flex items-center justify-center">
+                          <h1 className="text-2xl font-bold">404 - Page Not Found</h1>
+                        </div>
+                      }
+                    />
+                  </Routes>
+                </Suspense>
+              </main>
+              <Footer />
+            </div>
+          </Router>
+        </FarmerProvider>
+      </NotificationProvider>
+      <Chatbot />
     </CurrencyProvider>
   );
 }

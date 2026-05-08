@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Search, MapPin, Phone, Mail, User, Package, CheckCircle, XCircle, Eye, X } from 'lucide-react';
 import adminFarmerService, { FarmerWithStats } from '../../services/adminFarmerService';
 import adminProductRequestService, { ProductRequest } from '../../services/adminProductRequestService';
+import { getImageUrl } from '../../utils/imageUtils';
 
 const AdminFarmers: React.FC = () => {
   const [farmers, setFarmers] = useState<FarmerWithStats[]>([]);
@@ -292,7 +293,7 @@ const AdminFarmers: React.FC = () => {
                       <div className="flex items-center gap-3">
                         {farmer.photo ? (
                           <img
-                            src={`http://localhost:5000${farmer.photo}`}
+                            src={getImageUrl(farmer.photo)}
                             alt={farmer.name}
                             className="w-10 h-10 object-cover rounded-full border border-gray-200"
                           />
@@ -393,7 +394,7 @@ const AdminFarmers: React.FC = () => {
               <div className="flex items-start gap-6 pb-6 border-b border-gray-200">
                 {selectedFarmer.photo ? (
                   <img
-                    src={`http://localhost:5000${selectedFarmer.photo}`}
+                    src={getImageUrl(selectedFarmer.photo)}
                     alt={selectedFarmer.name}
                     className="w-24 h-24 object-cover rounded-lg border border-gray-200"
                   />
@@ -501,7 +502,7 @@ const AdminFarmers: React.FC = () => {
                             <td className="py-3 px-4">
                               <div className="flex items-center gap-2">
                                 <img
-                                  src={`http://localhost:5000${request.images[0]}`}
+                                  src={getImageUrl(request.images[0])}
                                   alt={request.productName}
                                   className="w-10 h-10 object-cover rounded border border-gray-200"
                                 />
@@ -596,7 +597,7 @@ const AdminFarmers: React.FC = () => {
             <div className="mb-4 p-4 bg-gray-50 rounded-lg">
               <div className="flex items-center gap-3 mb-2">
                 <img
-                  src={`http://localhost:5000${selectedRequest.images[0]}`}
+                  src={getImageUrl(selectedRequest.images[0])}
                   alt={selectedRequest.productName}
                   className="w-12 h-12 object-cover rounded border border-gray-200"
                 />

@@ -5,31 +5,19 @@ const Product = require('../models/Product');
 // Get all farmers with stats
 exports.getAllFarmers = async (req, res) => {
   try {
-    const farmers = await Farmer.find().select('-password').sort({ createdAt: -1 });
+    const farmers = await Farmer.find().select('-password').sort({ createdAt: -1 }).lean();
 
-    // Get stats for each farmer
     const farmersWithStats = await Promise.all(
       farmers.map(async (farmer) => {
-        const farmerObj = farmer.toObject();
-
-        // Get request counts
-        const totalRequests = await ProductRequest.countDocuments({ farmerId: farmer._id });
-        const approvedRequests = await ProductRequest.countDocuments({
-          farmerId: farmer._id,
-          status: 'approved',
-        });
-        const rejectedRequests = await ProductRequest.countDocuments({
-          farmerId: farmer._id,
-          status: 'rejected',
-        });
-
-        // Get active products count
-        const activeProducts = await Product.countDocuments({
-          farmerId: farmer._id,
-        });
+        const [totalRequests, approvedRequests, rejectedRequests, activeProducts] = await Promise.all([
+          ProductRequest.countDocuments({ farmerId: farmer._id }),
+          ProductRequest.countDocuments({ farmerId: farmer._id, status: 'approved' }),
+          ProductRequest.countDocuments({ farmerId: farmer._id, status: 'rejected' }),
+          Product.countDocuments({ farmerId: farmer._id }),
+        ]);
 
         return {
-          ...farmerObj,
+          ...farmer,
           totalRequests,
           approvedRequests,
           rejectedRequests,
@@ -101,7 +89,7 @@ exports.getFarmerById = async (req, res) => {
 // Get farmer's product requests
 exports.getFarmerRequests = async (req, res) => {
   try {
-    const requests = await ProductRequest.find({ farmerId: req.params.id }).sort({ createdAt: -1 });
+    const requests = await ProductRequest.find({ farmerId: req.params.id }).sort({ createdAt: -1 }).lean();
 
     res.status(200).json({
       success: true,
