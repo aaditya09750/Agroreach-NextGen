@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+build/
+**/dist/
+**/dist-ssr/
+.next/
+.vite/
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Python artefacts
+**/__pycache__/
+*.pyc
+*.pyo
+*.pkl
+
+# Local environment
+**/.env
+**/.env.local
+**/.env.production
+
+# Local upload directory (legacy)
+Backend/uploads/
+
+# Coverage
+coverage/
+
+# Generated reports
+report.html
+report.json
+
+# Editor / OS
+.DS_Store
+Thumbs.db

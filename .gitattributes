@@ -1,0 +1,41 @@
+# Auto-detect text files and normalize line endings to LF on commit.
+* text=auto eol=lf
+
+# Source code
+*.js   text eol=lf
+*.jsx  text eol=lf
+*.ts   text eol=lf
+*.tsx  text eol=lf
+*.json text eol=lf
+*.md   text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.css  text eol=lf
+*.html text eol=lf
+*.py   text eol=lf
+
+# Shell / batch
+*.sh  text eol=lf
+*.bat text eol=crlf
+
+# Lock files — generated, mark for diff brevity
+package-lock.json -diff linguist-generated=true
+yarn.lock         -diff linguist-generated=true
+pnpm-lock.yaml    -diff linguist-generated=true
+
+# Binary assets — never normalize
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.ico  binary
+*.pdf  binary
+*.pkl  binary
+*.zip  binary
+*.woff binary
+*.woff2 binary
+*.ttf  binary
+*.otf  binary
+*.mp4  binary
+*.webm binary
