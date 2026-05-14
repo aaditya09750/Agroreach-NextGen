@@ -28,7 +28,7 @@ const CurrencyDropdown: React.FC = () => {
 
   return (
     <div className="relative" ref={dropdownRef}>
-      <div 
+      <div
         className="flex items-center gap-1 cursor-pointer hover:text-primary transition-colors"
         onClick={() => setIsOpen(!isOpen)}
       >
@@ -96,7 +96,7 @@ const MidBar: React.FC = () => {
     <div className="container mx-auto px-8 py-4 flex justify-between items-center">
       <Link to="/" className="flex items-center gap-2">
         <img src={ARLogo} alt="AR Logo" className="h-8 w-8 object-contain" />
-        <span className="text-2xl font-semibold text-text-dark -tracking-[0.02em]">AgroReach NextGen</span>
+        <span className="text-2xl font-semibold text-text-dark -tracking-[0.02em]">Agroreach NextGen</span>
       </Link>
 
       <div className="flex items-center gap-4">
